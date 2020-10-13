@@ -89,6 +89,8 @@ const nativeModulesExternals = [
 // into using them.
 const replacementExternals = {
   'readable-stream': 'commonjs2 stream',
+  'sparqljs': 'commonjs2 sparqljs',
+  'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
 };
 
 // Webpack configuration
