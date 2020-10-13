@@ -100,7 +100,6 @@ module.exports = {
     filename: 'engine.bundle.js',
     libraryTarget: 'commonjs2',
   },
-
   module: {
     rules: [
       {
@@ -108,6 +107,15 @@ module.exports = {
         loader: 'json-loader',
       }
     ],
+  },
+  resolve: {
+    alias: {
+      // We can swap out "decimal.js" for "bignumber.js" as the latter covers
+      // all of our uses at roughly half the size:
+      // - https://github.com/MikeMcl/big.js/wiki
+      // - https://github.com/comunica/sparqlee/blob/master/lib/functions/RegularFunctions.ts
+      'decimal.js': 'bignumber.js',
+    },
   },
   externals: {
     ...nativeModulesExternals,
