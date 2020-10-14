@@ -89,17 +89,15 @@ const nativeModulesExternals = [
 // into using them.
 const replacementExternals = {
   'readable-stream': 'commonjs2 stream',
-  'sparqljs': 'commonjs2 sparqljs',
-  'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
 };
 
 // Webpack configuration
 module.exports = {
   mode: 'production',
-  entry: './engine.js',
+  entry: './index.js',
   output: {
     path: path.resolve(__dirname),
-    filename: 'engine.bundle.js',
+    filename: 'index.bundle.js',
     libraryTarget: 'commonjs2',
   },
   module: {
@@ -123,6 +121,11 @@ module.exports = {
     ...nativeModulesExternals,
     ...ignoredPackagesExternals,
     ...replacementExternals,
+
+    // These two are required by quadstore itself, so we don't need to bundle
+    // them. We do have "sparqlalgebrajs" in our "peerDependencies".
+    'sparqljs': 'commonjs2 sparqljs',
+    'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
   },
 };
 

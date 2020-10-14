@@ -2,15 +2,15 @@
   "name": "quadstore-comunica",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.bundle.js",
+  "typings": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ts:build": "tsc --project tsconfig.json",
-    "ts:watch": "tsc --project tsconfig.json --watch",
-    "engine:build": "comunica-compile-config config/config-default.json  > engine.js",
-    "build": "npm run ts:build && npm run engine:build",
-    "webpack:bundle": "webpack --config webpack.config.js",
-    "webpack:analyze": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json"
+    "build-ts": "tsc --project tsconfig.json",
+    "build-engine": "comunica-compile-config config/config-default.json  > engine.js",
+    "build": "npm run build-ts && npm run build-engine && npm run bundle-js",
+    "bundle-js": "webpack --config webpack.config.js",
+    "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json"
   },
   "homepage": "https://github.com/beautifulinteractions/node-quadstore-comunica",
   "bugs": "https://github.com/beautifulinteractions/node-quadstore-comunica/issues",
