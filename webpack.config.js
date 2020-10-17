@@ -38,6 +38,7 @@ const ignoredPackagesExternals = [
   '@comunica/actor-sparql-serialize-sparql-tsv',
   '@comunica/actor-sparql-serialize-sparql-xml',
   '@comunica/actor-sparql-serialize-table',
+  'asynciterator',
   'cross-fetch',
   'cross-fetch/dist',
   'dom-serializer',
