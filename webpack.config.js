@@ -38,7 +38,6 @@ const ignoredPackagesExternals = [
   '@comunica/actor-sparql-serialize-sparql-tsv',
   '@comunica/actor-sparql-serialize-sparql-xml',
   '@comunica/actor-sparql-serialize-table',
-  'asynciterator',
   'cross-fetch',
   'cross-fetch/dist',
   'dom-serializer',
@@ -126,8 +125,10 @@ module.exports = {
 
     // These two are required by quadstore itself, so we don't need to bundle
     // them. We do have "sparqlalgebrajs" in our "peerDependencies".
-    'sparqljs': 'commonjs2 sparqljs',
+    'asynciterator': 'commonjs2 asynciterator',
     'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
+    'sparqljs': 'commonjs2 sparqljs',
+
   },
 };
 
