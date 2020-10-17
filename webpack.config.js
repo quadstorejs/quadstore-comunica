@@ -13,6 +13,7 @@ const ignoredPackagesExternals = [
   '@comunica/actor-http-native',
   '@comunica/actor-query-operation-sparql-endpoint',
   '@comunica/actor-rdf-dereference-http-parse',
+  '@comunica/actor-rdf-join-symmetrichash',
   '@comunica/actor-rdf-metadata-extract-hydra-controls',
   '@comunica/actor-rdf-metadata-extract-hydra-count',
   '@comunica/actor-rdf-metadata-extract-sparql-service',
