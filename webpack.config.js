@@ -123,8 +123,8 @@ module.exports = {
     ...ignoredPackagesExternals,
     ...replacementExternals,
 
-    // These two are required by quadstore itself, so we don't need to bundle
-    // them. We do have "sparqlalgebrajs" in our "peerDependencies".
+    // These are required by quadstore itself, so we don't need to bundle
+    // them. These should show up in our `peerDependencies`.
     'asynciterator': 'commonjs2 asynciterator',
     'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
     'sparqljs': 'commonjs2 sparqljs',

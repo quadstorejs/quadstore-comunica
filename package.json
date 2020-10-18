@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha.1",
   "description": "",
   "main": "index.bundle.js",
   "typings": "index.d.ts",
@@ -10,10 +10,11 @@
     "build-engine": "comunica-compile-config config/config-default.json  > engine.js",
     "build": "npm run build-ts && npm run build-engine && npm run bundle-js",
     "bundle-js": "webpack --config webpack.config.js",
-    "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json"
+    "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json",
+    "publish:alpha": "npm publish --tag alpha"
   },
   "homepage": "https://github.com/beautifulinteractions/node-quadstore-comunica",
-  "bugs": "https://github.com/beautifulinteractions/node-quadstore-comunica/issues",
+  "bugs": "https://github.com/beautifulinteractions/node-quadstore/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/beautifulinteractions/node-quadstore-comunica.git"
@@ -39,10 +40,8 @@
     "components",
     "index.js",
     "index.d.ts",
-    "engine.js",
-    "engine.d.ts",
-    "engine.bundle.js",
-    "engine.bundle.d.ts"
+    "index.bundle.js",
+    "engine.js"
   ],
   "lsd:module": "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica",
   "lsd:contexts": {
