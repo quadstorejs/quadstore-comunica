@@ -1,7 +1,7 @@
 
 const path = require('path');
 
-// These packages should be ending up in the bundle given the configuration
+// These packages should not be bundled by Webpack given the configuration
 // in config/config-default.json. However, due to causes I haven't been able
 // to find so far, they're still being bundled. So, we forcefully add them
 // to the "externals" section of Webpack's configuration pointing to variables
@@ -63,8 +63,8 @@ const ignoredPackagesExternals = [
   return acc;
 }, {});
 
-// The following modules are either native Node.js modules that we do not want
-// to have in our bundle but that are still required by this package and/or its
+// The following modules are native Node.js modules that we do not want to have
+// in our bundle but that are still required by this package and/or its
 // dependencies. We add them as "commonjs2" externals, which causes Webpack to
 // to add the relevant require() invocations where needed.
 const nativeModulesExternals = [
@@ -85,12 +85,25 @@ const nativeModulesExternals = [
   return acc;
 }, {});
 
-// The following modules are polyfills / ponyfills for native modules. We want
-// to use the latter, so we use Webpack externals to trick our application
-// into using them.
+// The following modules are polyfills / ponyfills for native modules.
+// We prefer native modules, so we use "commonjs2" externals to replace
+// all polyfills with their native versions.
 const replacementExternals = {
   'readable-stream': 'commonjs2 stream',
 };
+
+// These modules are dependencies of both this configuration of Comunica
+// and quadstore itself. We don't need to bundle them as they are always
+// available when using this package within quadstore.
+// These should show up in our `peerDependencies`.
+const peerDependenciesExternals = [
+  'asynciterator',
+  'sparqlalgebrajs',
+  'sparqljs',
+].reduce((acc, moduleName) => {
+  acc[moduleName] = `commonjs2 ${moduleName}`;
+  return acc;
+}, {});
 
 // Webpack configuration
 module.exports = {
@@ -109,26 +122,11 @@ module.exports = {
       }
     ],
   },
-  resolve: {
-    alias: {
-      // We can swap out "decimal.js" for "bignumber.js" as the latter covers
-      // all of our uses at roughly half the size:
-      // - https://github.com/MikeMcl/big.js/wiki
-      // - https://github.com/comunica/sparqlee/blob/master/lib/functions/RegularFunctions.ts
-      'decimal.js': 'bignumber.js',
-    },
-  },
   externals: {
     ...nativeModulesExternals,
     ...ignoredPackagesExternals,
     ...replacementExternals,
-
-    // These are required by quadstore itself, so we don't need to bundle
-    // them. These should show up in our `peerDependencies`.
-    'asynciterator': 'commonjs2 asynciterator',
-    'sparqlalgebrajs': 'commonjs2 sparqlalgebrajs',
-    'sparqljs': 'commonjs2 sparqljs',
-
+    ...peerDependenciesExternals,
   },
 };
 
