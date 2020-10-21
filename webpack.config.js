@@ -4,10 +4,10 @@ const path = require('path');
 // These packages should not be bundled by Webpack given the configuration
 // in config/config-default.json. However, due to causes I haven't been able
 // to find so far, they're still being bundled. So, we forcefully add them
-// to the "externals" section of Webpack's configuration pointing to variables
-// that do not exist with similar names. This causes Webpack to drop them from
-// the bundle while giving us a nice error message in case we ignore a package
-// that is actually used by this configuration.
+// to the "externals" section of Webpack's configuration pointing to packages
+// that do not exist. This causes Webpack to drop them from the bundle while
+// giving us a nice error message in case we ignore a package that is actually
+// used by this configuration.
 const ignoredPackagesExternals = [
   '@comunica/actor-http-memento',
   '@comunica/actor-http-native',
@@ -59,7 +59,7 @@ const ignoredPackagesExternals = [
   'web-streams-ponyfill',
   'xml',
 ].reduce((acc, packageName) => {
-  acc[packageName] = `_webpack_ignored_${packageName.replace(/[^a-z0-9]/ig, '_')}`;
+  acc[packageName] = `commonjs2 _webpack_ignored_${packageName.replace(/[^a-z0-9]/ig, '_')}`;
   return acc;
 }, {});
 
