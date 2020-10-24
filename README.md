@@ -1,9 +1,14 @@
 
 # Comunica for quadstore
 
-This library lets you use the Comunica query engine with quadstore.
-It is not meant to be used on its own but rather as a dependency of
-quadstore itself.
+This package provides a Comunica-based SPARQL query engine for use
+within quadstore. 
+
+**IMPORTANT: this package is not meant to be used on its own but rather
+as a dependency of quadstore itself.**
+
+The engine is built using Comunica's tools, bundled into a single file
+using Webpack (version **5.x**) and published in its bundled form to NPM.
 
 Issues should be reported in quadstore's [issue tracker][2].
 See also the [quadstore][0] and [comunica][1] repositories.
