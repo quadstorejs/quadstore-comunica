@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This library lets you use the Comunica query engine with quadstore. It is not meant to be used on its own but rather as a dependency of quadstore itself.",
   "main": "index.bundle.js",
   "typings": "index.d.ts",
@@ -11,7 +11,8 @@
     "build": "npm run build-ts && npm run build-engine && npm run bundle-js",
     "bundle-js": "webpack --config webpack.config.js",
     "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json",
-    "publish:alpha": "npm publish --tag alpha"
+    "publish:alpha": "npm publish --tag alpha",
+    "publish:beta": "npm publish --tag beta"
   },
   "homepage": "https://github.com/beautifulinteractions/node-quadstore-comunica",
   "bugs": "https://github.com/beautifulinteractions/node-quadstore/issues",
