@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "0.0.5",
+  "version": "0.0.6-beta.0",
   "description": "This library lets you use the Comunica query engine with quadstore. It is not meant to be used on its own but rather as a dependency of quadstore itself.",
   "main": "index.bundle.js",
   "typings": "index.d.ts",
@@ -33,6 +33,7 @@
   },
   "peerDependencies": {
     "asynciterator": "^3.0.3",
+    "rdf-data-factory": "^1.0.4",
     "sparqljs": "^3.1.1",
     "sparqlalgebrajs": "^2.4.0"
   },

@@ -101,6 +101,7 @@ const replacementExternals = {
 // These should show up in our `peerDependencies`.
 const peerDependenciesExternals = [
   'asynciterator',
+  'rdf-data-factory',
   'sparqlalgebrajs',
   'sparqljs',
 ].reduce((acc, moduleName) => {
