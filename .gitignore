@@ -329,5 +329,6 @@ $RECYCLE.BIN/
 webpack.stats.json
 node_modules
 package-lock.json
+yarn.lock
 *.LICENSE.*
 
