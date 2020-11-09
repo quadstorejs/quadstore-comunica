@@ -11,12 +11,19 @@ const path = require('path');
 const ignoredPackagesExternals = [
   '@comunica/actor-http-memento',
   '@comunica/actor-http-native',
+  '@comunica/actor-init-hello-world',
+  '@comunica/actor-init-http',
+  '@comunica/actor-init-rdf-dereference',
+  '@comunica/actor-init-rdf-dereference-paged',
+  '@comunica/actor-init-rdf-parse',
   '@comunica/actor-query-operation-sparql-endpoint',
   '@comunica/actor-rdf-dereference-http-parse',
   '@comunica/actor-rdf-join-symmetrichash',
+  '@comunica/actor-rdf-metadata-all',
   '@comunica/actor-rdf-metadata-extract-hydra-controls',
   '@comunica/actor-rdf-metadata-extract-hydra-count',
   '@comunica/actor-rdf-metadata-extract-sparql-service',
+  '@comunica/actor-rdf-metadata-primary-topic',
   '@comunica/actor-rdf-parse-html',
   '@comunica/actor-rdf-parse-html-rdfa',
   '@comunica/actor-rdf-parse-html-script',
@@ -38,7 +45,10 @@ const ignoredPackagesExternals = [
   '@comunica/actor-sparql-serialize-sparql-json',
   '@comunica/actor-sparql-serialize-sparql-tsv',
   '@comunica/actor-sparql-serialize-sparql-xml',
+  '@comunica/actor-sparql-serialize-stats',
   '@comunica/actor-sparql-serialize-table',
+  '@comunica/bus-rdf-dereference',
+  '@comunica/bus-rdf-metadata',
   'cross-fetch',
   'cross-fetch/dist',
   'dom-serializer',
@@ -79,7 +89,6 @@ const nativeModulesExternals = [
   'http',
   'https',
   'crypto',
-  'stream',
   'buffer',
   'events',
   'querystring',
@@ -109,6 +118,18 @@ const peerDependenciesExternals = [
   return acc;
 }, {});
 
+// These packages are required by other modules but their exports are never
+// used. We trick webpack into resolving them to the "empty.js" module, which
+// is just an empty file.
+const unusedPackagesToEmptyModuleAliases = [
+  '@comunica/actor-sparql-serialize-tree', // @see https://github.com/comunica/comunica/blob/2d0818c64e5bfbbb334ecbccb7b5a98a69263d1c/packages/actor-init-sparql/index-browser.ts#L3
+  'stream',
+  'readable-stream',
+].reduce((acc, moduleName) => {
+  acc[moduleName] = path.join(process.cwd(), 'empty');
+  return acc;
+}, {});
+
 // Webpack configuration
 module.exports = {
   mode: 'production',
@@ -125,6 +146,11 @@ module.exports = {
         loader: 'json-loader',
       }
     ],
+  },
+  resolve: {
+    alias: {
+      ...unusedPackagesToEmptyModuleAliases,
+    },
   },
   externals: {
     ...nativeModulesExternals,
