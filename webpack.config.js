@@ -3,12 +3,10 @@ const path = require('path');
 
 // These packages should not be bundled by Webpack given the configuration
 // in config/config-default.json. However, due to causes I haven't been able
-// to find so far, they're still being bundled. So, we forcefully add them
-// to the "externals" section of Webpack's configuration pointing to packages
-// that do not exist. This causes Webpack to drop them from the bundle while
-// giving us a nice error message in case we ignore a package that is actually
-// used by this configuration.
-const ignoredPackagesExternals = [
+// to find so far, they're still being bundled. So, we forcefully drop them
+// from the bundle by tricking Webpack into aliasing them to a local empty
+// module.
+const ignoredPackagesToThrowModuleAliases = [
   '@comunica/actor-http-memento',
   '@comunica/actor-http-native',
   '@comunica/actor-init-hello-world',
@@ -72,7 +70,18 @@ const ignoredPackagesExternals = [
   'web-streams-ponyfill',
   'xml',
 ].reduce((acc, packageName) => {
-  acc[packageName] = `commonjs2 _webpack_ignored_${packageName.replace(/[^a-z0-9]/ig, '_')}`;
+  acc[packageName] = path.join(__dirname, 'require-empty.js');
+  return acc;
+}, {});
+
+// These packages are required by other modules but their exports are never
+// used. We trick webpack into resolving them to a local empty module.
+const unusedPackagesToEmptyModuleAliases = [
+  '@comunica/actor-sparql-serialize-tree', // @see https://github.com/comunica/comunica/blob/2d0818c64e5bfbbb334ecbccb7b5a98a69263d1c/packages/actor-init-sparql/index-browser.ts#L3
+  'stream',
+  'readable-stream',
+].reduce((acc, moduleName) => {
+  acc[moduleName] = path.join(__dirname, 'require-empty.js');
   return acc;
 }, {});
 
@@ -118,18 +127,6 @@ const peerDependenciesExternals = [
   return acc;
 }, {});
 
-// These packages are required by other modules but their exports are never
-// used. We trick webpack into resolving them to the "empty.js" module, which
-// is just an empty file.
-const unusedPackagesToEmptyModuleAliases = [
-  '@comunica/actor-sparql-serialize-tree', // @see https://github.com/comunica/comunica/blob/2d0818c64e5bfbbb334ecbccb7b5a98a69263d1c/packages/actor-init-sparql/index-browser.ts#L3
-  'stream',
-  'readable-stream',
-].reduce((acc, moduleName) => {
-  acc[moduleName] = path.join(process.cwd(), 'empty');
-  return acc;
-}, {});
-
 // Webpack configuration
 module.exports = {
   mode: 'production',
@@ -147,14 +144,17 @@ module.exports = {
       }
     ],
   },
+  optimization: {
+    minimize: false,
+  },
   resolve: {
     alias: {
+      ...ignoredPackagesToThrowModuleAliases,
       ...unusedPackagesToEmptyModuleAliases,
     },
   },
   externals: {
     ...nativeModulesExternals,
-    ...ignoredPackagesExternals,
     ...replacementExternals,
     ...peerDependenciesExternals,
   },

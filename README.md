@@ -7,7 +7,7 @@ within quadstore.
 **IMPORTANT: this package is not meant to be used on its own but rather
 as a dependency of quadstore itself.**
 
-The engine is built using Comunica's tools, bundled into a single file
+The engine is built using Comunica's runner, bundled into a single file
 using Webpack (version **5.x**) and published in its bundled form to NPM.
 
 Issues should be reported in quadstore's [issue tracker][2].
