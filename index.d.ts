@@ -3,7 +3,7 @@ import type * as RDF from 'rdf-js';
 import { Algebra } from 'sparqlalgebrajs';
 import { AsyncIterator } from 'asynciterator';
 
-export interface Map<K, V> {
+export interface Map<K extends string, V> {
   get(key: K): V;
   toObject(): Record<K, V>;
 }

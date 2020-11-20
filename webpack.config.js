@@ -144,9 +144,6 @@ module.exports = {
       }
     ],
   },
-  optimization: {
-    minimize: false,
-  },
   resolve: {
     alias: {
       ...ignoredPackagesToThrowModuleAliases,
