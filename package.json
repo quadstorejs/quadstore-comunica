@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "0.1.0-beta.1",
+  "version": "0.1.0",
   "description": "This library lets you use the Comunica query engine with quadstore. It is not meant to be used on its own but rather as a dependency of quadstore itself.",
   "main": "index.bundle.js",
   "typings": "index.d.ts",

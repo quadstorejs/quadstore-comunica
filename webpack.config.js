@@ -6,7 +6,7 @@ const path = require('path');
 // to find so far, they're still being bundled. So, we forcefully drop them
 // from the bundle by tricking Webpack into aliasing them to a local empty
 // module.
-const ignoredPackagesToThrowModuleAliases = [
+const ignoredPackagesToEmptyModuleAliases = [
   '@comunica/actor-http-memento',
   '@comunica/actor-http-native',
   '@comunica/actor-init-hello-world',
@@ -146,7 +146,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      ...ignoredPackagesToThrowModuleAliases,
+      ...ignoredPackagesToEmptyModuleAliases,
       ...unusedPackagesToEmptyModuleAliases,
     },
   },

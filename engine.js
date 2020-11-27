@@ -1,4 +1,4 @@
-const __b16bnode114 = new (require('@comunica/logger-void').LoggerVoid)({});
+const __b16bnode115 = new (require('@comunica/logger-void').LoggerVoid)({});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (require('@comunica/core').Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
@@ -117,7 +117,7 @@ const urn_comunica_sparqlinit = new (require('@comunica/actor-init-sparql').Acto
   'mediatorSparqlSerializeMediaTypeFormatCombiner': __b1bnode253,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': __b16bnode114,
+  'logger': __b16bnode115,
   'contextKeyShortcuts': {
     'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
     'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
