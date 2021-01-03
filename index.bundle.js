@@ -1,45 +1,36 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+module.exports =
+/******/ (() => { // webpackBootstrap
+/******/ 	var __cmncwpk_modules__ = ({
 
 /***/ "./engine.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const __b16bnode115 = new (__webpack_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const __b16bnode115 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-parse/Bus/SparqlParse'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-serialize/Bus/SparqlSerialize'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-context-preprocess/Bus/ContextPreprocess'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__webpack_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
   'actorIdentifierFields': [
     'operationName'
   ],
@@ -49,82 +40,82 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_ope
   ],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-query-operation/Bus/QueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__webpack_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__webpack_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__webpack_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlParse',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b0bnode253 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b0bnode253 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
   'name': '_:b0bnode253',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b1bnode253 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b1bnode253 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
   'name': '_:b1bnode253',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__webpack_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorContextPreprocess',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__webpack_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation = new (__webpack_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
   'field': 'httpRequests',
   'type': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/mediator-number/Mediator/Number/type/TypeMin',
   'ignoreErrors': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/index.js").ActorQueryOperationBgpEmpty)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/index.js").ActorQueryOperationBgpEmpty)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myEmptyBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-values/index.js").ActorQueryOperationValues)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-values/index.js").ActorQueryOperationValues)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myValuesQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__webpack_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
   'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const urn_comunica_sparqlinit = new (__webpack_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
+const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
   'mediatorOptimizeQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
@@ -151,141 +142,141 @@ const urn_comunica_sparqlinit = new (__webpack_require__("./node_modules/@comuni
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myAskQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-service/index.js").ActorQueryOperationService)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-service/index.js").ActorQueryOperationService)({
   'forceSparqlEndpoint': false,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myServiceQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-slice/index.js").ActorQueryOperationSlice)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-slice/index.js").ActorQueryOperationSlice)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mySliceQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-single/index.js").ActorQueryOperationBgpSingle)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-single/index.js").ActorQueryOperationBgpSingle)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mySingleBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/index.js").ActorQueryOperationBgpLeftDeepSmallest)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/index.js").ActorQueryOperationBgpLeftDeepSmallest)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myLeftDeepSmallestBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-construct/index.js").ActorQueryOperationConstruct)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-construct/index.js").ActorQueryOperationConstruct)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myConstructQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-describe-subject/index.js").ActorQueryOperationDescribeSubject)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-describe-subject/index.js").ActorQueryOperationDescribeSubject)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myDescribeQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/index.js").ActorQueryOperationDistinctHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/index.js").ActorQueryOperationDistinctHash)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myDistinctQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-extend/index.js").ActorQueryOperationExtend)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-extend/index.js").ActorQueryOperationExtend)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myExtendQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/index.js").ActorQueryOperationReducedHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/index.js").ActorQueryOperationReducedHash)({
   'cacheSize': 100,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myReducedQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/index.js").ActorQueryOperationFilterSparqlee)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/index.js").ActorQueryOperationFilterSparqlee)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myFilterQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-from-quad/index.js").ActorQueryOperationFromQuad)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-from-quad/index.js").ActorQueryOperationFromQuad)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myFromQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-group/index.js").ActorQueryOperationGroup)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-group/index.js").ActorQueryOperationGroup)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myGroupQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-join/index.js").ActorQueryOperationJoin)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-join/index.js").ActorQueryOperationJoin)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myJoinQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/index.js").ActorQueryOperationLeftJoinLeftDeep)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/index.js").ActorQueryOperationLeftJoinLeftDeep)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myLeftJoinQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js").ActorQueryOperationOrderBySparqlee)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js").ActorQueryOperationOrderBySparqlee)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myOrderByQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-project/index.js").ActorQueryOperationProject)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-project/index.js").ActorQueryOperationProject)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myProjectQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-union/index.js").ActorQueryOperationUnion)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-union/index.js").ActorQueryOperationUnion)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myUnionQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-minus/index.js").ActorQueryOperationMinus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-minus/index.js").ActorQueryOperationMinus)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myMinusQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
@@ -337,18 +328,18 @@ module.exports = urn_comunica_sparqlinit;
 /***/ }),
 
 /***/ "./index.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 
 exports.newEngine = () => {
-  return __webpack_require__("./engine.js");
+  return __cmncwpk_require__("./engine.js");
 };
 
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-bindings-hash/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -363,20 +354,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractBindingsHash.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractFilterHash.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractBindingsHash.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractFilterHash.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractBindingsHash.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AbstractBindingsHash = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 /**
  * A comunica Hash Query Operation Actor.
  */
@@ -405,15 +396,15 @@ exports.AbstractBindingsHash = AbstractBindingsHash;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-bindings-hash/lib/AbstractFilterHash.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AbstractFilterHash = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const hash_js_1 = __webpack_require__("./node_modules/hash.js/lib/hash.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const hash_js_1 = __cmncwpk_require__("./node_modules/hash.js/lib/hash.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
 /**
  * A comunica Hash Query Operation Actor.
  */
@@ -428,7 +419,7 @@ class AbstractFilterHash extends bus_query_operation_1.ActorQueryOperationTypedM
      */
     static hash(bindings) {
         return hash_js_1.sha1()
-            .update(__webpack_require__("./node_modules/canonicalize/lib/canonicalize.js")(bindings.map(x => rdf_string_1.termToString(x))))
+            .update(__cmncwpk_require__("./node_modules/canonicalize/lib/canonicalize.js")(bindings.map(x => rdf_string_1.termToString(x))))
             .digest('hex');
     }
 }
@@ -438,7 +429,7 @@ exports.AbstractFilterHash = AbstractFilterHash;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-mediatyped/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -453,20 +444,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTyped.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTypedFixed.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTyped.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTypedFixed.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTyped.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorAbstractMediaTyped = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * An abstract actor that handles media-typed actions.
  *
@@ -515,13 +506,13 @@ exports.ActorAbstractMediaTyped = ActorAbstractMediaTyped;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTypedFixed.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorAbstractMediaTypedFixed = void 0;
-const ActorAbstractMediaTyped_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTyped.js");
+const ActorAbstractMediaTyped_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/lib/ActorAbstractMediaTyped.js");
 class ActorAbstractMediaTypedFixed extends ActorAbstractMediaTyped_1.ActorAbstractMediaTyped {
     constructor(args) {
         super(args);
@@ -559,7 +550,7 @@ exports.ActorAbstractMediaTypedFixed = ActorAbstractMediaTypedFixed;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-path/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -574,24 +565,24 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-abstract-path/lib/ActorAbstractPath.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/lib/ActorAbstractPath.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-abstract-path/lib/ActorAbstractPath.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorAbstractPath = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * An abstract actor that handles Path operations.
@@ -796,7 +787,7 @@ ActorAbstractPath.isPathArbitraryLengthDistinctKey = 'isPathArbitraryLengthDisti
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-http-proxy/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -811,21 +802,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-http-proxy/lib/ActorHttpProxy.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-http-proxy/lib/IProxyHandler.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-http-proxy/lib/ProxyHandlerStatic.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-http-proxy/lib/ActorHttpProxy.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-http-proxy/lib/IProxyHandler.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-http-proxy/lib/ProxyHandlerStatic.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-http-proxy/lib/ActorHttpProxy.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.KEY_CONTEXT_HTTPPROXYHANDLER = exports.ActorHttpProxy = void 0;
-const bus_http_1 = __webpack_require__("./node_modules/@comunica/bus-http/index.js");
+const bus_http_1 = __cmncwpk_require__("./node_modules/@comunica/bus-http/index.js");
 /**
  * A comunica Proxy Http Actor.
  */
@@ -909,61 +900,61 @@ exports.ProxyHandlerStatic = ProxyHandlerStatic;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-init-sparql/engine-default.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const __b16bnode132 = new (__webpack_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const __b16bnode132 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http/Bus/Http'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-parse/Bus/RdfParse'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-parse-html/Bus/RdfParseHtml'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-dereference/Bus/RdfDereference'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-serialize/Bus/RdfSerialize'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata/Bus/RdfMetadata'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata-extract/Bus/RdfMetadataExtract'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-hypermedia/Bus/RdfResolveHypermedia'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-hypermedia-links/Bus/RdfResolveHypermediaLinks'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-parse/Bus/SparqlParse'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-serialize/Bus/SparqlSerialize'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess = new (__webpack_require__("./node_modules/@comunica/core/index.js").Bus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-context-preprocess/Bus/ContextPreprocess'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__webpack_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
   'actorIdentifierFields': [
     'operationName'
   ],
@@ -973,35 +964,35 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_ope
   ],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-query-operation/Bus/QueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp = new (__webpack_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
   'field': 'time',
   'type': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/mediator-number/Mediator/Number/type/TypeMin',
   'ignoreErrors': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#mediatorHttp',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher = new (__webpack_require__("./require-empty.js").ActorHttpNative)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpNative)({
   'agentOptions': '{ \"keepAlive\": true, \"maxSockets\": 5 }',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#myHttpFetcher',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_sparql_serialize_stats_Actor_SparqlSerialize_Stats_httpObserver_default = new (__webpack_require__("./require-empty.js").ActionObserverHttp)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_sparql_serialize_stats_Actor_SparqlSerialize_Stats_httpObserver_default = new (__cmncwpk_require__("./require-empty.js").ActionObserverHttp)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-sparql-serialize-stats/Actor/SparqlSerialize/Stats/httpObserver/default',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__webpack_require__("./require-empty.js").ActorRdfJoinSymmetricHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./require-empty.js").ActorRdfJoinSymmetricHash)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorSymmetricHash',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__webpack_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserN3 = new (__webpack_require__("./require-empty.js").ActorRdfParseN3)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserN3 = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseN3)({
   'mediaTypes': {
     'application/n-quads': '1.0',
     'application/trig': '0.95',
@@ -1020,7 +1011,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserN3',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserRdfXml = new (__webpack_require__("./require-empty.js").ActorRdfParseRdfXml)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserRdfXml = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseRdfXml)({
   'mediaTypes': {
     'application/rdf+xml': '1.0'
   },
@@ -1031,7 +1022,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserRdfXml',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserXmlRdfa = new (__webpack_require__("./require-empty.js").ActorRdfParseXmlRdfa)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserXmlRdfa = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseXmlRdfa)({
   'mediaTypes': {
     'application/xml': '1.0',
     'text/xml': '1.0',
@@ -1046,25 +1037,25 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserXmlRdfa',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseMediatypes = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseMediatypes = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#mediatorRdfParseMediatypes',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseHandle = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseHandle = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#mediatorRdfParseHandle',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseMediatypes',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseHandle = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseHandle = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseHandle',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtml = new (__webpack_require__("./require-empty.js").ActorRdfParseHtml)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtml = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtml)({
   'busRdfParseHtml': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml,
   'mediaTypes': {
     'text/html': '1.0',
@@ -1078,19 +1069,19 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtml',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlMicrodata = new (__webpack_require__("./node_modules/@comunica/actor-rdf-parse-html-microdata/index.js").ActorRdfParseHtmlMicrodata)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlMicrodata = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-parse-html-microdata/index.js").ActorRdfParseHtmlMicrodata)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlMicrodata',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlRdfa = new (__webpack_require__("./require-empty.js").ActorRdfParseHtmlRdfa)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlRdfa = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtmlRdfa)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlRdfa',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfDereference',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3 = new (__webpack_require__("./require-empty.js").ActorRdfSerializeN3)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3 = new (__cmncwpk_require__("./require-empty.js").ActorRdfSerializeN3)({
   'mediaTypes': {
     'application/trig': '1.0',
     'application/n-quads': '0.7',
@@ -1108,7 +1099,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-serializers.json#myRdfSerializerN3',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd = new (__webpack_require__("./node_modules/@comunica/actor-rdf-serialize-jsonld/index.js").ActorRdfSerializeJsonLd)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-serialize-jsonld/index.js").ActorRdfSerializeJsonLd)({
   'jsonStringifyIndentSpaces': 2,
   'mediaTypes': {
     'application/ld+json': '1.0'
@@ -1120,44 +1111,44 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-serializers.json#myRdfSerializeJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mediatorRdfSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const __b0bnode322 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b0bnode322 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
   'name': '_:b0bnode322',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const __b1bnode322 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b1bnode322 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
   'name': '_:b1bnode322',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadata',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic = new (__webpack_require__("./require-empty.js").ActorRdfMetadataPrimaryTopic)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataPrimaryTopic)({
   'metadataToData': false,
   'dataToMetadataOnInvalidMetadataGraph': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataPrimaryTopic',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll = new (__webpack_require__("./require-empty.js").ActorRdfMetadataAll)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataAll)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataAll',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'metadata',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadataExtract',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls = new (__webpack_require__("./require-empty.js").ActorRdfMetadataExtractHydraControls)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraControls)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraControls',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount = new (__webpack_require__("./require-empty.js").ActorRdfMetadataExtractHydraCount)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraCount)({
   'predicates': [
     'http://www.w3.org/ns/hydra/core#totalItems',
     'http://rdfs.org/ns/void#triples'
@@ -1165,62 +1156,62 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraCount',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService = new (__webpack_require__("./require-empty.js").ActorRdfMetadataExtractSparqlService)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractSparqlService)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#myRdfMetadataExtractSparqlService',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaNoneResolver = new (__webpack_require__("./require-empty.js").ActorRdfResolveHypermediaNone)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaNoneResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaNone)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myHypermediaNoneResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfResolveHypermedia = new (__webpack_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfResolveHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
   'field': 'filterFactor',
   'type': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/mediator-number/Mediator/Number/type/TypeMax',
   'ignoreErrors': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfResolveHypermedia',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfResolveHypermediaLinks = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfResolveHypermediaLinks = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfResolveHypermediaLinks',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaLinksNext = new (__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/index.js").ActorRdfResolveHypermediaLinksNext)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaLinksNext = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/index.js").ActorRdfResolveHypermediaLinksNext)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myHypermediaLinksNext',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_rdf_resolve_quad_pattern_hypermedia_Actor_RdfResolveQuadPattern_Hypermedia_httpInvalidator_default = new (__webpack_require__("./node_modules/@comunica/bus-http-invalidate/index.js").ActorHttpInvalidateListenable)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_rdf_resolve_quad_pattern_hypermedia_Actor_RdfResolveQuadPattern_Hypermedia_httpInvalidator_default = new (__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/index.js").ActorHttpInvalidateListenable)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-rdf-resolve-quad-pattern-hypermedia/Actor/RdfResolveQuadPattern/Hypermedia/httpInvalidator#default',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__webpack_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__webpack_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__webpack_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlParse',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_graphql_parsers_json_myGraphqlParser = new (__webpack_require__("./require-empty.js").ActorSparqlParseGraphql)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_graphql_parsers_json_myGraphqlParser = new (__cmncwpk_require__("./require-empty.js").ActorSparqlParseGraphql)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/graphql-parsers.json#myGraphqlParser',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser = new (__webpack_require__("./node_modules/@comunica/actor-sparql-parse-algebra/index.js").ActorSparqlParseAlgebra)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser = new (__cmncwpk_require__("./node_modules/@comunica/actor-sparql-parse-algebra/index.js").ActorSparqlParseAlgebra)({
   'prefixes': {
     'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
     'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
@@ -1240,21 +1231,21 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-parsers.json#mySparqlParser',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize = new (__webpack_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b0bnode316 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b0bnode316 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
   'name': '_:b0bnode316',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b1bnode316 = new (__webpack_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const __b1bnode316 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
   'name': '_:b1bnode316',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeJson)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeJson)({
   'mediaTypes': {
     'application/json': '1.0'
   },
@@ -1264,7 +1255,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myJsonSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeSimple)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSimple)({
   'mediaTypes': {
     'simple': '0.9'
   },
@@ -1274,7 +1265,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySimpleSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer = new (__webpack_require__("./node_modules/@comunica/actor-sparql-serialize-sparql-csv/index.js").ActorSparqlSerializeSparqlCsv)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer = new (__cmncwpk_require__("./node_modules/@comunica/actor-sparql-serialize-sparql-csv/index.js").ActorSparqlSerializeSparqlCsv)({
   'mediaTypes': {
     'text/csv': '0.75'
   },
@@ -1284,7 +1275,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlCsvSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeSparqlJson)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlJson)({
   'mediaTypes': {
     'application/sparql-results+json': '0.8'
   },
@@ -1294,7 +1285,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlJsonSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeSparqlTsv)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlTsv)({
   'mediaTypes': {
     'text/tab-separated-values': '0.75'
   },
@@ -1304,7 +1295,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlTsvSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeSparqlXml)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlXml)({
   'mediaTypes': {
     'application/sparql-results+xml': '0.8'
   },
@@ -1314,7 +1305,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlXmlSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeTable)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeTable)({
   'columnWidth': 50,
   'mediaTypes': {
     'table': '0.6'
@@ -1325,7 +1316,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myTableSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeTree)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeTree)({
   'mediaTypes': {
     'tree': '0.5'
   },
@@ -1335,26 +1326,26 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myTreeSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__webpack_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorContextPreprocess',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_preprocess_Bus_ContextPreprocess
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation = new (__webpack_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
   'field': 'httpRequests',
   'type': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/mediator-number/Mediator/Number/type/TypeMin',
   'ignoreErrors': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/index.js").ActorQueryOperationBgpEmpty)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/index.js").ActorQueryOperationBgpEmpty)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myEmptyBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-values/index.js").ActorQueryOperationValues)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-values/index.js").ActorQueryOperationValues)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myValuesQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserJsonLd = new (__webpack_require__("./require-empty.js").ActorRdfParseJsonLd)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserJsonLd = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseJsonLd)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'mediaTypes': {
     'application/ld+json': '1.0',
@@ -1368,18 +1359,18 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver = new (__webpack_require__("./require-empty.js").ActorRdfResolveHypermediaSparql)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaSparql)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'checkUrlSuffix': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#mySparqlQuadPatternResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver = new (__webpack_require__("./require-empty.js").ActorQueryOperationSparqlEndpoint)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver = new (__cmncwpk_require__("./require-empty.js").ActorQueryOperationSparqlEndpoint)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#mySparqlEndpointResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeStats)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeStats)({
   'httpObserver': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_sparql_serialize_stats_Actor_SparqlSerialize_Stats_httpObserver_default,
   'mediaTypes': {
     'stats': '0.5'
@@ -1390,18 +1381,18 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myStatsSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__webpack_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript = new (__webpack_require__("./require-empty.js").ActorRdfParseHtmlScript)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtmlScript)({
   'mediatorRdfParseMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseMediatypes,
   'mediatorRdfParseHandle': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseHandle,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlScript',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_myRdfDereferencer = new (__webpack_require__("./require-empty.js").ActorRdfDereferenceHttpParse)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_myRdfDereferencer = new (__cmncwpk_require__("./require-empty.js").ActorRdfDereferenceHttpParse)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'mediatorRdfParseMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes,
   'mediatorRdfParseHandle': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseHandle,
@@ -1432,14 +1423,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#myRdfDereferencer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer = new (__webpack_require__("./require-empty.js").ActorSparqlSerializeRdf)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeRdf)({
   'mediatorRdfSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize,
   'mediatorMediaTypeCombiner': __b0bnode322,
   'mediatorMediaTypeFormatCombiner': __b1bnode322,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myRdfSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver = new (__webpack_require__("./require-empty.js").ActorRdfResolveHypermediaQpf)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaQpf)({
   'mediatorMetadata': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata,
   'mediatorMetadataExtract': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract,
   'mediatorRdfDereference': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference,
@@ -1450,7 +1441,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myHypermediaQpfResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver = new (__webpack_require__("./require-empty.js").ActorRdfResolveQuadPatternHypermedia)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveQuadPatternHypermedia)({
   'mediatorRdfDereference': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference,
   'mediatorMetadata': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata,
   'mediatorMetadataExtract': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract,
@@ -1461,18 +1452,18 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myQuadPatternHypermediaResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__webpack_require__("./require-empty.js").ActorRdfResolveQuadPatternFederated)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveQuadPatternFederated)({
   'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
   'skipEmptyPatterns': false,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
   'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpProxy = new (__webpack_require__("./node_modules/@comunica/actor-http-proxy/index.js").ActorHttpProxy)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpProxy = new (__cmncwpk_require__("./node_modules/@comunica/actor-http-proxy/index.js").ActorHttpProxy)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#myHttpProxy',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http,
@@ -1480,7 +1471,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
     https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
   ]
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_memento_json_myHttpFetcher = new (__webpack_require__("./require-empty.js").ActorHttpMemento)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_memento_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpMemento)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http-memento.json#myHttpFetcher',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http,
@@ -1488,7 +1479,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
     https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
   ]
 });
-const urn_comunica_sparqlinit = new (__webpack_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
+const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
   'mediatorOptimizeQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
@@ -1515,141 +1506,141 @@ const urn_comunica_sparqlinit = new (__webpack_require__("./node_modules/@comuni
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myAskQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-service/index.js").ActorQueryOperationService)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-service/index.js").ActorQueryOperationService)({
   'forceSparqlEndpoint': false,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myServiceQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-slice/index.js").ActorQueryOperationSlice)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-slice/index.js").ActorQueryOperationSlice)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mySliceQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-single/index.js").ActorQueryOperationBgpSingle)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-single/index.js").ActorQueryOperationBgpSingle)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mySingleBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/index.js").ActorQueryOperationBgpLeftDeepSmallest)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/index.js").ActorQueryOperationBgpLeftDeepSmallest)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myLeftDeepSmallestBgpQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-construct/index.js").ActorQueryOperationConstruct)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-construct/index.js").ActorQueryOperationConstruct)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myConstructQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-describe-subject/index.js").ActorQueryOperationDescribeSubject)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-describe-subject/index.js").ActorQueryOperationDescribeSubject)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myDescribeQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/index.js").ActorQueryOperationDistinctHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/index.js").ActorQueryOperationDistinctHash)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myDistinctQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-extend/index.js").ActorQueryOperationExtend)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-extend/index.js").ActorQueryOperationExtend)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myExtendQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/index.js").ActorQueryOperationReducedHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/index.js").ActorQueryOperationReducedHash)({
   'cacheSize': 100,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myReducedQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/index.js").ActorQueryOperationFilterSparqlee)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/index.js").ActorQueryOperationFilterSparqlee)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myFilterQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-from-quad/index.js").ActorQueryOperationFromQuad)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-from-quad/index.js").ActorQueryOperationFromQuad)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myFromQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-group/index.js").ActorQueryOperationGroup)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-group/index.js").ActorQueryOperationGroup)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myGroupQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-join/index.js").ActorQueryOperationJoin)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-join/index.js").ActorQueryOperationJoin)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myJoinQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/index.js").ActorQueryOperationLeftJoinLeftDeep)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/index.js").ActorQueryOperationLeftJoinLeftDeep)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myLeftJoinQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js").ActorQueryOperationOrderBySparqlee)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js").ActorQueryOperationOrderBySparqlee)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myOrderByQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-project/index.js").ActorQueryOperationProject)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-project/index.js").ActorQueryOperationProject)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myProjectQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-union/index.js").ActorQueryOperationUnion)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-union/index.js").ActorQueryOperationUnion)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myUnionQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-minus/index.js").ActorQueryOperationMinus)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-minus/index.js").ActorQueryOperationMinus)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myMinusQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
@@ -1740,7 +1731,7 @@ module.exports = urn_comunica_sparqlinit;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-init-sparql/index-browser.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -1757,15 +1748,15 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.evaluateQuery = exports.newEngine = exports.bindingsStreamToGraphQl = void 0;
 /* eslint-disable unicorn/filename-case */
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-init-sparql/lib/ActorInitSparql-browser.js"), exports);
-var actor_sparql_serialize_tree_1 = __webpack_require__("./require-empty.js");
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/lib/ActorInitSparql-browser.js"), exports);
+var actor_sparql_serialize_tree_1 = __cmncwpk_require__("./require-empty.js");
 Object.defineProperty(exports, "bindingsStreamToGraphQl", ({ enumerable: true, get: function () { return actor_sparql_serialize_tree_1.bindingsStreamToGraphQl; } }));
 /**
  * Create a new comunica engine from the default config.
  * @return {ActorInitSparql} A comunica engine.
  */
 function newEngine() {
-    return __webpack_require__("./node_modules/@comunica/actor-init-sparql/engine-default.js");
+    return __cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/engine-default.js");
 }
 exports.newEngine = newEngine;
 // TODO: remove in 2.0.0, this is just here for backwards-compatibility
@@ -1778,17 +1769,17 @@ exports.evaluateQuery = evaluateQuery;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-init-sparql/lib/ActorInitSparql-browser.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.KEY_CONTEXT_LENIENT = exports.KEY_CONTEXT_GRAPHQL_SINGULARIZEVARIABLES = exports.KEY_CONTEXT_QUERYFORMAT = exports.KEY_CONTEXT_INITIALBINDINGS = exports.ActorInitSparql = void 0;
-const bus_init_1 = __webpack_require__("./node_modules/@comunica/bus-init/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const bus_rdf_resolve_quad_pattern_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const bus_init_1 = __cmncwpk_require__("./node_modules/@comunica/bus-init/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_resolve_quad_pattern_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A browser-safe comunica SPARQL Init Actor.
  */
@@ -1976,7 +1967,7 @@ exports.KEY_CONTEXT_LENIENT = '@comunica/actor-init-sparql:lenient';
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -1991,20 +1982,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/lib/ActorOptimizeQueryOperationJoinBgp.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/lib/ActorOptimizeQueryOperationJoinBgp.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-optimize-query-operation-join-bgp/lib/ActorOptimizeQueryOperationJoinBgp.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorOptimizeQueryOperationJoinBgp = void 0;
-const bus_optimize_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-optimize-query-operation/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const bus_optimize_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-optimize-query-operation/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Join BGP Optimize Query Operation Actor.
  */
@@ -2039,7 +2030,7 @@ exports.ActorOptimizeQueryOperationJoinBgp = ActorOptimizeQueryOperationJoinBgp;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-ask/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2054,19 +2045,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-ask/lib/ActorQueryOperationAsk.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/lib/ActorQueryOperationAsk.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-ask/lib/ActorQueryOperationAsk.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationAsk = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 /**
  * A comunica Ask Query Operation Actor.
  */
@@ -2101,7 +2092,7 @@ exports.ActorQueryOperationAsk = ActorQueryOperationAsk;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-empty/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2116,22 +2107,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/lib/ActorQueryOperationBgpEmpty.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-empty/lib/ActorQueryOperationBgpEmpty.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-empty/lib/ActorQueryOperationBgpEmpty.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationBgpEmpty = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const rdf_terms_1 = __webpack_require__("./node_modules/rdf-terms/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
 /**
  * A comunica Query Operation Actor for empty BGPs.
  */
@@ -2174,7 +2165,7 @@ exports.ActorQueryOperationBgpEmpty = ActorQueryOperationBgpEmpty;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2189,22 +2180,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/lib/ActorQueryOperationBgpLeftDeepSmallest.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/lib/ActorQueryOperationBgpLeftDeepSmallest.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-left-deep-smallest/lib/ActorQueryOperationBgpLeftDeepSmallest.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationBgpLeftDeepSmallest = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const rdf_terms_1 = __webpack_require__("./node_modules/rdf-terms/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
 /**
  * A comunica Query Operation Actor that resolves BGPs in a left-deep manner
  * based on the pattern with the smallest item count.
@@ -2408,7 +2399,7 @@ exports.ActorQueryOperationBgpLeftDeepSmallest = ActorQueryOperationBgpLeftDeepS
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-single/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2423,19 +2414,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-bgp-single/lib/ActorQueryOperationBgpSingle.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-bgp-single/lib/ActorQueryOperationBgpSingle.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-bgp-single/lib/ActorQueryOperationBgpSingle.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationBgpSingle = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 /**
  * A comunica Query Operation Actor for BGPs with a single pattern.
  */
@@ -2465,7 +2456,7 @@ exports.ActorQueryOperationBgpSingle = ActorQueryOperationBgpSingle;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-construct/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2480,21 +2471,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-construct/lib/ActorQueryOperationConstruct.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-construct/lib/ActorQueryOperationConstruct.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-construct/lib/ActorQueryOperationConstruct.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationConstruct = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const rdf_terms_1 = __webpack_require__("./node_modules/rdf-terms/index.js");
-const BindingsToQuadsIterator_1 = __webpack_require__("./node_modules/@comunica/actor-query-operation-construct/lib/BindingsToQuadsIterator.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
+const BindingsToQuadsIterator_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-construct/lib/BindingsToQuadsIterator.js");
 /**
  * A comunica Construct Query Operation Actor.
  */
@@ -2545,15 +2536,15 @@ exports.ActorQueryOperationConstruct = ActorQueryOperationConstruct;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-construct/lib/BindingsToQuadsIterator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BindingsToQuadsIterator = void 0;
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const rdf_terms_1 = __webpack_require__("./node_modules/rdf-terms/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * Transforms a bindings stream into a quad stream given a quad template.
@@ -2656,7 +2647,7 @@ exports.BindingsToQuadsIterator = BindingsToQuadsIterator;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-describe-subject/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2671,22 +2662,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-describe-subject/lib/ActorQueryOperationDescribeSubject.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-describe-subject/lib/ActorQueryOperationDescribeSubject.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-describe-subject/lib/ActorQueryOperationDescribeSubject.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationDescribeSubject = void 0;
-const actor_query_operation_union_1 = __webpack_require__("./node_modules/@comunica/actor-query-operation-union/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
+const actor_query_operation_union_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-union/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * A comunica Describe Subject Query Operation Actor.
@@ -2758,7 +2749,7 @@ exports.ActorQueryOperationDescribeSubject = ActorQueryOperationDescribeSubject;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-distinct-hash/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2773,19 +2764,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/lib/ActorQueryOperationDistinctHash.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-distinct-hash/lib/ActorQueryOperationDistinctHash.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-distinct-hash/lib/ActorQueryOperationDistinctHash.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationDistinctHash = void 0;
-const actor_abstract_bindings_hash_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
+const actor_abstract_bindings_hash_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
 /**
  * A comunica Distinct Hash Query Operation Actor.
  */
@@ -2813,7 +2804,7 @@ exports.ActorQueryOperationDistinctHash = ActorQueryOperationDistinctHash;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-extend/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2828,21 +2819,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-extend/lib/ActorQueryOperationExtend.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-extend/lib/ActorQueryOperationExtend.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-extend/lib/ActorQueryOperationExtend.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationExtend = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlee_1 = __webpack_require__("./node_modules/sparqlee/dist/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
 /**
  * A comunica Extend Query Operation Actor.
  *
@@ -2897,7 +2888,7 @@ exports.ActorQueryOperationExtend = ActorQueryOperationExtend;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-filter-sparqlee/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2912,20 +2903,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/lib/ActorQueryOperationFilterSparqlee.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-filter-sparqlee/lib/ActorQueryOperationFilterSparqlee.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-filter-sparqlee/lib/ActorQueryOperationFilterSparqlee.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationFilterSparqlee = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlee_1 = __webpack_require__("./node_modules/sparqlee/dist/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
 /**
  * A comunica Filter Sparqlee Query Operation Actor.
  */
@@ -2969,7 +2960,7 @@ exports.ActorQueryOperationFilterSparqlee = ActorQueryOperationFilterSparqlee;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-from-quad/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -2984,20 +2975,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-from-quad/lib/ActorQueryOperationFromQuad.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-from-quad/lib/ActorQueryOperationFromQuad.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-from-quad/lib/ActorQueryOperationFromQuad.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationFromQuad = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica From Query Operation Actor.
  */
@@ -3189,7 +3180,7 @@ ActorQueryOperationFromQuad.ALGEBRA_TYPES = Object.keys(sparqlalgebrajs_1.Algebr
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-group/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3204,23 +3195,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-group/lib/ActorQueryOperationGroup.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-group/lib/ActorQueryOperationGroup.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-group/lib/ActorQueryOperationGroup.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationGroup = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlee_1 = __webpack_require__("./node_modules/sparqlee/dist/index.js");
-const GroupsState_1 = __webpack_require__("./node_modules/@comunica/actor-query-operation-group/lib/GroupsState.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
+const GroupsState_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-group/lib/GroupsState.js");
 /**
  * A comunica Group Query Operation Actor.
  */
@@ -3287,16 +3278,16 @@ exports.ActorQueryOperationGroup = ActorQueryOperationGroup;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-group/lib/GroupsState.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.GroupsState = void 0;
-const actor_abstract_bindings_hash_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlee_1 = __webpack_require__("./node_modules/sparqlee/dist/index.js");
+const actor_abstract_bindings_hash_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
 /**
  * A state manager for the groups constructed by consuming the bindings-stream.
  */
@@ -3409,7 +3400,7 @@ exports.GroupsState = GroupsState;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-join/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3424,19 +3415,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-join/lib/ActorQueryOperationJoin.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-join/lib/ActorQueryOperationJoin.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-join/lib/ActorQueryOperationJoin.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationJoin = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 /**
  * A comunica Join Query Operation Actor.
  */
@@ -3461,7 +3452,7 @@ exports.ActorQueryOperationJoin = ActorQueryOperationJoin;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3476,22 +3467,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/lib/ActorQueryOperationLeftJoinLeftDeep.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/lib/ActorQueryOperationLeftJoinLeftDeep.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-leftjoin-left-deep/lib/ActorQueryOperationLeftJoinLeftDeep.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationLeftJoinLeftDeep = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const bus_rdf_join_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-join/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_join_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica LeftJoin left-deep Query Operation Actor.
  */
@@ -3555,7 +3546,7 @@ ActorQueryOperationLeftJoinLeftDeep.FACTORY = new sparqlalgebrajs_1.Factory();
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-minus/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3570,21 +3561,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-minus/lib/ActorQueryOperationMinus.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-minus/lib/ActorQueryOperationMinus.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-minus/lib/ActorQueryOperationMinus.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationMinus = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const BindingsIndex_1 = __webpack_require__("./node_modules/@comunica/actor-query-operation-minus/lib/BindingsIndex.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const BindingsIndex_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-minus/lib/BindingsIndex.js");
 /**
  * A comunica Minus Query Operation Actor.
  */
@@ -3639,13 +3630,13 @@ exports.ActorQueryOperationMinus = ActorQueryOperationMinus;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-minus/lib/BindingsIndex.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BindingsIndex = void 0;
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
 /**
  * A simple efficient tree-based index for maintaining bindings,
  * and checking whether or not a bindings is contained in this index.
@@ -3740,7 +3731,7 @@ exports.BindingsIndex = BindingsIndex;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3755,22 +3746,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/ActorQueryOperationOrderBySparqlee.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/ActorQueryOperationOrderBySparqlee.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/ActorQueryOperationOrderBySparqlee.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationOrderBySparqlee = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
-const sparqlee_1 = __webpack_require__("./node_modules/sparqlee/dist/index.js");
-const SortIterator_1 = __webpack_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/SortIterator.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
+const SortIterator_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/SortIterator.js");
 /**
  * A comunica OrderBy Sparqlee Query Operation Actor.
  */
@@ -3853,13 +3844,13 @@ exports.ActorQueryOperationOrderBySparqlee = ActorQueryOperationOrderBySparqlee;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/SortIterator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SortIterator = void 0;
-const asynciterator_1 = __webpack_require__("asynciterator");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
 // Based on https://github.com/LinkedDataFragments/Client.js/blob/master/lib/sparql/SortIterator.js
 class SortIterator extends asynciterator_1.TransformIterator {
     constructor(source, sort, options) {
@@ -3923,7 +3914,7 @@ exports.SortIterator = SortIterator;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-alt/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -3938,22 +3929,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-alt/lib/ActorQueryOperationPathAlt.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/lib/ActorQueryOperationPathAlt.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-alt/lib/ActorQueryOperationPathAlt.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathAlt = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path Alt Query Operation Actor.
  */
@@ -3985,7 +3976,7 @@ exports.ActorQueryOperationPathAlt = ActorQueryOperationPathAlt;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-inv/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4000,20 +3991,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-inv/lib/ActorQueryOperationPathInv.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/lib/ActorQueryOperationPathInv.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-inv/lib/ActorQueryOperationPathInv.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathInv = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path Inv Query Operation Actor.
  */
@@ -4033,7 +4024,7 @@ exports.ActorQueryOperationPathInv = ActorQueryOperationPathInv;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-link/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4048,20 +4039,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-link/lib/ActorQueryOperationPathLink.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/lib/ActorQueryOperationPathLink.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-link/lib/ActorQueryOperationPathLink.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathLink = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path Link Query Operation Actor.
  */
@@ -4081,7 +4072,7 @@ exports.ActorQueryOperationPathLink = ActorQueryOperationPathLink;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-nps/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4096,22 +4087,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-nps/lib/ActorQueryOperationPathNps.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/lib/ActorQueryOperationPathNps.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-nps/lib/ActorQueryOperationPathNps.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathNps = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path Nps Query Operation Actor.
  */
@@ -4144,7 +4135,7 @@ exports.ActorQueryOperationPathNps = ActorQueryOperationPathNps;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4159,23 +4150,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/lib/ActorQueryOperationPathOneOrMore.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/lib/ActorQueryOperationPathOneOrMore.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-one-or-more/lib/ActorQueryOperationPathOneOrMore.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathOneOrMore = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path OneOrMore Query Operation Actor.
  */
@@ -4294,7 +4285,7 @@ exports.ActorQueryOperationPathOneOrMore = ActorQueryOperationPathOneOrMore;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-seq/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4309,22 +4300,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-seq/lib/ActorQueryOperationPathSeq.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/lib/ActorQueryOperationPathSeq.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-seq/lib/ActorQueryOperationPathSeq.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathSeq = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path Seq Query Operation Actor.
  */
@@ -4365,7 +4356,7 @@ exports.ActorQueryOperationPathSeq = ActorQueryOperationPathSeq;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4380,23 +4371,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/lib/ActorQueryOperationPathZeroOrMore.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/lib/ActorQueryOperationPathZeroOrMore.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-zero-or-more/lib/ActorQueryOperationPathZeroOrMore.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathZeroOrMore = void 0;
-const actor_abstract_path_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path ZeroOrMore Query Operation Actor.
  */
@@ -4511,7 +4502,7 @@ exports.ActorQueryOperationPathZeroOrMore = ActorQueryOperationPathZeroOrMore;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4526,23 +4517,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/lib/ActorQueryOperationPathZeroOrOne.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/lib/ActorQueryOperationPathZeroOrOne.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-path-zero-or-one/lib/ActorQueryOperationPathZeroOrOne.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathZeroOrOne = void 0;
-const ActorAbstractPath_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-path/lib/ActorAbstractPath.js");
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const ActorAbstractPath_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/lib/ActorAbstractPath.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A comunica Path ZeroOrOne Query Operation Actor.
  */
@@ -4594,7 +4585,7 @@ exports.ActorQueryOperationPathZeroOrOne = ActorQueryOperationPathZeroOrOne;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-project/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4609,22 +4600,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-project/lib/ActorQueryOperationProject.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-project/lib/ActorQueryOperationProject.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-project/lib/ActorQueryOperationProject.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationProject = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const data_factory_1 = __webpack_require__("./node_modules/@comunica/data-factory/index.js");
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const data_factory_1 = __cmncwpk_require__("./node_modules/@comunica/data-factory/index.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * A comunica Project Query Operation Actor.
@@ -4693,7 +4684,7 @@ exports.ActorQueryOperationProject = ActorQueryOperationProject;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-quadpattern/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4708,22 +4699,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-quadpattern/lib/ActorQueryOperationQuadpattern.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/lib/ActorQueryOperationQuadpattern.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-quadpattern/lib/ActorQueryOperationQuadpattern.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationQuadpattern = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const rdf_terms_1 = __webpack_require__("./node_modules/rdf-terms/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
 /**
  * A comunica actor for handling 'quadpattern' query operations.
  */
@@ -4867,7 +4858,7 @@ exports.ActorQueryOperationQuadpattern = ActorQueryOperationQuadpattern;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-reduced-hash/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4882,20 +4873,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/lib/ActorQueryOperationReducedHash.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-reduced-hash/lib/ActorQueryOperationReducedHash.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-reduced-hash/lib/ActorQueryOperationReducedHash.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationReducedHash = void 0;
-const actor_abstract_bindings_hash_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
-const LRU = __webpack_require__("./node_modules/lru-cache/index.js");
+const actor_abstract_bindings_hash_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-bindings-hash/index.js");
+const LRU = __cmncwpk_require__("./node_modules/lru-cache/index.js");
 /**
  * A comunica Reduced Hash Query Operation Actor.
  */
@@ -4922,7 +4913,7 @@ exports.ActorQueryOperationReducedHash = ActorQueryOperationReducedHash;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-service/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -4937,22 +4928,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-service/lib/ActorQueryOperationService.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-service/lib/ActorQueryOperationService.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-service/lib/ActorQueryOperationService.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationService = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const bus_rdf_resolve_quad_pattern_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_resolve_quad_pattern_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
 /**
  * A comunica Service Query Operation Actor.
  * It unwraps the SERVICE operation and executes it on the given source.
@@ -5002,7 +4993,7 @@ exports.ActorQueryOperationService = ActorQueryOperationService;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-slice/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5017,19 +5008,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-slice/lib/ActorQueryOperationSlice.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-slice/lib/ActorQueryOperationSlice.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-slice/lib/ActorQueryOperationSlice.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationSlice = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 /**
  * A comunica Slice Query Operation Actor.
  */
@@ -5094,7 +5085,7 @@ exports.ActorQueryOperationSlice = ActorQueryOperationSlice;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-union/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5109,20 +5100,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-union/lib/ActorQueryOperationUnion.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-union/lib/ActorQueryOperationUnion.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-union/lib/ActorQueryOperationUnion.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationUnion = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
 /**
  * A comunica Union Query Operation Actor.
  */
@@ -5185,7 +5176,7 @@ exports.ActorQueryOperationUnion = ActorQueryOperationUnion;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-values/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5200,21 +5191,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-query-operation-values/lib/ActorQueryOperationValues.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-values/lib/ActorQueryOperationValues.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-query-operation-values/lib/ActorQueryOperationValues.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationValues = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
 /**
  * A comunica Values Query Operation Actor.
  */
@@ -5239,7 +5230,7 @@ exports.ActorQueryOperationValues = ActorQueryOperationValues;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5254,20 +5245,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/lib/ActorRdfJoinMultiSmallest.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/lib/ActorRdfJoinMultiSmallest.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-join-multi-smallest/lib/ActorRdfJoinMultiSmallest.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfJoinMultiSmallest = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const bus_rdf_join_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-join/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_join_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/index.js");
 /**
  * A Multi Smallest RDF Join Actor.
  * It accepts 3 or more streams, joins the smallest two, and joins the result with the remaining streams.
@@ -5314,7 +5305,7 @@ exports.ActorRdfJoinMultiSmallest = ActorRdfJoinMultiSmallest;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-join-nestedloop/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5329,21 +5320,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/lib/ActorRdfJoinNestedLoop.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/lib/ActorRdfJoinNestedLoop.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-join-nestedloop/lib/ActorRdfJoinNestedLoop.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfJoinNestedLoop = void 0;
-const bus_query_operation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const bus_rdf_join_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-join/index.js");
-const asyncjoin_1 = __webpack_require__("./node_modules/asyncjoin/index.js");
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_join_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/index.js");
+const asyncjoin_1 = __cmncwpk_require__("./node_modules/asyncjoin/index.js");
 /**
  * A comunica NestedLoop RDF Join Actor.
  */
@@ -5370,7 +5361,7 @@ exports.ActorRdfJoinNestedLoop = ActorRdfJoinNestedLoop;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-parse-html-microdata/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5385,20 +5376,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-parse-html-microdata/lib/ActorRdfParseHtmlMicrodata.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-parse-html-microdata/lib/ActorRdfParseHtmlMicrodata.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-parse-html-microdata/lib/ActorRdfParseHtmlMicrodata.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfParseHtmlMicrodata = void 0;
-const bus_rdf_parse_html_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-parse-html/index.js");
-const microdata_rdf_streaming_parser_1 = __webpack_require__("./require-empty.js");
+const bus_rdf_parse_html_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-parse-html/index.js");
+const microdata_rdf_streaming_parser_1 = __cmncwpk_require__("./require-empty.js");
 /**
  * A comunica Microdata RDF Parse Html Actor.
  */
@@ -5429,7 +5420,7 @@ exports.ActorRdfParseHtmlMicrodata = ActorRdfParseHtmlMicrodata;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5444,19 +5435,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/lib/ActorRdfResolveHypermediaLinksNext.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/lib/ActorRdfResolveHypermediaLinksNext.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-next/lib/ActorRdfResolveHypermediaLinksNext.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfResolveHypermediaLinksNext = void 0;
-const bus_rdf_resolve_hypermedia_links_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/index.js");
+const bus_rdf_resolve_hypermedia_links_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/index.js");
 /**
  * A comunica Next RDF Resolve Hypermedia Links Actor.
  */
@@ -5480,7 +5471,7 @@ exports.ActorRdfResolveHypermediaLinksNext = ActorRdfResolveHypermediaLinksNext;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5495,22 +5486,22 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/ActorRdfResolveQuadPatternRdfJsSource.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/IRdfJsSourceExtended.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/RdfJsQuadSource.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/ActorRdfResolveQuadPatternRdfJsSource.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/IRdfJsSourceExtended.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/RdfJsQuadSource.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/ActorRdfResolveQuadPatternRdfJsSource.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfResolveQuadPatternRdfJsSource = void 0;
-const bus_rdf_resolve_quad_pattern_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
-const RdfJsQuadSource_1 = __webpack_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/RdfJsQuadSource.js");
+const bus_rdf_resolve_quad_pattern_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
+const RdfJsQuadSource_1 = __cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/RdfJsQuadSource.js");
 /**
  * A comunica RDFJS Source RDF Resolve Quad Pattern Actor.
  */
@@ -5549,13 +5540,13 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/lib/RdfJsQuadSource.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.RdfJsQuadSource = void 0;
-const asynciterator_1 = __webpack_require__("asynciterator");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
 /**
  * A quad source that wraps over an {@link RDF.Source}.
  */
@@ -5602,7 +5593,7 @@ exports.RdfJsQuadSource = RdfJsQuadSource;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-serialize-jsonld/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5617,20 +5608,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-rdf-serialize-jsonld/lib/ActorRdfSerializeJsonLd.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-serialize-jsonld/lib/ActorRdfSerializeJsonLd.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-rdf-serialize-jsonld/lib/ActorRdfSerializeJsonLd.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfSerializeJsonLd = void 0;
-const bus_rdf_serialize_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-serialize/index.js");
-const jsonld_streaming_serializer_1 = __webpack_require__("./require-empty.js");
+const bus_rdf_serialize_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-serialize/index.js");
+const jsonld_streaming_serializer_1 = __cmncwpk_require__("./require-empty.js");
 /**
  * A comunica Jsonld RDF Serialize Actor.
  */
@@ -5649,7 +5640,7 @@ exports.ActorRdfSerializeJsonLd = ActorRdfSerializeJsonLd;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-sparql-parse-algebra/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5664,21 +5655,21 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-sparql-parse-algebra/lib/ActorSparqlParseAlgebra.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-sparql-parse-algebra/lib/ActorSparqlParseAlgebra.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-sparql-parse-algebra/lib/ActorSparqlParseAlgebra.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlParseAlgebra = void 0;
-const bus_sparql_parse_1 = __webpack_require__("./node_modules/@comunica/bus-sparql-parse/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
-const sparqljs_1 = __webpack_require__("sparqljs");
+const bus_sparql_parse_1 = __cmncwpk_require__("./node_modules/@comunica/bus-sparql-parse/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqljs_1 = __cmncwpk_require__("sparqljs");
 /**
  * A comunica Algebra SPARQL Parse Actor.
  */
@@ -5712,7 +5703,7 @@ exports.ActorSparqlParseAlgebra = ActorSparqlParseAlgebra;
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-sparql-serialize-sparql-csv/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5727,20 +5718,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/actor-sparql-serialize-sparql-csv/lib/ActorSparqlSerializeSparqlCsv.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-sparql-serialize-sparql-csv/lib/ActorSparqlSerializeSparqlCsv.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/actor-sparql-serialize-sparql-csv/lib/ActorSparqlSerializeSparqlCsv.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlSerializeSparqlCsv = void 0;
-const stream_1 = __webpack_require__("./require-empty.js");
-const bus_sparql_serialize_1 = __webpack_require__("./node_modules/@comunica/bus-sparql-serialize/index.js");
+const stream_1 = __cmncwpk_require__("./require-empty.js");
+const bus_sparql_serialize_1 = __cmncwpk_require__("./node_modules/@comunica/bus-sparql-serialize/index.js");
 /**
  * A comunica SPARQL CSV SPARQL Serialize Actor.
  */
@@ -5811,7 +5802,7 @@ exports.ActorSparqlSerializeSparqlCsv = ActorSparqlSerializeSparqlCsv;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-http-invalidate/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5826,20 +5817,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidate.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidateListenable.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidate.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidateListenable.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidate.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorHttpInvalidate = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica actor for http-invalidate events.
  *
@@ -5862,13 +5853,13 @@ exports.ActorHttpInvalidate = ActorHttpInvalidate;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidateListenable.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorHttpInvalidateListenable = void 0;
-const ActorHttpInvalidate_1 = __webpack_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidate.js");
+const ActorHttpInvalidate_1 = __cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/lib/ActorHttpInvalidate.js");
 /**
  * An ActorHttpInvalidate actor that allows listeners to be attached.
  *
@@ -5898,7 +5889,7 @@ exports.ActorHttpInvalidateListenable = ActorHttpInvalidateListenable;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-http/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5913,19 +5904,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-http/lib/ActorHttp.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-http/lib/ActorHttp.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-http/lib/ActorHttp.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.KEY_CONTEXT_AUTH = exports.KEY_CONTEXT_INCLUDE_CREDENTIALS = exports.ActorHttp = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A base actor for listening to HTTP events.
  *
@@ -5949,7 +5940,7 @@ class ActorHttp extends core_1.Actor {
      * @returns {NodeJS.ReadableStream}
      */
     static toNodeReadable(body) {
-        return __webpack_require__("./node_modules/is-stream/index.js")(body) ? body : __webpack_require__("./require-empty.js").toNodeReadable(body);
+        return __cmncwpk_require__("./node_modules/is-stream/index.js")(body) ? body : __cmncwpk_require__("./require-empty.js").toNodeReadable(body);
     }
     /**
      * Convert the given headers object into a raw hash.
@@ -5978,7 +5969,7 @@ exports.KEY_CONTEXT_AUTH = '@comunica/bus-http:auth';
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-init/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -5993,19 +5984,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-init/lib/ActorInit.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-init/lib/ActorInit.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-init/lib/ActorInit.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorInit = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A base actor for listening to init events.
  *
@@ -6029,7 +6020,7 @@ exports.ActorInit = ActorInit;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-optimize-query-operation/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6044,19 +6035,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-optimize-query-operation/lib/ActorOptimizeQueryOperation.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-optimize-query-operation/lib/ActorOptimizeQueryOperation.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-optimize-query-operation/lib/ActorOptimizeQueryOperation.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorOptimizeQueryOperation = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica actor for optimize-query-operation events.
  *
@@ -6079,7 +6070,7 @@ exports.ActorOptimizeQueryOperation = ActorOptimizeQueryOperation;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-query-operation/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6094,23 +6085,23 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperation.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTyped.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTypedMediated.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-query-operation/lib/Bindings.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperation.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTyped.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTypedMediated.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/Bindings.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperation.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.getMetadata = exports.ActorQueryOperation = exports.KEY_CONTEXT_QUERY_TIMESTAMP = exports.KEY_CONTEXT_BASEIRI = exports.KEY_CONTEXT_PATTERN_PARENTMETADATA = exports.KEY_CONTEXT_BGP_PATTERNBINDINGS = exports.KEY_CONTEXT_BGP_PARENTMETADATA = exports.KEY_CONTEXT_BGP_CURRENTMETADATA = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
-const Bindings_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/lib/Bindings.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const Bindings_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/Bindings.js");
 /**
  * @type {string} Context entry for current metadata.
  *                I.e., the metadata that was used to determine the next BGP operation.
@@ -6276,13 +6267,13 @@ exports.getMetadata = getMetadata;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTyped.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationTyped = exports.KEY_CONTEXT_QUERYOPERATION = void 0;
-const ActorQueryOperation_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperation.js");
+const ActorQueryOperation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperation.js");
 /**
  * @type {string} Context entry for the current query operation.
  */
@@ -6324,13 +6315,13 @@ exports.ActorQueryOperationTyped = ActorQueryOperationTyped;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTypedMediated.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationTypedMediated = void 0;
-const ActorQueryOperationTyped_1 = __webpack_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTyped.js");
+const ActorQueryOperationTyped_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/lib/ActorQueryOperationTyped.js");
 /**
  * A base implementation for query operation actors for a specific operation type that have a query operation mediator.
  */
@@ -6345,15 +6336,15 @@ exports.ActorQueryOperationTypedMediated = ActorQueryOperationTypedMediated;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-query-operation/lib/Bindings.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.materializeOperation = exports.materializeTerm = exports.ensureBindings = exports.isBindings = exports.Bindings = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const rdf_string_1 = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
 /**
  * A convenience constructor for bindings based on a given hash.
  * @param {{[p: string]: RDF.Term}} hash A hash that maps variable names to terms.
@@ -6559,7 +6550,7 @@ exports.materializeOperation = materializeOperation;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-join/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6574,20 +6565,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-join/lib/ActorRdfJoin.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/lib/ActorRdfJoin.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-join/lib/ActorRdfJoin.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfJoin = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
-const asynciterator_1 = __webpack_require__("asynciterator");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
 /**
  * A comunica actor for joining 2 binding streams.
  *
@@ -6750,7 +6741,7 @@ exports.ActorRdfJoin = ActorRdfJoin;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-parse-html/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6765,19 +6756,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-parse-html/lib/ActorRdfParseHtml.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-parse-html/lib/ActorRdfParseHtml.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-parse-html/lib/ActorRdfParseHtml.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfParseHtml = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica actor for rdf-parse-html events.
  *
@@ -6800,7 +6791,7 @@ exports.ActorRdfParseHtml = ActorRdfParseHtml;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6815,19 +6806,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/lib/ActorRdfResolveHypermediaLinks.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/lib/ActorRdfResolveHypermediaLinks.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-resolve-hypermedia-links/lib/ActorRdfResolveHypermediaLinks.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfResolveHypermediaLinks = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica actor for rdf-resolve-hypermedia-links events.
  *
@@ -6850,7 +6841,7 @@ exports.ActorRdfResolveHypermediaLinks = ActorRdfResolveHypermediaLinks;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -6865,20 +6856,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPattern.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPatternSource.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPattern.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPatternSource.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPattern.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfResolveQuadPattern = exports.getDataSourceContext = exports.getDataSourceValue = exports.getDataSourceType = exports.isDataSourceRawType = exports.KEY_CONTEXT_SOURCE = exports.KEY_CONTEXT_SOURCES = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * @type {string} Context entry for data sources.
  * @value {DataSources} An array of sources.
@@ -6986,13 +6977,13 @@ exports.ActorRdfResolveQuadPattern = ActorRdfResolveQuadPattern;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPatternSource.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfResolveQuadPatternSource = void 0;
-const ActorRdfResolveQuadPattern_1 = __webpack_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPattern.js");
+const ActorRdfResolveQuadPattern_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/lib/ActorRdfResolveQuadPattern.js");
 /**
  * A base implementation for rdf-resolve-quad-pattern events
  * that wraps around an {@link IQuadSource}.
@@ -7030,7 +7021,7 @@ exports.ActorRdfResolveQuadPatternSource = ActorRdfResolveQuadPatternSource;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-serialize/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7045,20 +7036,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerialize.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerializeFixedMediaTypes.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerialize.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerializeFixedMediaTypes.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerialize.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfSerialize = void 0;
-const actor_abstract_mediatyped_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
+const actor_abstract_mediatyped_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
 /**
  * A comunica actor for RDF parse events.
  *
@@ -7081,13 +7072,13 @@ exports.ActorRdfSerialize = ActorRdfSerialize;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-rdf-serialize/lib/ActorRdfSerializeFixedMediaTypes.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorRdfSerializeFixedMediaTypes = void 0;
-const actor_abstract_mediatyped_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
+const actor_abstract_mediatyped_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
 /**
  * A base actor for listening to RDF serialize events that has fixed media types.
  *
@@ -7112,7 +7103,7 @@ exports.ActorRdfSerializeFixedMediaTypes = ActorRdfSerializeFixedMediaTypes;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-sparql-parse/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7127,19 +7118,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-sparql-parse/lib/ActorSparqlParse.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-sparql-parse/lib/ActorSparqlParse.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-sparql-parse/lib/ActorSparqlParse.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlParse = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica actor for sparql-parse events.
  *
@@ -7162,7 +7153,7 @@ exports.ActorSparqlParse = ActorSparqlParse;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-sparql-serialize/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7177,20 +7168,20 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerialize.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerializeFixedMediaTypes.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerialize.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerializeFixedMediaTypes.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerialize.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlSerialize = void 0;
-const actor_abstract_mediatyped_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
+const actor_abstract_mediatyped_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
 /**
  * A comunica actor for sparql-serialize events.
  *
@@ -7213,13 +7204,13 @@ exports.ActorSparqlSerialize = ActorSparqlSerialize;
 /***/ }),
 
 /***/ "./node_modules/@comunica/bus-sparql-serialize/lib/ActorSparqlSerializeFixedMediaTypes.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlSerializeFixedMediaTypes = void 0;
-const actor_abstract_mediatyped_1 = __webpack_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
+const actor_abstract_mediatyped_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-mediatyped/index.js");
 /**
  * A base actor for listening to SPARQL serialize events that has fixed media types.
  *
@@ -7244,7 +7235,7 @@ exports.ActorSparqlSerializeFixedMediaTypes = ActorSparqlSerializeFixedMediaType
 /***/ }),
 
 /***/ "./node_modules/@comunica/core/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7263,12 +7254,12 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 if (typeof process === 'undefined' || ( true && !process.env.COMUNICA_DEBUG)) {
     Error.stackTraceLimit = false;
 }
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/Bus.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/BusIndexed.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/ActionObserver.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/Actor.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/Logger.js"), exports);
-__exportStar(__webpack_require__("./node_modules/@comunica/core/lib/Mediator.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/Bus.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/BusIndexed.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/ActionObserver.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/Actor.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/Logger.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/core/lib/Mediator.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -7311,14 +7302,14 @@ exports.ActionObserver = ActionObserver;
 /***/ }),
 
 /***/ "./node_modules/@comunica/core/lib/Actor.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ensureActionContext = exports.ActionContext = exports.Actor = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const Logger_1 = __webpack_require__("./node_modules/@comunica/core/lib/Logger.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const Logger_1 = __cmncwpk_require__("./node_modules/@comunica/core/lib/Logger.js");
 /**
  * An actor can act on messages of certain types and provide output of a certain type.
  *
@@ -7650,13 +7641,13 @@ exports.Bus = Bus;
 /***/ }),
 
 /***/ "./node_modules/@comunica/core/lib/BusIndexed.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.BusIndexed = void 0;
-const Bus_1 = __webpack_require__("./node_modules/@comunica/core/lib/Bus.js");
+const Bus_1 = __cmncwpk_require__("./node_modules/@comunica/core/lib/Bus.js");
 /**
  * A bus that indexes identified actors,
  * so that actions with a corresponding identifier can be published more efficiently.
@@ -7862,7 +7853,7 @@ exports.Mediator = Mediator;
 /***/ }),
 
 /***/ "./node_modules/@comunica/data-factory/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7877,7 +7868,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/data-factory/lib/BlankNodeScoped.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/data-factory/lib/BlankNodeScoped.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -7909,7 +7900,7 @@ exports.BlankNodeScoped = BlankNodeScoped;
 /***/ }),
 
 /***/ "./node_modules/@comunica/logger-void/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7924,19 +7915,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/logger-void/lib/LoggerVoid.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/logger-void/lib/LoggerVoid.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/logger-void/lib/LoggerVoid.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.LoggerVoid = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A logger that voids everything.
  */
@@ -7966,7 +7957,7 @@ exports.LoggerVoid = LoggerVoid;
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-all/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -7981,19 +7972,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/mediator-all/lib/MediatorAll.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/mediator-all/lib/MediatorAll.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-all/lib/MediatorAll.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MediatorAll = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica mediator that runs all actors that resolve their test.
  * This mediator will always resolve to the first actor's output.
@@ -8035,7 +8026,7 @@ exports.MediatorAll = MediatorAll;
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-combine-pipeline/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -8050,19 +8041,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/mediator-combine-pipeline/lib/MediatorCombinePipeline.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/lib/MediatorCombinePipeline.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-combine-pipeline/lib/MediatorCombinePipeline.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MediatorCombinePipeline = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica mediator that goes over all actors in sequence and forwards I/O.
  * This required the action input and the actor output to be of the same type.
@@ -8101,7 +8092,7 @@ exports.MediatorCombinePipeline = MediatorCombinePipeline;
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-combine-union/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -8116,19 +8107,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/mediator-combine-union/lib/MediatorCombineUnion.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/lib/MediatorCombineUnion.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-combine-union/lib/MediatorCombineUnion.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MediatorCombineUnion = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A comunica mediator that takes the union of all actor results.
  *
@@ -8175,7 +8166,7 @@ exports.MediatorCombineUnion = MediatorCombineUnion;
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-number/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -8190,19 +8181,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/mediator-number/lib/MediatorNumber.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/mediator-number/lib/MediatorNumber.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-number/lib/MediatorNumber.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MediatorNumber = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A mediator that can mediate over a single number field.
  *
@@ -8267,7 +8258,7 @@ MediatorNumber.MAX = 'https://linkedsoftwaredependencies.org/bundles/npm/@comuni
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-race/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -8282,19 +8273,19 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/@comunica/mediator-race/lib/MediatorRace.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/mediator-race/lib/MediatorRace.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/@comunica/mediator-race/lib/MediatorRace.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.MediatorRace = void 0;
-const core_1 = __webpack_require__("./node_modules/@comunica/core/index.js");
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 /**
  * A mediator that picks the first actor that resolves its test.
  */
@@ -8325,15 +8316,15 @@ exports.MediatorRace = MediatorRace;
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/index.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-const DynamicNestedLoopJoin = __webpack_require__("./node_modules/asyncjoin/join/DynamicNestedLoopJoin.js");
-const HashJoin = __webpack_require__("./node_modules/asyncjoin/join/HashJoin.js");
-const NestedLoopJoin = __webpack_require__("./node_modules/asyncjoin/join/NestedLoopJoin.js");
-const SymmetricHashJoin = __webpack_require__("./node_modules/asyncjoin/join/SymmetricHashJoin.js");
+const DynamicNestedLoopJoin = __cmncwpk_require__("./node_modules/asyncjoin/join/DynamicNestedLoopJoin.js");
+const HashJoin = __cmncwpk_require__("./node_modules/asyncjoin/join/HashJoin.js");
+const NestedLoopJoin = __cmncwpk_require__("./node_modules/asyncjoin/join/NestedLoopJoin.js");
+const SymmetricHashJoin = __cmncwpk_require__("./node_modules/asyncjoin/join/SymmetricHashJoin.js");
 
-const MergeStream = __webpack_require__("./node_modules/asyncjoin/util/MergeIterator.js");
+const MergeStream = __cmncwpk_require__("./node_modules/asyncjoin/util/MergeIterator.js");
 
 module.exports = {
     DynamicNestedLoopJoin,
@@ -8347,10 +8338,10 @@ module.exports = {
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/join/DynamicNestedLoopJoin.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-let AsyncIterator = __webpack_require__("asynciterator");
+let AsyncIterator = __cmncwpk_require__("asynciterator");
 let MultiTransformIterator = AsyncIterator.MultiTransformIterator;
 let SimpleTransformIterator = AsyncIterator.SimpleTransformIterator;
 
@@ -8382,10 +8373,10 @@ module.exports = DynamicNestedLoopJoin;
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/join/HashJoin.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-let AsyncIterator = __webpack_require__("asynciterator").AsyncIterator;
+let AsyncIterator = __cmncwpk_require__("asynciterator").AsyncIterator;
 
 // https://en.wikipedia.org/wiki/Hash_join
 class HashJoin extends AsyncIterator
@@ -8500,10 +8491,10 @@ module.exports = HashJoin;
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/join/NestedLoopJoin.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-let AsyncIterator = __webpack_require__("asynciterator");
+let AsyncIterator = __cmncwpk_require__("asynciterator");
 let MultiTransformIterator = AsyncIterator.MultiTransformIterator;
 let SimpleTransformIterator = AsyncIterator.SimpleTransformIterator;
 
@@ -8542,10 +8533,10 @@ module.exports = NestedLoopJoin;
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/join/SymmetricHashJoin.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-let AsyncIterator = __webpack_require__("asynciterator").AsyncIterator;
+let AsyncIterator = __cmncwpk_require__("asynciterator").AsyncIterator;
 
 // https://en.wikipedia.org/wiki/Symmetric_Hash_Join
 class SymmetricHashJoin extends AsyncIterator
@@ -8658,10 +8649,10 @@ module.exports = SymmetricHashJoin;
 /***/ }),
 
 /***/ "./node_modules/asyncjoin/util/MergeIterator.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 
-let AsyncIterator = __webpack_require__("asynciterator").AsyncIterator;
+let AsyncIterator = __cmncwpk_require__("asynciterator").AsyncIterator;
 
 // merges the contents of multiple streams
 class MergeIterator extends AsyncIterator
@@ -8761,7 +8752,7 @@ module.exports = function serialize (object) {
 /***/ }),
 
 /***/ "./node_modules/decimal.js/decimal.js":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __cmncwpk_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   'use strict';
@@ -13614,7 +13605,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   if (true) {
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {
       return Decimal;
-    }).call(exports, __webpack_require__, exports, module),
+    }).call(exports, __cmncwpk_require__, exports, module),
 		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
   // Node and other environments that support module.exports.
@@ -13625,15 +13616,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 var hash = exports;
 
-hash.utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-hash.common = __webpack_require__("./node_modules/hash.js/lib/hash/common.js");
-hash.sha = __webpack_require__("./node_modules/hash.js/lib/hash/sha.js");
-hash.ripemd = __webpack_require__("./node_modules/hash.js/lib/hash/ripemd.js");
-hash.hmac = __webpack_require__("./node_modules/hash.js/lib/hash/hmac.js");
+hash.utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+hash.common = __cmncwpk_require__("./node_modules/hash.js/lib/hash/common.js");
+hash.sha = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha.js");
+hash.ripemd = __cmncwpk_require__("./node_modules/hash.js/lib/hash/ripemd.js");
+hash.hmac = __cmncwpk_require__("./node_modules/hash.js/lib/hash/hmac.js");
 
 // Proxy hash functions to the main object
 hash.sha1 = hash.sha.sha1;
@@ -13647,13 +13638,13 @@ hash.ripemd160 = hash.ripemd.ripemd160;
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/common.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var assert = __webpack_require__("./node_modules/minimalistic-assert/index.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var assert = __cmncwpk_require__("./node_modules/minimalistic-assert/index.js");
 
 function BlockHash() {
   this.pending = null;
@@ -13747,13 +13738,13 @@ BlockHash.prototype._pad = function pad() {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/hmac.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var assert = __webpack_require__("./node_modules/minimalistic-assert/index.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var assert = __cmncwpk_require__("./node_modules/minimalistic-assert/index.js");
 
 function Hmac(hash, key, enc) {
   if (!(this instanceof Hmac))
@@ -13802,13 +13793,13 @@ Hmac.prototype.digest = function digest(enc) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/ripemd.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var common = __webpack_require__("./node_modules/hash.js/lib/hash/common.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var common = __cmncwpk_require__("./node_modules/hash.js/lib/hash/common.js");
 
 var rotl32 = utils.rotl32;
 var sum32 = utils.sum32;
@@ -13956,29 +13947,29 @@ var sh = [
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-exports.sha1 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/1.js");
-exports.sha224 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/224.js");
-exports.sha256 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/256.js");
-exports.sha384 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/384.js");
-exports.sha512 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/512.js");
+exports.sha1 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/1.js");
+exports.sha224 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/224.js");
+exports.sha256 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/256.js");
+exports.sha384 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/384.js");
+exports.sha512 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/512.js");
 
 
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/1.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var common = __webpack_require__("./node_modules/hash.js/lib/hash/common.js");
-var shaCommon = __webpack_require__("./node_modules/hash.js/lib/hash/sha/common.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var common = __cmncwpk_require__("./node_modules/hash.js/lib/hash/common.js");
+var shaCommon = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/common.js");
 
 var rotl32 = utils.rotl32;
 var sum32 = utils.sum32;
@@ -14053,13 +14044,13 @@ SHA1.prototype._digest = function digest(enc) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/224.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var SHA256 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/256.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var SHA256 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/256.js");
 
 function SHA224() {
   if (!(this instanceof SHA224))
@@ -14091,15 +14082,15 @@ SHA224.prototype._digest = function digest(enc) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/256.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var common = __webpack_require__("./node_modules/hash.js/lib/hash/common.js");
-var shaCommon = __webpack_require__("./node_modules/hash.js/lib/hash/sha/common.js");
-var assert = __webpack_require__("./node_modules/minimalistic-assert/index.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var common = __cmncwpk_require__("./node_modules/hash.js/lib/hash/common.js");
+var shaCommon = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/common.js");
+var assert = __cmncwpk_require__("./node_modules/minimalistic-assert/index.js");
 
 var sum32 = utils.sum32;
 var sum32_4 = utils.sum32_4;
@@ -14204,14 +14195,14 @@ SHA256.prototype._digest = function digest(enc) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/384.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
 
-var SHA512 = __webpack_require__("./node_modules/hash.js/lib/hash/sha/512.js");
+var SHA512 = __cmncwpk_require__("./node_modules/hash.js/lib/hash/sha/512.js");
 
 function SHA384() {
   if (!(this instanceof SHA384))
@@ -14247,14 +14238,14 @@ SHA384.prototype._digest = function digest(enc) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/512.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
-var common = __webpack_require__("./node_modules/hash.js/lib/hash/common.js");
-var assert = __webpack_require__("./node_modules/minimalistic-assert/index.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
+var common = __cmncwpk_require__("./node_modules/hash.js/lib/hash/common.js");
+var assert = __cmncwpk_require__("./node_modules/minimalistic-assert/index.js");
 
 var rotr64_hi = utils.rotr64_hi;
 var rotr64_lo = utils.rotr64_lo;
@@ -14585,12 +14576,12 @@ function g1_512_lo(xh, xl) {
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/sha/common.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var utils = __webpack_require__("./node_modules/hash.js/lib/hash/utils.js");
+var utils = __cmncwpk_require__("./node_modules/hash.js/lib/hash/utils.js");
 var rotr32 = utils.rotr32;
 
 function ft_1(s, x, y, z) {
@@ -14642,13 +14633,13 @@ exports.g1_256 = g1_256;
 /***/ }),
 
 /***/ "./node_modules/hash.js/lib/hash/utils.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
-var assert = __webpack_require__("./node_modules/minimalistic-assert/index.js");
-var inherits = __webpack_require__("./node_modules/inherits/inherits_browser.js");
+var assert = __cmncwpk_require__("./node_modules/minimalistic-assert/index.js");
+var inherits = __cmncwpk_require__("./node_modules/inherits/inherits_browser.js");
 
 exports.inherits = inherits;
 
@@ -19981,7 +19972,7 @@ module.exports = isStream;
 /***/ }),
 
 /***/ "./node_modules/lodash.uniqwith/index.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -20015,7 +20006,7 @@ var reRegExpChar = /[\\^$.*+?()[\]{}|]/g;
 var reIsHostCtor = /^\[object .+?Constructor\]$/;
 
 /** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;
+var freeGlobal = typeof __cmncwpk_require__.g == 'object' && __cmncwpk_require__.g && __cmncwpk_require__.g.Object === Object && __cmncwpk_require__.g;
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -20886,13 +20877,13 @@ module.exports = uniqWith;
 /***/ }),
 
 /***/ "./node_modules/lru-cache/index.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
 
 // A linked list to keep track of recently-used-ness
-const Yallist = __webpack_require__("./node_modules/yallist/yallist.js")
+const Yallist = __cmncwpk_require__("./node_modules/yallist/yallist.js")
 
 const MAX = Symbol('max')
 const LENGTH = Symbol('length')
@@ -21246,13 +21237,13 @@ assert.equal = function assertEqual(l, r, msg) {
 /***/ }),
 
 /***/ "./node_modules/rdf-string/index.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.termToString = exports.stringToTerm = exports.stringQuadToQuad = exports.quadToStringQuad = exports.getLiteralValue = exports.getLiteralType = exports.getLiteralLanguage = void 0;
-const TermUtil_1 = __webpack_require__("./node_modules/rdf-string/lib/TermUtil.js");
+const TermUtil_1 = __cmncwpk_require__("./node_modules/rdf-string/lib/TermUtil.js");
 Object.defineProperty(exports, "getLiteralLanguage", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralLanguage; } }));
 Object.defineProperty(exports, "getLiteralType", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralType; } }));
 Object.defineProperty(exports, "getLiteralValue", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralValue; } }));
@@ -21265,13 +21256,13 @@ Object.defineProperty(exports, "termToString", ({ enumerable: true, get: functio
 /***/ }),
 
 /***/ "./node_modules/rdf-string/lib/TermUtil.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.stringQuadToQuad = exports.quadToStringQuad = exports.stringToTerm = exports.getLiteralLanguage = exports.getLiteralType = exports.getLiteralValue = exports.termToString = void 0;
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const FACTORY = new rdf_data_factory_1.DataFactory();
 /**
  * Utility methods for converting between string-based RDF representations and RDFJS objects.
@@ -21447,12 +21438,12 @@ exports.stringQuadToQuad = stringQuadToQuad;
 /***/ }),
 
 /***/ "./node_modules/rdf-terms/index.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const QuadTermUtil_1 = __webpack_require__("./node_modules/rdf-terms/lib/QuadTermUtil.js");
+const QuadTermUtil_1 = __cmncwpk_require__("./node_modules/rdf-terms/lib/QuadTermUtil.js");
 exports.collectNamedTerms = QuadTermUtil_1.collectNamedTerms;
 exports.everyTerms = QuadTermUtil_1.everyTerms;
 exports.filterQuadTermNames = QuadTermUtil_1.filterQuadTermNames;
@@ -21468,7 +21459,7 @@ exports.QUAD_TERM_NAMES = QuadTermUtil_1.QUAD_TERM_NAMES;
 exports.reduceTerms = QuadTermUtil_1.reduceTerms;
 exports.someTerms = QuadTermUtil_1.someTerms;
 exports.TRIPLE_TERM_NAMES = QuadTermUtil_1.TRIPLE_TERM_NAMES;
-const TermUtil_1 = __webpack_require__("./node_modules/rdf-terms/lib/TermUtil.js");
+const TermUtil_1 = __cmncwpk_require__("./node_modules/rdf-terms/lib/TermUtil.js");
 exports.getBlankNodes = TermUtil_1.getBlankNodes;
 exports.getDefaultGraphs = TermUtil_1.getDefaultGraphs;
 exports.getLiterals = TermUtil_1.getLiterals;
@@ -21482,12 +21473,12 @@ exports.uniqTerms = TermUtil_1.uniqTerms;
 /***/ }),
 
 /***/ "./node_modules/rdf-terms/lib/QuadTermUtil.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * All available quad term names.
@@ -21745,7 +21736,7 @@ exports.matchPatternComplete = matchPatternComplete;
 /***/ }),
 
 /***/ "./node_modules/rdf-terms/lib/TermUtil.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
@@ -21765,7 +21756,7 @@ exports.TERM_TYPES = ['NamedNode', 'BlankNode', 'Literal', 'Variable', 'DefaultG
  * @return {T[]} A new array of unique RDFJS terms.
  */
 function uniqTerms(terms) {
-    return __webpack_require__("./node_modules/lodash.uniqwith/index.js")(terms, (termA, termB) => termA.equals(termB));
+    return __cmncwpk_require__("./node_modules/lodash.uniqwith/index.js")(terms, (termA, termB) => termA.equals(termB));
 }
 exports.uniqTerms = uniqTerms;
 /**
@@ -21837,7 +21828,7 @@ exports.getQuads = getQuads;
 /***/ }),
 
 /***/ "./node_modules/relative-to-absolute-iri/index.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
@@ -21845,7 +21836,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__export(__webpack_require__("./node_modules/relative-to-absolute-iri/lib/Resolve.js"));
+__export(__cmncwpk_require__("./node_modules/relative-to-absolute-iri/lib/Resolve.js"));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -22821,42 +22812,42 @@ function isCharacterAllowedAfterRelativePathSegment(character) {
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/index.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.orderTypes = exports.isExpressionError = exports.ExpressionError = exports.AggregateEvaluator = exports.SyncEvaluator = exports.AsyncEvaluator = void 0;
-var AsyncEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/AsyncEvaluator.js");
+var AsyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/AsyncEvaluator.js");
 Object.defineProperty(exports, "AsyncEvaluator", ({ enumerable: true, get: function () { return AsyncEvaluator_1.AsyncEvaluator; } }));
-var SyncEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
+var SyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
 Object.defineProperty(exports, "SyncEvaluator", ({ enumerable: true, get: function () { return SyncEvaluator_1.SyncEvaluator; } }));
-var AggregateEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/AggregateEvaluator.js");
+var AggregateEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/AggregateEvaluator.js");
 Object.defineProperty(exports, "AggregateEvaluator", ({ enumerable: true, get: function () { return AggregateEvaluator_1.AggregateEvaluator; } }));
-var Errors_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+var Errors_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 Object.defineProperty(exports, "ExpressionError", ({ enumerable: true, get: function () { return Errors_1.ExpressionError; } }));
 Object.defineProperty(exports, "isExpressionError", ({ enumerable: true, get: function () { return Errors_1.isExpressionError; } }));
-var Ordering_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Ordering.js");
+var Ordering_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Ordering.js");
 Object.defineProperty(exports, "orderTypes", ({ enumerable: true, get: function () { return Ordering_1.orderTypes; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/Transformation.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.transformExistence = exports.transformAggregate = exports.transformNamed = exports.transformLiteral = exports.transformRDFTermUnsafe = exports.transformAlgebra = void 0;
-const RDFString = __webpack_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __webpack_require__("sparqlalgebrajs");
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const P = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const functions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
-const Consts_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const RDFString = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const P = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
+const functions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
 function transformAlgebra(expr) {
     if (!expr) {
         throw new Err.InvalidExpression(expr);
@@ -23038,7 +23029,7 @@ exports.transformExistence = transformExistence;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/evaluators/AggregateEvaluator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
@@ -23046,16 +23037,16 @@ exports.transformExistence = transformExistence;
 // tslint:disable:max-classes-per-file
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.aggregators = exports.AggregateEvaluator = void 0;
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const functions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
-const Helpers_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
-const Parsing_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const Consts_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const SyncEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const functions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
+const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
+const Parsing_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const SyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
 const DF = new rdf_data_factory_1.DataFactory();
 // TODO: Support hooks
 class AggregateEvaluator {
@@ -23319,14 +23310,14 @@ function extractValue(extremeTerm, term) {
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/evaluators/AsyncEvaluator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.AsyncEvaluator = void 0;
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
-const RecursiveExpressionEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/RecursiveExpressionEvaluator.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const RecursiveExpressionEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/RecursiveExpressionEvaluator.js");
 class AsyncEvaluator {
     constructor(algExpr, config = {}) {
         this.algExpr = algExpr;
@@ -23363,15 +23354,15 @@ function log(val) {
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/evaluators/RecursiveExpressionEvaluator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.UnsupportedOperation = exports.SyncRecursiveEvaluator = exports.AsyncRecursiveEvaluator = void 0;
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
 const sharedEvaluators = {
     term(expr, mapping) {
         return expr;
@@ -23522,14 +23513,14 @@ exports.UnsupportedOperation = UnsupportedOperation;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SyncEvaluator = void 0;
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
-const RecursiveExpressionEvaluator_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/evaluators/RecursiveExpressionEvaluator.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const RecursiveExpressionEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/RecursiveExpressionEvaluator.js");
 class SyncEvaluator {
     constructor(algExpr, config = {}) {
         this.algExpr = algExpr;
@@ -23566,13 +23557,13 @@ function log(val) {
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Aggregate.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Aggregate = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class Aggregate {
     constructor(name, expression) {
         this.name = name;
@@ -23586,13 +23577,13 @@ exports.Aggregate = Aggregate;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Existence.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Existence = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class Existence {
     constructor(expression) {
         this.expression = expression;
@@ -23626,13 +23617,13 @@ var ExpressionType;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Named.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Named = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class Named {
     constructor(name, args, apply) {
         this.name = name;
@@ -23647,13 +23638,13 @@ exports.Named = Named;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Operator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Operator = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class Operator {
     constructor(args, apply) {
         this.args = args;
@@ -23667,13 +23658,13 @@ exports.Operator = Operator;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/SpecialOperator.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.SpecialOperator = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class SpecialOperator {
     constructor(args, applyAsync, applySync) {
         this.args = args;
@@ -23688,16 +23679,16 @@ exports.SpecialOperator = SpecialOperator;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Term.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.NonLexicalLiteral = exports.StringLiteral = exports.LangStringLiteral = exports.DateTimeLiteral = exports.BooleanLiteral = exports.NumericLiteral = exports.Literal = exports.BlankNode = exports.NamedNode = exports.Term = void 0;
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const DF = new rdf_data_factory_1.DataFactory();
 class Term {
     constructor() {
@@ -23890,13 +23881,13 @@ exports.NonLexicalLiteral = NonLexicalLiteral;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Variable.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.Variable = void 0;
-const Expressions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 class Variable {
     constructor(name) {
         this.expressionType = Expressions_1.ExpressionType.Variable;
@@ -23909,7 +23900,7 @@ exports.Variable = Variable;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/expressions/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -23924,27 +23915,27 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Variable.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Term.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Operator.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/SpecialOperator.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Named.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Aggregate.js"), exports);
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/expressions/Existence.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Variable.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Term.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Operator.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/SpecialOperator.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Named.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Aggregate.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Existence.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/Core.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.promote = exports.SpecialFunction = exports.NamedFunction = exports.RegularFunction = exports.BaseFunction = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 class BaseFunction {
     constructor(operator, definition) {
         this.operator = operator;
@@ -24108,7 +24099,7 @@ exports.promote = promote;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/Helpers.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
@@ -24118,12 +24109,12 @@ exports.promote = promote;
  */
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.typeCheckLit = exports.log = exports.dateTime = exports.langString = exports.string = exports.numberFromString = exports.number = exports.bool = exports.map = exports.Impl = exports.Builder = exports.declare = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const Consts_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Core_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Core.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Core_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Core.js");
 function declare() {
     return new Builder();
 }
@@ -24416,17 +24407,17 @@ exports.typeCheckLit = typeCheckLit;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/NamedFunctions.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.namedDefinitions = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const Consts_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Parsing_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const Helpers_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Parsing_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
+const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -24578,26 +24569,26 @@ exports.namedDefinitions = immutable_1.Map(_definitions);
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/RegularFunctions.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.definitions = void 0;
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const hash_js_1 = __webpack_require__("./node_modules/hash.js/lib/hash.js");
-const spark_md5_1 = __webpack_require__("./node_modules/spark-md5/spark-md5.js");
-const decimal_js_1 = __webpack_require__("./node_modules/decimal.js/decimal.js");
-const uuid = __webpack_require__("./node_modules/uuid/dist/esm-browser/index.js");
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const P = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const X = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/XPathFunctions.js");
-const Consts_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
-const Helpers_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const hash_js_1 = __cmncwpk_require__("./node_modules/hash.js/lib/hash.js");
+const spark_md5_1 = __cmncwpk_require__("./node_modules/spark-md5/spark-md5.js");
+const decimal_js_1 = __cmncwpk_require__("./node_modules/decimal.js/decimal.js");
+const uuid = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/index.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const P = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
+const X = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/XPathFunctions.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
 const DF = new rdf_data_factory_1.DataFactory();
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -25187,20 +25178,20 @@ exports.definitions = immutable_1.Map(_definitions);
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/SpecialFunctions.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.specialDefinitions = void 0;
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
-const relative_to_absolute_iri_1 = __webpack_require__("./node_modules/relative-to-absolute-iri/index.js");
-const uuid = __webpack_require__("./node_modules/uuid/dist/esm-browser/index.js");
-const E = __webpack_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __webpack_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const Helpers_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
-const index_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
+const relative_to_absolute_iri_1 = __cmncwpk_require__("./node_modules/relative-to-absolute-iri/index.js");
+const uuid = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/index.js");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
+const index_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
 // ----------------------------------------------------------------------------
 // Functional forms
 // ----------------------------------------------------------------------------
@@ -25675,7 +25666,7 @@ exports.formatDayTimeDuration = formatDayTimeDuration;
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/functions/index.js":
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
 "use strict";
 
@@ -25691,11 +25682,11 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.namedFunctions = exports.specialFunctions = exports.regularFunctions = void 0;
-const Core_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/Core.js");
-const NamedFunctions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/NamedFunctions.js");
-const RegularFunctions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/RegularFunctions.js");
-const SpecialFunctions_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/functions/SpecialFunctions.js");
-__exportStar(__webpack_require__("./node_modules/sparqlee/dist/lib/functions/Core.js"), exports);
+const Core_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Core.js");
+const NamedFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/NamedFunctions.js");
+const RegularFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/RegularFunctions.js");
+const SpecialFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/SpecialFunctions.js");
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Core.js"), exports);
 exports.regularFunctions = RegularFunctions_1.definitions
     .map((def, op) => new Core_1.RegularFunction(op, def))
     .toMap();
@@ -25710,15 +25701,15 @@ exports.namedFunctions = NamedFunctions_1.namedDefinitions
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/util/Consts.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.NamedOperators = exports.SetFunctions = exports.SetFunction = exports.Operators = exports.SpecialOperators = exports.RegularOperators = exports.SpecialOperator = exports.RegularOperator = exports.decategorize = exports.type = exports.PrimitiveNumericTypes = exports.commonTerms = exports.DerivedIntegerTypeURLs = exports.NumericTypeURLs = exports.DerivedIntegerTypeURL = exports.NumericTypeURL = exports.make = exports.TypeURL = exports.EVB_ERR_STR = exports.FALSE_STR = exports.TRUE_STR = void 0;
 // tslint:disable:variable-name
-const rdf_data_factory_1 = __webpack_require__("rdf-data-factory");
-const immutable_1 = __webpack_require__("./node_modules/immutable/dist/immutable.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const DF = new rdf_data_factory_1.DataFactory();
 exports.TRUE_STR = '"true"^^xsd:boolean';
 exports.FALSE_STR = '"false"^^xsd:boolean';
@@ -26205,13 +26196,13 @@ function pp(o) {
 /***/ }),
 
 /***/ "./node_modules/sparqlee/dist/lib/util/Ordering.js":
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.order = exports.orderTypes = void 0;
-const Transformation_1 = __webpack_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
 // Determine the relative numerical order of the two given terms.
 function orderTypes(litA, litB, isAscending) {
     if (litA && litA.termType === 'Literal' && litB && litB.termType === 'Literal') {
@@ -26337,11 +26328,11 @@ exports.parseXSDDateTime = parseXSDDateTime;
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/index.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+__cmncwpk_require__.r(__cmncwpk_exports__);
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "v1": () => /* reexport safe */ _v1_js__WEBPACK_IMPORTED_MODULE_0__.Z,
 /* harmony export */   "v3": () => /* reexport safe */ _v3_js__WEBPACK_IMPORTED_MODULE_1__.Z,
 /* harmony export */   "v4": () => /* reexport safe */ _v4_js__WEBPACK_IMPORTED_MODULE_2__.Z,
@@ -26352,15 +26343,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "stringify": () => /* reexport safe */ _stringify_js__WEBPACK_IMPORTED_MODULE_7__.Z,
 /* harmony export */   "parse": () => /* reexport safe */ _parse_js__WEBPACK_IMPORTED_MODULE_8__.Z
 /* harmony export */ });
-/* harmony import */ var _v1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v1.js");
-/* harmony import */ var _v3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v3.js");
-/* harmony import */ var _v4_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v4.js");
-/* harmony import */ var _v5_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v5.js");
-/* harmony import */ var _nil_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/nil.js");
-/* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/version.js");
-/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/validate.js");
-/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
-/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/parse.js");
+/* harmony import */ var _v1_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v1.js");
+/* harmony import */ var _v3_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v3.js");
+/* harmony import */ var _v4_js__WEBPACK_IMPORTED_MODULE_2__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v4.js");
+/* harmony import */ var _v5_js__WEBPACK_IMPORTED_MODULE_3__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v5.js");
+/* harmony import */ var _nil_js__WEBPACK_IMPORTED_MODULE_4__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/nil.js");
+/* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_5__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/version.js");
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_6__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/validate.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_7__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
+/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_8__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/parse.js");
 
 
 
@@ -26374,10 +26365,10 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/md5.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /*
@@ -26599,10 +26590,10 @@ function md5ii(a, b, c, d, x, s, t) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/nil.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ('00000000-0000-0000-0000-000000000000');
@@ -26610,13 +26601,13 @@ function md5ii(a, b, c, d, x, s, t) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/parse.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/validate.js");
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/validate.js");
 
 
 function parse(uuid) {
@@ -26656,10 +26647,10 @@ function parse(uuid) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/regex.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
@@ -26667,10 +26658,10 @@ function parse(uuid) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/rng.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => /* binding */ rng
 /* harmony export */ });
 // Unique ID creation requires a high quality random # generator. In the browser we therefore
@@ -26696,10 +26687,10 @@ function rng() {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/sha1.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 // Adapted from Chris Veness' SHA1 code at
@@ -26802,13 +26793,13 @@ function sha1(bytes) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/stringify.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/validate.js");
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/validate.js");
 
 /**
  * Convert array of 16 byte values to UUID string format of the form:
@@ -26843,14 +26834,14 @@ function stringify(arr) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/v1.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/rng.js");
-/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
+/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/rng.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
 
  // **`v1()` - Generate time-based UUID**
 //
@@ -26950,14 +26941,14 @@ function v1(options, buf, offset) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/v3.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v35.js");
-/* harmony import */ var _md5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/md5.js");
+/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v35.js");
+/* harmony import */ var _md5_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/md5.js");
 
 
 var v3 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v3', 0x30, _md5_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z);
@@ -26966,15 +26957,15 @@ var v3 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v3', 0x30, 
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/v35.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "ZP": () => /* export default binding */ __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
 /* unused harmony exports DNS, URL */
-/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
-/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/parse.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
+/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/parse.js");
 
 
 
@@ -27043,14 +27034,14 @@ var URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/v4.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/rng.js");
-/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
+/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/rng.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/stringify.js");
 
 
 
@@ -27079,14 +27070,14 @@ function v4(options, buf, offset) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/v5.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/v35.js");
-/* harmony import */ var _sha1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/sha1.js");
+/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/v35.js");
+/* harmony import */ var _sha1_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/sha1.js");
 
 
 var v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v5', 0x50, _sha1_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z);
@@ -27095,13 +27086,13 @@ var v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v5', 0x50, 
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/validate.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _regex_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/regex.js");
+/* harmony import */ var _regex_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/regex.js");
 
 
 function validate(uuid) {
@@ -27113,13 +27104,13 @@ function validate(uuid) {
 /***/ }),
 
 /***/ "./node_modules/uuid/dist/esm-browser/version.js":
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
 "use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */ __cmncwpk_require__.d(__cmncwpk_exports__, {
 /* harmony export */   "Z": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("./node_modules/uuid/dist/esm-browser/validate.js");
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/validate.js");
 
 
 function version(uuid) {
@@ -27151,7 +27142,7 @@ module.exports = function (Yallist) {
 /***/ }),
 
 /***/ "./node_modules/yallist/yallist.js":
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
 "use strict";
 
@@ -27578,7 +27569,7 @@ function Node (value, prev, next, list) {
 
 try {
   // add if support for Symbol.iterator is present
-  __webpack_require__("./node_modules/yallist/iterator.js")(Yallist)
+  __cmncwpk_require__("./node_modules/yallist/iterator.js")(Yallist)
 } catch (er) {}
 
 
@@ -27626,23 +27617,23 @@ module.exports = require("sparqljs");;
 /******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
-/******/ 	var __webpack_module_cache__ = {};
+/******/ 	var __cmncwpk_module_cache__ = {};
 /******/ 	
 /******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
+/******/ 	function __cmncwpk_require__(moduleId) {
 /******/ 		// Check if module is in cache
-/******/ 		if(__webpack_module_cache__[moduleId]) {
-/******/ 			return __webpack_module_cache__[moduleId].exports;
+/******/ 		if(__cmncwpk_module_cache__[moduleId]) {
+/******/ 			return __cmncwpk_module_cache__[moduleId].exports;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 		var module = __cmncwpk_module_cache__[moduleId] = {
 /******/ 			// no module.id needed
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/ 		__cmncwpk_modules__[moduleId].call(module.exports, module, module.exports, __cmncwpk_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -27652,9 +27643,9 @@ module.exports = require("sparqljs");;
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__cmncwpk_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 				if(__cmncwpk_require__.o(definition, key) && !__cmncwpk_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
@@ -27663,7 +27654,7 @@ module.exports = require("sparqljs");;
 /******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
+/******/ 		__cmncwpk_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
 /******/ 				return this || new Function('return this')();
@@ -27675,13 +27666,13 @@ module.exports = require("sparqljs");;
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
+/******/ 		__cmncwpk_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__cmncwpk_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
@@ -27693,7 +27684,6 @@ module.exports = require("sparqljs");;
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__("./index.js");
+/******/ 	return __cmncwpk_require__("./index.js");
 /******/ })()
 ;
-});

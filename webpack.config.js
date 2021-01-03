@@ -134,7 +134,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname),
     filename: 'index.bundle.js',
-    libraryTarget: 'umd',
+    libraryTarget: 'commonjs2',
   },
   optimization: {
     minimize: false,
