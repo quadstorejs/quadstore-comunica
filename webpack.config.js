@@ -136,6 +136,7 @@ module.exports = {
     filename: 'index.bundle.js',
     libraryTarget: 'commonjs2',
   },
+  target: 'web',
   optimization: {
     minimize: false,
     moduleIds: 'named',
