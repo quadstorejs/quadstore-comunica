@@ -16,7 +16,6 @@ const ignoredPackagesToEmptyModuleAliases = [
   '@comunica/actor-init-rdf-parse',
   '@comunica/actor-query-operation-sparql-endpoint',
   '@comunica/actor-rdf-dereference-http-parse',
-  '@comunica/actor-rdf-join-symmetrichash',
   '@comunica/actor-rdf-metadata-all',
   '@comunica/actor-rdf-metadata-extract-hydra-controls',
   '@comunica/actor-rdf-metadata-extract-hydra-count',

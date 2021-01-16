@@ -5,15 +5,18 @@ module.exports =
 /***/ "./engine.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const __b16bnode115 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
+const df_237_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)();
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-parse/Bus/SparqlParse'
@@ -27,26 +30,27 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_p
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
   'actorIdentifierFields': [
-    'operationName'
-  ],
+  'operationName'
+],
   'actionIdentifierFields': [
-    'operation',
-    'type'
-  ],
+  'operation',
+  'type'
+],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-query-operation/Bus/QueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-symmetrichash/index.js").ActorRdfJoinSymmetricHash)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorSymmetricHash',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
@@ -56,6 +60,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlParse',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
@@ -64,14 +76,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b0bnode253 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_515_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
-  'name': '_:b0bnode253',
+  'name': 'df_515_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b1bnode253 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_515_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
-  'name': '_:b1bnode253',
+  'name': 'df_515_1',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
@@ -81,14 +93,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
   'field': 'httpRequests',
@@ -105,83 +109,42 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myValuesQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
   'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
   'mediatorOptimizeQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
   'mediatorSparqlSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize,
-  'mediatorSparqlSerializeMediaTypeCombiner': __b0bnode253,
-  'mediatorSparqlSerializeMediaTypeFormatCombiner': __b1bnode253,
+  'mediatorSparqlSerializeMediaTypeCombiner': df_515_0,
+  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_515_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': __b16bnode115,
+  'logger': df_237_0,
   'contextKeyShortcuts': {
-    'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
-    'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
-    'initialBindings': '@comunica/actor-init-sparql:initialBindings',
-    'queryFormat': '@comunica/actor-init-sparql:queryFormat',
-    'baseIRI': '@comunica/actor-init-sparql:baseIRI',
-    'log': '@comunica/core:log',
-    'datetime': '@comunica/actor-http-memento:datetime',
-    'queryTimestamp': '@comunica/actor-init-sparql:queryTimestamp',
-    'httpProxyHandler': '@comunica/actor-http-proxy:httpProxyHandler',
-    'lenient': '@comunica/actor-init-sparql:lenient',
-    'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
-    'httpAuth': '@comunica/bus-http:auth'
-  },
+  'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
+  'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
+  'initialBindings': '@comunica/actor-init-sparql:initialBindings',
+  'queryFormat': '@comunica/actor-init-sparql:queryFormat',
+  'baseIRI': '@comunica/actor-init-sparql:baseIRI',
+  'log': '@comunica/core:log',
+  'datetime': '@comunica/actor-http-memento:datetime',
+  'queryTimestamp': '@comunica/actor-init-sparql:queryTimestamp',
+  'httpProxyHandler': '@comunica/actor-http-proxy:httpProxyHandler',
+  'lenient': '@comunica/actor-init-sparql:lenient',
+  'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
+  'httpAuth': '@comunica/bus-http:auth'
+},
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
-  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
@@ -281,45 +244,87 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myMinusQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
+  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
 const urn_comunica_my = ({
   'busInit': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init,
   'actors': [
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
-    urn_comunica_sparqlinit,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator
-  ]
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
+  urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator
+]
 });
 module.exports = urn_comunica_sparqlinit;
 
@@ -865,7 +870,7 @@ class ActorHttpProxy extends bus_http_1.ActorHttp {
         if (!await proxyHandler.getProxy(action)) {
             throw new Error(`Actor ${this.name} could not determine a proxy for the given request.`);
         }
-        return { time: Infinity };
+        return { time: Number.POSITIVE_INFINITY };
     }
     async run(action) {
         var _a;
@@ -932,7 +937,7 @@ exports.ProxyHandlerStatic = ProxyHandlerStatic;
 /***/ "./node_modules/@comunica/actor-init-sparql/engine-default.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const __b16bnode132 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)({});
+const df_269_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)();
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
@@ -945,14 +950,17 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-parse/Bus/RdfParse'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-parse-html/Bus/RdfParseHtml'
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-dereference/Bus/RdfDereference'
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-parse-html/Bus/RdfParseHtml'
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-serialize/Bus/RdfSerialize'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata/Bus/RdfMetadata'
@@ -969,9 +977,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resol
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
 });
@@ -986,12 +991,12 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_p
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").BusIndexed)({
   'actorIdentifierFields': [
-    'operationName'
-  ],
+  'operationName'
+],
   'actionIdentifierFields': [
-    'operation',
-    'type'
-  ],
+  'operation',
+  'type'
+],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-query-operation/Bus/QueryOperation'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp = new (__cmncwpk_require__("./node_modules/@comunica/mediator-number/index.js").MediatorNumber)({
@@ -1002,7 +1007,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpNative)({
-  'agentOptions': '{ \"keepAlive\": true, \"maxSockets\": 5 }',
+  'agentOptions': '{ "keepAlive": true, "maxSockets": 5 }',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#myHttpFetcher',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
@@ -1014,7 +1019,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./require-empty.js").ActorRdfJoinSymmetricHash)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-symmetrichash/index.js").ActorRdfJoinSymmetricHash)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorSymmetricHash',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
@@ -1022,47 +1027,56 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+  'field': 'mediaTypes',
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseMediatypes',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseHandle = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseHandle',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserN3 = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseN3)({
   'mediaTypes': {
-    'application/n-quads': '1.0',
-    'application/trig': '0.95',
-    'application/n-triples': '0.8',
-    'text/turtle': '0.6',
-    'text/n3': '0.35'
-  },
+  'application/n-quads': '1.0',
+  'application/trig': '0.95',
+  'application/n-triples': '0.8',
+  'text/turtle': '0.6',
+  'text/n3': '0.35'
+},
   'mediaTypeFormats': {
-    'application/n-quads': 'http://www.w3.org/ns/formats/N-Quads',
-    'application/trig': 'http://www.w3.org/ns/formats/TriG',
-    'application/n-triples': 'http://www.w3.org/ns/formats/N-Triples',
-    'text/turtle': 'http://www.w3.org/ns/formats/Turtle',
-    'text/n3': 'http://www.w3.org/ns/formats/N3'
-  },
+  'application/n-quads': 'http://www.w3.org/ns/formats/N-Quads',
+  'application/trig': 'http://www.w3.org/ns/formats/TriG',
+  'application/n-triples': 'http://www.w3.org/ns/formats/N-Triples',
+  'text/turtle': 'http://www.w3.org/ns/formats/Turtle',
+  'text/n3': 'http://www.w3.org/ns/formats/N3'
+},
   'priorityScale': '1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserN3',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserRdfXml = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseRdfXml)({
   'mediaTypes': {
-    'application/rdf+xml': '1.0'
-  },
+  'application/rdf+xml': '1.0'
+},
   'mediaTypeFormats': {
-    'application/rdf+xml': 'http://www.w3.org/ns/formats/RDF_XML'
-  },
+  'application/rdf+xml': 'http://www.w3.org/ns/formats/RDF_XML'
+},
   'priorityScale': '5.0E-1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserRdfXml',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserXmlRdfa = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseXmlRdfa)({
   'mediaTypes': {
-    'application/xml': '1.0',
-    'text/xml': '1.0',
-    'image/svg+xml': '1.0'
-  },
+  'application/xml': '1.0',
+  'text/xml': '1.0',
+  'image/svg+xml': '1.0'
+},
   'mediaTypeFormats': {
-    'application/xml': 'http://www.w3.org/ns/formats/RDFa',
-    'text/xml': 'http://www.w3.org/ns/formats/RDFa',
-    'image/svg+xml': 'http://www.w3.org/ns/formats/RDFa'
-  },
+  'application/xml': 'http://www.w3.org/ns/formats/RDFa',
+  'text/xml': 'http://www.w3.org/ns/formats/RDFa',
+  'image/svg+xml': 'http://www.w3.org/ns/formats/RDFa'
+},
   'priorityScale': '3.0E-1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserXmlRdfa',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
@@ -1076,25 +1090,20 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#mediatorRdfParseHandle',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
-  'field': 'mediaTypes',
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseMediatypes',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseHandle = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#mediatorRdfParseHandle',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfDereference',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtml = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtml)({
   'busRdfParseHtml': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml,
   'mediaTypes': {
-    'text/html': '1.0',
-    'application/xhtml+xml': '0.9'
-  },
+  'text/html': '1.0',
+  'application/xhtml+xml': '0.9'
+},
   'mediaTypeFormats': {
-    'text/html': 'http://www.w3.org/ns/formats/HTML',
-    'application/xhtml+xml': 'http://www.w3.org/ns/formats/HTML'
-  },
+  'text/html': 'http://www.w3.org/ns/formats/HTML',
+  'application/xhtml+xml': 'http://www.w3.org/ns/formats/HTML'
+},
   'priorityScale': '2.0E-1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtml',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
@@ -1107,36 +1116,32 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlRdfa',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfDereference',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3 = new (__cmncwpk_require__("./require-empty.js").ActorRdfSerializeN3)({
   'mediaTypes': {
-    'application/trig': '1.0',
-    'application/n-quads': '0.7',
-    'text/turtle': '0.6',
-    'application/n-triples': '0.3',
-    'text/n3': '0.2'
-  },
+  'application/trig': '1.0',
+  'application/n-quads': '0.7',
+  'text/turtle': '0.6',
+  'application/n-triples': '0.3',
+  'text/n3': '0.2'
+},
   'mediaTypeFormats': {
-    'application/trig': 'http://www.w3.org/ns/formats/TriG',
-    'application/n-quads': 'http://www.w3.org/ns/formats/N-Quads',
-    'text/turtle': 'http://www.w3.org/ns/formats/Turtle',
-    'application/n-triples': 'http://www.w3.org/ns/formats/N-Triples',
-    'text/n3': 'http://www.w3.org/ns/formats/N3'
-  },
+  'application/trig': 'http://www.w3.org/ns/formats/TriG',
+  'application/n-quads': 'http://www.w3.org/ns/formats/N-Quads',
+  'text/turtle': 'http://www.w3.org/ns/formats/Turtle',
+  'application/n-triples': 'http://www.w3.org/ns/formats/N-Triples',
+  'text/n3': 'http://www.w3.org/ns/formats/N3'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-serializers.json#myRdfSerializerN3',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-serialize-jsonld/index.js").ActorRdfSerializeJsonLd)({
   'jsonStringifyIndentSpaces': 2,
   'mediaTypes': {
-    'application/ld+json': '1.0'
-  },
+  'application/ld+json': '1.0'
+},
   'mediaTypeFormats': {
-    'application/ld+json': 'http://www.w3.org/ns/formats/JSON-LD'
-  },
+  'application/ld+json': 'http://www.w3.org/ns/formats/JSON-LD'
+},
   'priorityScale': '9.0E-1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-serializers.json#myRdfSerializeJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
@@ -1145,15 +1150,23 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mediatorRdfSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const __b0bnode322 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_649_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
-  'name': '_:b0bnode322',
+  'name': 'df_649_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const __b1bnode322 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_649_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
-  'name': '_:b1bnode322',
+  'name': 'df_649_1',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadata',
@@ -1180,9 +1193,9 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraCount)({
   'predicates': [
-    'http://www.w3.org/ns/hydra/core#totalItems',
-    'http://rdfs.org/ns/void#triples'
-  ],
+  'http://www.w3.org/ns/hydra/core#totalItems',
+  'http://rdfs.org/ns/void#triples'
+],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraCount',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
 });
@@ -1217,14 +1230,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
@@ -1243,21 +1248,21 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser = new (__cmncwpk_require__("./node_modules/@comunica/actor-sparql-parse-algebra/index.js").ActorSparqlParseAlgebra)({
   'prefixes': {
-    'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
-    'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
-    'owl': 'http://www.w3.org/2002/07/owl#',
-    'xsd': 'http://www.w3.org/2001/XMLSchema#',
-    'dc': 'http://purl.org/dc/terms/',
-    'dcterms': 'http://purl.org/dc/terms/',
-    'dc11': 'http://purl.org/dc/elements/1.1/',
-    'foaf': 'http://xmlns.com/foaf/0.1/',
-    'geo': 'http://www.w3.org/2003/01/geo/wgs84_pos#',
-    'dbpedia': 'http://dbpedia.org/resource/',
-    'dbpedia-owl': 'http://dbpedia.org/ontology/',
-    'dbpprop': 'http://dbpedia.org/property/',
-    'schema': 'http://schema.org/',
-    'skos': 'http://www.w3.org/2008/05/skos#'
-  },
+  'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+  'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
+  'owl': 'http://www.w3.org/2002/07/owl#',
+  'xsd': 'http://www.w3.org/2001/XMLSchema#',
+  'dc': 'http://purl.org/dc/terms/',
+  'dcterms': 'http://purl.org/dc/terms/',
+  'dc11': 'http://purl.org/dc/elements/1.1/',
+  'foaf': 'http://xmlns.com/foaf/0.1/',
+  'geo': 'http://www.w3.org/2003/01/geo/wgs84_pos#',
+  'dbpedia': 'http://dbpedia.org/resource/',
+  'dbpedia-owl': 'http://dbpedia.org/ontology/',
+  'dbpprop': 'http://dbpedia.org/property/',
+  'schema': 'http://schema.org/',
+  'skos': 'http://www.w3.org/2008/05/skos#'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-parsers.json#mySparqlParser',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
@@ -1265,94 +1270,94 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b0bnode316 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_637_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
-  'name': '_:b0bnode316',
+  'name': 'df_637_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const __b1bnode316 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_637_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
-  'name': '_:b1bnode316',
+  'name': 'df_637_1',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeJson)({
   'mediaTypes': {
-    'application/json': '1.0'
-  },
+  'application/json': '1.0'
+},
   'mediaTypeFormats': {
-    'application/json': 'https://comunica.linkeddatafragments.org/#results_JSON'
-  },
+  'application/json': 'https://comunica.linkeddatafragments.org/#results_JSON'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myJsonSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSimple)({
   'mediaTypes': {
-    'simple': '0.9'
-  },
+  'simple': '0.9'
+},
   'mediaTypeFormats': {
-    'simple': 'https://comunica.linkeddatafragments.org/#results_simple'
-  },
+  'simple': 'https://comunica.linkeddatafragments.org/#results_simple'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySimpleSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer = new (__cmncwpk_require__("./node_modules/@comunica/actor-sparql-serialize-sparql-csv/index.js").ActorSparqlSerializeSparqlCsv)({
   'mediaTypes': {
-    'text/csv': '0.75'
-  },
+  'text/csv': '0.75'
+},
   'mediaTypeFormats': {
-    'text/csv': 'http://www.w3.org/ns/formats/SPARQL_Results_CSV'
-  },
+  'text/csv': 'http://www.w3.org/ns/formats/SPARQL_Results_CSV'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlCsvSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlJson)({
   'mediaTypes': {
-    'application/sparql-results+json': '0.8'
-  },
+  'application/sparql-results+json': '0.8'
+},
   'mediaTypeFormats': {
-    'application/sparql-results+json': 'http://www.w3.org/ns/formats/SPARQL_Results_JSON'
-  },
+  'application/sparql-results+json': 'http://www.w3.org/ns/formats/SPARQL_Results_JSON'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlJsonSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlTsv)({
   'mediaTypes': {
-    'text/tab-separated-values': '0.75'
-  },
+  'text/tab-separated-values': '0.75'
+},
   'mediaTypeFormats': {
-    'text/tab-separated-values': 'http://www.w3.org/ns/formats/SPARQL_Results_TSV'
-  },
+  'text/tab-separated-values': 'http://www.w3.org/ns/formats/SPARQL_Results_TSV'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlTsvSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeSparqlXml)({
   'mediaTypes': {
-    'application/sparql-results+xml': '0.8'
-  },
+  'application/sparql-results+xml': '0.8'
+},
   'mediaTypeFormats': {
-    'application/sparql-results+xml': 'http://www.w3.org/ns/formats/SPARQL_Results_XML'
-  },
+  'application/sparql-results+xml': 'http://www.w3.org/ns/formats/SPARQL_Results_XML'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mySparqlXmlSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeTable)({
   'columnWidth': 50,
   'mediaTypes': {
-    'table': '0.6'
-  },
+  'table': '0.6'
+},
   'mediaTypeFormats': {
-    'table': 'https://comunica.linkeddatafragments.org/#results_table'
-  },
+  'table': 'https://comunica.linkeddatafragments.org/#results_table'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myTableSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeTree)({
   'mediaTypes': {
-    'tree': '0.5'
-  },
+  'tree': '0.5'
+},
   'mediaTypeFormats': {
-    'tree': 'https://comunica.linkeddatafragments.org/#results_tree'
-  },
+  'tree': 'https://comunica.linkeddatafragments.org/#results_tree'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myTreeSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
@@ -1378,13 +1383,13 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserJsonLd = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseJsonLd)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'mediaTypes': {
-    'application/ld+json': '1.0',
-    'application/json': '0.5'
-  },
+  'application/ld+json': '1.0',
+  'application/json': '0.5'
+},
   'mediaTypeFormats': {
-    'application/ld+json': 'http://www.w3.org/ns/formats/JSON-LD',
-    'application/json': 'http://www.w3.org/ns/formats/JSON-LD'
-  },
+  'application/ld+json': 'http://www.w3.org/ns/formats/JSON-LD',
+  'application/json': 'http://www.w3.org/ns/formats/JSON-LD'
+},
   'priorityScale': '9.0E-1',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
@@ -1403,11 +1408,11 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeStats)({
   'httpObserver': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_sparql_serialize_stats_Actor_SparqlSerialize_Stats_httpObserver_default,
   'mediaTypes': {
-    'stats': '0.5'
-  },
+  'stats': '0.5'
+},
   'mediaTypeFormats': {
-    'stats': 'https://comunica.linkeddatafragments.org/#results_stats'
-  },
+  'stats': 'https://comunica.linkeddatafragments.org/#results_stats'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myStatsSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
@@ -1416,12 +1421,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtmlScript)({
-  'mediatorRdfParseMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseMediatypes,
-  'mediatorRdfParseHandle': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseHandle,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlScript',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_myRdfDereferencer = new (__cmncwpk_require__("./require-empty.js").ActorRdfDereferenceHttpParse)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'mediatorRdfParseMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_mediatorRdfParseMediatypes,
@@ -1429,36 +1428,53 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'maxAcceptHeaderLength': 1024,
   'maxAcceptHeaderLengthBrowser': 128,
   'mediaMappings': {
-    'ttl': 'text/turtle',
-    'turtle': 'text/turtle',
-    'nt': 'application/n-triples',
-    'ntriples': 'application/n-triples',
-    'nq': 'application/n-quads',
-    'nquads': 'application/n-quads',
-    'rdf': 'application/rdf+xml',
-    'rdfxml': 'application/rdf+xml',
-    'owl': 'application/rdf+xml',
-    'n3': 'text/n3',
-    'trig': 'application/trig',
-    'jsonld': 'application/ld+json',
-    'json': 'application/json',
-    'html': 'text/html',
-    'htm': 'text/html',
-    'xhtml': 'application/xhtml+xml',
-    'xht': 'application/xhtml+xml',
-    'xml': 'application/xml',
-    'svg': 'image/svg+xml',
-    'svgz': 'image/svg+xml'
-  },
+  'ttl': 'text/turtle',
+  'turtle': 'text/turtle',
+  'nt': 'application/n-triples',
+  'ntriples': 'application/n-triples',
+  'nq': 'application/n-quads',
+  'nquads': 'application/n-quads',
+  'rdf': 'application/rdf+xml',
+  'rdfxml': 'application/rdf+xml',
+  'owl': 'application/rdf+xml',
+  'n3': 'text/n3',
+  'trig': 'application/trig',
+  'jsonld': 'application/ld+json',
+  'json': 'application/json',
+  'html': 'text/html',
+  'htm': 'text/html',
+  'xhtml': 'application/xhtml+xml',
+  'xht': 'application/xhtml+xml',
+  'xml': 'application/xml',
+  'svg': 'image/svg+xml',
+  'svgz': 'image/svg+xml'
+},
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-dereference.json#myRdfDereferencer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_dereference_Bus_RdfDereference
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript = new (__cmncwpk_require__("./require-empty.js").ActorRdfParseHtmlScript)({
+  'mediatorRdfParseMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseMediatypes,
+  'mediatorRdfParseHandle': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_mediatorRdfParseHandle,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlScript',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeRdf)({
   'mediatorRdfSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize,
-  'mediatorMediaTypeCombiner': __b0bnode322,
-  'mediatorMediaTypeFormatCombiner': __b1bnode322,
+  'mediatorMediaTypeCombiner': df_649_0,
+  'mediatorMediaTypeFormatCombiner': df_649_1,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myRdfSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveQuadPatternFederated)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'skipEmptyPatterns': false,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaQpf)({
   'mediatorMetadata': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata,
@@ -1482,57 +1498,46 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myQuadPatternHypermediaResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveQuadPatternFederated)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'skipEmptyPatterns': false,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpProxy = new (__cmncwpk_require__("./node_modules/@comunica/actor-http-proxy/index.js").ActorHttpProxy)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#myHttpProxy',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http,
   'beforeActors': [
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
-  ]
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
+]
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_memento_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpMemento)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http-memento.json#myHttpFetcher',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http,
   'beforeActors': [
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
-  ]
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher
+]
 });
 const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
   'mediatorOptimizeQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation,
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
   'mediatorSparqlSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize,
-  'mediatorSparqlSerializeMediaTypeCombiner': __b0bnode316,
-  'mediatorSparqlSerializeMediaTypeFormatCombiner': __b1bnode316,
+  'mediatorSparqlSerializeMediaTypeCombiner': df_637_0,
+  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_637_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': __b16bnode132,
+  'logger': df_269_0,
   'contextKeyShortcuts': {
-    'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
-    'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
-    'initialBindings': '@comunica/actor-init-sparql:initialBindings',
-    'queryFormat': '@comunica/actor-init-sparql:queryFormat',
-    'baseIRI': '@comunica/actor-init-sparql:baseIRI',
-    'log': '@comunica/core:log',
-    'datetime': '@comunica/actor-http-memento:datetime',
-    'queryTimestamp': '@comunica/actor-init-sparql:queryTimestamp',
-    'httpProxyHandler': '@comunica/actor-http-proxy:httpProxyHandler',
-    'lenient': '@comunica/actor-init-sparql:lenient',
-    'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
-    'httpAuth': '@comunica/bus-http:auth'
-  },
+  'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
+  'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
+  'initialBindings': '@comunica/actor-init-sparql:initialBindings',
+  'queryFormat': '@comunica/actor-init-sparql:queryFormat',
+  'baseIRI': '@comunica/actor-init-sparql:baseIRI',
+  'log': '@comunica/core:log',
+  'datetime': '@comunica/actor-http-memento:datetime',
+  'queryTimestamp': '@comunica/actor-init-sparql:queryTimestamp',
+  'httpProxyHandler': '@comunica/actor-http-proxy:httpProxyHandler',
+  'lenient': '@comunica/actor-init-sparql:lenient',
+  'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
+  'httpAuth': '@comunica/bus-http:auth'
+},
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
 });
@@ -1678,81 +1683,81 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const urn_comunica_my = ({
   'busInit': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init,
   'actors': [
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpProxy,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_memento_json_myHttpFetcher,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserN3,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserJsonLd,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserRdfXml,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserXmlRdfa,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtml,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlMicrodata,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlRdfa,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_myRdfDereferencer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaNoneResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaLinksNext,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver,
-    urn_comunica_sparqlinit,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_graphql_parsers_json_myGraphqlParser,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer,
-    https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer
-  ]
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpProxy,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_memento_json_myHttpFetcher,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_dereference_json_myRdfDereferencer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserN3,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserJsonLd,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserRdfXml,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserXmlRdfa,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtml,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlMicrodata,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlRdfa,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaNoneResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaLinksNext,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver,
+  urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_graphql_parsers_json_myGraphqlParser,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myEmptyBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySingleBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftDeepSmallestBgpQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myConstructQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDescribeQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myDistinctQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myExtendQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myReducedQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFilterQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myFromQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myGroupQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myJoinQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLeftJoinQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myOrderByQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer
+]
 });
 module.exports = urn_comunica_sparqlinit;
 
@@ -2271,7 +2276,7 @@ class ActorQueryOperationBgpLeftDeepSmallest extends bus_query_operation_1.Actor
      */
     static getSmallestPatternId(metadatas) {
         let smallestId = -1;
-        let smallestCount = Infinity;
+        let smallestCount = Number.POSITIVE_INFINITY;
         for (const [i, meta] of metadatas.entries()) {
             const count = ActorQueryOperationBgpLeftDeepSmallest.getTotalItems(meta);
             if (count <= smallestCount) {
@@ -2301,7 +2306,7 @@ class ActorQueryOperationBgpLeftDeepSmallest extends bus_query_operation_1.Actor
      */
     static getTotalItems(metadata) {
         const { totalItems } = metadata !== null && metadata !== void 0 ? metadata : {};
-        return totalItems || totalItems === 0 ? totalItems : Infinity;
+        return totalItems || totalItems === 0 ? totalItems : Number.POSITIVE_INFINITY;
     }
     /**
      * Materialize all patterns in the given pattern array with the given bindings.
@@ -3091,14 +3096,7 @@ class ActorQueryOperationFromQuad extends bus_query_operation_1.ActorQueryOperat
     static applyOperationNamedGraph(operation, namedGraphs, defaultGraphs) {
         // If the operation is a BGP or Path, change the graph.
         if ((operation.type === 'bgp' && operation.patterns.length > 0) || operation.type === 'path') {
-            let patternGraph;
-            if (operation.type === 'bgp') {
-                // We assume that the BGP has at least one pattern and all have the same graph.
-                patternGraph = operation.patterns[0].graph;
-            }
-            else {
-                patternGraph = operation.graph;
-            }
+            const patternGraph = operation.type === 'bgp' ? operation.patterns[0].graph : operation.graph;
             if (patternGraph.termType === 'DefaultGraph') {
                 // SPARQL spec (8.2) describes that when FROM NAMED's are used without a FROM, the default graph must be empty.
                 // The FROMs are transformed before this step to a named node, so this will not apply to this case anymore.
@@ -3112,16 +3110,12 @@ class ActorQueryOperationFromQuad extends bus_query_operation_1.ActorQueryOperat
                     bindings[`?${patternGraph.value}`] = graph;
                     const values = ActorQueryOperationFromQuad.FACTORY
                         .createValues([patternGraph], [bindings]);
-                    let pattern;
-                    if (operation.type === 'bgp') {
-                        pattern = ActorQueryOperationFromQuad.FACTORY
+                    const pattern = operation.type === 'bgp' ?
+                        ActorQueryOperationFromQuad.FACTORY
                             .createBgp(operation.patterns.map((pat) => ActorQueryOperationFromQuad.FACTORY
-                            .createPattern(pat.subject, pat.predicate, pat.object, graph)));
-                    }
-                    else {
-                        pattern = ActorQueryOperationFromQuad.FACTORY
+                            .createPattern(pat.subject, pat.predicate, pat.object, graph))) :
+                        ActorQueryOperationFromQuad.FACTORY
                             .createPath(operation.subject, operation.predicate, operation.object, graph);
-                    }
                     return ActorQueryOperationFromQuad.FACTORY.createJoin(values, pattern);
                 }
                 // If the pattern graph is a variable, take the union of the pattern applied to each available named graph
@@ -3564,7 +3558,7 @@ class ActorQueryOperationLeftJoinLeftDeep extends bus_query_operation_1.ActorQue
         const variables = bus_rdf_join_1.ActorRdfJoin.joinVariables({ entries: [left, right] });
         const metadata = () => Promise.all([left, right].map(x => bus_query_operation_1.getMetadata(x)))
             .then(metadatas => metadatas.reduce((acc, val) => acc * val.totalItems, 1))
-            .catch(() => Infinity)
+            .catch(() => Number.POSITIVE_INFINITY)
             .then(totalItems => ({ totalItems }));
         return { type: 'bindings', bindingsStream, metadata, variables, canContainUndefs: true };
     }
@@ -3799,7 +3793,7 @@ class ActorQueryOperationOrderBySparqlee extends bus_query_operation_1.ActorQuer
     constructor(args) {
         var _a;
         super(args, 'orderby');
-        this.window = (_a = args.window) !== null && _a !== void 0 ? _a : Infinity;
+        this.window = (_a = args.window) !== null && _a !== void 0 ? _a : Number.POSITIVE_INFINITY;
     }
     async testOperation(pattern, context) {
         // Will throw error for unsupported operators
@@ -3887,7 +3881,7 @@ class SortIterator extends asynciterator_1.TransformIterator {
         super(source, options);
         // The `window` parameter indicates the length of the sliding window to apply sorting
         const window = options && options.window;
-        this.windowLength = Number.isFinite(window) && window > 0 ? window : Infinity;
+        this.windowLength = Number.isFinite(window) && window > 0 ? window : Number.POSITIVE_INFINITY;
         this.sort = sort;
         this.sorted = [];
     }
@@ -4577,15 +4571,13 @@ class ActorQueryOperationPathZeroOrOne extends ActorAbstractPath_1.ActorAbstract
         const oVar = path.object.termType === 'Variable';
         const extra = [];
         // Both subject and object non-variables
-        if (!sVar && !oVar) {
-            if (path.subject.equals(path.object)) {
-                return {
-                    type: 'bindings',
-                    bindingsStream: new asynciterator_1.SingletonIterator(bus_query_operation_1.Bindings({})),
-                    variables: [],
-                    canContainUndefs: false,
-                };
-            }
+        if (!sVar && !oVar && path.subject.equals(path.object)) {
+            return {
+                type: 'bindings',
+                bindingsStream: new asynciterator_1.SingletonIterator(bus_query_operation_1.Bindings({})),
+                variables: [],
+                canContainUndefs: false,
+            };
         }
         if (sVar && oVar) {
             throw new Error('ZeroOrOne path expressions with 2 variables not supported yet');
@@ -5086,13 +5078,15 @@ class ActorQueryOperationSlice extends bus_query_operation_1.ActorQueryOperation
     }
     // Slice the stream based on the pattern values
     sliceStream(stream, pattern) {
+        // eslint-disable-next-line unicorn/explicit-length-check
         const hasLength = Boolean(pattern.length) || pattern.length === 0;
         const { start } = pattern;
-        const end = hasLength ? pattern.start + pattern.length - 1 : Infinity;
+        const end = hasLength ? pattern.start + pattern.length - 1 : Number.POSITIVE_INFINITY;
         return stream.transform({ offset: start, limit: Math.max(end - start + 1, 0), autoStart: false });
     }
     // If we find metadata, apply slicing on the total number of items
     sliceMetadata(output, pattern) {
+        // eslint-disable-next-line unicorn/explicit-length-check
         const hasLength = Boolean(pattern.length) || pattern.length === 0;
         return !output.metadata ?
             undefined :
@@ -5174,7 +5168,7 @@ class ActorQueryOperationUnion extends bus_query_operation_1.ActorQueryOperation
                 totalItems += metadata.totalItems;
             }
             else {
-                totalItems = Infinity;
+                totalItems = Number.POSITIVE_INFINITY;
                 break;
             }
         }
@@ -5299,7 +5293,7 @@ class ActorRdfJoinMultiSmallest extends bus_rdf_join_1.ActorRdfJoin {
     }
     static getSmallestPatternId(totalItems) {
         let smallestId = -1;
-        let smallestCount = Infinity;
+        let smallestCount = Number.POSITIVE_INFINITY;
         for (const [i, count] of totalItems.entries()) {
             if (count <= smallestCount) {
                 smallestCount = count;
@@ -5312,7 +5306,7 @@ class ActorRdfJoinMultiSmallest extends bus_rdf_join_1.ActorRdfJoin {
         const entries = action.entries.slice();
         // Determine the two smallest streams by estimated count
         const entriesTotalItems = (await Promise.all(action.entries.map(x => bus_query_operation_1.getMetadata(x))))
-            .map(metadata => 'totalItems' in metadata ? metadata.totalItems : Infinity);
+            .map(metadata => 'totalItems' in metadata ? metadata.totalItems : Number.POSITIVE_INFINITY);
         const smallestIndex1 = ActorRdfJoinMultiSmallest.getSmallestPatternId(entriesTotalItems);
         const smallestItem1 = entries.splice(smallestIndex1, 1)[0];
         const smallestCount1 = entriesTotalItems.splice(smallestIndex1, 1);
@@ -5387,6 +5381,74 @@ class ActorRdfJoinNestedLoop extends bus_rdf_join_1.ActorRdfJoin {
 }
 exports.ActorRdfJoinNestedLoop = ActorRdfJoinNestedLoop;
 //# sourceMappingURL=ActorRdfJoinNestedLoop.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-join-symmetrichash/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-symmetrichash/lib/ActorRdfJoinSymmetricHash.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-join-symmetrichash/lib/ActorRdfJoinSymmetricHash.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfJoinSymmetricHash = void 0;
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const bus_rdf_join_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/index.js");
+const asyncjoin_1 = __cmncwpk_require__("./node_modules/asyncjoin/index.js");
+/**
+ * A comunica Hash RDF Join Actor.
+ */
+class ActorRdfJoinSymmetricHash extends bus_rdf_join_1.ActorRdfJoin {
+    constructor(args) {
+        super(args, 2);
+    }
+    /**
+     * Creates a hash of the given bindings by concatenating the results of the given variables.
+     * This function will not sort the variables and expects them to be in the same order for every call.
+     * @param {Bindings} bindings
+     * @param {string[]} variables
+     * @returns {string}
+     */
+    static hash(bindings, variables) {
+        return variables.filter(variable => bindings.has(variable)).map(variable => bindings.get(variable).value).join('');
+    }
+    async getOutput(action) {
+        const variables = bus_rdf_join_1.ActorRdfJoin.overlappingVariables(action);
+        const join = new asyncjoin_1.SymmetricHashJoin(action.entries[0].bindingsStream, action.entries[1].bindingsStream, entry => ActorRdfJoinSymmetricHash.hash(entry, variables), bus_rdf_join_1.ActorRdfJoin.join);
+        return {
+            type: 'bindings',
+            bindingsStream: join,
+            variables: bus_rdf_join_1.ActorRdfJoin.joinVariables(action),
+            canContainUndefs: false,
+        };
+    }
+    async getIterations(action) {
+        // eslint-disable-next-line @typescript-eslint/restrict-plus-operands
+        return (await bus_query_operation_1.getMetadata(action.entries[0])).totalItems + (await bus_query_operation_1.getMetadata(action.entries[1])).totalItems;
+    }
+}
+exports.ActorRdfJoinSymmetricHash = ActorRdfJoinSymmetricHash;
+//# sourceMappingURL=ActorRdfJoinSymmetricHash.js.map
 
 /***/ }),
 
@@ -5790,7 +5852,7 @@ class ActorSparqlSerializeSparqlCsv extends bus_sparql_serialize_1.ActorSparqlSe
             stringValue = `<${stringValue}>`;
         }
         // If a value contains certain characters, put it between double quotes
-        if (/[",\n\r]/u.exec(stringValue)) {
+        if (/[",\n\r]/u.test(stringValue)) {
             // Within quote strings, " is written using a pair of quotation marks "".
             stringValue = `"${stringValue.replace(/"/gu, '""')}"`;
         }
@@ -6623,7 +6685,7 @@ const asynciterator_1 = __cmncwpk_require__("asynciterator");
 class ActorRdfJoin extends core_1.Actor {
     constructor(args, limitEntries, limitEntriesMin, canHandleUndefs) {
         super(args);
-        this.limitEntries = limitEntries !== null && limitEntries !== void 0 ? limitEntries : Infinity;
+        this.limitEntries = limitEntries !== null && limitEntries !== void 0 ? limitEntries : Number.POSITIVE_INFINITY;
         this.limitEntriesMin = limitEntriesMin !== null && limitEntriesMin !== void 0 ? limitEntriesMin : false;
         this.canHandleUndefs = canHandleUndefs !== null && canHandleUndefs !== void 0 ? canHandleUndefs : false;
     }
@@ -6716,7 +6778,7 @@ class ActorRdfJoin extends core_1.Actor {
             }
         }
         if (!await ActorRdfJoin.iteratorsHaveMetadata(action, 'totalItems')) {
-            return { iterations: Infinity };
+            return { iterations: Number.POSITIVE_INFINITY };
         }
         return { iterations: await this.getIterations(action) };
     }
@@ -8244,12 +8306,12 @@ class MediatorNumber extends core_1.Mediator {
         switch (this.type) {
             case MediatorNumber.MIN:
                 return (tests) => tests.reduce((prev, curr, i) => {
-                    const val = this.getOrDefault(curr[this.field], Infinity);
+                    const val = this.getOrDefault(curr[this.field], Number.POSITIVE_INFINITY);
                     return val !== null && (Number.isNaN(prev[0]) || prev[0] > val) ? [val, i] : prev;
                 }, [Number.NaN, -1])[1];
             case MediatorNumber.MAX:
                 return (tests) => tests.reduce((prev, curr, i) => {
-                    const val = this.getOrDefault(curr[this.field], -Infinity);
+                    const val = this.getOrDefault(curr[this.field], Number.NEGATIVE_INFINITY);
                     return val !== null && (Number.isNaN(prev[0]) || prev[0] < val) ? [val, i] : prev;
                 }, [Number.NaN, -1])[1];
             default:
@@ -8606,7 +8668,11 @@ class SymmetricHashJoin extends AsyncIterator
     
     hasResults()
     {
-        return !this.left.ended  || !this.right.ended || this.matchIdx < this.matches.length;
+        // The "!!this.match" condition was added as a workaround to race
+        // conditions and/or duplicate "end" events that may lead to premature
+        // cleanups of the "this.matches" array.
+        // See https://github.com/joachimvh/asyncjoin/issues/7
+        return !this.left.ended  || !this.right.ended || (!!this.matches && this.matchIdx < this.matches.length);
     }
     
     _cleanup ()

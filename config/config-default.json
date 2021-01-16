@@ -7,7 +7,7 @@
   "@id": "urn:comunica:my",
   "@type": "Runner",
   "import": [
-    "files-ex:config/sets/join.json",
+    "files-cais:config/sets/join.json",
     "files-cais:config/sets/resolve-rdfjs.json",
     "files-cais:config/sets/sparql-init.json",
     "files-cais:config/sets/sparql-optimize.json",
