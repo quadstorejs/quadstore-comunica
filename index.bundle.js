@@ -5,7 +5,7 @@ module.exports =
 /***/ "./engine.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const df_237_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)();
+const df_235_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)();
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
@@ -60,12 +60,12 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
@@ -128,7 +128,7 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'mediatorSparqlSerializeMediaTypeFormatCombiner': df_515_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': df_237_0,
+  'logger': df_235_0,
   'contextKeyShortcuts': {
   'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
   'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
@@ -292,8 +292,8 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
   urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
