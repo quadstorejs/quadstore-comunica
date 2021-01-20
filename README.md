@@ -1,20 +1,45 @@
 
 # Comunica for quadstore
 
-This package provides a Comunica-based SPARQL query engine for use
-within quadstore. 
+This package provides a SPARQL query engine for [quadstore][3] based on the
+[Comunica][1] framework.
 
-**IMPORTANT: this package is not meant to be used on its own but rather
-as a dependency of quadstore itself.**
+Current version(s):
 
-## Build
+- `0.2.1` available on NPM under the `latest` tag, using `comunica@1.18.1`
+- `0.2.2-beta.0` available on NPM under the `beta` tag, using `comunica@1.19.0` 
 
-The engine is built using Comunica's runner, bundled into a single file
-using Webpack (version **5.x**) and published in its bundled form to NPM.
+## Usage
 
-**WARNING: due to issues with nested bundles arising from naming collisions
-of Webpack's internal variables, the build process of this package replaces
-the variable prefix `__webpack_` with `__cmncwpk_` everywhere in the bundle.**
+```
+import {Quadstore} from 'quadstore';
+import {newEngine} from 'quadstore-comunica';
+
+const store = new Quadstore({ 
+  /* other options... */ 
+  comunica: newEngine(), 
+});
+```
+
+## Build process
+
+This package and the SPARQL query engine it contains are optimized for bundle
+size and dependency count.
+
+The engine is first built using Comunica's runner, then bundled into a single
+file using Webpack **5.x** and finally published in its bundled form to NPM. 
+Dependencies shared with [quadstore][0] appear as `peerDependencies` in 
+`package.json`.
+
+The bundle is intentionally kept un-minified to facilitate debugging and
+preservation.
+
+## Nested bundles
+
+The build process of this package replaces the variable prefix `__webpack_` 
+with `__cmncwpk_` everywhere throughout the resulting bundle. This ensures
+that the latter can be included in other application bundles without 
+triggering naming collisions of Webpack's internal variables.
 
 More issues related to naming collisions between nested bundles:
 
@@ -31,3 +56,4 @@ See also the [quadstore][0] and [comunica][1] repositories.
 [0]: https://github.com/beautifulinteractions/node-quadstore
 [1]: https://github.com/comunica/comunica
 [2]: https://github.com/beautifulinteractions/node-quadstore/issues
+[3]: https://github.com/beautifulinteractions/node-quadstore#optscomunica
