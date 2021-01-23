@@ -4,10 +4,7 @@
 This package provides a SPARQL query engine for [quadstore][3] based on the
 [Comunica][1] framework.
 
-Current version(s):
-
-- `0.2.1` available on NPM under the `latest` tag, using `comunica@1.18.1`
-- `0.2.2-beta.0` available on NPM under the `beta` tag, using `comunica@1.19.0` 
+Current version(s): `0.3.0` available on NPM under the `latest` tag, using `comunica@1.19.1` 
 
 ## Usage
 

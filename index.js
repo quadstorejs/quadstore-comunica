@@ -5,7 +5,7 @@
     && process.versions != null
     && process.versions.node != null;
 
-  // The Webpack bundle of this package is build using the "target: browser"
+  // The Webpack bundle of this package is built using the "target: browser"
   // option (see webpack.config.js). This leads some packages to assume the
   // availability of the Web Crypto API through the global "crypto" object.
   // As we don't have that in Node.js but usage seems to be limited to the
@@ -14,9 +14,7 @@
 
   if (isNode && typeof crypto === 'undefined') {
 
-    // Concealing the require() invocation through eval() tricks Webpack
-    // into ignoring it.
-    const crypto = eval('require(\'crypto\')');
+    const crypto = require('crypto');
 
     global.crypto = {};
 
