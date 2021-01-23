@@ -14,7 +14,7 @@
 
   if (isNode && typeof crypto === 'undefined') {
 
-    const crypto = require('crypto');
+    const crypto = eval('require(\'crypto\')');
 
     global.crypto = {};
 
