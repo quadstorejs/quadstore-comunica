@@ -31,7 +31,6 @@ const ignoredPackagesToEmptyModuleAliases = [
   '@comunica/actor-rdf-resolve-hypermedia-none',
   '@comunica/actor-rdf-resolve-hypermedia-qpf',
   '@comunica/actor-rdf-resolve-hypermedia-sparql',
-  '@comunica/actor-rdf-resolve-quad-pattern-federated',
   '@comunica/actor-rdf-resolve-quad-pattern-hypermedia',
   '@comunica/actor-rdf-serialize-n3',
   '@comunica/actor-sparql-parse-graphql',

@@ -23,18 +23,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@comunica/actor-init-sparql": "^1.19.1",
-    "@types/rdf-js": "^4.0.0",
+    "@comunica/actor-init-sparql": "^1.20.0",
+    "@comunica/types": "^1.20.0",
+    "@types/rdf-js": "^4.0.1",
     "json-loader": "^0.5.7",
-    "webpack": "^5.17.0",
+    "webpack": "^5.28.0",
     "webpack-bundle-analyzer": "^4.4.0",
-    "webpack-cli": "^4.4.0"
+    "webpack-cli": "^4.6.0"
   },
   "peerDependencies": {
-    "asynciterator": "^3.0.3",
+    "asynciterator": "^3.1.0",
     "rdf-data-factory": "^1.0.4",
-    "sparqlalgebrajs": "^2.4.0",
-    "sparqljs": "^3.2.0"
+    "sparqlalgebrajs": "^2.5.5",
+    "sparqljs": "^3.4.1"
   },
   "files": [
     "index.d.ts",
