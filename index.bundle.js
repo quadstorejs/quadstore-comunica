@@ -4,15 +4,15 @@
 /***/ "./engine.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const df_259_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
+const df_279_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-sparql-parse/Bus/SparqlParse'
@@ -26,8 +26,8 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_p
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Bus_RdfUpdateQuads = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-update-quads/Bus/RdfUpdateQuads'
@@ -42,28 +42,44 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_ope
 ],
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-query-operation/Bus/QueryOperation'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-symmetrichash/index.js").ActorRdfJoinSymmetricHash)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorSymmetricHash',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer = new (__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-operation-join-bgp/index.js").ActorOptimizeQueryOperationJoinBgp)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-optimize.json#myJoinBgpOptimizer',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlParse',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser = new (__cmncwpk_require__("./node_modules/@comunica/actor-sparql-parse-algebra/index.js").ActorSparqlParseAlgebra)({
+  'prefixes': {
+  'rdf': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+  'rdfs': 'http://www.w3.org/2000/01/rdf-schema#',
+  'owl': 'http://www.w3.org/2002/07/owl#',
+  'xsd': 'http://www.w3.org/2001/XMLSchema#',
+  'dc': 'http://purl.org/dc/terms/',
+  'dcterms': 'http://purl.org/dc/terms/',
+  'dc11': 'http://purl.org/dc/elements/1.1/',
+  'foaf': 'http://xmlns.com/foaf/0.1/',
+  'geo': 'http://www.w3.org/2003/01/geo/wgs84_pos#',
+  'dbpedia': 'http://dbpedia.org/resource/',
+  'dbpedia-owl': 'http://dbpedia.org/ontology/',
+  'dbpprop': 'http://dbpedia.org/property/',
+  'schema': 'http://schema.org/',
+  'skos': 'http://www.w3.org/2008/05/skos#'
+},
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-parsers.json#mySparqlParser',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_parse_Bus_SparqlParse
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
@@ -92,13 +108,17 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorRdfJoin',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-symmetrichash/index.js").ActorRdfJoinSymmetricHash)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorSymmetricHash',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-quads-rdfjs-store/index.js").ActorRdfUpdateQuadsRdfJsStore)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateQuadsRdfJsStore',
@@ -123,21 +143,21 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myValuesQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
-  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-federated/index.js").ActorRdfResolveQuadPatternFederated)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'skipEmptyPatterns': false,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
   'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-federated/index.js").ActorRdfResolveQuadPatternFederated)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'skipEmptyPatterns': false,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-multi-smallest/index.js").ActorRdfJoinMultiSmallest)({
+  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinMultiActor',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
 });
 const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comunica/actor-init-sparql/index-browser.js").ActorInitSparql)({
   'mediatorOptimizeQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation,
@@ -148,7 +168,7 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'mediatorSparqlSerializeMediaTypeFormatCombiner': df_579_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': df_259_0,
+  'logger': df_279_0,
   'contextKeyShortcuts': {
   'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
   'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
@@ -360,12 +380,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const urn_comunica_my = ({
   'busInit': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init,
   'actors': [
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
+  urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
-  urn_comunica_sparqlinit,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
@@ -388,8 +410,6 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
@@ -398,6 +418,7 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCompositeUpdateOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myDeleteInsertOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLoadQueryOperator,
@@ -412,6 +433,45 @@ const urn_comunica_my = ({
 });
 module.exports = urn_comunica_sparqlinit;
 
+
+
+/***/ }),
+
+/***/ "./index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+
+(() => {
+
+  const isNode = typeof process !== 'undefined'
+    && process.versions != null
+    && process.versions.node != null;
+
+  // The Webpack bundle of this package is built using the "target: browser"
+  // option (see webpack.config.js). This leads some packages to assume the
+  // availability of the Web Crypto API through the global "crypto" object.
+  // As we don't have that in Node.js but usage seems to be limited to the
+  // crypto.getRandomValues() method, we use Node.js' own crypto module to
+  // create a polyfill.
+
+  if (isNode && typeof crypto === 'undefined') {
+
+    const crypto = eval('require(\'crypto\')');
+
+    __cmncwpk_require__.g.crypto = {};
+
+    __cmncwpk_require__.g.crypto.getRandomValues = (array) => {
+      crypto.randomFillSync(array);
+      return array;
+    };
+
+  }
+
+})();
+
+exports.newEngine = () => {
+  return __cmncwpk_require__("./engine.js");
+};
 
 
 /***/ }),
@@ -660,7 +720,7 @@ const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * An abstract actor that handles Path operations.
@@ -2017,7 +2077,7 @@ const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-
 const bus_rdf_resolve_quad_pattern_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-resolve-quad-pattern/index.js");
 const context_entries_1 = __cmncwpk_require__("./node_modules/@comunica/context-entries/index.js");
 const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A browser-safe comunica SPARQL Init Actor.
  */
@@ -2251,7 +2311,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-optimize-query-
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorOptimizeQueryOperationJoinBgp = void 0;
 const bus_optimize_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-optimize-query-operation/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Join BGP Optimize Query Operation Actor.
  */
@@ -3252,7 +3312,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationFromQuad = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica From Query Operation Actor.
  */
@@ -3737,7 +3797,7 @@ exports.ActorQueryOperationLeftJoinLeftDeep = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const bus_rdf_join_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-join/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica LeftJoin left-deep Query Operation Actor.
  */
@@ -4014,7 +4074,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationOrderBySparqlee = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const sparqlee_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/index.js");
 const SortIterator_1 = __cmncwpk_require__("./node_modules/@comunica/actor-query-operation-orderby-sparqlee/lib/SortIterator.js");
 /**
@@ -4199,7 +4259,7 @@ exports.ActorQueryOperationPathAlt = void 0;
 const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path Alt Query Operation Actor.
  */
@@ -4259,7 +4319,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathInv = void 0;
 const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path Inv Query Operation Actor.
  */
@@ -4307,7 +4367,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationPathLink = void 0;
 const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path Link Query Operation Actor.
  */
@@ -4357,7 +4417,7 @@ exports.ActorQueryOperationPathNps = void 0;
 const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path Nps Query Operation Actor.
  */
@@ -4421,7 +4481,7 @@ const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/acto
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path OneOrMore Query Operation Actor.
  */
@@ -4570,7 +4630,7 @@ exports.ActorQueryOperationPathSeq = void 0;
 const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/actor-abstract-path/index.js");
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path Seq Query Operation Actor.
  */
@@ -4642,7 +4702,7 @@ const actor_abstract_path_1 = __cmncwpk_require__("./node_modules/@comunica/acto
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path ZeroOrMore Query Operation Actor.
  */
@@ -4788,7 +4848,7 @@ const ActorAbstractPath_1 = __cmncwpk_require__("./node_modules/@comunica/actor-
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A comunica Path ZeroOrOne Query Operation Actor.
  */
@@ -5465,7 +5525,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationAddRewrite = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * A [Query Operation](https://github.com/comunica/comunica/tree/master/packages/bus-query-operation) actor
@@ -5648,7 +5708,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationCopyRewrite = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A [Query Operation](https://github.com/comunica/comunica/tree/master/packages/bus-query-operation) actor that
  * handles SPARQL copy operations.
@@ -5921,7 +5981,7 @@ exports.KEY_CONTEXT_LENIENT = exports.KEY_CONTEXT_SOURCES = exports.ActorQueryOp
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
 const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * A [Query Operation](https://github.com/comunica/comunica/tree/master/packages/bus-query-operation) actor
@@ -6002,7 +6062,7 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorQueryOperationMoveRewrite = void 0;
 const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A [Query Operation](https://github.com/comunica/comunica/tree/master/packages/bus-query-operation) actor that
  * handles SPARQL move operations.
@@ -6607,7 +6667,7 @@ const data_factory_1 = __cmncwpk_require__("./node_modules/@comunica/data-factor
 const asynciterator_1 = __cmncwpk_require__("asynciterator");
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
  * A FederatedQuadSource can evaluate quad pattern queries over the union of different heterogeneous sources.
@@ -7155,8 +7215,8 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-sparql-parse-al
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.ActorSparqlParseAlgebra = void 0;
 const bus_sparql_parse_1 = __cmncwpk_require__("./node_modules/@comunica/bus-sparql-parse/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
-const sparqljs_1 = __cmncwpk_require__("sparqljs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
+const sparqljs_1 = __cmncwpk_require__("./node_modules/sparqljs/sparql.js");
 /**
  * A comunica Algebra SPARQL Parse Actor.
  */
@@ -7939,7 +7999,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.materializeOperation = exports.materializeTerm = exports.ensureBindings = exports.isBindings = exports.Bindings = void 0;
 const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 /**
  * A convenience constructor for bindings based on a given hash.
  * @param {{[p: string]: RDF.Term}} hash A hash that maps variable names to terms.
@@ -15656,6 +15716,60 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 
 /***/ }),
 
+/***/ "./node_modules/fast-deep-equal/index.js":
+/***/ ((module) => {
+
+"use strict";
+
+
+// do not edit .js files directly - edit src/index.jst
+
+
+
+module.exports = function equal(a, b) {
+  if (a === b) return true;
+
+  if (a && b && typeof a == 'object' && typeof b == 'object') {
+    if (a.constructor !== b.constructor) return false;
+
+    var length, i, keys;
+    if (Array.isArray(a)) {
+      length = a.length;
+      if (length != b.length) return false;
+      for (i = length; i-- !== 0;)
+        if (!equal(a[i], b[i])) return false;
+      return true;
+    }
+
+
+
+    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
+    if (a.valueOf !== Object.prototype.valueOf) return a.valueOf() === b.valueOf();
+    if (a.toString !== Object.prototype.toString) return a.toString() === b.toString();
+
+    keys = Object.keys(a);
+    length = keys.length;
+    if (length !== Object.keys(b).length) return false;
+
+    for (i = length; i-- !== 0;)
+      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
+
+    for (i = length; i-- !== 0;) {
+      var key = keys[i];
+
+      if (!equal(a[key], b[key])) return false;
+    }
+
+    return true;
+  }
+
+  // true if both NaN, false otherwise
+  return a!==a && b!==b;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/hash.js/lib/hash.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
@@ -23277,6 +23391,379 @@ assert.equal = function assertEqual(l, r, msg) {
 
 /***/ }),
 
+/***/ "./node_modules/rdf-isomorphic/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__export(__cmncwpk_require__("./node_modules/rdf-isomorphic/lib/RdfIsomorphic.js"));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-isomorphic/lib/RdfIsomorphic.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const crypto_1 = __cmncwpk_require__("crypto");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const rdf_terms_1 = __cmncwpk_require__("./node_modules/rdf-terms/index.js");
+/**
+ * Determines if the two given graphs are isomorphic.
+ *
+ * @param {Quad[]} graphA An array of quads, order is not important.
+ * @param {Quad[]} graphB An array of quads, order is not important.
+ * @return {boolean} If the two given graphs are isomorphic.
+ */
+function isomorphic(graphA, graphB) {
+    return !!getBijection(graphA, graphB);
+}
+exports.isomorphic = isomorphic;
+/**
+ * Calculate a hash of graphA blank nodes to graphB blank nodes.
+ * This represents a bijection from graphA's blank nodes to graphB's blank nodes.
+ *
+ * @param {Quad[]} graphA An array of quads, order is not important.
+ * @param {Quad[]} graphB An array of quads, order is not important.
+ * @return {IBijection} A hash representing a bijection, or null if none could be found.
+ */
+function getBijection(graphA, graphB) {
+    // Check if all (non-blanknode-containing) quads in the two graphs are equal.
+    // We do this by creating a hash-based index for both graphs.
+    const nonBlankIndexA = indexGraph(getQuadsWithoutBlankNodes(graphA));
+    const nonBlankIndexB = indexGraph(getQuadsWithoutBlankNodes(graphB));
+    if (Object.keys(nonBlankIndexA).length !== Object.keys(nonBlankIndexB).length) {
+        return null;
+    }
+    for (const key in nonBlankIndexA) {
+        if (nonBlankIndexA[key] !== nonBlankIndexB[key]) {
+            return null;
+        }
+    }
+    // Pre-process data that needs to be present in each iteration of getBijectionInner.
+    const blankQuadsA = uniqGraph(getQuadsWithBlankNodes(graphA));
+    const blankQuadsB = uniqGraph(getQuadsWithBlankNodes(graphB));
+    const blankNodesA = getGraphBlankNodes(graphA);
+    const blankNodesB = getGraphBlankNodes(graphB);
+    return getBijectionInner(blankQuadsA, blankQuadsB, blankNodesA, blankNodesB);
+}
+exports.getBijection = getBijection;
+function getBijectionInner(blankQuadsA, blankQuadsB, blankNodesA, blankNodesB, groundedHashesA, groundedHashesB) {
+    if (!groundedHashesA) {
+        groundedHashesA = {};
+    }
+    if (!groundedHashesB) {
+        groundedHashesB = {};
+    }
+    // Hash every term based on the signature of the quads if appears in.
+    const [hashesA, ungroundedHashesA] = hashTerms(blankQuadsA, blankNodesA, groundedHashesA);
+    const [hashesB, ungroundedHashesB] = hashTerms(blankQuadsB, blankNodesB, groundedHashesB);
+    // Break quickly if a graph contains a grounded node that is not contained in the other graph.
+    if (Object.keys(hashesA).length !== Object.keys(hashesB).length) {
+        return null;
+    }
+    for (const hashKeyA in hashesA) {
+        if (!hasValue(hashesB, hashesA[hashKeyA])) {
+            return null;
+        }
+    }
+    // Map the blank nodes from graph A to the blank nodes of graph B using the created hashes.
+    // Grounded hashes will also be equal, but not needed here, we will need them in the next recursion
+    // (as we only recurse on grounded nodes).
+    let bijection = {};
+    for (const blankNodeA of blankNodesA) {
+        const blankNodeAString = rdf_string_1.termToString(blankNodeA);
+        const blankNodeAHash = ungroundedHashesA[blankNodeAString];
+        for (const blankNodeBString in ungroundedHashesB) {
+            if (ungroundedHashesB[blankNodeBString] === blankNodeAHash) {
+                bijection[blankNodeAString] = blankNodeBString;
+                delete ungroundedHashesB[blankNodeBString];
+                break;
+            }
+        }
+    }
+    // Check if all nodes from graph A and B are present in the bijection,
+    // if not, speculatively mark pairs with matching ungrounded hashes as bijected, and recurse.
+    if (!arraysEqual(Object.keys(bijection).sort(), blankNodesA.map(rdf_string_1.termToString).sort())
+        || !arraysEqual(hashValues(bijection).sort(), blankNodesB.map(rdf_string_1.termToString).sort())) {
+        // I have not yet been able to find any pathological cases where this code is reached.
+        // This may be removable, but let's wait until someone proves that.
+        bijection = null;
+        for (const blankNodeA of blankNodesA) {
+            // Only replace ungrounded node hashes
+            const blankNodeAString = rdf_string_1.termToString(blankNodeA);
+            if (!hashesA[blankNodeAString]) {
+                for (const blankNodeB of blankNodesB) {
+                    // Only replace ungrounded node hashes
+                    const blankNodeBString = rdf_string_1.termToString(blankNodeB);
+                    if (!hashesB[blankNodeBString]) {
+                        if (ungroundedHashesA[blankNodeAString] === ungroundedHashesB[blankNodeBString]) {
+                            const hash = sha1hex(blankNodeAString);
+                            bijection = getBijectionInner(blankQuadsA, blankQuadsB, blankNodesA, blankNodesB, Object.assign(Object.assign({}, hashesA), { [blankNodeAString]: hash }), Object.assign(Object.assign({}, hashesB), { [blankNodeBString]: hash }));
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return bijection;
+}
+exports.getBijectionInner = getBijectionInner;
+function arraysEqual(array1, array2) {
+    if (array1.length !== array2.length) {
+        return false;
+    }
+    for (let i = array1.length; i--;) {
+        if (array1[i] !== array2[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+/**
+ * Get all values from the given hash
+ * @param hash A hash.
+ * @return {any[]} The array of values.
+ */
+function hashValues(hash) {
+    const arr = [];
+    for (const e in hash) {
+        arr.push(hash[e]);
+    }
+    return arr;
+}
+exports.hashValues = hashValues;
+/**
+ * Check if the given hash contains the given value.
+ * @param hash A hash.
+ * @param {string} value A value.
+ * @return {boolean} If it contains the value.
+ */
+function hasValue(hash, value) {
+    for (const hashValue in hash) {
+        if (hash[hashValue] === value) {
+            return true;
+        }
+    }
+    return false;
+}
+exports.hasValue = hasValue;
+/**
+ * Get all quads with blank nodes.
+ * @param {Quad[]} graph An array of quads.
+ * @return {Quad[]} An array of quads with blank nodes
+ */
+function getQuadsWithBlankNodes(graph) {
+    return graph.filter((quad) => rdf_terms_1.someTerms(quad, (value) => {
+        return value.termType === 'BlankNode'
+            || (value.termType === 'Quad' && rdf_terms_1.getTermsNested(value).some(term => term.termType === 'BlankNode'));
+    }));
+}
+exports.getQuadsWithBlankNodes = getQuadsWithBlankNodes;
+/**
+ * Get all quads without blank nodes.
+ * @param {Quad[]} graph An array of quads.
+ * @return {Quad[]} An array of quads without blank nodes
+ */
+function getQuadsWithoutBlankNodes(graph) {
+    return graph.filter((quad) => rdf_terms_1.everyTerms(quad, (value) => {
+        return value.termType !== 'BlankNode'
+            && !(value.termType === 'Quad' && rdf_terms_1.getTermsNested(value).some(term => term.termType === 'BlankNode'));
+    }));
+}
+exports.getQuadsWithoutBlankNodes = getQuadsWithoutBlankNodes;
+/**
+ * Create a hash-based index of the given graph.
+ * @param {Quad[]} graph An array of quads, the order does not matter.
+ * @return {{[p: string]: boolean}} A hash-based datastructure representing the graph.
+ */
+function indexGraph(graph) {
+    const index = {};
+    for (const quad of graph) {
+        index[JSON.stringify(rdf_string_1.quadToStringQuad(quad))] = true;
+    }
+    return index;
+}
+exports.indexGraph = indexGraph;
+/**
+ * Create a graph from the given hash-based index.
+ * @param {{[p: string]: boolean}} indexedGraph A hash-based datastructure representing the graph.
+ * @return {Quad[]} An array of quads, the order does not matter.
+ */
+function deindexGraph(indexedGraph) {
+    return Object.keys(indexedGraph).map((str) => rdf_string_1.stringQuadToQuad(JSON.parse(str)));
+}
+exports.deindexGraph = deindexGraph;
+/**
+ * Unique-ify the given RDF graph based on strict equality.
+ * The output graph will consist of new quad and term instances.
+ * @param {Quad[]} graph An input graph.
+ * @return {Quad[]} The input graph without duplicates.
+ */
+function uniqGraph(graph) {
+    return deindexGraph(indexGraph(graph));
+}
+exports.uniqGraph = uniqGraph;
+/**
+ * Find all blank nodes in the given graph.
+ * @param {Quad[]} graph An array of quads.
+ * @return {BlankNode[]} A list of (unique) blank nodes.
+ */
+function getGraphBlankNodes(graph) {
+    return rdf_terms_1.uniqTerms(graph.map((quad) => rdf_terms_1.getBlankNodes(rdf_terms_1.getTermsNested(quad)))
+        .reduce((acc, val) => acc.concat(val), []));
+}
+exports.getGraphBlankNodes = getGraphBlankNodes;
+/**
+ * Create term hashes for the given set of quads and blank node terms.
+ *
+ * @param {Quad[]} quads A set of quads.
+ * @param {Term[]} terms Blank node terms.
+ * @param {ITermHash} groundedHashes Grounded term hashes that are used to create more specific signatures
+ *                                   of other terms, because they are based on non-blank nodes and grounded blank nodes.
+ * @return {[ITermHash]} A tuple of grounded and ungrounded hashes.
+ */
+function hashTerms(quads, terms, groundedHashes) {
+    const hashes = Object.assign({}, groundedHashes);
+    const ungroundedHashes = {};
+    let hashNeeded = true;
+    // Iteratively mark nodes as grounded.
+    // If a node is marked as grounded, then the next iteration can lead to new grounded states
+    while (hashNeeded) {
+        const initialGroundedNodesCount = Object.keys(hashes).length;
+        for (const term of terms) {
+            const termString = rdf_string_1.termToString(term);
+            if (!hashes[termString]) {
+                const [grounded, hash] = hashTerm(term, quads, hashes);
+                if (grounded) {
+                    hashes[termString] = hash;
+                }
+                ungroundedHashes[termString] = hash;
+            }
+        }
+        // All terms that have a unique hash at this point can be marked as grounded
+        const uniques = {};
+        for (const termKey in ungroundedHashes) {
+            const hash = ungroundedHashes[termKey];
+            if (uniques[hash] === undefined) {
+                uniques[hash] = termKey;
+            }
+            else {
+                uniques[hash] = false;
+            }
+        }
+        for (const hash in uniques) {
+            const value = uniques[hash];
+            if (value) {
+                hashes[value] = hash;
+            }
+        }
+        // Check if the loop needs to terminate
+        hashNeeded = initialGroundedNodesCount !== Object.keys(hashes).length;
+    }
+    return [hashes, ungroundedHashes];
+}
+exports.hashTerms = hashTerms;
+/**
+ * Generate a hash for the given term based on the signature of the quads it appears in.
+ *
+ * Signatures are made up of grounded terms in quads that are associated with a term,
+ * i.e., everything except for ungrounded blank nodes.
+ * The hash is created by hashing a sorted list of each quad's signature,
+ * where each quad signature is a concatenation of the signature of all grounded terms.
+ *
+ * Terms are considered grounded if they are a member in the given hash AND if they are not the given term.
+ *
+ * @param {Term} term The term to get the hash around.
+ * @param {Quad[]} quads The quads to include in the hashing.
+ * @param {ITermHash} hashes A grounded term hash object.
+ * @return {[boolean , string]} A tuple indicating if the given term is grounded in all the given quads, and the hash.
+ */
+function hashTerm(term, quads, hashes) {
+    const quadSignatures = [];
+    let grounded = true;
+    for (const quad of quads) {
+        const terms = rdf_terms_1.getTermsNested(quad);
+        if (terms.some((quadTerm) => quadTerm.equals(term))) {
+            quadSignatures.push(quadToSignature(quad, hashes, term));
+            for (const quadTerm of terms) {
+                if (!isTermGrounded(quadTerm, hashes) && !quadTerm.equals(term)) {
+                    grounded = false;
+                }
+            }
+        }
+    }
+    const hash = sha1hex(quadSignatures.sort().join(''));
+    return [grounded, hash];
+}
+exports.hashTerm = hashTerm;
+/**
+ * Create a hash using sha1 as a hex digest.
+ * @param {string | Buffer | NodeJS.TypedArray | DataView} data Something to hash.
+ * @return {string} A hash string.
+ */
+function sha1hex(data) {
+    return crypto_1.createHash('sha1').update(data).digest('hex');
+}
+exports.sha1hex = sha1hex;
+/**
+ * Convert the given quad to a string signature so that it can be used in the hash structure.
+ * @param {Quad} quad A quad.
+ * @param {ITermHash} hashes A grounded term hash object.
+ * @param {Term} term A target term to compare with.
+ * @return {string} A string signature.
+ */
+function quadToSignature(quad, hashes, term) {
+    return rdf_terms_1.getTerms(quad).map((quadTerm) => termToSignature(quadTerm, hashes, term)).join('|');
+}
+exports.quadToSignature = quadToSignature;
+/**
+ * Convert the given term to a string signature so that it can be used in the hash structure.
+ * @param {Term} term A term.
+ * @param {ITermHash} hashes A grounded term hash object.
+ * @param {Term} target A target term to compare with.
+ * @return {string} A string signature.
+ */
+function termToSignature(term, hashes, target) {
+    if (term.equals(target)) {
+        return '@self';
+    }
+    else if (term.termType === 'BlankNode') {
+        return hashes[rdf_string_1.termToString(term)] || '@blank';
+    }
+    else if (term.termType === 'Quad') {
+        return `<${quadToSignature(term, hashes, target)}>`;
+    }
+    else {
+        return rdf_string_1.termToString(term);
+    }
+}
+exports.termToSignature = termToSignature;
+/**
+ * Check if a term is grounded.
+ *
+ * A term is grounded if it is not a blank node
+ * or if it included in the given hash of grounded nodes.
+ *
+ * @param {Term} term A term.
+ * @param {ITermHash} hashes A grounded term hash object.
+ * @return {boolean} If the given term is grounded.
+ */
+function isTermGrounded(term, hashes) {
+    return (term.termType !== 'BlankNode'
+        && !(term.termType === 'Quad' && rdf_terms_1.getTermsNested(term).some(subTerm => !isTermGrounded(subTerm, hashes)))) || !!hashes[rdf_string_1.termToString(term)];
+}
+exports.isTermGrounded = isTermGrounded;
+//# sourceMappingURL=RdfIsomorphic.js.map
+
+/***/ }),
+
 /***/ "./node_modules/rdf-string/index.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
@@ -24852,6 +25339,2122 @@ function isCharacterAllowedAfterRelativePathSegment(character) {
 
 /***/ }),
 
+/***/ "./node_modules/sparqlalgebrajs/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Util = exports.toSparqlJs = exports.toSparql = exports.Factory = exports.Algebra = exports.translate = void 0;
+const sparqlAlgebra_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/sparqlAlgebra.js");
+exports.translate = sparqlAlgebra_1.default;
+const Algebra = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/algebra.js");
+exports.Algebra = Algebra;
+const factory_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/factory.js");
+exports.Factory = factory_1.default;
+const sparql_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/sparql.js");
+Object.defineProperty(exports, "toSparql", ({ enumerable: true, get: function () { return sparql_1.toSparql; } }));
+Object.defineProperty(exports, "toSparqlJs", ({ enumerable: true, get: function () { return sparql_1.toSparqlJs; } }));
+const util_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/util.js");
+exports.Util = util_1.default;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlalgebrajs/lib/algebra.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.expressionTypes = exports.types = void 0;
+// TODO: add aggregates?
+// TODO: can't find a way to use these values as string types in the interfaces
+exports.types = Object.freeze({
+    ALT: 'alt',
+    ASK: 'ask',
+    BGP: 'bgp',
+    CONSTRUCT: 'construct',
+    DESC: 'desc',
+    DESCRIBE: 'describe',
+    DISTINCT: 'distinct',
+    EXPRESSION: 'expression',
+    EXTEND: 'extend',
+    FILTER: 'filter',
+    FROM: 'from',
+    GRAPH: 'graph',
+    GROUP: 'group',
+    INV: 'inv',
+    JOIN: 'join',
+    LEFT_JOIN: 'leftjoin',
+    LINK: 'link',
+    MINUS: 'minus',
+    NPS: 'nps',
+    ONE_OR_MORE_PATH: 'OneOrMorePath',
+    ORDER_BY: 'orderby',
+    PATH: 'path',
+    PATTERN: 'pattern',
+    PROJECT: 'project',
+    REDUCED: 'reduced',
+    SEQ: 'seq',
+    SERVICE: 'service',
+    SLICE: 'slice',
+    UNION: 'union',
+    VALUES: 'values',
+    ZERO_OR_MORE_PATH: 'ZeroOrMorePath',
+    ZERO_OR_ONE_PATH: 'ZeroOrOnePath',
+    COMPOSITE_UPDATE: 'compositeupdate',
+    DELETE_INSERT: 'deleteinsert',
+    LOAD: 'load',
+    CLEAR: 'clear',
+    CREATE: 'create',
+    DROP: 'drop',
+    ADD: 'add',
+    MOVE: 'move',
+    COPY: 'copy',
+});
+exports.expressionTypes = Object.freeze({
+    AGGREGATE: 'aggregate',
+    EXISTENCE: 'existence',
+    NAMED: 'named',
+    OPERATOR: 'operator',
+    TERM: 'term',
+    WILDCARD: 'wildcard',
+});
+//# sourceMappingURL=algebra.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlalgebrajs/lib/factory.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const Wildcard = __cmncwpk_require__("./node_modules/sparqljs/sparql.js").Wildcard;
+class Factory {
+    constructor(dataFactory) {
+        this.dataFactory = dataFactory || new rdf_data_factory_1.DataFactory();
+        this.stringType = this.createTerm('http://www.w3.org/2001/XMLSchema#string');
+    }
+    createAlt(left, right) { return { type: 'alt', left, right }; }
+    createAsk(input) { return { type: 'ask', input }; }
+    createBoundAggregate(variable, aggregate, expression, distinct, separator) {
+        let result = this.createAggregateExpression(aggregate, expression, distinct, separator);
+        result.variable = variable;
+        return result;
+    }
+    createBgp(patterns) { return { type: 'bgp', patterns }; }
+    createConstruct(input, template) { return { type: 'construct', input, template }; }
+    createDescribe(input, terms) { return { type: 'describe', input, terms }; }
+    createDistinct(input) { return { type: 'distinct', input }; }
+    createExtend(input, variable, expression) { return { type: 'extend', input, variable, expression }; }
+    createFrom(input, def, named) { return { type: 'from', input, default: def, named }; }
+    createFilter(input, expression) { return { type: 'filter', input, expression }; }
+    createGraph(input, name) { return { type: 'graph', input, name }; }
+    createGroup(input, variables, aggregates) { return { type: 'group', input, variables, aggregates }; }
+    createInv(path) { return { type: 'inv', path }; }
+    createJoin(left, right) { return { type: 'join', left, right }; }
+    createLeftJoin(left, right, expression) {
+        if (expression)
+            return { type: 'leftjoin', left, right, expression };
+        return { type: 'leftjoin', left, right };
+    }
+    createLink(iri) { return { type: 'link', iri }; }
+    createMinus(left, right) { return { type: 'minus', left, right }; }
+    createNps(iris) { return { type: 'nps', iris }; }
+    createOneOrMorePath(path) { return { type: 'OneOrMorePath', path }; }
+    createOrderBy(input, expressions) { return { type: 'orderby', input, expressions }; }
+    createPath(subject, predicate, object, graph) {
+        if (graph)
+            return { type: 'path', subject, predicate, object, graph };
+        return { type: 'path', subject, predicate, object, graph: this.dataFactory.defaultGraph() };
+    }
+    createPattern(subject, predicate, object, graph) {
+        let pattern = this.dataFactory.quad(subject, predicate, object, graph);
+        pattern.type = 'pattern';
+        return pattern;
+    }
+    createProject(input, variables) { return { type: 'project', input, variables }; }
+    createReduced(input) { return { type: 'reduced', input }; }
+    createSeq(left, right) { return { type: 'seq', left, right }; }
+    createService(input, name, silent) { return { type: 'service', input, name, silent }; }
+    createSlice(input, start, length) {
+        if (start === undefined)
+            start = 0;
+        if (length !== undefined)
+            return { type: 'slice', input, start, length };
+        return { type: 'slice', input, start };
+    }
+    createUnion(left, right) { return { type: 'union', left, right }; }
+    createValues(variables, bindings) { return { type: 'values', variables, bindings }; }
+    createZeroOrMorePath(path) { return { type: 'ZeroOrMorePath', path }; }
+    createZeroOrOnePath(path) { return { type: 'ZeroOrOnePath', path }; }
+    createAggregateExpression(aggregator, expression, distinct, separator) {
+        if (separator)
+            return { type: 'expression', expressionType: 'aggregate', aggregator: aggregator, expression, separator, distinct };
+        return { type: 'expression', expressionType: 'aggregate', aggregator: aggregator, expression, distinct };
+    }
+    createExistenceExpression(not, input) { return { type: 'expression', expressionType: 'existence', not, input }; }
+    createNamedExpression(name, args) { return { type: 'expression', expressionType: 'named', name, args }; }
+    createOperatorExpression(operator, args) { return { type: 'expression', expressionType: 'operator', operator, args }; }
+    createTermExpression(term) { return { type: 'expression', expressionType: 'term', term }; }
+    createWildcardExpression() { return { type: 'expression', expressionType: 'wildcard', wildcard: new Wildcard() }; }
+    createTerm(str) {
+        return rdf_string_1.stringToTerm(str, this.dataFactory);
+    }
+    // Update functions
+    createCompositeUpdate(updates) { return { type: 'compositeupdate', updates }; }
+    createDeleteInsert(deleteQuads, insertQuads, where) {
+        const result = { type: 'deleteinsert' };
+        if (deleteQuads)
+            result.delete = deleteQuads;
+        if (insertQuads)
+            result.insert = insertQuads;
+        if (where)
+            result.where = where;
+        return result;
+    }
+    createLoad(source, destination, silent) {
+        const result = { type: 'load', source };
+        if (destination)
+            result.destination = destination;
+        return this.addSilent(result, silent);
+    }
+    createClear(source, silent) {
+        return this.addSilent({ type: 'clear', source }, silent);
+    }
+    createCreate(source, silent) {
+        return this.addSilent({ type: 'create', source }, silent);
+    }
+    createDrop(source, silent) {
+        return this.addSilent({ type: 'drop', source }, silent);
+    }
+    createAdd(source, destination, silent) {
+        return this.addSilent({ type: 'add', source, destination }, silent);
+    }
+    createMove(source, destination, silent) {
+        return this.addSilent({ type: 'move', source, destination }, silent);
+    }
+    createCopy(source, destination, silent) {
+        return this.addSilent({ type: 'copy', source, destination }, silent);
+    }
+    addSilent(input, silent) {
+        if (silent)
+            input.silent = silent;
+        return input;
+    }
+}
+exports.default = Factory;
+//# sourceMappingURL=factory.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlalgebrajs/lib/sparql.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.toSparqlJs = exports.toSparql = void 0;
+const rdf_isomorphic_1 = __cmncwpk_require__("./node_modules/rdf-isomorphic/index.js");
+const Algebra = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/algebra.js");
+const factory_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/factory.js");
+const util_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/util.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const SparqlGenerator = __cmncwpk_require__("./node_modules/sparqljs/sparql.js").Generator;
+const Wildcard = __cmncwpk_require__("./node_modules/sparqljs/sparql.js").Wildcard;
+const types = Algebra.types;
+const eTypes = Algebra.expressionTypes;
+let context;
+const factory = new factory_1.default();
+function toSparql(op, options = {}) {
+    let generator = new SparqlGenerator(options);
+    return generator.stringify(toSparqlJs(op));
+}
+exports.toSparql = toSparql;
+function toSparqlJs(op) {
+    resetContext();
+    op = removeQuads(op);
+    let result = translateOperation(op);
+    if (result.type === 'group')
+        return result.patterns[0];
+    return result;
+}
+exports.toSparqlJs = toSparqlJs;
+function resetContext() {
+    context = { project: false, extend: [], group: [], aggregates: [], order: [] };
+}
+function translateOperation(op) {
+    // this allows us to differentiate between BIND and SELECT when translating EXTEND
+    // GRAPH was added because the way graphs get added back here is not the same as how they get added in the future
+    // ^ seems fine but might have to be changed if problems get detected in the future
+    if (op.type !== types.EXTEND && op.type !== types.ORDER_BY && op.type !== types.GRAPH)
+        context.project = false;
+    switch (op.type) {
+        case types.EXPRESSION: return translateExpression(op);
+        case types.ASK: return translateProject(op, types.ASK);
+        case types.BGP: return translateBgp(op);
+        case types.CONSTRUCT: return translateConstruct(op);
+        case types.DESCRIBE: return translateProject(op, types.DESCRIBE);
+        case types.DISTINCT: return translateDistinct(op);
+        case types.EXTEND: return translateExtend(op);
+        case types.FROM: return translateFrom(op);
+        case types.FILTER: return translateFilter(op);
+        case types.GRAPH: return translateGraph(op);
+        case types.GROUP: return translateGroup(op);
+        case types.JOIN: return translateJoin(op);
+        case types.LEFT_JOIN: return translateLeftJoin(op);
+        case types.MINUS: return translateMinus(op);
+        case types.ORDER_BY: return translateOrderBy(op);
+        case types.PATH: return translatePath(op);
+        case types.PATTERN: return translatePattern(op);
+        case types.PROJECT: return translateProject(op, types.PROJECT);
+        case types.REDUCED: return translateReduced(op);
+        case types.SERVICE: return translateService(op);
+        case types.SLICE: return translateSlice(op);
+        case types.UNION: return translateUnion(op);
+        case types.VALUES: return translateValues(op);
+        // UPDATE operations
+        case types.COMPOSITE_UPDATE: return translateCompositeUpdate(op);
+        case types.DELETE_INSERT: return translateDeleteInsert(op);
+        case types.LOAD: return translateLoad(op);
+        case types.CLEAR: return translateClear(op);
+        case types.CREATE: return translateCreate(op);
+        case types.DROP: return translateDrop(op);
+        case types.ADD: return translateAdd(op);
+        case types.MOVE: return translateMove(op);
+        case types.COPY: return translateCopy(op);
+    }
+    throw new Error('Unknown Operation type ' + op.type);
+}
+function translateExpression(expr) {
+    switch (expr.expressionType) {
+        case eTypes.AGGREGATE: return translateAggregateExpression(expr);
+        case eTypes.EXISTENCE: return translateExistenceExpression(expr);
+        case eTypes.NAMED: return translateNamedExpression(expr);
+        case eTypes.OPERATOR: return translateOperatorExpression(expr);
+        case eTypes.TERM: return translateTermExpression(expr);
+        case eTypes.WILDCARD: return translateWildcardExpression(expr);
+    }
+    throw new Error('Unknown Expression Operation type ' + expr.expressionType);
+}
+function translatePathComponent(path) {
+    switch (path.type) {
+        case types.ALT: return translateAlt(path);
+        case types.INV: return translateInv(path);
+        case types.LINK: return translateLink(path);
+        case types.NPS: return translateNps(path);
+        case types.ONE_OR_MORE_PATH: return translateOneOrMorePath(path);
+        case types.SEQ: return translateSeq(path);
+        case types.ZERO_OR_MORE_PATH: return translateZeroOrMorePath(path);
+        case types.ZERO_OR_ONE_PATH: return translateZeroOrOnePath(path);
+    }
+    throw new Error('Unknown Path type ' + path.type);
+}
+function translateTerm(term) {
+    return rdf_string_1.termToString(term);
+}
+// ------------------------- EXPRESSIONS -------------------------
+function translateAggregateExpression(expr) {
+    let result = {
+        expression: translateExpression(expr.expression),
+        type: 'aggregate',
+        aggregation: expr.aggregator,
+        distinct: expr.distinct
+    };
+    if (expr.separator)
+        result.separator = expr.separator;
+    return result;
+}
+function translateExistenceExpression(expr) {
+    return {
+        type: 'operation',
+        operator: expr.not ? 'notexists' : 'exists',
+        args: util_1.default.flatten([
+            translateOperation(expr.input)
+        ])
+    };
+}
+function translateNamedExpression(expr) {
+    return {
+        type: 'functionCall',
+        function: expr.name,
+        args: expr.args.map(translateExpression)
+    };
+}
+function translateOperatorExpression(expr) {
+    if (expr.operator === 'desc') {
+        let result = { expression: translateExpression(expr.args[0]) };
+        result.descending = true;
+        return result;
+    }
+    let result = {
+        type: 'operation',
+        operator: expr.operator,
+        args: expr.args.map(translateExpression)
+    };
+    if (result.operator === 'in' || result.operator === 'notin')
+        result.args = [result.args[0]].concat([result.args.slice(1)]);
+    return result;
+}
+function translateTermExpression(expr) {
+    return expr.term;
+}
+function translateWildcardExpression(expr) {
+    return expr.wildcard;
+}
+// ------------------------- OPERATIONS -------------------------
+// these get translated in the project function
+function translateBoundAggregate(op) {
+    return op;
+}
+function translateBgp(op) {
+    let patterns = op.patterns.map(translatePattern);
+    if (patterns.length === 0)
+        return null;
+    return {
+        type: 'bgp',
+        triples: patterns
+    };
+}
+function translateConstruct(op) {
+    return {
+        type: 'query',
+        prefixes: {},
+        queryType: "CONSTRUCT",
+        template: op.template.map(translatePattern),
+        where: util_1.default.flatten([
+            translateOperation(op.input)
+        ])
+    };
+}
+function translateDistinct(op) {
+    let result = translateOperation(op.input);
+    // project is nested in group object
+    result.patterns[0].distinct = true;
+    return result;
+}
+function translateExtend(op) {
+    if (context.project) {
+        context.extend.push(op);
+        return translateOperation(op.input);
+    }
+    return util_1.default.flatten([
+        translateOperation(op.input),
+        {
+            type: 'bind',
+            variable: op.variable,
+            expression: translateExpression(op.expression)
+        }
+    ]);
+}
+function translateFrom(op) {
+    let result = translateOperation(op.input);
+    // project is nested in group object
+    let obj = result.patterns[0];
+    obj.from = {
+        default: op.default,
+        named: op.named
+    };
+    return result;
+}
+function translateFilter(op) {
+    return {
+        type: 'group',
+        patterns: util_1.default.flatten([
+            translateOperation(op.input),
+            { type: 'filter', expression: translateExpression(op.expression) }
+        ])
+    };
+}
+function translateGraph(op) {
+    return {
+        type: 'graph',
+        patterns: util_1.default.flatten([translateOperation(op.input)]),
+        name: op.name
+    };
+}
+function translateGroup(op) {
+    let input = translateOperation(op.input);
+    let aggs = op.aggregates.map(translateBoundAggregate);
+    context.aggregates.push(...aggs);
+    // TODO: apply possible extends
+    context.group.push(...op.variables);
+    return input;
+}
+function translateJoin(op) {
+    const arr = util_1.default.flatten([
+        translateOperation(op.left),
+        translateOperation(op.right)
+    ]);
+    // Merge bgps
+    // This is possible if one side was a path and the other a bgp for example
+    return arr.reduce((result, val) => {
+        if (val.type !== 'bgp' || result.length == 0 || result[result.length - 1].type !== 'bgp') {
+            result.push(val);
+        }
+        else {
+            result[result.length - 1].triples.push(...val.triples);
+        }
+        return result;
+    }, []);
+}
+function translateLeftJoin(op) {
+    let leftjoin = {
+        type: 'optional',
+        patterns: [
+            translateOperation(op.right)
+        ]
+    };
+    if (op.expression) {
+        leftjoin.patterns.push({
+            type: 'filter',
+            expression: translateExpression(op.expression)
+        });
+    }
+    leftjoin.patterns = util_1.default.flatten(leftjoin.patterns);
+    return util_1.default.flatten([
+        translateOperation(op.left),
+        leftjoin
+    ]);
+}
+function translateMinus(op) {
+    let patterns = translateOperation(op.right);
+    if (patterns.type === 'group')
+        patterns = patterns.patterns;
+    if (!Array.isArray(patterns))
+        patterns = [patterns];
+    return util_1.default.flatten([
+        translateOperation(op.left),
+        {
+            type: 'minus',
+            patterns: patterns
+        }
+    ]);
+}
+function translateOrderBy(op) {
+    context.order.push(...op.expressions);
+    return translateOperation(op.input);
+}
+function translatePath(op) {
+    // TODO: quads back to graph statement
+    return {
+        type: 'bgp',
+        triples: [{
+                subject: op.subject,
+                predicate: translatePathComponent(op.predicate),
+                object: op.object
+            }]
+    };
+}
+function translatePattern(op) {
+    return {
+        subject: op.subject,
+        predicate: op.predicate,
+        object: op.object
+    };
+}
+function replaceAggregatorVariables(s, map) {
+    let st = util_1.default.isTerm(s) ? translateTerm(s) : s;
+    if (typeof st === 'string') {
+        if (map[st])
+            return map[st];
+    }
+    else if (Array.isArray(s)) {
+        s = s.map(e => replaceAggregatorVariables(e, map));
+    }
+    else {
+        for (let key of Object.keys(s))
+            s[key] = replaceAggregatorVariables(s[key], map);
+    }
+    return s;
+}
+function translateProject(op, type) {
+    let result = {
+        type: 'query',
+        prefixes: {}
+    };
+    if (type === types.PROJECT) {
+        result.queryType = 'SELECT';
+        result.variables = op.variables;
+    }
+    else if (type === types.ASK) {
+        result.queryType = 'ASK';
+    }
+    else if (type === types.DESCRIBE) {
+        result.queryType = 'DESCRIBE';
+        result.variables = op.terms;
+    }
+    // backup values in case of nested queries
+    // everything in extend, group, etc. is irrelevant for this project call
+    let extend = context.extend;
+    let group = context.group;
+    let aggregates = context.aggregates;
+    let order = context.order;
+    resetContext();
+    context.project = true;
+    let input = util_1.default.flatten([translateOperation(op.input)]);
+    if (input.length === 1 && input[0].type === 'group')
+        input = input[0].patterns;
+    result.where = input;
+    let aggregators = {};
+    // these can not reference each other
+    for (let agg of context.aggregates)
+        aggregators[translateTerm(agg.variable)] = translateExpression(agg);
+    // do these in reverse order since variables in one extend might apply to an expression in an other extend
+    let extensions = {};
+    for (let i = context.extend.length - 1; i >= 0; --i) {
+        let e = context.extend[i];
+        extensions[translateTerm(e.variable)] = replaceAggregatorVariables(translateExpression(e.expression), aggregators);
+    }
+    if (context.group.length > 0)
+        result.group = context.group.map(variable => {
+            let v = translateTerm(variable);
+            if (extensions[v]) {
+                let result = extensions[v];
+                delete extensions[v]; // make sure there is only 1 'AS' statement
+                return {
+                    variable,
+                    expression: result
+                };
+            }
+            return { expression: variable };
+        });
+    // descending expressions will already be in the correct format due to the structure of those
+    if (context.order.length > 0)
+        result.order = context.order.map(translateOperation).map(o => o.descending ? o : ({ expression: o }));
+    // this needs to happen after the group because it might depend on variables generated there
+    if (result.variables) {
+        result.variables = result.variables.map((term) => {
+            let v = translateTerm(term);
+            if (extensions[v])
+                return {
+                    variable: term,
+                    expression: extensions[v]
+                };
+            return term;
+        });
+        // if the * didn't match any variables this would be empty
+        if (result.variables.length === 0)
+            result.variables = [new Wildcard()];
+    }
+    // convert filter to 'having' if it contains an aggregator variable
+    // could always convert, but is nicer to use filter when possible
+    if (result.where.length > 0 && result.where[result.where.length - 1].type === 'filter') {
+        let filter = result.where[result.where.length - 1];
+        if (objectContainsValues(filter, Object.keys(aggregators))) {
+            result.having = util_1.default.flatten([replaceAggregatorVariables(filter.expression, aggregators)]);
+            result.where.splice(-1);
+        }
+    }
+    context.extend = extend;
+    context.group = group;
+    context.aggregates = aggregates;
+    context.order = order;
+    // subqueries need to be in a group
+    result = { type: 'group', patterns: [result] };
+    return result;
+}
+function objectContainsValues(o, vals) {
+    if (util_1.default.isTerm(o))
+        return vals.indexOf(translateTerm(o)) >= 0;
+    if (Array.isArray(o))
+        return o.some(e => objectContainsValues(e, vals));
+    if (o === Object(o))
+        return Object.keys(o).some(key => objectContainsValues(o[key], vals));
+    return vals.indexOf(o) >= 0;
+}
+function translateReduced(op) {
+    let result = translateOperation(op.input);
+    // project is nested in group object
+    result.patterns[0].reduced = true;
+    return result;
+}
+function translateService(op) {
+    let patterns = translateOperation(op.input);
+    if (patterns.type === 'group')
+        patterns = patterns.patterns;
+    if (!Array.isArray(patterns))
+        patterns = [patterns];
+    return {
+        type: 'service',
+        name: op.name,
+        silent: op.silent,
+        patterns
+    };
+}
+function translateSlice(op) {
+    let result = translateOperation(op.input);
+    // results can be nested in a group object
+    let obj = result;
+    if (result.type && result.type === 'group')
+        obj = result.patterns[0];
+    if (op.start !== 0)
+        obj.offset = op.start;
+    if (op.length !== undefined)
+        obj.limit = op.length;
+    return result;
+}
+function translateUnion(op) {
+    return {
+        type: 'union',
+        patterns: util_1.default.flatten([
+            translateOperation(op.left),
+            translateOperation(op.right)
+        ])
+    };
+}
+function translateValues(op) {
+    // TODO: check if handled correctly when outside of select block
+    return {
+        type: 'values',
+        values: op.bindings.map(binding => {
+            let result = {};
+            for (let v of op.variables) {
+                let s = '?' + v.value;
+                if (binding[s])
+                    result[s] = binding[s];
+                else
+                    result[s] = undefined;
+            }
+            return result;
+        })
+    };
+}
+// PATH COMPONENTS
+function translateAlt(path) {
+    let left = translatePathComponent(path.left);
+    let right = translatePathComponent(path.right);
+    if (left.pathType === '!' && right.pathType === '!') {
+        return {
+            type: 'path',
+            pathType: '!',
+            items: [{
+                    type: 'path',
+                    pathType: '|',
+                    items: [].concat(left.items, right.items)
+                }]
+        };
+    }
+    return {
+        type: 'path',
+        pathType: '|',
+        items: [left, right]
+    };
+}
+function translateInv(path) {
+    if (path.path.type === types.NPS) {
+        let npsPath = path.path;
+        let inv = npsPath.iris.map((iri) => {
+            return {
+                type: 'path',
+                pathType: '^',
+                items: [iri]
+            };
+        });
+        if (inv.length <= 1)
+            return {
+                type: 'path',
+                pathType: '!',
+                items: inv
+            };
+        return {
+            type: 'path',
+            pathType: '!',
+            items: [{
+                    type: 'path',
+                    pathType: '|',
+                    items: inv
+                }]
+        };
+    }
+    return {
+        type: 'path',
+        pathType: '^',
+        items: [translatePathComponent(path.path)]
+    };
+}
+function translateLink(path) {
+    return path.iri;
+}
+function translateNps(path) {
+    if (path.iris.length <= 1)
+        return {
+            type: 'path',
+            pathType: '!',
+            items: path.iris
+        };
+    return {
+        type: 'path',
+        pathType: '!',
+        items: [{
+                type: 'path',
+                pathType: '|',
+                items: path.iris
+            }]
+    };
+}
+function translateOneOrMorePath(path) {
+    return {
+        type: 'path',
+        pathType: '+',
+        items: [translatePathComponent(path.path)]
+    };
+}
+function translateSeq(path) {
+    return {
+        type: 'path',
+        pathType: '/',
+        items: [translatePathComponent(path.left), translatePathComponent(path.right)]
+    };
+}
+function translateZeroOrMorePath(path) {
+    return {
+        type: 'path',
+        pathType: '*',
+        items: [translatePathComponent(path.path)]
+    };
+}
+function translateZeroOrOnePath(path) {
+    return {
+        type: 'path',
+        pathType: '?',
+        items: [translatePathComponent(path.path)]
+    };
+}
+// UPDATE OPERATIONS
+function translateCompositeUpdate(op) {
+    const updates = op.updates.map(update => {
+        const result = translateOperation(update);
+        return result.updates[0];
+    });
+    return { prefixes: {}, type: 'update', updates };
+}
+function translateDeleteInsert(op) {
+    let where = op.where;
+    let using = undefined;
+    if (where && where.type === types.FROM) {
+        let from = op.where;
+        where = from.input;
+        using = { default: from.default, named: from.named };
+    }
+    const updates = [{
+            updateType: 'insertdelete',
+            delete: convertUpdatePatterns(op.delete),
+            insert: convertUpdatePatterns(op.insert),
+        }];
+    if (using)
+        updates[0].using = using;
+    // corresponds to empty array in SPARQL.js
+    if (!where || (where.type === types.BGP && where.patterns.length === 0))
+        updates[0].where = [];
+    else {
+        const graphs = {};
+        let result = translateOperation(removeQuadsRecursive(where, graphs));
+        if (result.type === 'group')
+            updates[0].where = result.patterns;
+        else
+            updates[0].where = [result];
+        // graph might not be applied yet since there was no project
+        // this can only happen if there was a single graph
+        const graphNames = Object.keys(graphs);
+        if (graphNames.length > 0) {
+            if (graphNames.length !== 1)
+                throw new Error('This is unexpected and might indicate an error in graph handling for updates.');
+            // ignore if default graph
+            if (graphs[graphNames[0]].graph.value !== '')
+                updates[0].where = [{ type: 'graph', patterns: updates[0].where, name: graphs[graphNames[0]].graph }];
+        }
+    }
+    // not really necessary but can give cleaner looking queries
+    if (!op.delete && !op.where) {
+        updates[0].updateType = 'insert';
+        delete updates[0].delete;
+        delete updates[0].where;
+    }
+    else if (!op.insert && !op.where) {
+        delete updates[0].insert;
+        delete updates[0].where;
+        if (op.delete.some(pattern => pattern.subject.termType === 'Variable' ||
+            pattern.predicate.termType === 'Variable' ||
+            pattern.object.termType === 'Variable'))
+            updates[0].updateType = 'deletewhere';
+        else
+            updates[0].updateType = 'delete';
+    }
+    else if (!op.insert && op.where && op.where.type === 'bgp') {
+        if (rdf_isomorphic_1.isomorphic(op.delete, op.where.patterns)) {
+            delete updates[0].where;
+            updates[0].updateType = 'deletewhere';
+        }
+    }
+    return { prefixes: {}, type: 'update', updates };
+}
+function translateLoad(op) {
+    const updates = [{ type: 'load', silent: Boolean(op.silent), source: op.source }];
+    if (op.destination)
+        updates[0].destination = op.destination;
+    return { prefixes: {}, type: 'update', updates };
+}
+function translateClear(op) {
+    return translateClearCreateDrop(op, 'clear');
+}
+function translateCreate(op) {
+    return translateClearCreateDrop(op, 'create');
+}
+function translateDrop(op) {
+    return translateClearCreateDrop(op, 'drop');
+}
+function translateClearCreateDrop(op, type) {
+    const updates = [{ type, silent: Boolean(op.silent) }];
+    if (op.source === 'DEFAULT')
+        updates[0].graph = { default: true };
+    else if (op.source === 'NAMED')
+        updates[0].graph = { named: true };
+    else if (op.source === 'ALL')
+        updates[0].graph = { all: true };
+    else
+        updates[0].graph = { type: 'graph', name: op.source };
+    return { prefixes: {}, type: 'update', updates };
+}
+function translateAdd(op) {
+    return translateUpdateGraphShortcut(op, 'add');
+}
+function translateMove(op) {
+    return translateUpdateGraphShortcut(op, 'move');
+}
+function translateCopy(op) {
+    return translateUpdateGraphShortcut(op, 'copy');
+}
+function translateUpdateGraphShortcut(op, type) {
+    const updates = [{ type, silent: Boolean(op.silent) }];
+    updates[0].source = op.source === 'DEFAULT' ? { type: 'graph', default: true } : { type: 'graph', name: op.source };
+    updates[0].destination = op.destination === 'DEFAULT' ? { type: 'graph', default: true } : { type: 'graph', name: op.destination };
+    return { prefixes: {}, type: 'update', updates };
+}
+// similar to removeQuads but more simplified for UPDATEs
+function convertUpdatePatterns(patterns) {
+    if (!patterns)
+        return [];
+    const graphs = {};
+    patterns.forEach(pattern => {
+        const graph = pattern.graph.value;
+        if (!graphs[graph])
+            graphs[graph] = [];
+        graphs[graph].push(pattern);
+    });
+    return Object.keys(graphs).map(graph => {
+        if (graph === '')
+            return { type: 'bgp', triples: graphs[graph].map(translatePattern) };
+        return { type: 'graph', triples: graphs[graph].map(translatePattern), name: graphs[graph][0].graph };
+    });
+}
+function removeQuads(op) {
+    return removeQuadsRecursive(op, {});
+}
+// remove quads
+function removeQuadsRecursive(op, graphs) {
+    if (Array.isArray(op))
+        return op.map(sub => removeQuadsRecursive(sub, graphs));
+    if (!op.type)
+        return op;
+    // UPDATE operations with Patterns handle graphs a bit differently
+    if (op.type === types.DELETE_INSERT)
+        return op;
+    if ((op.type === types.PATTERN || op.type === types.PATH) && op.graph) {
+        if (!graphs[op.graph.value])
+            graphs[op.graph.value] = { graph: op.graph, values: [] };
+        graphs[op.graph.value].values.push(op);
+        return op;
+    }
+    const result = {};
+    const keyGraphs = {}; // unique graph per key
+    const globalNames = {}; // track all the unique graph names for the entire Operation
+    for (let key of Object.keys(op)) {
+        const newGraphs = {};
+        result[key] = removeQuadsRecursive(op[key], newGraphs);
+        const graphNames = Object.keys(newGraphs);
+        // create graph statements if multiple graphs are found
+        if (graphNames.length > 1) {
+            // nest joins
+            let left = potentialGraphFromPatterns(newGraphs[graphNames[0]].values);
+            for (let i = 1; i < graphNames.length; ++i) {
+                const right = potentialGraphFromPatterns(newGraphs[graphNames[i]].values);
+                left = factory.createJoin(left, right);
+            }
+            graphNames.map(name => delete newGraphs[name]);
+            // this ignores the result object that is being generated, but should not be a problem
+            // is only an issue for objects that have 2 keys where this can occur, which is none
+            return left;
+        }
+        else if (graphNames.length === 1) {
+            const graph = newGraphs[graphNames[0]].graph;
+            keyGraphs[key] = graph;
+            globalNames[graph.value] = graph;
+        }
+    }
+    const graphNameSet = Object.keys(globalNames);
+    if (graphNameSet.length > 0) {
+        // also need to create graph statement if we are at the edge of the query
+        if (graphNameSet.length === 1 && op.type !== types.PROJECT)
+            graphs[graphNameSet[0]] = { graph: globalNames[graphNameSet[0]], values: [result] };
+        else {
+            // multiple graphs (or project), need to create graph objects for them
+            for (let key of Object.keys(keyGraphs))
+                if (keyGraphs[key].value.length > 0)
+                    result[key] = factory.createGraph(result[key], keyGraphs[key]);
+        }
+    }
+    return result;
+}
+function potentialGraphFromPatterns(patterns) {
+    const bgp = factory.createBgp(patterns);
+    const name = patterns[0].graph;
+    if (name.value.length === 0)
+        return bgp;
+    return factory.createGraph(bgp, name);
+}
+//# sourceMappingURL=sparql.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlalgebrajs/lib/sparqlAlgebra.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const Algebra = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/algebra.js");
+const factory_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/factory.js");
+const util_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/util.js");
+const equal = __cmncwpk_require__("./node_modules/fast-deep-equal/index.js");
+const rdf_string_1 = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const Parser = __cmncwpk_require__("./node_modules/sparqljs/sparql.js").Parser;
+const types = Algebra.types;
+let variables = new Set();
+let varCount = 0;
+let useQuads = false;
+let factory;
+/**
+ * Translates the given SPARQL query to SPARQL Algebra.
+ * @param sparql - Either a SPARQL string or an object generated by sparql.js
+ * @param options - Optional options object. Current options:
+ *                    * dataFactory: The Datafactory used to generate terms. Default @rdfjs/data-model.
+ *                    * quads: Boolean indicating whether triples should be converted to Quads (consumes GRAPH statements). Default false.
+ *                    * prefixes: Pre-defined prefixes for the given query. Default empty.
+ *                    * baseIRI: Base IRI that should be used for the query. Default undefined (throws error if required).
+ * @returns {Operation}
+ */
+function translate(sparql, options) {
+    options = options || {};
+    factory = new factory_1.default(options.dataFactory);
+    if (isString(sparql)) {
+        let parser = new Parser(options);
+        // resets the identifier counter used for blank nodes
+        // provides nicer and more consistent output if there are multiple calls
+        parser._resetBlanks();
+        sparql = parser.parse(sparql);
+    }
+    return translateQuery(sparql, options.quads, options.blankToVariable);
+}
+exports.default = translate;
+function translateQuery(sparql, quads, blankToVariable) {
+    // this set is filled in during the inScopeVariables call
+    variables = new Set();
+    varCount = 0;
+    useQuads = quads;
+    // Assume this is an empty query
+    if (!sparql.type)
+        return factory.createProject(factory.createBgp([]), []);
+    if (sparql.type !== 'query' && sparql.type !== 'update')
+        throw new Error('Translate only works on complete query or update objects.');
+    let vars = new Set(Object.keys(inScopeVariables(sparql)).map(factory.createTerm.bind(factory)));
+    let res;
+    if (sparql.type === 'query') {
+        // group and where are identical, having only 1 makes parsing easier, can be undefined in DESCRIBE
+        let group = { type: 'group', patterns: sparql.where || [] };
+        res = translateGroupGraphPattern(group);
+        res = translateAggregates(sparql, res, vars);
+    }
+    else if (sparql.type === 'update') {
+        res = translateUpdate(sparql);
+    }
+    if (blankToVariable) {
+        res = translateBlankNodesToVariables(res, vars);
+    }
+    return res;
+}
+function isString(str) {
+    return typeof str === 'string';
+}
+function isObject(o) {
+    return o !== null && typeof o === 'object';
+}
+function isVariable(term) {
+    return term && term.termType === "Variable";
+}
+// 18.2.1
+function inScopeVariables(thingy) {
+    let inScope = {};
+    if (isVariable(thingy)) {
+        inScope[rdf_string_1.termToString(thingy)] = true;
+        variables.add(thingy); // keep track of all variables so we don't generate duplicates
+    }
+    else if (isObject(thingy)) {
+        if (thingy.type === 'bind') {
+            inScopeVariables(thingy.expression); // to fill `variables`
+            Object.assign(inScope, inScopeVariables(thingy.variable));
+        }
+        else if (thingy.queryType === 'SELECT') {
+            let all = inScopeVariables(thingy.where); // always executing this makes sure `variables` gets filled correctly
+            for (let v of thingy.variables) {
+                if (util_1.default.isWildcard(v))
+                    Object.assign(inScope, all);
+                else if (v.variable) // aggregates
+                    Object.assign(inScope, inScopeVariables(v.variable));
+                else
+                    Object.assign(inScope, inScopeVariables(v));
+            }
+            // TODO: I'm not 100% sure if you always add these or only when '*' was selected
+            if (thingy.group)
+                for (let v of thingy.group)
+                    Object.assign(inScope, inScopeVariables(v));
+        }
+        else
+            for (let key of Object.keys(thingy))
+                Object.assign(inScope, inScopeVariables(thingy[key]));
+    }
+    return inScope;
+}
+function translateGroupGraphPattern(thingy) {
+    // 18.2.2.1
+    // already done by sparql parser
+    // 18.2.2.2
+    let filters = [];
+    let nonfilters = [];
+    if (thingy.patterns)
+        for (let pattern of thingy.patterns)
+            (pattern.type === 'filter' ? filters : nonfilters).push(pattern);
+    // 18.2.2.3
+    // 18.2.2.4
+    // 18.2.2.5
+    if (thingy.type === 'bgp')
+        return translateBgp(thingy);
+    // 18.2.2.6
+    let result;
+    if (thingy.type === 'union')
+        result = nonfilters.map((p) => {
+            // sparqljs doesn't always indicate the children are groups
+            if (p.type !== 'group')
+                p = { type: 'group', patterns: [p] };
+            return translateGroupGraphPattern(p);
+        }).reduce((acc, item) => factory.createUnion(acc, item));
+    else if (thingy.type === 'graph')
+        // need to handle this separately since the filters need to be in the graph
+        return translateGraph(thingy);
+    else if (thingy.type === 'group')
+        result = nonfilters.reduce(accumulateGroupGraphPattern, factory.createBgp([]));
+    // custom values operation
+    else if (thingy.type === 'values')
+        result = translateInlineData(thingy);
+    else if (thingy.type === 'query')
+        result = translateQuery(thingy, useQuads, false);
+    else
+        throw new Error('Unexpected type: ' + thingy.type);
+    if (filters.length > 0) {
+        let expressions = filters.map(filter => translateExpression(filter.expression));
+        if (expressions.length > 0)
+            result = factory.createFilter(result, expressions.reduce((acc, exp) => factory.createOperatorExpression('&&', [acc, exp])));
+    }
+    return result;
+}
+function translateExpression(exp) {
+    if (util_1.default.isTerm(exp) || exp.termType === 'Quad')
+        return factory.createTermExpression(exp);
+    if (util_1.default.isWildcard(exp))
+        return factory.createWildcardExpression();
+    if (exp.aggregation)
+        return factory.createAggregateExpression(exp.aggregation, translateExpression(exp.expression), exp.distinct, exp.separator);
+    if (exp.function)
+        return factory.createNamedExpression(exp.function, exp.args.map(translateExpression));
+    if (exp.operator) {
+        if (exp.operator === 'exists' || exp.operator === 'notexists')
+            return factory.createExistenceExpression(exp.operator === 'notexists', translateGroupGraphPattern(exp.args[0]));
+        if (exp.operator === 'in' || exp.operator === 'notin')
+            exp.args = [exp.args[0]].concat(exp.args[1]); // sparql.js uses 2 arguments with the second one being a list
+        return factory.createOperatorExpression(exp.operator, exp.args.map(translateExpression));
+    }
+    throw new Error('Unknown expression: ' + JSON.stringify(exp));
+}
+function translateBgp(thingy) {
+    let patterns = [];
+    let joins = [];
+    for (let t of thingy.triples) {
+        if (t.predicate.type === 'path') {
+            // translatePath returns a mix of Quads and Paths
+            let path = translatePath(t);
+            for (let p of path) {
+                if (p.type === types.PATH) {
+                    if (patterns.length > 0)
+                        joins.push(factory.createBgp(patterns));
+                    patterns = [];
+                    joins.push(p);
+                }
+                else
+                    patterns.push(p);
+            }
+        }
+        else
+            patterns.push(translateQuad(t));
+    }
+    if (patterns.length > 0)
+        joins.push(factory.createBgp(patterns));
+    if (joins.length === 1)
+        return joins[0];
+    return joins.reduce((acc, item) => factory.createJoin(acc, item));
+}
+function translatePath(triple) {
+    let sub = triple.subject;
+    let pred = translatePathPredicate(triple.predicate);
+    let obj = triple.object;
+    return simplifyPath(sub, pred, obj);
+}
+function translatePathPredicate(predicate) {
+    if (util_1.default.isTerm(predicate) && predicate.termType === "NamedNode")
+        return factory.createLink(predicate);
+    if (predicate.pathType === '^')
+        return factory.createInv(translatePathPredicate(predicate.items[0]));
+    if (predicate.pathType === '!') {
+        // negation is either over a single predicate or a list of disjuncted properties
+        let normals = [];
+        let inverted = [];
+        let items;
+        if (predicate.items[0].type === 'path' && predicate.items[0].pathType === '|')
+            items = predicate.items[0].items; // the | element
+        else
+            items = predicate.items;
+        for (let item of items) {
+            if (util_1.default.isTerm(item))
+                normals.push(item);
+            else if (item.pathType === '^')
+                inverted.push(item.items[0]);
+            else
+                throw new Error('Unexpected item: ' + JSON.stringify(item));
+        }
+        // NPS elements do not have the LINK function
+        let normalElement = factory.createNps(normals);
+        let invertedElement = factory.createInv(factory.createNps(inverted));
+        if (inverted.length === 0)
+            return normalElement;
+        if (normals.length === 0)
+            return invertedElement;
+        return factory.createAlt(normalElement, invertedElement);
+    }
+    if (predicate.pathType === '/')
+        return predicate.items.map(translatePathPredicate).reduce((acc, p) => factory.createSeq(acc, p));
+    if (predicate.pathType === '|')
+        return predicate.items.map(translatePathPredicate).reduce((acc, p) => factory.createAlt(acc, p));
+    if (predicate.pathType === '*')
+        return factory.createZeroOrMorePath(translatePathPredicate(predicate.items[0]));
+    if (predicate.pathType === '+')
+        return factory.createOneOrMorePath(translatePathPredicate(predicate.items[0]));
+    if (predicate.pathType === '?')
+        return factory.createZeroOrOnePath(translatePathPredicate(predicate.items[0]));
+    throw new Error('Unable to translate path expression ' + JSON.stringify(predicate));
+}
+function simplifyPath(subject, predicate, object) {
+    if (predicate.type === types.LINK)
+        return [factory.createPattern(subject, predicate.iri, object)];
+    if (predicate.type === types.INV)
+        return simplifyPath(object, predicate.path, subject);
+    if (predicate.type === types.SEQ) {
+        let v = generateFreshVar();
+        let left = simplifyPath(subject, predicate.left, v);
+        let right = simplifyPath(v, predicate.right, object);
+        return left.concat(right);
+    }
+    return [factory.createPath(subject, predicate, object)];
+}
+function generateFreshVar() {
+    let v = '?var' + varCount++;
+    if (variables.has(v))
+        return generateFreshVar();
+    variables.add(v);
+    return factory.createTerm(v);
+}
+function translateQuad(quad) {
+    return factory.createPattern(quad.subject, quad.predicate, quad.object, quad.graph);
+}
+function translateGraph(graph) {
+    graph.type = 'group';
+    let result = translateGroupGraphPattern(graph);
+    if (useQuads)
+        result = recurseGraph(result, graph.name);
+    else
+        result = factory.createGraph(result, graph.name);
+    return result;
+}
+let typeVals = Object.keys(types).map(key => types[key]);
+function recurseGraph(thingy, graph, replacement) {
+    if (thingy.type === types.GRAPH) {
+        if (replacement) {
+            // At this point we would lose track of the replacement which would result in incorrect results
+            // This would indicate the library is not being used as intended though
+            throw new Error('Recursing through nested GRAPH statements with a replacement is impossible.');
+        }
+        const graph = thingy;
+        // In case there were nested GRAPH statements that were not recursed yet for some reason
+        thingy = recurseGraph(graph.input, graph.name);
+    }
+    else if (thingy.type === types.BGP)
+        thingy.patterns = thingy.patterns.map(quad => {
+            if (replacement) {
+                if (quad.subject.equals(graph))
+                    quad.subject = replacement;
+                if (quad.predicate.equals(graph))
+                    quad.predicate = replacement;
+                if (quad.object.equals(graph))
+                    quad.object = replacement;
+            }
+            if (quad.graph.termType === 'DefaultGraph')
+                quad.graph = graph;
+            return quad;
+        });
+    else if (thingy.type === types.PATH) {
+        const p = thingy;
+        if (replacement) {
+            if (p.subject.equals(graph))
+                p.subject = replacement;
+            if (p.object.equals(graph))
+                p.object = replacement;
+        }
+        if (thingy.graph.termType === 'DefaultGraph')
+            thingy.graph = graph;
+    }
+    // need to replace variables in subqueries should the graph also be a variable of the same name
+    // unless the subquery projects that variable
+    else if (thingy.type === types.PROJECT && !replacement) {
+        const proj = thingy;
+        if (!proj.variables.some(v => v.equals(graph)))
+            replacement = generateFreshVar();
+        proj.input = recurseGraph(proj.input, graph, replacement);
+    }
+    // this can happen if the query extends an expression to the name of the graph
+    // since the extend happens here there should be no further occurrences of this name
+    // if there are it's the same situation as above
+    else if (thingy.type === types.EXTEND && !replacement) {
+        const ext = thingy;
+        if (ext.variable.equals(graph))
+            replacement = generateFreshVar();
+        ext.input = recurseGraph(ext.input, graph, replacement);
+    }
+    else {
+        for (let key of Object.keys(thingy)) {
+            if (Array.isArray(thingy[key]))
+                thingy[key] = thingy[key].map((x) => recurseGraph(x, graph, replacement));
+            else if (typeVals.indexOf(thingy[key].type) >= 0) // can't do instanceof on an interface
+                thingy[key] = recurseGraph(thingy[key], graph, replacement);
+            else if (replacement && isVariable(thingy[key]) && thingy[key].equals(graph))
+                thingy[key] = replacement;
+        }
+    }
+    return thingy;
+}
+function accumulateGroupGraphPattern(G, E) {
+    if (E.type === 'optional') {
+        // optional input needs to be interpreted as a group
+        let A = translateGroupGraphPattern({ type: 'group', patterns: E.patterns });
+        if (A.type === types.FILTER) {
+            let filter = A;
+            G = factory.createLeftJoin(G, filter.input, filter.expression);
+        }
+        else
+            G = factory.createLeftJoin(G, A);
+    }
+    else if (E.type === 'minus') {
+        // minus input needs to be interpreted as a group
+        let A = translateGroupGraphPattern({ type: 'group', patterns: E.patterns });
+        G = factory.createMinus(G, A);
+    }
+    else if (E.type === 'bind')
+        G = factory.createExtend(G, E.variable, translateExpression(E.expression));
+    else if (E.type === 'service') {
+        // transform to group so childnodes get parsed correctly
+        E.type = 'group';
+        let A = factory.createService(translateGroupGraphPattern(E), E.name, E.silent);
+        G = simplifiedJoin(G, A);
+    }
+    else {
+        let A = translateGroupGraphPattern(E);
+        G = simplifiedJoin(G, A);
+    }
+    return G;
+}
+function simplifiedJoin(G, A) {
+    // Note: this is more simplification than requested in 18.2.2.8, but no reason not to do it.
+    if (G.type === types.BGP && A.type === types.BGP)
+        G = factory.createBgp([].concat(G.patterns, A.patterns));
+    // 18.2.2.8 (simplification)
+    else if (G.type === types.BGP && G.patterns.length === 0)
+        G = A;
+    else if (A.type === types.BGP && A.patterns.length === 0) { } // do nothing
+    else
+        G = factory.createJoin(G, A);
+    return G;
+}
+function translateInlineData(values) {
+    let variables = (values.values.length === 0 ? [] : Object.keys(values.values[0])).map(factory.createTerm.bind(factory));
+    let bindings = values.values.map((binding) => {
+        let keys = Object.keys(binding);
+        keys = keys.filter(k => binding[k] !== undefined);
+        let map = {};
+        for (let key of keys)
+            map[key] = binding[key];
+        return map;
+    });
+    return factory.createValues(variables, bindings);
+}
+// --------------------------------------- AGGREGATES
+function translateAggregates(query, res, variables) {
+    // 18.2.4.1
+    let E = [];
+    let A = {};
+    query.variables = mapAggregates(query.variables, A);
+    query.having = mapAggregates(query.having, A);
+    query.order = mapAggregates(query.order, A);
+    // if there are any aggregates or if we have a groupBy (both result in a GROUP)
+    if (query.group || Object.keys(A).length > 0) {
+        let aggregates = Object.keys(A).map(v => translateBoundAggregate(A[v], factory.createTerm(v)));
+        let vars = [];
+        if (query.group) {
+            for (let e of query.group) {
+                if (e.expression.type) {
+                    const v = e.variable ? e.variable : generateFreshVar();
+                    res = factory.createExtend(res, v, translateExpression(e.expression));
+                    vars.push(v);
+                }
+                else
+                    vars.push(e.expression); // this will always be a var, otherwise sparql would be invalid
+            }
+        }
+        res = factory.createGroup(res, vars, aggregates);
+    }
+    // 18.2.4.2
+    if (query.having)
+        for (let filter of query.having)
+            res = factory.createFilter(res, translateExpression(filter));
+    // 18.2.4.3
+    if (query.values)
+        res = factory.createJoin(res, translateInlineData(query));
+    // 18.2.4.4
+    let PV = new Set();
+    if (query.queryType === 'SELECT' || query.queryType === 'DESCRIBE') {
+        if (query.variables.some((e) => e && util_1.default.isWildcard(e)))
+            PV = variables;
+        else {
+            for (let v of query.variables) {
+                // can have non-variables with DESCRIBE
+                if (isVariable(v) || !v.variable)
+                    PV.add(v);
+                else if (v.variable) // ... AS ?x
+                 {
+                    PV.add(v.variable);
+                    E.push(v);
+                }
+            }
+        }
+    }
+    // TODO: Jena simplifies by having a list of extends
+    for (let v of E)
+        res = factory.createExtend(res, v.variable, translateExpression(v.expression));
+    // 18.2.5
+    // not using toList and toMultiset
+    // 18.2.5.1
+    if (query.order)
+        res = factory.createOrderBy(res, query.order.map((exp) => {
+            let result = translateExpression(exp.expression);
+            if (exp.descending)
+                result = factory.createOperatorExpression(types.DESC, [result]); // TODO: should this really be an expression?
+            return result;
+        }));
+    // 18.2.5.2
+    // construct does not need a project (select, ask and describe do)
+    if (query.queryType === 'SELECT')
+        res = factory.createProject(res, Array.from(PV));
+    // 18.2.5.3
+    if (query.distinct)
+        res = factory.createDistinct(res);
+    // 18.2.5.4
+    if (query.reduced)
+        res = factory.createReduced(res);
+    // NEW: support for ask/construct/describe queries
+    if (query.queryType === 'CONSTRUCT')
+        res = factory.createConstruct(res, query.template.map(translateQuad));
+    else if (query.queryType === 'ASK')
+        res = factory.createAsk(res);
+    else if (query.queryType === 'DESCRIBE')
+        res = factory.createDescribe(res, Array.from(PV));
+    // Slicing needs to happen after construct/describe
+    // 18.2.5.5
+    if (query.offset || query.limit)
+        res = factory.createSlice(res, query.offset, query.limit);
+    if (query.from)
+        res = factory.createFrom(res, query.from.default, query.from.named);
+    return res;
+}
+// rewrites some of the input sparql object to make use of aggregate variables
+function mapAggregates(thingy, aggregates) {
+    if (!thingy)
+        return thingy;
+    if (thingy.type === 'aggregate') {
+        let found = false;
+        let v;
+        for (let key of Object.keys(aggregates)) {
+            if (equal(aggregates[key], thingy)) {
+                v = factory.createTerm(key);
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            v = generateFreshVar();
+            aggregates[rdf_string_1.termToString(v)] = thingy;
+        }
+        return v;
+    }
+    // non-aggregate expression
+    if (thingy.expression)
+        thingy.expression = mapAggregates(thingy.expression, aggregates);
+    else if (thingy.args)
+        mapAggregates(thingy.args, aggregates);
+    else if (Array.isArray(thingy))
+        thingy.forEach((subthingy, idx) => thingy[idx] = mapAggregates(subthingy, aggregates));
+    return thingy;
+}
+function translateBoundAggregate(thingy, v) {
+    if (thingy.type !== 'aggregate' || !thingy.aggregation)
+        throw new Error('Unexpected input: ' + JSON.stringify(thingy));
+    let A = translateExpression(thingy);
+    A.variable = v;
+    return A;
+}
+function translateUpdate(thingy) {
+    if (thingy.updates.length === 1)
+        return translateSingleUpdate(thingy.updates[0]);
+    return factory.createCompositeUpdate(thingy.updates.map(translateSingleUpdate));
+}
+function translateSingleUpdate(thingy) {
+    if (thingy.updateType === 'insertdelete' || thingy.updateType === 'deletewhere' || thingy.updateType === 'delete' || thingy.updateType === 'insert')
+        return translateInsertDelete(thingy);
+    if (thingy.type === 'load')
+        return translateUpdateGraphLoad(thingy);
+    if (thingy.type === 'clear' || thingy.type === 'create' || thingy.type === 'drop')
+        return translateUpdateGraph(thingy);
+    if (thingy.type === 'add' || thingy.type === 'copy' || thingy.type === 'move')
+        return translateUpdateGraphShortcut(thingy);
+    throw new Error(`Unknown update type ${thingy.updateType}`);
+}
+function translateInsertDelete(thingy) {
+    if (!useQuads)
+        throw new Error('INSERT/DELETE operations are only supported with quads option enabled');
+    let deleteTriples = [];
+    let insertTriples = [];
+    let where;
+    if (thingy.delete)
+        deleteTriples = util_1.default.flatten(thingy.delete.map(input => translateUpdateTriplesBlock(input, thingy.graph)));
+    if (thingy.insert)
+        insertTriples = util_1.default.flatten(thingy.insert.map(input => translateUpdateTriplesBlock(input, thingy.graph)));
+    if (thingy.where && thingy.where.length > 0) {
+        where = translateGroupGraphPattern({ type: 'group', patterns: thingy.where });
+        if (thingy.using)
+            where = factory.createFrom(where, thingy.using.default, thingy.using.named);
+        else if (thingy.graph)
+            // This is equivalent
+            where = recurseGraph(where, thingy.graph);
+    }
+    else if (thingy.updateType === 'deletewhere' && deleteTriples.length > 0) {
+        where = factory.createBgp(deleteTriples);
+    }
+    return factory.createDeleteInsert(deleteTriples.length > 0 ? deleteTriples : undefined, insertTriples.length > 0 ? insertTriples : undefined, where);
+}
+// UPDATE parsing will always return quads and have no GRAPH elements
+function translateUpdateTriplesBlock(thingy, graph) {
+    let currentGraph = graph;
+    if (thingy.type === 'graph')
+        currentGraph = thingy.name;
+    let currentTriples = thingy.triples;
+    if (currentGraph)
+        currentTriples = currentTriples.map(triple => Object.assign(triple, { graph: currentGraph }));
+    return currentTriples.map(translateQuad);
+}
+function translateUpdateGraph(thingy) {
+    let source;
+    if (thingy.graph.all)
+        source = 'ALL';
+    else if (thingy.graph.default)
+        source = 'DEFAULT';
+    else if (thingy.graph.named)
+        source = 'NAMED';
+    else
+        source = thingy.graph.name;
+    switch (thingy.type) {
+        case 'clear': return factory.createClear(source, thingy.silent);
+        case 'create': return factory.createCreate(source, thingy.silent);
+        case 'drop': return factory.createDrop(source, thingy.silent);
+    }
+}
+function translateUpdateGraphLoad(thingy) {
+    return factory.createLoad(thingy.source, thingy.destination, thingy.silent);
+}
+function translateUpdateGraphShortcut(thingy) {
+    const source = thingy.source.default ? 'DEFAULT' : thingy.source.name;
+    const destination = thingy.destination.default ? 'DEFAULT' : thingy.destination.name;
+    switch (thingy.type) {
+        case 'copy': return factory.createCopy(source, destination, thingy.silent);
+        case 'move': return factory.createMove(source, destination, thingy.silent);
+        case 'add': return factory.createAdd(source, destination, thingy.silent);
+    }
+}
+function translateBlankNodesToVariables(res, variables) {
+    const blankToVariableMapping = {};
+    const variablesRaw = Array.from(variables).reduce((acc, variable) => {
+        acc[variable.value] = true;
+        return acc;
+    }, {});
+    return util_1.default.mapOperation(res, {
+        'deleteinsert': (op) => {
+            // Only relevant for INSERT operations as others should never contain blank nodes
+            return { result: op, recurse: false };
+        },
+        'path': (op, factory) => {
+            return {
+                result: factory.createPath(blankToVariable(op.subject), op.predicate, blankToVariable(op.object), blankToVariable(op.graph)),
+                recurse: false,
+            };
+        },
+        'pattern': (op, factory) => {
+            return {
+                result: factory.createPattern(blankToVariable(op.subject), blankToVariable(op.predicate), blankToVariable(op.object), blankToVariable(op.graph)),
+                recurse: false,
+            };
+        },
+        'construct': (op) => {
+            // Blank nodes in CONSTRUCT templates must be maintained
+            return {
+                result: factory.createConstruct(translateBlankNodesToVariables(op.input, variables), op.template),
+                recurse: false,
+            };
+        },
+    });
+    function blankToVariable(term) {
+        if (term.termType === 'BlankNode') {
+            let variable = blankToVariableMapping[term.value];
+            if (!variable) {
+                variable = util_1.default.createUniqueVariable(term.value, variablesRaw, factory.dataFactory);
+                variablesRaw[variable.value] = true;
+                blankToVariableMapping[term.value] = variable;
+            }
+            return variable;
+        }
+        return term;
+    }
+}
+//# sourceMappingURL=sparqlAlgebra.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlalgebrajs/lib/util.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const algebra_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/algebra.js");
+const factory_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/lib/factory.js");
+class Util {
+    /**
+     * Flattens an array of arrays to an array.
+     * @param arr - Array of arrays
+     */
+    static flatten(arr) {
+        return Array.prototype.concat(...arr).filter(x => x);
+    }
+    /**
+     * Detects all in-scope variables.
+     * In practice this means iterating through the entire algebra tree, finding all variables,
+     * and stopping when a project function is found.
+     * @param {Operation} op - Input algebra tree.
+     * @returns {Variable[]} - List of unique in-scope variables.
+     */
+    static inScopeVariables(op) {
+        const variables = [];
+        function addVariable(v) {
+            if (!variables.find(v2 => v.value === v2.value))
+                variables.push(v);
+        }
+        function recurseTerm(quad) {
+            if (quad.subject.termType === 'Variable')
+                addVariable(quad.subject);
+            if (quad.predicate.termType === 'Variable')
+                addVariable(quad.predicate);
+            if (quad.object.termType === 'Variable')
+                addVariable(quad.object);
+            if (quad.graph.termType === 'Variable')
+                addVariable(quad.graph);
+            if (quad.subject.termType === 'Quad')
+                recurseTerm(quad.subject);
+            if (quad.predicate.termType === 'Quad')
+                recurseTerm(quad.predicate);
+            if (quad.object.termType === 'Quad')
+                recurseTerm(quad.object);
+            if (quad.graph.termType === 'Quad')
+                recurseTerm(quad.graph);
+        }
+        // https://www.w3.org/TR/sparql11-query/#variableScope
+        Util.recurseOperation(op, {
+            [algebra_1.types.EXPRESSION]: (op) => {
+                let expr = op;
+                if (expr.expressionType === 'aggregate' && expr.variable) {
+                    let agg = expr;
+                    addVariable(agg.variable);
+                }
+                return true;
+            },
+            [algebra_1.types.EXTEND]: (op) => {
+                let extend = op;
+                addVariable(extend.variable);
+                return true;
+            },
+            [algebra_1.types.GRAPH]: (op) => {
+                let graph = op;
+                if (graph.name.termType === 'Variable')
+                    addVariable(graph.name);
+                return true;
+            },
+            [algebra_1.types.GROUP]: (op) => {
+                let group = op;
+                group.variables.forEach(addVariable);
+                return true;
+            },
+            [algebra_1.types.PATH]: (op) => {
+                let path = op;
+                if (path.subject.termType === 'Variable')
+                    addVariable(path.subject);
+                if (path.object.termType === 'Variable')
+                    addVariable(path.object);
+                if (path.graph.termType === 'Variable')
+                    addVariable(path.graph);
+                if (path.subject.termType === 'Quad')
+                    recurseTerm(path.subject);
+                if (path.object.termType === 'Quad')
+                    recurseTerm(path.object);
+                if (path.graph.termType === 'Quad')
+                    recurseTerm(path.graph);
+                return true;
+            },
+            [algebra_1.types.PATTERN]: (op) => {
+                let pattern = op;
+                recurseTerm(pattern);
+                return true;
+            },
+            [algebra_1.types.PROJECT]: (op) => {
+                let project = op;
+                project.variables.forEach(addVariable);
+                return false;
+            },
+            [algebra_1.types.SERVICE]: (op) => {
+                let service = op;
+                if (service.name.termType === 'Variable')
+                    addVariable(service.name);
+                return true;
+            },
+            [algebra_1.types.VALUES]: (op) => {
+                let values = op;
+                values.variables.forEach(addVariable);
+                return true;
+            },
+        });
+        return variables;
+    }
+    /**
+     * Recurses through the given algebra tree
+     * A map of callback functions can be provided for individual Operation types to gather data.
+     * The return value of those callbacks should indicate whether recursion should be applied or not.
+     * Making modifications will change the original input object.
+     * @param {Operation} op - The Operation to recurse on.
+     * @param { [type: string]: (op: Operation) => boolean } callbacks - A map of required callback Operations.
+     */
+    static recurseOperation(op, callbacks) {
+        let result = op;
+        let doRecursion = true;
+        if (callbacks[op.type])
+            doRecursion = callbacks[op.type](op);
+        if (!doRecursion)
+            return;
+        let recurseOp = (op) => Util.recurseOperation(op, callbacks);
+        switch (result.type) {
+            case algebra_1.types.ALT:
+                const alt = result;
+                recurseOp(alt.left);
+                recurseOp(alt.right);
+                break;
+            case algebra_1.types.ASK:
+                const ask = result;
+                recurseOp(ask.input);
+                break;
+            case algebra_1.types.BGP:
+                const bgp = result;
+                bgp.patterns.forEach(recurseOp);
+                break;
+            case algebra_1.types.CONSTRUCT:
+                const construct = result;
+                recurseOp(construct.input);
+                construct.template.map(recurseOp);
+                break;
+            case algebra_1.types.DESCRIBE:
+                const describe = result;
+                recurseOp(describe.input);
+                break;
+            case algebra_1.types.DISTINCT:
+                const distinct = result;
+                recurseOp(distinct.input);
+                break;
+            case algebra_1.types.EXPRESSION:
+                const expr = result;
+                if (expr.expressionType === algebra_1.expressionTypes.EXISTENCE) {
+                    const exist = expr;
+                    recurseOp(exist.input);
+                }
+                break;
+            case algebra_1.types.EXTEND:
+                const extend = result;
+                recurseOp(extend.input);
+                recurseOp(extend.expression);
+                break;
+            case algebra_1.types.FILTER:
+                const filter = result;
+                recurseOp(filter.input);
+                recurseOp(filter.expression);
+                break;
+            case algebra_1.types.FROM:
+                const from = result;
+                recurseOp(from.input);
+                break;
+            case algebra_1.types.GRAPH:
+                const graph = result;
+                recurseOp(graph.input);
+                break;
+            case algebra_1.types.GROUP:
+                const group = result;
+                recurseOp(group.input);
+                group.aggregates.forEach(recurseOp);
+                break;
+            case algebra_1.types.INV:
+                const inv = result;
+                recurseOp(inv.path);
+                break;
+            case algebra_1.types.JOIN:
+                const join = result;
+                recurseOp(join.left);
+                recurseOp(join.right);
+                break;
+            case algebra_1.types.LEFT_JOIN:
+                const leftJoin = result;
+                recurseOp(leftJoin.left);
+                recurseOp(leftJoin.right);
+                if (leftJoin.expression)
+                    recurseOp(leftJoin.expression);
+                break;
+            case algebra_1.types.LINK:
+                break;
+            case algebra_1.types.MINUS:
+                const minus = result;
+                recurseOp(minus.left);
+                recurseOp(minus.right);
+                break;
+            case algebra_1.types.NPS:
+                break;
+            case algebra_1.types.ONE_OR_MORE_PATH:
+                const oom = result;
+                recurseOp(oom.path);
+                break;
+            case algebra_1.types.ORDER_BY:
+                const order = result;
+                recurseOp(order.input);
+                order.expressions.forEach(recurseOp);
+                break;
+            case algebra_1.types.PATH:
+                const path = result;
+                recurseOp(path.predicate);
+                break;
+            case algebra_1.types.PATTERN:
+                break;
+            case algebra_1.types.PROJECT:
+                const project = result;
+                recurseOp(project.input);
+                break;
+            case algebra_1.types.REDUCED:
+                const reduced = result;
+                recurseOp(reduced.input);
+                break;
+            case algebra_1.types.SEQ:
+                const seq = result;
+                recurseOp(seq.left);
+                recurseOp(seq.right);
+                break;
+            case algebra_1.types.SERVICE:
+                const service = result;
+                recurseOp(service.input);
+                break;
+            case algebra_1.types.SLICE:
+                const slice = result;
+                recurseOp(slice.input);
+                break;
+            case algebra_1.types.UNION:
+                const union = result;
+                recurseOp(union.left);
+                recurseOp(union.right);
+                break;
+            case algebra_1.types.VALUES:
+                break;
+            case algebra_1.types.ZERO_OR_MORE_PATH:
+                const zom = result;
+                recurseOp(zom.path);
+                break;
+            case algebra_1.types.ZERO_OR_ONE_PATH:
+                const zoo = result;
+                recurseOp(zoo.path);
+                break;
+            // UPDATE operations
+            case algebra_1.types.COMPOSITE_UPDATE:
+                const cu = result;
+                cu.updates.forEach(update => recurseOp(update));
+                break;
+            case algebra_1.types.DELETE_INSERT:
+                const di = result;
+                if (di.delete)
+                    di.delete.forEach(pattern => recurseOp(pattern));
+                if (di.insert)
+                    di.insert.forEach(pattern => recurseOp(pattern));
+                if (di.where)
+                    recurseOp(di.where);
+                break;
+            // all of these only have graph IDs as values
+            case algebra_1.types.LOAD: break;
+            case algebra_1.types.CLEAR: break;
+            case algebra_1.types.CREATE: break;
+            case algebra_1.types.DROP: break;
+            case algebra_1.types.ADD: break;
+            case algebra_1.types.MOVE: break;
+            case algebra_1.types.COPY: break;
+            default: throw new Error('Unknown Operation type ' + result.type);
+        }
+    }
+    /**
+     * Creates a deep copy of the given Operation.
+     * Creates shallow copies of the non-Operation values.
+     * A map of callback functions can be provided for individual Operation types
+     * to specifically modify the given objects before triggering recursion.
+     * The return value of those callbacks should indicate whether recursion should be applied to this returned object or not.
+     * @param {Operation} op - The Operation to recurse on.
+     * @param { [type: string]: (op: Operation, factory: Factory) => RecurseResult } callbacks - A map of required callback Operations.
+     * @param {Factory} factory - Factory used to create new Operations. Will use default factory if none is provided.
+     * @returns {Operation} - The copied result.
+     */
+    static mapOperation(op, callbacks, factory) {
+        let result = op;
+        let doRecursion = true;
+        factory = factory || new factory_1.default();
+        if (callbacks[op.type])
+            ({ result, recurse: doRecursion } = callbacks[op.type](op, factory));
+        if (!doRecursion)
+            return result;
+        let mapOp = (op) => Util.mapOperation(op, callbacks, factory);
+        switch (result.type) {
+            case algebra_1.types.ALT:
+                const alt = result;
+                return factory.createAlt(mapOp(alt.left), mapOp(alt.right));
+            case algebra_1.types.ASK:
+                const ask = result;
+                return factory.createAsk(mapOp(ask.input));
+            case algebra_1.types.BGP:
+                const bgp = result;
+                return factory.createBgp(bgp.patterns.map(mapOp));
+            case algebra_1.types.CONSTRUCT:
+                const construct = result;
+                return factory.createConstruct(mapOp(construct.input), construct.template.map(mapOp));
+            case algebra_1.types.DESCRIBE:
+                const describe = result;
+                return factory.createDescribe(mapOp(describe.input), describe.terms);
+            case algebra_1.types.DISTINCT:
+                const distinct = result;
+                return factory.createDistinct(mapOp(distinct.input));
+            case algebra_1.types.EXPRESSION:
+                const expr = result;
+                return Util.mapExpression(expr, callbacks, factory);
+            case algebra_1.types.EXTEND:
+                const extend = result;
+                return factory.createExtend(mapOp(extend.input), extend.variable, mapOp(extend.expression));
+            case algebra_1.types.FILTER:
+                const filter = result;
+                return factory.createFilter(mapOp(filter.input), mapOp(filter.expression));
+            case algebra_1.types.FROM:
+                const from = result;
+                return factory.createFrom(mapOp(from.input), [].concat(from.default), [].concat(from.named));
+            case algebra_1.types.GRAPH:
+                const graph = result;
+                return factory.createGraph(mapOp(graph.input), graph.name);
+            case algebra_1.types.GROUP:
+                const group = result;
+                return factory.createGroup(mapOp(group.input), [].concat(group.variables), group.aggregates.map(mapOp));
+            case algebra_1.types.INV:
+                const inv = result;
+                return factory.createInv(mapOp(inv.path));
+            case algebra_1.types.JOIN:
+                const join = result;
+                return factory.createJoin(mapOp(join.left), mapOp(join.right));
+            case algebra_1.types.LEFT_JOIN:
+                const leftJoin = result;
+                return factory.createLeftJoin(mapOp(leftJoin.left), mapOp(leftJoin.right), leftJoin.expression ? mapOp(leftJoin.expression) : undefined);
+            case algebra_1.types.LINK:
+                const link = result;
+                return factory.createLink(link.iri);
+            case algebra_1.types.MINUS:
+                const minus = result;
+                return factory.createMinus(mapOp(minus.left), mapOp(minus.right));
+            case algebra_1.types.NPS:
+                const nps = result;
+                return factory.createNps([].concat(nps.iris));
+            case algebra_1.types.ONE_OR_MORE_PATH:
+                const oom = result;
+                return factory.createOneOrMorePath(mapOp(oom.path));
+            case algebra_1.types.ORDER_BY:
+                const order = result;
+                return factory.createOrderBy(mapOp(order.input), order.expressions.map(mapOp));
+            case algebra_1.types.PATH:
+                const path = result;
+                return factory.createPath(path.subject, mapOp(path.predicate), path.object, path.graph);
+            case algebra_1.types.PATTERN:
+                const pattern = result;
+                return factory.createPattern(pattern.subject, pattern.predicate, pattern.object, pattern.graph);
+            case algebra_1.types.PROJECT:
+                const project = result;
+                return factory.createProject(mapOp(project.input), [].concat(project.variables));
+            case algebra_1.types.REDUCED:
+                const reduced = result;
+                return factory.createReduced(mapOp(reduced.input));
+            case algebra_1.types.SEQ:
+                const seq = result;
+                return factory.createSeq(mapOp(seq.left), mapOp(seq.right));
+            case algebra_1.types.SERVICE:
+                const service = result;
+                return factory.createService(mapOp(service.input), service.name, service.silent);
+            case algebra_1.types.SLICE:
+                const slice = result;
+                return factory.createSlice(mapOp(slice.input), slice.start, slice.length);
+            case algebra_1.types.UNION:
+                const union = result;
+                return factory.createUnion(mapOp(union.left), mapOp(union.right));
+            case algebra_1.types.VALUES:
+                const values = result;
+                return factory.createValues([].concat(values.variables), values.bindings.map(b => Object.assign({}, b)));
+            case algebra_1.types.ZERO_OR_MORE_PATH:
+                const zom = result;
+                return factory.createZeroOrMorePath(mapOp(zom.path));
+            case algebra_1.types.ZERO_OR_ONE_PATH:
+                const zoo = result;
+                return factory.createZeroOrOnePath(mapOp(zoo.path));
+            // UPDATE operations
+            case algebra_1.types.COMPOSITE_UPDATE:
+                const cu = result;
+                return factory.createCompositeUpdate(cu.updates.map(mapOp));
+            case algebra_1.types.DELETE_INSERT:
+                const di = result;
+                return factory.createDeleteInsert(di.delete ? di.delete.map(mapOp) : undefined, di.insert ? di.insert.map(mapOp) : undefined, di.where ? mapOp(di.where) : undefined);
+            case algebra_1.types.LOAD:
+                const load = result;
+                return factory.createLoad(load.source, load.destination, load.silent);
+            case algebra_1.types.CLEAR:
+                const clear = result;
+                return factory.createClear(clear.source, clear.silent);
+            case algebra_1.types.CREATE:
+                const create = result;
+                return factory.createCreate(create.source, create.silent);
+            case algebra_1.types.DROP:
+                const drop = result;
+                return factory.createDrop(drop.source, drop.silent);
+            case algebra_1.types.ADD:
+                const add = result;
+                return factory.createAdd(add.source, add.destination);
+            case algebra_1.types.MOVE:
+                const move = result;
+                return factory.createMove(move.source, move.destination);
+            case algebra_1.types.COPY:
+                const copy = result;
+                return factory.createCopy(copy.source, copy.destination);
+            default: throw new Error('Unknown Operation type ' + result);
+        }
+    }
+    /**
+     * Similar to the {@link mapOperation} function but specifically for expressions.
+     * Both functions call each other while copying.
+     * Should not be called directly since it does not execute the callbacks, these happen in {@link mapOperation}.
+     * @param {Expression} expr - The Operation to recurse on.
+     * @param { [type: string]: (op: Operation, factory: Factory) => RecurseResult } callbacks - A map of required callback Operations.
+     * @param {Factory} factory - Factory used to create new Operations. Will use default factory if none is provided.
+     * @returns {Operation} - The copied result.
+     */
+    static mapExpression(expr, callbacks, factory) {
+        let recurse = (op) => Util.mapOperation(op, callbacks, factory);
+        switch (expr.expressionType) {
+            case algebra_1.expressionTypes.AGGREGATE:
+                if (expr.variable) {
+                    const bound = expr;
+                    return factory.createBoundAggregate(bound.variable, bound.aggregator, recurse(bound.expression), bound.distinct, bound.separator);
+                }
+                const aggregate = expr;
+                return factory.createAggregateExpression(aggregate.aggregator, recurse(aggregate.expression), aggregate.distinct, aggregate.separator);
+            case algebra_1.expressionTypes.EXISTENCE:
+                const exist = expr;
+                return factory.createExistenceExpression(exist.not, recurse(exist.input));
+            case algebra_1.expressionTypes.NAMED:
+                const named = expr;
+                return factory.createNamedExpression(named.name, named.args.map(recurse));
+            case algebra_1.expressionTypes.OPERATOR:
+                const op = expr;
+                return factory.createOperatorExpression(op.operator, op.args.map(recurse));
+            case algebra_1.expressionTypes.TERM:
+                const term = expr;
+                return factory.createTermExpression(term.term);
+            case algebra_1.expressionTypes.WILDCARD:
+                return factory.createWildcardExpression();
+            default: throw new Error('Unknown Expression type ' + expr.expressionType);
+        }
+    }
+    static createUniqueVariable(label, variables, dataFactory) {
+        let counter = 0;
+        let labelLoop = label;
+        while (variables[labelLoop]) {
+            labelLoop = label + counter++;
+        }
+        return dataFactory.variable(labelLoop);
+    }
+    // separate terms from wildcard since we handle them differently
+    static isTerm(term) {
+        return term.termType !== undefined && term.termType !== 'Quad' && term.termType !== 'Wildcard';
+    }
+    static isWildcard(term) {
+        return term.termType === 'Wildcard';
+    }
+}
+exports.default = Util;
+//# sourceMappingURL=util.js.map
+
+/***/ }),
+
 /***/ "./node_modules/sparqlee/dist/index.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
@@ -24882,7 +27485,7 @@ Object.defineProperty(exports, "orderTypes", ({ enumerable: true, get: function 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.transformExistence = exports.transformAggregate = exports.transformNamed = exports.transformLiteral = exports.transformRDFTermUnsafe = exports.transformAlgebra = void 0;
 const RDFString = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const sparqlalgebrajs_1 = __cmncwpk_require__("./node_modules/sparqlalgebrajs/index.js");
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
 const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
 const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
@@ -28369,6 +30972,2361 @@ exports.parseXSDDateTime = parseXSDDateTime;
 
 /***/ }),
 
+/***/ "./node_modules/sparqljs/lib/SparqlGenerator.js":
+/***/ ((module) => {
+
+var XSD_INTEGER = 'http://www.w3.org/2001/XMLSchema#integer';
+var XSD_STRING = 'http://www.w3.org/2001/XMLSchema#string';
+
+function Generator(options) {
+  this._options = options = options || {};
+
+  var prefixes = options.prefixes || {};
+  this._prefixByIri = {};
+  var prefixIris = [];
+  for (var prefix in prefixes) {
+    var iri = prefixes[prefix];
+    if (isString(iri)) {
+      this._prefixByIri[iri] = prefix;
+      prefixIris.push(iri);
+    }
+  }
+  var iriList = prefixIris.join('|').replace(/[\]\/\(\)\*\+\?\.\\\$]/g, '\\$&');
+  this._prefixRegex = new RegExp('^(' + iriList + ')([a-zA-Z][\\-_a-zA-Z0-9]*)$');
+  this._usedPrefixes = {};
+  this._sparqlStar = options.sparqlStar;
+  this._indent =  isString(options.indent)  ? options.indent  : '  ';
+  this._newline = isString(options.newline) ? options.newline : '\n';
+  this._explicitDatatype = Boolean(options.explicitDatatype);
+}
+
+// Converts the parsed query object into a SPARQL query
+Generator.prototype.toQuery = function (q) {
+  var query = '';
+
+  if (q.queryType)
+    query += q.queryType.toUpperCase() + ' ';
+  if (q.reduced)
+    query += 'REDUCED ';
+  if (q.distinct)
+    query += 'DISTINCT ';
+
+  if (q.variables){
+    query += mapJoin(q.variables, undefined, function (variable) {
+      return isTerm(variable) ? this.toEntity(variable) :
+             '(' + this.toExpression(variable.expression) + ' AS ' + variableToString(variable.variable) + ')';
+    }, this) + ' ';
+  }
+  else if (q.template)
+    query += this.group(q.template, true) + this._newline;
+
+  if (q.from)
+    query += this.graphs('FROM ', q.from.default) + this.graphs('FROM NAMED ', q.from.named);
+  if (q.where)
+    query += 'WHERE ' + this.group(q.where, true) + this._newline;
+
+  if (q.updates)
+    query += mapJoin(q.updates, ';' + this._newline, this.toUpdate, this);
+
+  if (q.group)
+    query += 'GROUP BY ' + mapJoin(q.group, undefined, function (it) {
+      var result = isString(it.expression) ? it.expression : '(' + this.toExpression(it.expression) + ')';
+      return it.variable ? '(' + result + ' AS ' + variableToString(it.variable) + ')' : result;
+    }, this) + this._newline;
+  if (q.having)
+    query += 'HAVING (' + mapJoin(q.having, undefined, this.toExpression, this) + ')' + this._newline;
+  if (q.order)
+    query += 'ORDER BY ' + mapJoin(q.order, undefined, function (it) {
+      var expr = '(' + this.toExpression(it.expression) + ')';
+      return !it.descending ? expr : 'DESC ' + expr;
+    }, this) + this._newline;
+
+  if (q.offset)
+    query += 'OFFSET ' + q.offset + this._newline;
+  if (q.limit)
+    query += 'LIMIT ' + q.limit + this._newline;
+
+  if (q.values)
+    query += this.values(q);
+
+  // stringify prefixes at the end to mark used ones
+  query = this.baseAndPrefixes(q) + query;
+  return query.trim();
+};
+
+Generator.prototype.baseAndPrefixes = function (q) {
+  var base = q.base ? ('BASE <' + q.base + '>' + this._newline) : '';
+  var prefixes = '';
+  for (var key in q.prefixes) {
+    if (this._options.allPrefixes || this._usedPrefixes[key])
+      prefixes += 'PREFIX ' + key + ': <' + q.prefixes[key] + '>' + this._newline;
+  }
+  return base + prefixes;
+};
+
+// Converts the parsed SPARQL pattern into a SPARQL pattern
+Generator.prototype.toPattern = function (pattern) {
+  var type = pattern.type || (pattern instanceof Array) && 'array' ||
+             (pattern.subject && pattern.predicate && pattern.object ? 'triple' : '');
+  if (!(type in this))
+    throw new Error('Unknown entry type: ' + type);
+  return this[type](pattern);
+};
+
+Generator.prototype.triple = function (t) {
+  return this.toEntity(t.subject) + ' ' + this.toEntity(t.predicate) + ' ' + this.toEntity(t.object) + '.';
+};
+
+Generator.prototype.array = function (items) {
+  return mapJoin(items, this._newline, this.toPattern, this);
+};
+
+Generator.prototype.bgp = function (bgp) {
+  return this.encodeTriples(bgp.triples);
+};
+
+Generator.prototype.encodeTriples = function (triples) {
+  if (!triples.length)
+    return '';
+
+  var parts = [], subject = undefined, predicate = undefined;
+  for (var i = 0; i < triples.length; i++) {
+    var triple = triples[i];
+    // Triple with different subject
+    if (!equalTerms(triple.subject, subject)) {
+      // Terminate previous triple
+      if (subject)
+        parts.push('.' + this._newline);
+      subject = triple.subject;
+      predicate = triple.predicate;
+      parts.push(this.toEntity(subject), ' ', this.toEntity(predicate));
+    }
+    // Triple with same subject but different predicate
+    else if (!equalTerms(triple.predicate, predicate)) {
+      predicate = triple.predicate;
+      parts.push(';' + this._newline, this._indent, this.toEntity(predicate));
+    }
+    // Triple with same subject and predicate
+    else {
+      parts.push(',');
+    }
+    parts.push(' ', this.toEntity(triple.object));
+  }
+  parts.push('.');
+
+  return parts.join('');
+}
+
+Generator.prototype.graph = function (graph) {
+  return 'GRAPH ' + this.toEntity(graph.name) + ' ' + this.group(graph);
+};
+
+Generator.prototype.graphs = function (keyword, graphs) {
+  return !graphs || graphs.length === 0 ? '' :
+    mapJoin(graphs, '', function (g) { return keyword + this.toEntity(g) + this._newline; }, this)
+}
+
+Generator.prototype.group = function (group, inline) {
+  group = inline !== true ? this.array(group.patterns || group.triples)
+                          : this.toPattern(group.type !== 'group' ? group : group.patterns);
+  return group.indexOf(this._newline) === -1 ? '{ ' + group + ' }' : '{' + this._newline + this.indent(group) + this._newline + '}';
+};
+
+Generator.prototype.query = function (query) {
+  return this.toQuery(query);
+};
+
+Generator.prototype.filter = function (filter) {
+  return 'FILTER(' + this.toExpression(filter.expression) + ')';
+};
+
+Generator.prototype.bind = function (bind) {
+  return 'BIND(' + this.toExpression(bind.expression) + ' AS ' + variableToString(bind.variable) + ')';
+};
+
+Generator.prototype.optional = function (optional) {
+  return 'OPTIONAL ' + this.group(optional);
+};
+
+Generator.prototype.union = function (union) {
+  return mapJoin(union.patterns, this._newline + 'UNION' + this._newline, function (p) { return this.group(p, true); }, this);
+};
+
+Generator.prototype.minus = function (minus) {
+  return 'MINUS ' + this.group(minus);
+};
+
+Generator.prototype.values = function (valuesList) {
+  // Gather unique keys
+  var keys = Object.keys(valuesList.values.reduce(function (keyHash, values) {
+    for (var key in values) keyHash[key] = true;
+    return keyHash;
+  }, {}));
+  // Check whether simple syntax can be used
+  var lparen, rparen;
+  if (keys.length === 1) {
+    lparen = rparen = '';
+  } else {
+    lparen = '(';
+    rparen = ')';
+  }
+  // Create value rows
+  return 'VALUES ' + lparen + keys.join(' ') + rparen + ' {' + this._newline +
+    mapJoin(valuesList.values, this._newline, function (values) {
+      return '  ' + lparen + mapJoin(keys, undefined, function (key) {
+        return values[key] ? this.toEntity(values[key]) : 'UNDEF';
+      }, this) + rparen;
+    }, this) + this._newline + '}';
+};
+
+Generator.prototype.service = function (service) {
+  return 'SERVICE ' + (service.silent ? 'SILENT ' : '') + this.toEntity(service.name) + ' ' +
+         this.group(service);
+};
+
+// Converts the parsed expression object into a SPARQL expression
+Generator.prototype.toExpression = function (expr) {
+  if (isTerm(expr)) {
+    return this.toEntity(expr);
+  }
+  switch (expr.type.toLowerCase()) {
+    case 'aggregate':
+      return expr.aggregation.toUpperCase() +
+             '(' + (expr.distinct ? 'DISTINCT ' : '') + this.toExpression(expr.expression) +
+             (expr.separator ? '; SEPARATOR = ' + '"' + expr.separator.replace(escape, escapeReplacer) + '"' : '') + ')';
+    case 'functioncall':
+      return this.toEntity(expr.function) + '(' + mapJoin(expr.args, ', ', this.toExpression, this) + ')';
+    case 'operation':
+      var operator = expr.operator.toUpperCase(), args = expr.args || [];
+      switch (expr.operator.toLowerCase()) {
+      // Infix operators
+      case '<':
+      case '>':
+      case '>=':
+      case '<=':
+      case '&&':
+      case '||':
+      case '=':
+      case '!=':
+      case '+':
+      case '-':
+      case '*':
+      case '/':
+          return (isTerm(args[0]) ? this.toEntity(args[0]) : '(' + this.toExpression(args[0]) + ')') +
+                 ' ' + operator + ' ' +
+                 (isTerm(args[1]) ? this.toEntity(args[1]) : '(' + this.toExpression(args[1]) + ')');
+      // Unary operators
+      case '!':
+        return '!(' + this.toExpression(args[0]) + ')';
+      case 'uminus':
+        return '-(' + this.toExpression(args[0]) + ')';
+      // IN and NOT IN
+      case 'notin':
+        operator = 'NOT IN';
+      case 'in':
+        return this.toExpression(args[0]) + ' ' + operator +
+               '(' + (isString(args[1]) ? args[1] : mapJoin(args[1], ', ', this.toExpression, this)) + ')';
+      // EXISTS and NOT EXISTS
+      case 'notexists':
+        operator = 'NOT EXISTS';
+      case 'exists':
+        return operator + ' ' + this.group(args[0], true);
+      // Other expressions
+      default:
+        return operator + '(' + mapJoin(args, ', ', this.toExpression, this) + ')';
+      }
+    default:
+      throw new Error('Unknown expression type: ' + expr.type);
+  }
+};
+
+// Converts the parsed entity (or property path) into a SPARQL entity
+Generator.prototype.toEntity = function (value) {
+  if (isTerm(value)) {
+    switch (value.termType) {
+    // variable, * selector, or blank node
+    case 'Wildcard':
+      return '*';
+    case 'Variable':
+      return variableToString(value);
+    case 'BlankNode':
+      return '_:' + value.value;
+    // literal
+    case 'Literal':
+      var lexical = value.value || '', language = value.language || '', datatype = value.datatype;
+      value = '"' + lexical.replace(escape, escapeReplacer) + '"';
+      if (language){
+        value += '@' + language;
+      } else if (datatype) {
+        // Abbreviate literals when possible
+        if (!this._explicitDatatype) {
+          switch (datatype.value) {
+          case XSD_STRING:
+            return value;
+          case XSD_INTEGER:
+            if (/^\d+$/.test(lexical))
+              // Add space to avoid confusion with decimals in broken parsers
+              return lexical + ' ';
+          }
+        }
+        value += '^^' + this.encodeIRI(datatype.value);
+      }
+      return value;
+    case 'Quad':
+      if (!this._sparqlStar)
+          throw new Error('SPARQL* support is not enabled');
+
+      if (value.graph && value.graph.termType !== "DefaultGraph") {
+        return '<< GRAPH ' +
+          this.toEntity(value.graph) +
+          ' { ' +
+          this.toEntity(value.subject) + ' ' +
+          this.toEntity(value.predicate) + ' ' +
+          this.toEntity(value.object) +
+          ' } ' +
+          ' >>'
+      }
+      else {
+        return (
+          '<< ' +
+          this.toEntity(value.subject) + ' ' +
+          this.toEntity(value.predicate) + ' ' +
+          this.toEntity(value.object) +
+          ' >>'
+        );
+      }
+    // IRI
+    default:
+      return this.encodeIRI(value.value);
+    }
+  }
+  // property path
+  else {
+    var items = value.items.map(this.toEntity, this), path = value.pathType;
+    switch (path) {
+    // prefix operator
+    case '^':
+    case '!':
+      return path + items[0];
+    // postfix operator
+    case '*':
+    case '+':
+    case '?':
+      return '(' + items[0] + path + ')';
+    // infix operator
+    default:
+      return '(' + items.join(path) + ')';
+    }
+  }
+};
+var escape = /["\\\t\n\r\b\f]/g,
+    escapeReplacer = function (c) { return escapeReplacements[c]; },
+    escapeReplacements = { '\\': '\\\\', '"': '\\"', '\t': '\\t',
+                           '\n': '\\n', '\r': '\\r', '\b': '\\b', '\f': '\\f' };
+
+// Represent the IRI, as a prefixed name when possible
+Generator.prototype.encodeIRI = function (iri) {
+  var prefixMatch = this._prefixRegex.exec(iri);
+  if (prefixMatch) {
+    var prefix = this._prefixByIri[prefixMatch[1]];
+    this._usedPrefixes[prefix] = true;
+    return prefix + ':' + prefixMatch[2];
+  }
+  return '<' + iri + '>';
+};
+
+// Converts the parsed update object into a SPARQL update clause
+Generator.prototype.toUpdate = function (update) {
+  switch (update.type || update.updateType) {
+  case 'load':
+    return 'LOAD' + (update.source ? ' ' + this.toEntity(update.source) : '') +
+           (update.destination ? ' INTO GRAPH ' + this.toEntity(update.destination) : '');
+  case 'insert':
+    return 'INSERT DATA '  + this.group(update.insert, true);
+  case 'delete':
+    return 'DELETE DATA '  + this.group(update.delete, true);
+  case 'deletewhere':
+    return 'DELETE WHERE ' + this.group(update.delete, true);
+  case 'insertdelete':
+    return (update.graph ? 'WITH ' + this.toEntity(update.graph) + this._newline : '') +
+           (update.delete.length ? 'DELETE ' + this.group(update.delete, true) + this._newline : '') +
+           (update.insert.length ? 'INSERT ' + this.group(update.insert, true) + this._newline : '') +
+           (update.using ? this.graphs('USING ', update.using.default) : '') +
+           (update.using ? this.graphs('USING NAMED ', update.using.named) : '') +
+           'WHERE ' + this.group(update.where, true);
+  case 'add':
+  case 'copy':
+  case 'move':
+    return update.type.toUpperCase() + (update.source.default ? ' DEFAULT ' : ' ') +
+           'TO ' + this.toEntity(update.destination.name);
+  case 'create':
+  case 'clear':
+  case 'drop':
+    return update.type.toUpperCase() + (update.silent ? ' SILENT ' : ' ') + (
+      update.graph.default ? 'DEFAULT' :
+      update.graph.named ? 'NAMED' :
+      update.graph.all ? 'ALL' :
+      ('GRAPH ' + this.toEntity(update.graph.name))
+    );
+  default:
+    throw new Error('Unknown update query type: ' + update.type);
+  }
+};
+
+// Indents each line of the string
+Generator.prototype.indent = function(text) { return text.replace(/^/gm, this._indent); }
+
+function variableToString(variable){
+  return '?' + variable.value;
+}
+
+// Checks whether the object is a string
+function isString(object) { return typeof object === 'string'; }
+
+// Checks whether the object is a Term
+function isTerm(object) {
+  return typeof object.termType === 'string';
+}
+
+// Checks whether term1 and term2 are equivalent without `.equals()` prototype method
+function equalTerms(term1, term2) {
+  if (!term1 || !isTerm(term1)) { return false; }
+  if (!term2 || !isTerm(term2)) { return false; }
+  if (term1.termType !== term2.termType) { return false; }
+  switch (term1.termType) {
+    case 'Literal':
+      return term1.value === term2.value
+          && term1.language === term2.language
+          && equalTerms(term1.datatype, term2.datatype);
+    case 'Quad':
+      return equalTerms(term1.subject, term2.subject)
+          && equalTerms(term1.predicate, term2.predicate)
+          && equalTerms(term1.object, term2.object)
+          && equalTerms(term1.graph, term2.graph);
+    default:
+      return term1.value === term2.value;
+  }
+}
+
+// Maps the array with the given function, and joins the results using the separator
+function mapJoin(array, sep, func, self) {
+  return array.map(func, self).join(isString(sep) ? sep : ' ');
+}
+
+/**
+ * @param options {
+ *   allPrefixes: boolean,
+ *   indentation: string,
+ *   newline: string
+ * }
+ */
+module.exports = function SparqlGenerator(options = {}) {
+  return {
+    stringify: function (query) {
+      var currentOptions = Object.create(options);
+      currentOptions.prefixes = query.prefixes;
+      return new Generator(currentOptions).toQuery(query);
+    },
+    createGenerator: function() { return new Generator(options); }
+  };
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/sparqljs/lib/SparqlParser.js":
+/***/ ((module, exports, __cmncwpk_require__) => {
+
+/* module decorator */ module = __cmncwpk_require__.nmd(module);
+/* parser generated by jison 0.4.18 */
+/*
+  Returns a Parser object of the following structure:
+
+  Parser: {
+    yy: {}
+  }
+
+  Parser.prototype: {
+    yy: {},
+    trace: function(),
+    symbols_: {associative list: name ==> number},
+    terminals_: {associative list: number ==> name},
+    productions_: [...],
+    performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate, $$, _$),
+    table: [...],
+    defaultActions: {...},
+    parseError: function(str, hash),
+    parse: function(input),
+
+    lexer: {
+        EOF: 1,
+        parseError: function(str, hash),
+        setInput: function(input),
+        input: function(),
+        unput: function(str),
+        more: function(),
+        less: function(n),
+        pastInput: function(),
+        upcomingInput: function(),
+        showPosition: function(),
+        test_match: function(regex_match_array, rule_index),
+        next: function(),
+        lex: function(),
+        begin: function(condition),
+        popState: function(),
+        _currentRules: function(),
+        topState: function(),
+        pushState: function(condition),
+
+        options: {
+            ranges: boolean           (optional: true ==> token location info will include a .range[] member)
+            flex: boolean             (optional: true ==> flex-like lexing behaviour where the rules are tested exhaustively to find the longest match)
+            backtrack_lexer: boolean  (optional: true ==> lexer regexes are tested in order and for each matching regex the action code is invoked; the lexer terminates the scan when a token is returned by the action code)
+        },
+
+        performAction: function(yy, yy_, $avoiding_name_collisions, YY_START),
+        rules: [...],
+        conditions: {associative list: name ==> set},
+    }
+  }
+
+
+  token location info (@$, _$, etc.): {
+    first_line: n,
+    last_line: n,
+    first_column: n,
+    last_column: n,
+    range: [start_number, end_number]       (where the numbers are indexes into the input string, regular zero-based)
+  }
+
+
+  the parseError function receives a 'hash' object with these members for lexer and parser errors: {
+    text:        (matched text)
+    token:       (the produced terminal token, if any)
+    line:        (yylineno)
+  }
+  while parser (grammar) errors will also provide these members, i.e. parser errors deliver a superset of attributes: {
+    loc:         (yylloc)
+    expected:    (string describing the set of expected tokens)
+    recoverable: (boolean: TRUE when the parser has a error recovery rule available for this particular error)
+  }
+*/
+var SparqlParser = (function(){
+var o=function(k,v,o,l){for(o=o||{},l=k.length;l--;o[k[l]]=v);return o},$V0=[6,12,15,28,41,50,55,107,117,120,122,123,132,133,138,320,321,322,323,324],$V1=[2,208],$V2=[107,117,120,122,123,132,133,138,320,321,322,323,324],$V3=[1,20],$V4=[1,29],$V5=[6,90],$V6=[45,46,58],$V7=[45,58],$V8=[1,58],$V9=[1,60],$Va=[1,56],$Vb=[1,59],$Vc=[1,65],$Vd=[1,66],$Ve=[26,34,35],$Vf=[13,16,310],$Vg=[119,141,318,325],$Vh=[13,16,119,141,310],$Vi=[1,88],$Vj=[1,92],$Vk=[1,94],$Vl=[119,141,318,319,325],$Vm=[13,16,119,141,310,319],$Vn=[1,100],$Vo=[2,250],$Vp=[1,99],$Vq=[13,16,34,35,87,93,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vr=[6,45,46,58,68,75,78,86,88,90],$Vs=[6,13,16,34,45,46,58,68,75,78,86,88,90,310],$Vt=[6,13,16,26,34,35,37,38,45,46,48,58,68,75,78,86,87,88,90,93,100,116,119,132,133,135,140,167,168,170,173,174,191,195,217,222,224,225,229,233,243,244,248,252,256,271,276,293,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,328,329,331,332,333,334,335,336,337,338],$Vu=[34,35,45,46,58],$Vv=[13,16,34,35,87,273,274,275,277,279,280,282,283,286,288,297,298,299,300,301,302,303,304,305,306,307,308,309,310,338,339,340,341,342,343],$Vw=[2,451],$Vx=[1,123],$Vy=[1,117],$Vz=[1,124],$VA=[1,125],$VB=[6,13,16,34,35,46,48,87,90,93,119,167,168,170,173,174,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$VC=[2,309],$VD=[1,142],$VE=[1,140],$VF=[6,191],$VG=[2,326],$VH=[2,314],$VI=[45,135],$VJ=[6,48,78,86,88,90],$VK=[2,254],$VL=[1,156],$VM=[1,158],$VN=[6,48,75,78,86,88,90],$VO=[2,252],$VP=[1,164],$VQ=[1,176],$VR=[1,174],$VS=[1,184],$VT=[1,182],$VU=[1,175],$VV=[1,180],$VW=[1,181],$VX=[1,185],$VY=[1,186],$VZ=[1,189],$V_=[1,190],$V$=[1,191],$V01=[1,192],$V11=[1,193],$V21=[1,194],$V31=[1,195],$V41=[1,196],$V51=[1,197],$V61=[1,198],$V71=[1,199],$V81=[6,68,75,78,86,88,90],$V91=[37,38,191,248,276],$Va1=[37,38,191,248,252,276],$Vb1=[37,38,191,248,252,256,271,276,293,304,305,306,307,308,309,332,333,334,335,336,337,338],$Vc1=[26,37,38,191,248,252,256,271,276,293,304,305,306,307,308,309,329,332,333,334,335,336,337,338],$Vd1=[1,229],$Ve1=[1,230],$Vf1=[1,232],$Vg1=[1,233],$Vh1=[1,234],$Vi1=[1,235],$Vj1=[1,237],$Vk1=[1,238],$Vl1=[2,458],$Vm1=[1,240],$Vn1=[1,241],$Vo1=[1,242],$Vp1=[1,248],$Vq1=[1,243],$Vr1=[1,244],$Vs1=[1,245],$Vt1=[1,246],$Vu1=[1,247],$Vv1=[13,16,48,87,100,229,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vw1=[48,93],$Vx1=[34,38],$Vy1=[6,116,191],$Vz1=[48,119],$VA1=[6,48,86,88,90],$VB1=[2,338],$VC1=[2,330],$VD1=[1,293],$VE1=[1,295],$VF1=[48,119,326],$VG1=[13,16,34,195,310],$VH1=[13,16,34,35,38,46,48,87,90,93,119,167,168,170,173,174,191,195,217,222,224,225,229,233,243,244,276,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$VI1=[13,16,26,34,35,37,38,46,48,87,90,93,100,119,167,168,170,173,174,191,195,217,222,224,225,229,233,243,244,248,252,256,271,276,293,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,329,332,333,334,335,336,337,338],$VJ1=[13,16,26,34,35,37,38,46,48,87,90,93,100,119,167,168,170,173,174,191,195,217,222,224,225,229,233,243,244,248,252,256,271,276,293,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,329,332,333,334,335,336,337,338],$VK1=[13,16,34,35,87,217,271,273,274,275,277,279,280,282,283,286,288,297,298,299,300,301,302,303,304,305,306,307,308,309,310,332,338,339,340,341,342,343],$VL1=[1,329],$VM1=[1,330],$VN1=[1,332],$VO1=[1,331],$VP1=[6,13,16,26,34,35,37,38,46,48,75,78,81,83,86,87,88,90,93,119,167,168,170,173,174,191,224,229,243,244,248,252,256,271,273,274,275,276,277,279,280,282,283,286,288,293,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,329,332,333,334,335,336,337,338,339,340,341,342,343],$VQ1=[1,340],$VR1=[1,339],$VS1=[35,93],$VT1=[1,353],$VU1=[1,354],$VV1=[1,367],$VW1=[6,48,90],$VX1=[6,13,16,35,48,78,86,88,90,273,274,275,277,279,280,282,283,286,288,310,338,339,340,341,342,343],$VY1=[6,13,16,34,35,46,48,78,81,83,86,87,88,90,93,119,167,168,170,173,174,224,229,243,244,273,274,275,277,279,280,282,283,286,288,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,338,339,340,341,342,343],$VZ1=[46,48,90,119,167,168,170,173,174],$V_1=[1,386],$V$1=[1,387],$V02=[1,393],$V12=[1,392],$V22=[48,119,191,225,326],$V32=[2,370],$V42=[13,16,34,35,38,87,93,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$V52=[13,16,34,35,38,46,48,87,90,93,119,167,168,170,173,174,191,224,225,229,243,244,276,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$V62=[13,16,26,34,35,87,217,271,273,274,275,277,279,280,282,283,286,288,297,298,299,300,301,302,303,304,305,306,307,308,309,310,332,338,339,340,341,342,343],$V72=[13,16,38,48,87,100,229,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$V82=[35,48],$V92=[2,329],$Va2=[1,451],$Vb2=[1,448],$Vc2=[1,449],$Vd2=[6,13,16,26,34,35,37,38,46,48,68,75,78,81,83,86,87,88,90,93,119,167,168,170,173,174,191,224,229,243,244,248,252,256,271,273,274,275,276,277,279,280,282,283,286,288,293,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,327,329,332,333,334,335,336,337,338,339,340,341,342,343],$Ve2=[13,16,35,195,217,222,310],$Vf2=[2,384],$Vg2=[1,469],$Vh2=[46,48,90,119,167,168,170,173,174,326],$Vi2=[13,16,34,35,195,217,222,310],$Vj2=[6,13,16,34,35,48,75,78,86,88,90,273,274,275,277,279,280,282,283,286,288,310,338,339,340,341,342,343],$Vk2=[13,16,34,35,38,46,48,87,90,93,119,167,168,170,173,174,191,195,224,225,229,243,244,276,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$Vl2=[6,13,16,34,35,48,81,83,86,88,90,273,274,275,277,279,280,282,283,286,288,310,338,339,340,341,342,343],$Vm2=[13,16,34,35,46,48,87,90,93,119,167,168,170,173,174,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vn2=[13,16,34,310],$Vo2=[13,16,34,35,46,48,87,90,93,119,167,168,170,173,174,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$Vp2=[2,341],$Vq2=[46,48,90,119,167,168,170,173,174,191,225,326],$Vr2=[13,16,34,35,37,38,46,48,87,90,93,119,167,168,170,173,174,191,195,217,222,224,225,229,233,243,244,276,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$Vs2=[2,336],$Vt2=[13,16,35,195,217,310],$Vu2=[13,16,34,35,38,46,48,87,90,93,119,167,168,170,173,174,191,195,217,222,224,225,229,243,244,276,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326],$Vv2=[13,16,38,87,100,229,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vw2=[13,16,34,38,48,87,100,195,229,233,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vx2=[13,16,34,35,48,87,93,119,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310],$Vy2=[13,16,34,35,38,87,93,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310,328,329],$Vz2=[13,16,26,34,35,38,87,93,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310,328,329,331,332],$VA2=[1,630],$VB2=[1,631],$VC2=[2,324],$VD2=[13,16,38,195,222,310];
+var parser = {trace: function trace () { },
+yy: {},
+symbols_: {"error":2,"QueryOrUpdate":3,"Prologue":4,"QueryOrUpdate_group0":5,"EOF":6,"Prologue_repetition0":7,"Query":8,"Query_group0":9,"Query_option0":10,"BaseDecl":11,"BASE":12,"IRIREF":13,"PrefixDecl":14,"PREFIX":15,"PNAME_NS":16,"SelectQuery":17,"SelectClauseWildcard":18,"SelectQuery_repetition0":19,"WhereClause":20,"SolutionModifierNoGroup":21,"SelectClauseVars":22,"SelectQuery_repetition1":23,"SolutionModifier":24,"SelectClauseBase":25,"*":26,"SelectClauseVars_repetition_plus0":27,"SELECT":28,"SelectClauseBase_option0":29,"SubSelect":30,"SubSelect_option0":31,"SubSelect_option1":32,"SelectClauseItem":33,"VAR":34,"(":35,"Expression":36,"AS":37,")":38,"VarTriple":39,"ConstructQuery":40,"CONSTRUCT":41,"ConstructTemplate":42,"ConstructQuery_repetition0":43,"ConstructQuery_repetition1":44,"WHERE":45,"{":46,"ConstructQuery_option0":47,"}":48,"DescribeQuery":49,"DESCRIBE":50,"DescribeQuery_group0":51,"DescribeQuery_repetition0":52,"DescribeQuery_option0":53,"AskQuery":54,"ASK":55,"AskQuery_repetition0":56,"DatasetClause":57,"FROM":58,"DatasetClause_option0":59,"iri":60,"WhereClause_option0":61,"GroupGraphPattern":62,"SolutionModifier_option0":63,"SolutionModifierNoGroup_option0":64,"SolutionModifierNoGroup_option1":65,"SolutionModifierNoGroup_option2":66,"GroupClause":67,"GROUP":68,"BY":69,"GroupClause_repetition_plus0":70,"GroupCondition":71,"BuiltInCall":72,"FunctionCall":73,"HavingClause":74,"HAVING":75,"HavingClause_repetition_plus0":76,"OrderClause":77,"ORDER":78,"OrderClause_repetition_plus0":79,"OrderCondition":80,"ASC":81,"BrackettedExpression":82,"DESC":83,"Constraint":84,"LimitOffsetClauses":85,"LIMIT":86,"INTEGER":87,"OFFSET":88,"ValuesClause":89,"VALUES":90,"InlineData":91,"InlineData_repetition0":92,"NIL":93,"InlineData_repetition1":94,"InlineData_repetition_plus2":95,"InlineData_repetition3":96,"DataBlockValue":97,"Literal":98,"ConstTriple":99,"UNDEF":100,"DataBlockValueList":101,"DataBlockValueList_repetition_plus0":102,"Update":103,"Update_repetition0":104,"Update1":105,"Update_option0":106,"LOAD":107,"Update1_option0":108,"Update1_option1":109,"Update1_group0":110,"Update1_option2":111,"GraphRefAll":112,"Update1_group1":113,"Update1_option3":114,"GraphOrDefault":115,"TO":116,"CREATE":117,"Update1_option4":118,"GRAPH":119,"INSERTDATA":120,"QuadPattern":121,"DELETEDATA":122,"DELETEWHERE":123,"Update1_option5":124,"InsertClause":125,"Update1_option6":126,"Update1_repetition0":127,"Update1_option7":128,"DeleteClause":129,"Update1_option8":130,"Update1_repetition1":131,"DELETE":132,"INSERT":133,"UsingClause":134,"USING":135,"UsingClause_option0":136,"WithClause":137,"WITH":138,"IntoGraphClause":139,"INTO":140,"DEFAULT":141,"GraphOrDefault_option0":142,"GraphRefAll_group0":143,"QuadPattern_option0":144,"QuadPattern_repetition0":145,"QuadsNotTriples":146,"QuadsNotTriples_group0":147,"QuadsNotTriples_option0":148,"QuadsNotTriples_option1":149,"QuadsNotTriples_option2":150,"TriplesTemplate":151,"TriplesTemplate_repetition0":152,"TriplesSameSubject":153,"TriplesTemplate_option0":154,"GroupGraphPatternSub":155,"GroupGraphPatternSub_option0":156,"GroupGraphPatternSub_repetition0":157,"GroupGraphPatternSubTail":158,"GraphPatternNotTriples":159,"GroupGraphPatternSubTail_option0":160,"GroupGraphPatternSubTail_option1":161,"TriplesBlock":162,"TriplesBlock_repetition0":163,"TriplesSameSubjectPath":164,"TriplesBlock_option0":165,"GraphPatternNotTriples_repetition0":166,"OPTIONAL":167,"MINUS":168,"GraphPatternNotTriples_group0":169,"SERVICE":170,"GraphPatternNotTriples_option0":171,"GraphPatternNotTriples_group1":172,"FILTER":173,"BIND":174,"FunctionCall_option0":175,"FunctionCall_repetition0":176,"ExpressionList":177,"ExpressionList_repetition0":178,"ConstructTemplate_option0":179,"ConstructTriples":180,"ConstructTriples_repetition0":181,"ConstructTriples_option0":182,"TriplesSameSubject_group0":183,"PropertyListNotEmpty":184,"TriplesNode":185,"PropertyList":186,"PropertyList_option0":187,"VerbObjectList":188,"PropertyListNotEmpty_repetition0":189,"SemiOptionalVerbObjectList":190,";":191,"SemiOptionalVerbObjectList_option0":192,"Verb":193,"ObjectList":194,"a":195,"ObjectList_repetition0":196,"GraphNode":197,"TriplesSameSubjectPath_group0":198,"PropertyListPathNotEmpty":199,"TriplesNodePath":200,"TriplesSameSubjectPath_option0":201,"PropertyListPathNotEmpty_group0":202,"PropertyListPathNotEmpty_repetition0":203,"GraphNodePath":204,"PropertyListPathNotEmpty_repetition1":205,"PropertyListPathNotEmptyTail":206,"PropertyListPathNotEmptyTail_group0":207,"Path":208,"Path_repetition0":209,"PathSequence":210,"PathSequence_repetition0":211,"PathEltOrInverse":212,"PathElt":213,"PathPrimary":214,"PathElt_option0":215,"PathEltOrInverse_option0":216,"!":217,"PathNegatedPropertySet":218,"PathOneInPropertySet":219,"PathNegatedPropertySet_repetition0":220,"PathNegatedPropertySet_option0":221,"^":222,"TriplesNode_repetition_plus0":223,"[":224,"]":225,"TriplesNodePath_repetition_plus0":226,"GraphNode_group0":227,"GraphNodePath_group0":228,"<<":229,"VarTriple_group0":230,"VarTriple_group1":231,"VarTriple_group2":232,">>":233,"VarTriple_group3":234,"VarTriple_group4":235,"ConstTriple_group0":236,"ConstTriple_group1":237,"ConstTriple_group2":238,"ConstTriple_group3":239,"ConstTriple_group4":240,"VarOrTerm":241,"Term":242,"BLANK_NODE_LABEL":243,"ANON":244,"ConditionalAndExpression":245,"Expression_repetition0":246,"ExpressionTail":247,"||":248,"RelationalExpression":249,"ConditionalAndExpression_repetition0":250,"ConditionalAndExpressionTail":251,"&&":252,"AdditiveExpression":253,"RelationalExpression_group0":254,"RelationalExpression_option0":255,"IN":256,"MultiplicativeExpression":257,"AdditiveExpression_repetition0":258,"AdditiveExpressionTail":259,"AdditiveExpressionTail_group0":260,"NumericLiteralPositive":261,"AdditiveExpressionTail_repetition0":262,"NumericLiteralNegative":263,"AdditiveExpressionTail_repetition1":264,"UnaryExpression":265,"MultiplicativeExpression_repetition0":266,"MultiplicativeExpressionTail":267,"MultiplicativeExpressionTail_group0":268,"UnaryExpression_option0":269,"PrimaryExpression":270,"-":271,"Aggregate":272,"FUNC_ARITY0":273,"FUNC_ARITY1":274,"FUNC_ARITY2":275,",":276,"IF":277,"BuiltInCall_group0":278,"BOUND":279,"BNODE":280,"BuiltInCall_option0":281,"EXISTS":282,"COUNT":283,"Aggregate_option0":284,"Aggregate_group0":285,"FUNC_AGGREGATE":286,"Aggregate_option1":287,"GROUP_CONCAT":288,"Aggregate_option2":289,"Aggregate_option3":290,"GroupConcatSeparator":291,"SEPARATOR":292,"=":293,"String":294,"LANGTAG":295,"^^":296,"DECIMAL":297,"DOUBLE":298,"BOOLEAN":299,"STRING_LITERAL1":300,"STRING_LITERAL2":301,"STRING_LITERAL_LONG1":302,"STRING_LITERAL_LONG2":303,"INTEGER_POSITIVE":304,"DECIMAL_POSITIVE":305,"DOUBLE_POSITIVE":306,"INTEGER_NEGATIVE":307,"DECIMAL_NEGATIVE":308,"DOUBLE_NEGATIVE":309,"PNAME_LN":310,"QueryOrUpdate_group0_option0":311,"Prologue_repetition0_group0":312,"SelectClauseBase_option0_group0":313,"DISTINCT":314,"REDUCED":315,"DescribeQuery_group0_repetition_plus0_group0":316,"DescribeQuery_group0_repetition_plus0":317,"NAMED":318,"SILENT":319,"CLEAR":320,"DROP":321,"ADD":322,"MOVE":323,"COPY":324,"ALL":325,".":326,"UNION":327,"|":328,"/":329,"PathElt_option0_group0":330,"?":331,"+":332,"!=":333,"<":334,">":335,"<=":336,">=":337,"NOT":338,"CONCAT":339,"COALESCE":340,"SUBSTR":341,"REGEX":342,"REPLACE":343,"$accept":0,"$end":1},
+terminals_: {2:"error",6:"EOF",12:"BASE",13:"IRIREF",15:"PREFIX",16:"PNAME_NS",26:"*",28:"SELECT",34:"VAR",35:"(",37:"AS",38:")",41:"CONSTRUCT",45:"WHERE",46:"{",48:"}",50:"DESCRIBE",55:"ASK",58:"FROM",68:"GROUP",69:"BY",75:"HAVING",78:"ORDER",81:"ASC",83:"DESC",86:"LIMIT",87:"INTEGER",88:"OFFSET",90:"VALUES",93:"NIL",100:"UNDEF",107:"LOAD",116:"TO",117:"CREATE",119:"GRAPH",120:"INSERTDATA",122:"DELETEDATA",123:"DELETEWHERE",132:"DELETE",133:"INSERT",135:"USING",138:"WITH",140:"INTO",141:"DEFAULT",167:"OPTIONAL",168:"MINUS",170:"SERVICE",173:"FILTER",174:"BIND",191:";",195:"a",217:"!",222:"^",224:"[",225:"]",229:"<<",233:">>",243:"BLANK_NODE_LABEL",244:"ANON",248:"||",252:"&&",256:"IN",271:"-",273:"FUNC_ARITY0",274:"FUNC_ARITY1",275:"FUNC_ARITY2",276:",",277:"IF",279:"BOUND",280:"BNODE",282:"EXISTS",283:"COUNT",286:"FUNC_AGGREGATE",288:"GROUP_CONCAT",292:"SEPARATOR",293:"=",295:"LANGTAG",296:"^^",297:"DECIMAL",298:"DOUBLE",299:"BOOLEAN",300:"STRING_LITERAL1",301:"STRING_LITERAL2",302:"STRING_LITERAL_LONG1",303:"STRING_LITERAL_LONG2",304:"INTEGER_POSITIVE",305:"DECIMAL_POSITIVE",306:"DOUBLE_POSITIVE",307:"INTEGER_NEGATIVE",308:"DECIMAL_NEGATIVE",309:"DOUBLE_NEGATIVE",310:"PNAME_LN",314:"DISTINCT",315:"REDUCED",318:"NAMED",319:"SILENT",320:"CLEAR",321:"DROP",322:"ADD",323:"MOVE",324:"COPY",325:"ALL",326:".",327:"UNION",328:"|",329:"/",331:"?",332:"+",333:"!=",334:"<",335:">",336:"<=",337:">=",338:"NOT",339:"CONCAT",340:"COALESCE",341:"SUBSTR",342:"REGEX",343:"REPLACE"},
+productions_: [0,[3,3],[4,1],[8,2],[11,2],[14,3],[17,4],[17,4],[18,2],[22,2],[25,2],[30,4],[30,4],[33,1],[33,5],[33,5],[40,5],[40,7],[49,5],[54,4],[57,3],[20,2],[24,2],[21,3],[67,3],[71,1],[71,1],[71,3],[71,5],[71,1],[74,2],[77,3],[80,2],[80,2],[80,1],[80,1],[85,2],[85,2],[85,4],[85,4],[89,2],[91,4],[91,4],[91,6],[97,1],[97,1],[97,1],[97,1],[101,3],[103,3],[105,4],[105,3],[105,5],[105,4],[105,2],[105,2],[105,2],[105,6],[105,6],[129,2],[125,2],[134,3],[137,2],[139,3],[115,1],[115,2],[112,2],[112,1],[121,4],[146,7],[151,3],[62,3],[62,3],[155,2],[158,3],[162,3],[159,2],[159,2],[159,2],[159,3],[159,4],[159,2],[159,6],[159,6],[159,1],[84,1],[84,1],[84,1],[73,2],[73,6],[177,1],[177,4],[42,3],[180,3],[153,2],[153,2],[186,1],[184,2],[190,2],[188,2],[193,1],[193,1],[193,1],[194,2],[164,2],[164,2],[199,4],[206,1],[206,3],[208,2],[210,2],[213,2],[212,2],[214,1],[214,1],[214,2],[214,3],[218,1],[218,1],[218,4],[219,1],[219,1],[219,2],[219,2],[185,3],[185,3],[200,3],[200,3],[197,1],[197,1],[204,1],[204,1],[39,9],[39,5],[99,9],[99,5],[241,1],[241,1],[242,1],[242,1],[242,1],[242,1],[242,1],[36,2],[247,2],[245,2],[251,2],[249,1],[249,3],[249,4],[253,2],[259,2],[259,2],[259,2],[257,2],[267,2],[265,2],[265,2],[265,2],[270,1],[270,1],[270,1],[270,1],[270,1],[270,1],[82,3],[72,1],[72,2],[72,4],[72,6],[72,8],[72,2],[72,4],[72,2],[72,4],[72,3],[272,5],[272,5],[272,6],[291,4],[98,1],[98,2],[98,3],[98,1],[98,1],[98,1],[98,1],[98,1],[98,1],[294,1],[294,1],[294,1],[294,1],[261,1],[261,1],[261,1],[263,1],[263,1],[263,1],[60,1],[60,1],[60,1],[311,0],[311,1],[5,1],[5,1],[312,1],[312,1],[7,0],[7,2],[9,1],[9,1],[9,1],[9,1],[10,0],[10,1],[19,0],[19,2],[23,0],[23,2],[27,1],[27,2],[313,1],[313,1],[29,0],[29,1],[31,0],[31,1],[32,0],[32,1],[43,0],[43,2],[44,0],[44,2],[47,0],[47,1],[316,1],[316,1],[317,1],[317,2],[51,1],[51,1],[52,0],[52,2],[53,0],[53,1],[56,0],[56,2],[59,0],[59,1],[61,0],[61,1],[63,0],[63,1],[64,0],[64,1],[65,0],[65,1],[66,0],[66,1],[70,1],[70,2],[76,1],[76,2],[79,1],[79,2],[92,0],[92,2],[94,0],[94,2],[95,1],[95,2],[96,0],[96,2],[102,1],[102,2],[104,0],[104,4],[106,0],[106,2],[108,0],[108,1],[109,0],[109,1],[110,1],[110,1],[111,0],[111,1],[113,1],[113,1],[113,1],[114,0],[114,1],[118,0],[118,1],[124,0],[124,1],[126,0],[126,1],[127,0],[127,2],[128,0],[128,1],[130,0],[130,1],[131,0],[131,2],[136,0],[136,1],[142,0],[142,1],[143,1],[143,1],[143,1],[144,0],[144,1],[145,0],[145,2],[147,1],[147,1],[148,0],[148,1],[149,0],[149,1],[150,0],[150,1],[152,0],[152,3],[154,0],[154,1],[156,0],[156,1],[157,0],[157,2],[160,0],[160,1],[161,0],[161,1],[163,0],[163,3],[165,0],[165,1],[166,0],[166,3],[169,1],[169,1],[171,0],[171,1],[172,1],[172,1],[175,0],[175,1],[176,0],[176,3],[178,0],[178,3],[179,0],[179,1],[181,0],[181,3],[182,0],[182,1],[183,1],[183,1],[187,0],[187,1],[189,0],[189,2],[192,0],[192,1],[196,0],[196,3],[198,1],[198,1],[201,0],[201,1],[202,1],[202,1],[203,0],[203,3],[205,0],[205,2],[207,1],[207,1],[209,0],[209,3],[211,0],[211,3],[330,1],[330,1],[330,1],[215,0],[215,1],[216,0],[216,1],[220,0],[220,3],[221,0],[221,1],[223,1],[223,2],[226,1],[226,2],[227,1],[227,1],[228,1],[228,1],[230,1],[230,1],[231,1],[231,1],[232,1],[232,1],[234,1],[234,1],[235,1],[235,1],[236,1],[236,1],[237,1],[237,1],[238,1],[238,1],[239,1],[239,1],[240,1],[240,1],[246,0],[246,2],[250,0],[250,2],[254,1],[254,1],[254,1],[254,1],[254,1],[254,1],[255,0],[255,1],[258,0],[258,2],[260,1],[260,1],[262,0],[262,2],[264,0],[264,2],[266,0],[266,2],[268,1],[268,1],[269,0],[269,1],[278,1],[278,1],[278,1],[278,1],[278,1],[281,0],[281,1],[284,0],[284,1],[285,1],[285,1],[287,0],[287,1],[289,0],[289,1],[290,0],[290,1]],
+performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
+/* this == yyval */
+
+var $0 = $$.length - 1;
+switch (yystate) {
+case 1:
+
+      // Set parser options
+      $$[$0-1] = $$[$0-1] || {};
+      if (Parser.base)
+        $$[$0-1].base = Parser.base;
+      Parser.base = '';
+      $$[$0-1].prefixes = Parser.prefixes;
+      Parser.prefixes = null;
+
+      // Ensure that blank nodes are not used across INSERT DATA clauses
+      if ($$[$0-1].type === 'update') {
+        const insertBnodesAll = {};
+        for (const update of $$[$0-1].updates) {
+          if (update.updateType === 'insert') {
+            // Collect bnodes for current insert clause
+            const insertBnodes = {};
+            for (const operation of update.insert) {
+              if (operation.type === 'bgp' || operation.type === 'graph') {
+                for (const triple of operation.triples) {
+                  if (triple.subject.termType === 'BlankNode')
+                    insertBnodes[triple.subject.value] = true;
+                  if (triple.predicate.termType === 'BlankNode')
+                    insertBnodes[triple.predicate.value] = true;
+                  if (triple.object.termType === 'BlankNode')
+                    insertBnodes[triple.object.value] = true;
+                }
+              }
+            }
+
+            // Check if the inserting bnodes don't clash with bnodes from a previous insert clause
+            for (const bnode of Object.keys(insertBnodes)) {
+              if (insertBnodesAll[bnode]) {
+                throw new Error('Detected reuse blank node across different INSERT DATA clauses');
+              }
+              insertBnodesAll[bnode] = true;
+            }
+          }
+        }
+      }
+
+      return $$[$0-1];
+    
+break;
+case 3:
+this.$ = extend($$[$0-1], $$[$0], { type: 'query' });
+break;
+case 4:
+
+      Parser.base = resolveIRI($$[$0])
+    
+break;
+case 5:
+
+      if (!Parser.prefixes) Parser.prefixes = {};
+      $$[$0-1] = $$[$0-1].substr(0, $$[$0-1].length - 1);
+      $$[$0] = resolveIRI($$[$0]);
+      Parser.prefixes[$$[$0-1]] = $$[$0];
+    
+break;
+case 6:
+this.$ = extend($$[$0-3], groupDatasets($$[$0-2]), $$[$0-1], $$[$0]);
+break;
+case 7:
+
+      // Check for projection of ungrouped variable
+      if (!Parser.skipUngroupedVariableCheck) {
+        const counts = flatten($$[$0-3].variables.map(vars => getAggregatesOfExpression(vars.expression)))
+          .some(agg => agg.aggregation === "count" && !(agg.expression instanceof Wildcard));
+        if (counts || $$[$0].group) {
+          for (const selectVar of $$[$0-3].variables) {
+            if (selectVar.termType === "Variable") {
+              if (!$$[$0].group || !$$[$0].group.map(groupVar => getExpressionId(groupVar)).includes(getExpressionId(selectVar))) {
+                throw Error("Projection of ungrouped variable (?" + getExpressionId(selectVar) + ")");
+              }
+            } else if (getAggregatesOfExpression(selectVar.expression).length === 0) {
+              const usedVars = getVariablesFromExpression(selectVar.expression);
+              for (const usedVar of usedVars) {
+                if (!$$[$0].group.map(groupVar => getExpressionId(groupVar)).includes(getExpressionId(usedVar))) {
+                  throw Error("Use of ungrouped variable in projection of operation (?" + getExpressionId(usedVar) + ")");
+                }
+              }
+            }
+          }
+        }
+      }
+      // Check if id of each AS-selected column is not yet bound by subquery
+      const subqueries = $$[$0-1].where.filter(w => w.type === "query");
+      if (subqueries.length > 0) {
+        const selectedVarIds = $$[$0-3].variables.filter(v => v.variable && v.variable.value).map(v => v.variable.value);
+        const subqueryIds = flatten(subqueries.map(sub => sub.variables)).map(v => v.value || v.variable.value);
+        for (const selectedVarId of selectedVarIds) {
+          if (subqueryIds.indexOf(selectedVarId) >= 0) {
+            throw Error("Target id of 'AS' (?" + selectedVarId + ") already used in subquery");
+          }
+        }
+      }
+      this.$ = extend($$[$0-3], groupDatasets($$[$0-2]), $$[$0-1], $$[$0])
+    
+break;
+case 8:
+this.$ = extend($$[$0-1], {variables: [new Wildcard()]});
+break;
+case 9:
+
+      // Check if id of each selected column is different
+      const selectedVarIds = $$[$0].map(v => v.value || v.variable.value);
+      const duplicates = getDuplicatesInArray(selectedVarIds);
+      if (duplicates.length > 0) {
+        throw Error("Two or more of the resulting columns have the same name (?" + duplicates[0] + ")");
+      }
+
+      this.$ = extend($$[$0-1], { variables: $$[$0] })
+    
+break;
+case 10:
+this.$ = extend({ queryType: 'SELECT'}, $$[$0] && ($$[$0-1] = lowercase($$[$0]), $$[$0] = {}, $$[$0][$$[$0-1]] = true, $$[$0]));
+break;
+case 11: case 12:
+this.$ = extend($$[$0-3], $$[$0-2], $$[$0-1], $$[$0], { type: 'query' });
+break;
+case 13: case 100: case 136: case 164:
+this.$ = toVar($$[$0]);
+break;
+case 14: case 28:
+this.$ = expression($$[$0-3], { variable: toVar($$[$0-1]) });
+break;
+case 15:
+this.$ = ensureSparqlStar(expression($$[$0-3], { variable: toVar($$[$0-1]) }));
+break;
+case 16:
+this.$ = extend({ queryType: 'CONSTRUCT', template: $$[$0-3] }, groupDatasets($$[$0-2]), $$[$0-1], $$[$0]);
+break;
+case 17:
+this.$ = extend({ queryType: 'CONSTRUCT', template: $$[$0-2] = ($$[$0-2] ? $$[$0-2].triples : []) }, groupDatasets($$[$0-5]), { where: [ { type: 'bgp', triples: appendAllTo([], $$[$0-2]) } ] }, $$[$0]);
+break;
+case 18:
+this.$ = extend({ queryType: 'DESCRIBE', variables: $$[$0-3] === '*' ? [new Wildcard()] : $$[$0-3].map(toVar) }, groupDatasets($$[$0-2]), $$[$0-1], $$[$0]);
+break;
+case 19:
+this.$ = extend({ queryType: 'ASK' }, groupDatasets($$[$0-2]), $$[$0-1], $$[$0]);
+break;
+case 20: case 61:
+this.$ = { iri: $$[$0], named: !!$$[$0-1] };
+break;
+case 21:
+this.$ = { where: $$[$0].patterns };
+break;
+case 22:
+this.$ = extend($$[$0-1], $$[$0]);
+break;
+case 23:
+this.$ = extend($$[$0-2], $$[$0-1], $$[$0]);
+break;
+case 24:
+this.$ = { group: $$[$0] };
+break;
+case 25: case 26: case 32: case 34:
+this.$ = expression($$[$0]);
+break;
+case 27:
+this.$ = expression($$[$0-1]);
+break;
+case 29: case 35:
+this.$ = expression(toVar($$[$0]));
+break;
+case 30:
+this.$ = { having: $$[$0] };
+break;
+case 31:
+this.$ = { order: $$[$0] };
+break;
+case 33:
+this.$ = expression($$[$0], { descending: true });
+break;
+case 36:
+this.$ = { limit:  toInt($$[$0]) };
+break;
+case 37:
+this.$ = { offset: toInt($$[$0]) };
+break;
+case 38:
+this.$ = { limit: toInt($$[$0-2]), offset: toInt($$[$0]) };
+break;
+case 39:
+this.$ = { limit: toInt($$[$0]), offset: toInt($$[$0-2]) };
+break;
+case 40:
+this.$ = { type: 'values', values: $$[$0] };
+break;
+case 41:
+
+      this.$ = $$[$0-1].map(function(v) { var o = {}; o[$$[$0-3]] = v; return o; })
+    
+break;
+case 42:
+
+      this.$ = $$[$0-1].map(function() { return {}; })
+    
+break;
+case 43:
+
+      var length = $$[$0-4].length;
+      $$[$0-4] = $$[$0-4].map(toVar);
+      this.$ = $$[$0-1].map(function (values) {
+        if (values.length !== length)
+          throw Error('Inconsistent VALUES length');
+        var valuesObject = {};
+        for(var i = 0; i<length; i++)
+          valuesObject['?' + $$[$0-4][i].value] = values[i];
+        return valuesObject;
+      });
+    
+break;
+case 46:
+this.$ = ensureSparqlStar($$[$0]);
+break;
+case 47:
+this.$ = undefined;
+break;
+case 48: case 92: case 116: case 165:
+this.$ = $$[$0-1];
+break;
+case 49:
+this.$ = { type: 'update', updates: appendTo($$[$0-2], $$[$0-1]) };
+break;
+case 50:
+this.$ = extend({ type: 'load', silent: !!$$[$0-2], source: $$[$0-1] }, $$[$0] && { destination: $$[$0] });
+break;
+case 51:
+this.$ = { type: lowercase($$[$0-2]), silent: !!$$[$0-1], graph: $$[$0] };
+break;
+case 52:
+this.$ = { type: lowercase($$[$0-4]), silent: !!$$[$0-3], source: $$[$0-2], destination: $$[$0] };
+break;
+case 53:
+this.$ = { type: 'create', silent: !!$$[$0-2], graph: { type: 'graph', name: $$[$0] } };
+break;
+case 54:
+this.$ = { updateType: 'insert',      insert: ensureNoVariables($$[$0])                 };
+break;
+case 55:
+this.$ = { updateType: 'delete',      delete: ensureNoBnodes(ensureNoVariables($$[$0])) };
+break;
+case 56:
+this.$ = { updateType: 'deletewhere', delete: ensureNoBnodes($$[$0])                    };
+break;
+case 57:
+this.$ = extend({ updateType: 'insertdelete' }, $$[$0-5], { insert: $$[$0-4] || [] }, { delete: $$[$0-3] || [] }, groupDatasets($$[$0-2], 'using'), { where: $$[$0].patterns });
+break;
+case 58:
+this.$ = extend({ updateType: 'insertdelete' }, $$[$0-5], { delete: $$[$0-4] || [] }, { insert: $$[$0-3] || [] }, groupDatasets($$[$0-2], 'using'), { where: $$[$0].patterns });
+break;
+case 59:
+this.$ = ensureNoBnodes($$[$0]);
+break;
+case 60: case 63: case 156: case 179:
+this.$ = $$[$0];
+break;
+case 62:
+this.$ = { graph: $$[$0] };
+break;
+case 64:
+this.$ = { type: 'graph', default: true };
+break;
+case 65: case 66:
+this.$ = { type: 'graph', name: $$[$0] };
+break;
+case 67:
+ this.$ = {}; this.$[lowercase($$[$0])] = true; 
+break;
+case 68:
+this.$ = $$[$0-2] ? unionAll($$[$0-1], [$$[$0-2]]) : unionAll($$[$0-1]);
+break;
+case 69:
+
+      var graph = extend($$[$0-3] || { triples: [] }, { type: 'graph', name: toVar($$[$0-5]) });
+      this.$ = $$[$0] ? [graph, $$[$0]] : [graph];
+    
+break;
+case 70: case 75:
+this.$ = { type: 'bgp', triples: unionAll($$[$0-2], [$$[$0-1]]) };
+break;
+case 71:
+this.$ = { type: 'group', patterns: [ $$[$0-1] ] };
+break;
+case 72:
+
+      // For every binding
+      for (const binding of $$[$0-1].filter(el => el.type === "bind")) {
+        const index = $$[$0-1].indexOf(binding);
+        const boundVars = new Set();
+        //Collect all bounded variables before the binding
+        for (const el of $$[$0-1].slice(0, index)) {
+          if (el.type === "group" || el.type === "bgp") {
+            getBoundVarsFromGroupGraphPattern(el).forEach(boundVar => boundVars.add(boundVar));
+          }
+        }
+        // If binding with a non-free variable, throw error
+        if (boundVars.has(binding.variable.value)) {
+          throw Error("Variable used to bind is already bound (?" + binding.variable.value + ")");
+        }
+      }
+      this.$ = { type: 'group', patterns: $$[$0-1] }
+    
+break;
+case 73:
+this.$ = $$[$0-1] ? unionAll([$$[$0-1]], $$[$0]) : unionAll($$[$0]);
+break;
+case 74:
+this.$ = $$[$0] ? [$$[$0-2], $$[$0]] : $$[$0-2];
+break;
+case 76:
+
+      if ($$[$0-1].length)
+        this.$ = { type: 'union', patterns: unionAll($$[$0-1].map(degroupSingle), [degroupSingle($$[$0])]) };
+      else
+        this.$ = $$[$0];
+    
+break;
+case 77:
+this.$ = extend($$[$0], { type: 'optional' });
+break;
+case 78:
+this.$ = extend($$[$0], { type: 'minus' });
+break;
+case 79:
+this.$ = extend($$[$0], { type: 'graph', name: toVar($$[$0-1]) });
+break;
+case 80:
+this.$ = extend($$[$0], { type: 'service', name: toVar($$[$0-1]), silent: !!$$[$0-2] });
+break;
+case 81:
+this.$ = { type: 'filter', expression: $$[$0] };
+break;
+case 82:
+this.$ = { type: 'bind', variable: toVar($$[$0-1]), expression: $$[$0-3] };
+break;
+case 83:
+this.$ = ensureSparqlStar({ type: 'bind', variable: toVar($$[$0-1]), expression: $$[$0-3] });
+break;
+case 88:
+this.$ = { type: 'functionCall', function: $$[$0-1], args: [] };
+break;
+case 89:
+this.$ = { type: 'functionCall', function: $$[$0-5], args: appendTo($$[$0-2], $$[$0-1]), distinct: !!$$[$0-3] };
+break;
+case 90: case 107: case 118: case 208: case 216: case 218: case 230: case 232: case 242: case 246: case 266: case 268: case 272: case 276: case 299: case 305: case 316: case 326: case 332: case 338: case 342: case 352: case 354: case 358: case 366: case 370: case 378: case 380: case 384: case 386: case 395: case 427: case 429: case 439: case 443: case 445: case 447:
+this.$ = [];
+break;
+case 91:
+this.$ = appendTo($$[$0-2], $$[$0-1]);
+break;
+case 93:
+this.$ = unionAll($$[$0-2], [$$[$0-1]]);
+break;
+case 94: case 104:
+this.$ = $$[$0].map(function (t) { return extend(triple($$[$0-1]), t); });
+break;
+case 95:
+this.$ = appendAllTo($$[$0].map(function (t) { return extend(triple($$[$0-1].entity), t); }), $$[$0-1].triples) /* the subject is a blank node, possibly with more triples */;
+break;
+case 97:
+this.$ = unionAll([$$[$0-1]], $$[$0]);
+break;
+case 98:
+this.$ = unionAll($$[$0]);
+break;
+case 99:
+this.$ = objectListToTriples($$[$0-1], $$[$0]);
+break;
+case 102: case 114: case 121:
+this.$ = Parser.factory.namedNode(RDF_TYPE);
+break;
+case 103:
+this.$ = appendTo($$[$0-1], $$[$0]);
+break;
+case 105:
+this.$ = !$$[$0] ? $$[$0-1].triples : appendAllTo($$[$0].map(function (t) { return extend(triple($$[$0-1].entity), t); }), $$[$0-1].triples) /* the subject is a blank node, possibly with more triples */;
+break;
+case 106:
+this.$ = objectListToTriples(toVar($$[$0-3]), appendTo($$[$0-2], $$[$0-1]), $$[$0]);
+break;
+case 108:
+this.$ = objectListToTriples(toVar($$[$0-1]), $$[$0]);
+break;
+case 109:
+this.$ = $$[$0-1].length ? path('|',appendTo($$[$0-1], $$[$0])) : $$[$0];
+break;
+case 110:
+this.$ = $$[$0-1].length ? path('/', appendTo($$[$0-1], $$[$0])) : $$[$0];
+break;
+case 111:
+this.$ = $$[$0] ? path($$[$0], [$$[$0-1]]) : $$[$0-1];
+break;
+case 112:
+this.$ = $$[$0-1] ? path($$[$0-1], [$$[$0]]) : $$[$0];;
+break;
+case 115: case 122:
+this.$ = path($$[$0-1], [$$[$0]]);
+break;
+case 119:
+this.$ = path('|', appendTo($$[$0-2], $$[$0-1]));
+break;
+case 123:
+this.$ = path($$[$0-1], [Parser.factory.namedNode(RDF_TYPE)]);
+break;
+case 124: case 126:
+this.$ = createList($$[$0-1]);
+break;
+case 125: case 127:
+this.$ = createAnonymousObject($$[$0-1]);
+break;
+case 128:
+this.$ = { entity: $$[$0], triples: [] } /* for consistency with TriplesNode */;
+break;
+case 130:
+this.$ = { entity: $$[$0], triples: [] } /* for consistency with TriplesNodePath */;
+break;
+case 132: case 134:
+this.$ = ensureSparqlStar(Parser.factory.quad($$[$0-4], $$[$0-3], $$[$0-2], toVar($$[$0-6])));
+break;
+case 133: case 135:
+this.$ = ensureSparqlStar(Parser.factory.quad($$[$0-3], $$[$0-2], $$[$0-1]));
+break;
+case 140:
+this.$ = blank($$[$0].replace(/^(_:)/,''));;
+break;
+case 141:
+this.$ = blank();
+break;
+case 142:
+this.$ = Parser.factory.namedNode(RDF_NIL);
+break;
+case 143: case 145: case 150: case 154:
+this.$ = createOperationTree($$[$0-1], $$[$0]);
+break;
+case 144:
+this.$ = ['||', $$[$0]];
+break;
+case 146:
+this.$ = ['&&', $$[$0]];
+break;
+case 148:
+this.$ = operation($$[$0-1], [$$[$0-2], $$[$0]]);
+break;
+case 149:
+this.$ = operation($$[$0-2] ? 'notin' : 'in', [$$[$0-3], $$[$0]]);
+break;
+case 151: case 155:
+this.$ = [$$[$0-1], $$[$0]];
+break;
+case 152:
+this.$ = ['+', createOperationTree($$[$0-1], $$[$0])];
+break;
+case 153:
+
+      var negatedLiteral = createTypedLiteral($$[$0-1].value.replace('-', ''), $$[$0-1].datatype);
+      this.$ = ['-', createOperationTree(negatedLiteral, $$[$0])];
+    
+break;
+case 157:
+this.$ = operation($$[$0-1], [$$[$0]]);
+break;
+case 158:
+this.$ = operation('UMINUS', [$$[$0]]);
+break;
+case 167:
+this.$ = operation(lowercase($$[$0-1]));
+break;
+case 168:
+this.$ = operation(lowercase($$[$0-3]), [$$[$0-1]]);
+break;
+case 169:
+this.$ = operation(lowercase($$[$0-5]), [$$[$0-3], $$[$0-1]]);
+break;
+case 170:
+this.$ = operation(lowercase($$[$0-7]), [$$[$0-5], $$[$0-3], $$[$0-1]]);
+break;
+case 171:
+this.$ = operation(lowercase($$[$0-1]), $$[$0]);
+break;
+case 172:
+this.$ = operation('bound', [toVar($$[$0-1])]);
+break;
+case 173:
+this.$ = operation($$[$0-1], []);
+break;
+case 174:
+this.$ = operation($$[$0-3], [$$[$0-1]]);
+break;
+case 175:
+this.$ = operation($$[$0-2] ? 'notexists' :'exists', [degroupSingle($$[$0])]);
+break;
+case 176: case 177:
+this.$ = expression($$[$0-1], { type: 'aggregate', aggregation: lowercase($$[$0-4]), distinct: !!$$[$0-2] });
+break;
+case 178:
+this.$ = expression($$[$0-2], { type: 'aggregate', aggregation: lowercase($$[$0-5]), distinct: !!$$[$0-3], separator: $$[$0-1] || ' ' });
+break;
+case 180:
+this.$ = createTypedLiteral($$[$0]);
+break;
+case 181:
+this.$ = createLangLiteral($$[$0-1], lowercase($$[$0].substr(1)));
+break;
+case 182:
+this.$ = createTypedLiteral($$[$0-2], $$[$0]);
+break;
+case 183: case 196:
+this.$ = createTypedLiteral($$[$0], XSD_INTEGER);
+break;
+case 184: case 197:
+this.$ = createTypedLiteral($$[$0], XSD_DECIMAL);
+break;
+case 185: case 198:
+this.$ = createTypedLiteral(lowercase($$[$0]), XSD_DOUBLE);
+break;
+case 188:
+this.$ = createTypedLiteral($$[$0].toLowerCase(), XSD_BOOLEAN);
+break;
+case 189: case 190:
+this.$ = unescapeString($$[$0], 1);
+break;
+case 191: case 192:
+this.$ = unescapeString($$[$0], 3);
+break;
+case 193:
+this.$ = createTypedLiteral($$[$0].substr(1), XSD_INTEGER);
+break;
+case 194:
+this.$ = createTypedLiteral($$[$0].substr(1), XSD_DECIMAL);
+break;
+case 195:
+this.$ = createTypedLiteral($$[$0].substr(1).toLowerCase(), XSD_DOUBLE);
+break;
+case 199:
+this.$ = Parser.factory.namedNode(resolveIRI($$[$0]));
+break;
+case 200:
+
+      var namePos = $$[$0].indexOf(':'),
+          prefix = $$[$0].substr(0, namePos),
+          expansion = Parser.prefixes[prefix];
+      if (!expansion) throw new Error('Unknown prefix: ' + prefix);
+      var uriString = resolveIRI(expansion + $$[$0].substr(namePos + 1));
+      this.$ = Parser.factory.namedNode(uriString);
+    
+break;
+case 201:
+
+      $$[$0] = $$[$0].substr(0, $$[$0].length - 1);
+      if (!($$[$0] in Parser.prefixes)) throw new Error('Unknown prefix: ' + $$[$0]);
+      var uriString = resolveIRI(Parser.prefixes[$$[$0]]);
+      this.$ = Parser.factory.namedNode(uriString);
+    
+break;
+case 209: case 217: case 219: case 221: case 231: case 233: case 239: case 243: case 247: case 261: case 263: case 265: case 267: case 269: case 271: case 273: case 275: case 300: case 306: case 317: case 333: case 367: case 381: case 400: case 402: case 428: case 430: case 440: case 444: case 446: case 448:
+$$[$0-1].push($$[$0]);
+break;
+case 220: case 238: case 260: case 262: case 264: case 270: case 274: case 399: case 401:
+this.$ = [$$[$0]];
+break;
+case 277:
+$$[$0-3].push($$[$0-2]);
+break;
+case 327: case 339: case 343: case 353: case 355: case 359: case 371: case 379: case 385: case 387: case 396:
+$$[$0-2].push($$[$0-1]);
+break;
+}
+},
+table: [o($V0,$V1,{3:1,4:2,7:3}),{1:[3]},o($V2,[2,276],{5:4,8:5,311:6,9:7,103:8,17:9,40:10,49:11,54:12,104:13,18:14,22:15,25:19,6:[2,202],28:$V3,41:[1,16],50:[1,17],55:[1,18]}),o([6,28,41,50,55,107,117,120,122,123,132,133,138,320,321,322,323,324],[2,2],{312:21,11:22,14:23,12:[1,24],15:[1,25]}),{6:[1,26]},{6:[2,204]},{6:[2,205]},{6:[2,214],10:27,89:28,90:$V4},{6:[2,203]},o($V5,[2,210]),o($V5,[2,211]),o($V5,[2,212]),o($V5,[2,213]),{105:30,107:[1,31],110:32,113:33,117:[1,34],120:[1,35],122:[1,36],123:[1,37],124:38,128:39,132:[2,301],133:[2,295],137:45,138:[1,46],320:[1,40],321:[1,41],322:[1,42],323:[1,43],324:[1,44]},o($V6,[2,216],{19:47}),o($V6,[2,218],{23:48}),o($V7,[2,232],{42:49,44:50,46:[1,51]}),{13:$V8,16:$V9,26:[1,54],34:$Va,51:52,60:57,310:$Vb,316:55,317:53},o($V6,[2,246],{56:61}),{26:[1,62],27:63,33:64,34:$Vc,35:$Vd},o($Ve,[2,224],{29:67,313:68,314:[1,69],315:[1,70]}),o($V0,[2,209]),o($V0,[2,206]),o($V0,[2,207]),{13:[1,71]},{16:[1,72]},{1:[2,1]},{6:[2,3]},{6:[2,215]},{34:[1,74],35:[1,76],91:73,93:[1,75]},{6:[2,278],106:77,191:[1,78]},o($Vf,[2,280],{108:79,319:[1,80]}),o($Vg,[2,286],{111:81,319:[1,82]}),o($Vh,[2,291],{114:83,319:[1,84]}),{118:85,119:[2,293],319:[1,86]},{46:$Vi,121:87},{46:$Vi,121:89},{46:$Vi,121:90},{125:91,133:$Vj},{129:93,132:$Vk},o($Vl,[2,284]),o($Vl,[2,285]),o($Vm,[2,288]),o($Vm,[2,289]),o($Vm,[2,290]),{132:[2,302],133:[2,296]},{13:$V8,16:$V9,60:95,310:$Vb},{20:96,45:$Vn,46:$Vo,57:97,58:$Vp,61:98},{20:101,45:$Vn,46:$Vo,57:102,58:$Vp,61:98},o($V6,[2,230],{43:103}),{45:[1,104],57:105,58:$Vp},o($Vq,[2,358],{179:106,180:107,181:108,48:[2,356]}),o($Vr,[2,242],{52:109}),o($Vr,[2,240],{60:57,316:110,13:$V8,16:$V9,34:$Va,310:$Vb}),o($Vr,[2,241]),o($Vs,[2,238]),o($Vs,[2,236]),o($Vs,[2,237]),o($Vt,[2,199]),o($Vt,[2,200]),o($Vt,[2,201]),{20:111,45:$Vn,46:$Vo,57:112,58:$Vp,61:98},o($V6,[2,8]),o($V6,[2,9],{33:113,34:$Vc,35:$Vd}),o($Vu,[2,220]),o($Vu,[2,13]),o($Vv,$Vw,{36:114,39:115,245:116,249:118,253:119,257:120,265:121,269:122,217:$Vx,229:$Vy,271:$Vz,332:$VA}),o($Ve,[2,10]),o($Ve,[2,225]),o($Ve,[2,222]),o($Ve,[2,223]),o($V0,[2,4]),{13:[1,126]},o($VB,[2,40]),{46:[1,127]},{46:[1,128]},{34:[1,130],95:129},{6:[2,49]},o($V0,$V1,{7:3,4:131}),{13:$V8,16:$V9,60:132,310:$Vb},o($Vf,[2,281]),{112:133,119:[1,134],141:[1,136],143:135,318:[1,137],325:[1,138]},o($Vg,[2,287]),o($Vf,$VC,{115:139,142:141,119:$VD,141:$VE}),o($Vh,[2,292]),{119:[1,143]},{119:[2,294]},o($VF,[2,54]),o($Vq,$VG,{144:144,151:145,152:146,48:$VH,119:$VH}),o($VF,[2,55]),o($VF,[2,56]),o($VI,[2,297],{126:147,129:148,132:$Vk}),{46:$Vi,121:149},o($VI,[2,303],{130:150,125:151,133:$Vj}),{46:$Vi,121:152},o([132,133],[2,62]),o($VJ,$VK,{21:153,64:154,74:155,75:$VL}),o($V6,[2,217]),{46:$VM,62:157},o($Vf,[2,248],{59:159,318:[1,160]}),{46:[2,251]},o($VN,$VO,{24:161,63:162,67:163,68:$VP}),o($V6,[2,219]),{20:165,45:$Vn,46:$Vo,57:166,58:$Vp,61:98},{46:[1,167]},o($V7,[2,233]),{48:[1,168]},{48:[2,357]},{13:$V8,16:$V9,34:$VQ,35:$VR,39:173,60:178,87:$VS,93:$VT,98:179,153:169,183:170,185:171,224:$VU,229:$Vy,241:172,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($V81,[2,244],{61:98,53:200,57:201,20:202,45:$Vn,46:$Vo,58:$Vp}),o($Vs,[2,239]),o($VN,$VO,{63:162,67:163,24:203,68:$VP}),o($V6,[2,247]),o($Vu,[2,221]),{37:[1,204]},{37:[1,205]},o($V91,[2,427],{246:206}),{13:$V8,16:$V9,34:$VQ,39:209,60:178,87:$VS,93:$VT,98:179,119:[1,207],229:$Vy,234:208,241:210,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Va1,[2,429],{250:211}),o($Va1,[2,147],{254:212,255:213,256:[2,437],293:[1,214],333:[1,215],334:[1,216],335:[1,217],336:[1,218],337:[1,219],338:[1,220]}),o($Vb1,[2,439],{258:221}),o($Vc1,[2,447],{266:222}),{13:$V8,16:$V9,34:$Vd1,35:$Ve1,60:226,72:225,73:227,82:224,87:$VS,98:228,261:187,263:188,270:223,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},{13:$V8,16:$V9,34:$Vd1,35:$Ve1,60:226,72:225,73:227,82:224,87:$VS,98:228,261:187,263:188,270:249,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},{13:$V8,16:$V9,34:$Vd1,35:$Ve1,60:226,72:225,73:227,82:224,87:$VS,98:228,261:187,263:188,270:250,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},o($Vv,[2,452]),o($V0,[2,5]),o($Vv1,[2,266],{92:251}),o($Vw1,[2,268],{94:252}),{34:[1,254],38:[1,253]},o($Vx1,[2,270]),o($V2,[2,277],{6:[2,279]}),o($VF,[2,282],{109:255,139:256,140:[1,257]}),o($VF,[2,51]),{13:$V8,16:$V9,60:258,310:$Vb},o($VF,[2,67]),o($VF,[2,311]),o($VF,[2,312]),o($VF,[2,313]),{116:[1,259]},o($Vy1,[2,64]),{13:$V8,16:$V9,60:260,310:$Vb},o($Vf,[2,310]),{13:$V8,16:$V9,60:261,310:$Vb},o($Vz1,[2,316],{145:262}),o($Vz1,[2,315]),{13:$V8,16:$V9,34:$VQ,35:$VR,39:173,60:178,87:$VS,93:$VT,98:179,153:263,183:170,185:171,224:$VU,229:$Vy,241:172,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($VI,[2,299],{127:264}),o($VI,[2,298]),o([45,132,135],[2,60]),o($VI,[2,305],{131:265}),o($VI,[2,304]),o([45,133,135],[2,59]),o($V5,[2,6]),o($VA1,[2,256],{65:266,77:267,78:[1,268]}),o($VJ,[2,255]),{13:$V8,16:$V9,35:$Ve1,60:274,72:272,73:273,76:269,82:271,84:270,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},o([6,48,68,75,78,86,88,90],[2,21]),o($Vq,$VB1,{25:19,30:275,155:276,18:277,22:278,156:279,162:280,163:281,28:$V3,46:$VC1,48:$VC1,90:$VC1,119:$VC1,167:$VC1,168:$VC1,170:$VC1,173:$VC1,174:$VC1}),{13:$V8,16:$V9,60:282,310:$Vb},o($Vf,[2,249]),o($V5,[2,7]),o($VJ,$VK,{64:154,74:155,21:283,75:$VL}),o($VN,[2,253]),{69:[1,284]},o($VN,$VO,{63:162,67:163,24:285,68:$VP}),o($V6,[2,231]),o($Vq,$VG,{152:146,47:286,151:287,48:[2,234]}),o($V6,[2,92]),{48:[2,360],182:288,326:[1,289]},{13:$V8,16:$V9,34:$VD1,60:294,184:290,188:291,193:292,195:$VE1,310:$Vb},o($VF1,[2,364],{188:291,193:292,60:294,186:296,187:297,184:298,13:$V8,16:$V9,34:$VD1,195:$VE1,310:$Vb}),o($VG1,[2,362]),o($VG1,[2,363]),{13:$V8,16:$V9,34:$VQ,35:$VR,39:304,60:178,87:$VS,93:$VT,98:179,185:302,197:300,223:299,224:$VU,227:301,229:$Vy,241:303,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},{13:$V8,16:$V9,34:$VD1,60:294,184:305,188:291,193:292,195:$VE1,310:$Vb},o($VH1,[2,136]),o($VH1,[2,137]),o($VH1,[2,138]),o($VH1,[2,139]),o($VH1,[2,140]),o($VH1,[2,141]),o($VH1,[2,142]),o($VI1,[2,180],{295:[1,306],296:[1,307]}),o($VI1,[2,183]),o($VI1,[2,184]),o($VI1,[2,185]),o($VI1,[2,186]),o($VI1,[2,187]),o($VI1,[2,188]),o($VJ1,[2,189]),o($VJ1,[2,190]),o($VJ1,[2,191]),o($VJ1,[2,192]),o($VI1,[2,193]),o($VI1,[2,194]),o($VI1,[2,195]),o($VI1,[2,196]),o($VI1,[2,197]),o($VI1,[2,198]),o($VN,$VO,{63:162,67:163,24:308,68:$VP}),o($Vr,[2,243]),o($V81,[2,245]),o($V5,[2,19]),{34:[1,309]},{34:[1,310]},o([37,38,191,276],[2,143],{247:311,248:[1,312]}),{13:$V8,16:$V9,34:[1,314],60:315,230:313,310:$Vb},{13:$V8,16:$V9,34:$VD1,60:294,193:316,195:$VE1,310:$Vb},o($VG1,[2,413]),o($VG1,[2,414]),o($V91,[2,145],{251:317,252:[1,318]}),o($Vv,$Vw,{257:120,265:121,269:122,253:319,217:$Vx,271:$Vz,332:$VA}),{256:[1,320]},o($VK1,[2,431]),o($VK1,[2,432]),o($VK1,[2,433]),o($VK1,[2,434]),o($VK1,[2,435]),o($VK1,[2,436]),{256:[2,438]},o([37,38,191,248,252,256,276,293,333,334,335,336,337,338],[2,150],{259:321,260:322,261:323,263:324,271:[1,326],304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,332:[1,325]}),o($Vb1,[2,154],{267:327,268:328,26:$VL1,329:$VM1}),o($Vc1,[2,156]),o($Vc1,[2,159]),o($Vc1,[2,160]),o($Vc1,[2,161],{35:$VN1,93:$VO1}),o($Vc1,[2,162]),o($Vc1,[2,163]),o($Vc1,[2,164]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:333,217:$Vx,271:$Vz,332:$VA}),o($VP1,[2,166]),{93:[1,334]},{35:[1,335]},{35:[1,336]},{35:[1,337]},{35:$VQ1,93:$VR1,177:338},{35:[1,341]},{35:[1,343],93:[1,342]},{282:[1,344]},{35:[1,345]},{35:[1,346]},{35:[1,347]},o($VS1,[2,453]),o($VS1,[2,454]),o($VS1,[2,455]),o($VS1,[2,456]),o($VS1,[2,457]),{282:[2,459]},o($Vc1,[2,157]),o($Vc1,[2,158]),{13:$V8,16:$V9,48:[1,348],60:350,87:$VS,97:349,98:351,99:352,100:$VT1,229:$VU1,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},{48:[1,355],93:[1,356]},{46:[1,357]},o($Vx1,[2,271]),o($VF,[2,50]),o($VF,[2,283]),{119:[1,358]},o($VF,[2,66]),o($Vf,$VC,{142:141,115:359,119:$VD,141:$VE}),o($Vy1,[2,65]),o($VF,[2,53]),{48:[1,360],119:[1,362],146:361},o($Vz1,[2,328],{154:363,326:[1,364]}),{45:[1,365],134:366,135:$VV1},{45:[1,368],134:369,135:$VV1},o($VW1,[2,258],{66:370,85:371,86:[1,372],88:[1,373]}),o($VA1,[2,257]),{69:[1,374]},o($VJ,[2,30],{272:231,278:236,281:239,82:271,72:272,73:273,60:274,84:375,13:$V8,16:$V9,35:$Ve1,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,279:$Vj1,280:$Vk1,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1}),o($VX1,[2,262]),o($VY1,[2,85]),o($VY1,[2,86]),o($VY1,[2,87]),{35:$VN1,93:$VO1},{48:[1,376]},{48:[1,377]},{20:378,45:$Vn,46:$Vo,61:98},{20:379,45:$Vn,46:$Vo,61:98},o($VZ1,[2,332],{157:380}),o($VZ1,[2,331]),{13:$V8,16:$V9,34:$VQ,35:$V_1,39:385,60:178,87:$VS,93:$VT,98:179,164:381,198:382,200:383,224:$V$1,229:$Vy,241:384,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Vr,[2,20]),o($VW1,[2,22]),{13:$V8,16:$V9,34:$V02,35:$V12,60:274,70:388,71:389,72:390,73:391,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},o($V5,[2,16]),{48:[1,394]},{48:[2,235]},{48:[2,93]},o($Vq,[2,359],{48:[2,361]}),o($VF1,[2,94]),o($V22,[2,366],{189:395}),o($Vq,$V32,{194:396,196:397}),o($Vq,[2,100]),o($Vq,[2,101]),o($Vq,[2,102]),o($VF1,[2,95]),o($VF1,[2,96]),o($VF1,[2,365]),{13:$V8,16:$V9,34:$VQ,35:$VR,38:[1,398],39:304,60:178,87:$VS,93:$VT,98:179,185:302,197:399,224:$VU,227:301,229:$Vy,241:303,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($V42,[2,399]),o($V52,[2,128]),o($V52,[2,129]),o($V52,[2,403]),o($V52,[2,404]),{225:[1,400]},o($VI1,[2,181]),{13:$V8,16:$V9,60:401,310:$Vb},o($V5,[2,18]),{38:[1,402]},{38:[1,403]},o($V91,[2,428]),o($Vv,$Vw,{249:118,253:119,257:120,265:121,269:122,245:404,217:$Vx,271:$Vz,332:$VA}),{46:[1,405]},{46:[2,407]},{46:[2,408]},{13:$V8,16:$V9,34:$VQ,39:407,60:178,87:$VS,93:$VT,98:179,229:$Vy,235:406,241:408,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Va1,[2,430]),o($Vv,$Vw,{253:119,257:120,265:121,269:122,249:409,217:$Vx,271:$Vz,332:$VA}),o($Va1,[2,148]),{35:$VQ1,93:$VR1,177:410},o($Vb1,[2,440]),o($Vv,$Vw,{265:121,269:122,257:411,217:$Vx,271:$Vz,332:$VA}),o($Vc1,[2,443],{262:412}),o($Vc1,[2,445],{264:413}),o($VK1,[2,441]),o($VK1,[2,442]),o($Vc1,[2,448]),o($Vv,$Vw,{269:122,265:414,217:$Vx,271:$Vz,332:$VA}),o($VK1,[2,449]),o($VK1,[2,450]),o($VP1,[2,88]),o($VK1,[2,350],{175:415,314:[1,416]}),{38:[1,417]},o($VP1,[2,167]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:418,217:$Vx,271:$Vz,332:$VA}),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:419,217:$Vx,271:$Vz,332:$VA}),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:420,217:$Vx,271:$Vz,332:$VA}),o($VP1,[2,171]),o($VP1,[2,90]),o($VK1,[2,354],{178:421}),{34:[1,422]},o($VP1,[2,173]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:423,217:$Vx,271:$Vz,332:$VA}),{46:$VM,62:424},o($V62,[2,460],{284:425,314:[1,426]}),o($VK1,[2,464],{287:427,314:[1,428]}),o($VK1,[2,466],{289:429,314:[1,430]}),o($VB,[2,41]),o($Vv1,[2,267]),o($V72,[2,44]),o($V72,[2,45]),o($V72,[2,46]),o($V72,[2,47]),{13:$V8,16:$V9,60:178,87:$VS,93:$VT,98:179,99:433,119:[1,431],229:$VU1,239:432,242:434,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($VB,[2,42]),o($Vw1,[2,269]),o($V82,[2,272],{96:435}),{13:$V8,16:$V9,60:436,310:$Vb},o($VF,[2,52]),o([6,45,132,133,135,191],[2,68]),o($Vz1,[2,317]),{13:$V8,16:$V9,34:[1,438],60:439,147:437,310:$Vb},o($Vz1,[2,70]),o($Vq,[2,327],{48:$V92,119:$V92}),{46:$VM,62:440},o($VI,[2,300]),o($Vf,[2,307],{136:441,318:[1,442]}),{46:$VM,62:443},o($VI,[2,306]),o($VW1,[2,23]),o($VW1,[2,259]),{87:[1,444]},{87:[1,445]},{13:$V8,16:$V9,34:$Va2,35:$Ve1,60:274,72:272,73:273,79:446,80:447,81:$Vb2,82:271,83:$Vc2,84:450,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},o($VX1,[2,263]),o($Vd2,[2,71]),o($Vd2,[2,72]),o($VJ,$VK,{64:154,74:155,21:452,75:$VL}),o($VN,$VO,{63:162,67:163,24:453,68:$VP}),{46:[2,342],48:[2,73],89:463,90:$V4,119:[1,459],158:454,159:455,166:456,167:[1,457],168:[1,458],170:[1,460],173:[1,461],174:[1,462]},o($VZ1,[2,340],{165:464,326:[1,465]}),o($Ve2,$Vf2,{199:466,202:467,208:468,209:470,34:$Vg2}),o($Vh2,[2,374],{202:467,208:468,209:470,201:471,199:472,13:$Vf2,16:$Vf2,35:$Vf2,195:$Vf2,217:$Vf2,222:$Vf2,310:$Vf2,34:$Vg2}),o($Vi2,[2,372]),o($Vi2,[2,373]),{13:$V8,16:$V9,34:$VQ,35:$V_1,39:478,60:178,87:$VS,93:$VT,98:179,200:476,204:474,224:$V$1,226:473,228:475,229:$Vy,241:477,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Ve2,$Vf2,{202:467,208:468,209:470,199:479,34:$Vg2}),o($VN,[2,24],{272:231,278:236,281:239,60:274,72:390,73:391,71:480,13:$V8,16:$V9,34:$V02,35:$V12,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,279:$Vj1,280:$Vk1,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1}),o($Vj2,[2,260]),o($Vj2,[2,25]),o($Vj2,[2,26]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:481,217:$Vx,271:$Vz,332:$VA}),o($Vj2,[2,29]),o($VN,$VO,{63:162,67:163,24:482,68:$VP}),o([48,119,225,326],[2,97],{190:483,191:[1,484]}),o($V22,[2,99]),{13:$V8,16:$V9,34:$VQ,35:$VR,39:304,60:178,87:$VS,93:$VT,98:179,185:302,197:485,224:$VU,227:301,229:$Vy,241:303,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Vk2,[2,124]),o($V42,[2,400]),o($Vk2,[2,125]),o($VI1,[2,182]),o($Vu,[2,14]),o($Vu,[2,15]),o($V91,[2,144]),{13:$V8,16:$V9,34:$VQ,39:487,60:178,87:$VS,93:$VT,98:179,229:$Vy,231:486,241:488,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},{233:[1,489]},{233:[2,415]},{233:[2,416]},o($Va1,[2,146]),o($Va1,[2,149]),o($Vb1,[2,151]),o($Vb1,[2,152],{268:328,267:490,26:$VL1,329:$VM1}),o($Vb1,[2,153],{268:328,267:491,26:$VL1,329:$VM1}),o($Vc1,[2,155]),o($VK1,[2,352],{176:492}),o($VK1,[2,351]),o([6,13,16,26,34,35,37,38,46,48,78,81,83,86,87,88,90,93,119,167,168,170,173,174,191,224,229,243,244,248,252,256,271,273,274,275,276,277,279,280,282,283,286,288,293,297,298,299,300,301,302,303,304,305,306,307,308,309,310,326,329,332,333,334,335,336,337,338,339,340,341,342,343],[2,165]),{38:[1,493]},{276:[1,494]},{276:[1,495]},o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:496,217:$Vx,271:$Vz,332:$VA}),{38:[1,497]},{38:[1,498]},o($VP1,[2,175]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,285:499,36:501,26:[1,500],217:$Vx,271:$Vz,332:$VA}),o($V62,[2,461]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:502,217:$Vx,271:$Vz,332:$VA}),o($VK1,[2,465]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:503,217:$Vx,271:$Vz,332:$VA}),o($VK1,[2,467]),{13:$V8,16:$V9,34:[1,505],60:506,236:504,310:$Vb},{13:$V8,16:$V9,34:$VD1,60:294,193:507,195:$VE1,310:$Vb},o($VG1,[2,423]),o($VG1,[2,424]),{35:[1,510],48:[1,508],101:509},o($VF,[2,63]),{46:[1,511]},{46:[2,318]},{46:[2,319]},o($VF,[2,57]),{13:$V8,16:$V9,60:512,310:$Vb},o($Vf,[2,308]),o($VF,[2,58]),o($VW1,[2,36],{88:[1,513]}),o($VW1,[2,37],{86:[1,514]}),o($VA1,[2,31],{272:231,278:236,281:239,82:271,72:272,73:273,60:274,84:450,80:515,13:$V8,16:$V9,34:$Va2,35:$Ve1,81:$Vb2,83:$Vc2,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,279:$Vj1,280:$Vk1,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1}),o($Vl2,[2,264]),{35:$Ve1,82:516},{35:$Ve1,82:517},o($Vl2,[2,34]),o($Vl2,[2,35]),{31:518,48:[2,226],89:519,90:$V4},{32:520,48:[2,228],89:521,90:$V4},o($VZ1,[2,333]),o($Vm2,[2,334],{160:522,326:[1,523]}),{46:$VM,62:524},{46:$VM,62:525},{46:$VM,62:526},{13:$V8,16:$V9,34:[1,528],60:529,169:527,310:$Vb},o($Vn2,[2,346],{171:530,319:[1,531]}),{13:$V8,16:$V9,35:$Ve1,60:274,72:272,73:273,82:271,84:532,272:231,273:$Vf1,274:$Vg1,275:$Vh1,277:$Vi1,278:236,279:$Vj1,280:$Vk1,281:239,282:$Vl1,283:$Vm1,286:$Vn1,288:$Vo1,310:$Vb,338:$Vp1,339:$Vq1,340:$Vr1,341:$Vs1,342:$Vt1,343:$Vu1},{35:[1,533]},o($Vo2,[2,84]),o($VZ1,[2,75]),o($Vq,[2,339],{46:$Vp2,48:$Vp2,90:$Vp2,119:$Vp2,167:$Vp2,168:$Vp2,170:$Vp2,173:$Vp2,174:$Vp2}),o($Vh2,[2,104]),o($Vq,[2,378],{203:534}),o($Vq,[2,376]),o($Vq,[2,377]),o($Ve2,[2,386],{210:535,211:536}),o($Vh2,[2,105]),o($Vh2,[2,375]),{13:$V8,16:$V9,34:$VQ,35:$V_1,38:[1,537],39:478,60:178,87:$VS,93:$VT,98:179,200:476,204:538,224:$V$1,228:475,229:$Vy,241:477,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($V42,[2,401]),o($V52,[2,130]),o($V52,[2,131]),o($V52,[2,405]),o($V52,[2,406]),{225:[1,539]},o($Vj2,[2,261]),{37:[1,541],38:[1,540]},o($V5,[2,17]),o($V22,[2,367]),o($V22,[2,368],{193:292,60:294,192:542,188:543,13:$V8,16:$V9,34:$VD1,195:$VE1,310:$Vb}),o($Vq2,[2,103],{276:[1,544]}),{13:$V8,16:$V9,34:$VD1,60:294,193:545,195:$VE1,310:$Vb},o($VG1,[2,409]),o($VG1,[2,410]),o($Vr2,[2,133]),o($Vc1,[2,444]),o($Vc1,[2,446]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:546,217:$Vx,271:$Vz,332:$VA}),o($VP1,[2,168]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:547,217:$Vx,271:$Vz,332:$VA}),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:548,217:$Vx,271:$Vz,332:$VA}),{38:[1,549],276:[1,550]},o($VP1,[2,172]),o($VP1,[2,174]),{38:[1,551]},{38:[2,462]},{38:[2,463]},{38:[1,552]},{38:[2,468],191:[1,555],290:553,291:554},{46:[1,556]},{46:[2,417]},{46:[2,418]},{13:$V8,16:$V9,60:178,87:$VS,93:$VT,98:179,99:558,229:$VU1,240:557,242:559,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($VB,[2,43]),o($V82,[2,273]),{13:$V8,16:$V9,60:350,87:$VS,97:561,98:351,99:352,100:$VT1,102:560,229:$VU1,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Vq,$VG,{152:146,148:562,151:563,48:[2,320]}),o($VI,[2,61]),{87:[1,564]},{87:[1,565]},o($Vl2,[2,265]),o($Vl2,[2,32]),o($Vl2,[2,33]),{48:[2,11]},{48:[2,227]},{48:[2,12]},{48:[2,229]},o($Vq,$VB1,{163:281,161:566,162:567,46:$Vs2,48:$Vs2,90:$Vs2,119:$Vs2,167:$Vs2,168:$Vs2,170:$Vs2,173:$Vs2,174:$Vs2}),o($Vm2,[2,335]),o($Vo2,[2,76],{327:[1,568]}),o($Vo2,[2,77]),o($Vo2,[2,78]),{46:$VM,62:569},{46:[2,344]},{46:[2,345]},{13:$V8,16:$V9,34:[1,571],60:572,172:570,310:$Vb},o($Vn2,[2,347]),o($Vo2,[2,81]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:573,39:574,217:$Vx,229:$Vy,271:$Vz,332:$VA}),{13:$V8,16:$V9,34:$VQ,35:$V_1,39:478,60:178,87:$VS,93:$VT,98:179,200:476,204:575,224:$V$1,228:475,229:$Vy,241:477,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($V42,[2,109],{328:[1,576]}),o($Vt2,[2,393],{212:577,216:578,222:[1,579]}),o($Vu2,[2,126]),o($V42,[2,402]),o($Vu2,[2,127]),o($Vj2,[2,27]),{34:[1,580]},o($V22,[2,98]),o($V22,[2,369]),o($Vq,[2,371]),{13:$V8,16:$V9,34:$VQ,39:582,60:178,87:$VS,93:$VT,98:179,229:$Vy,232:581,241:583,242:177,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},{38:[1,584],276:[1,585]},{38:[1,586]},{276:[1,587]},o($VP1,[2,91]),o($VK1,[2,355]),o($VP1,[2,176]),o($VP1,[2,177]),{38:[1,588]},{38:[2,469]},{292:[1,589]},{13:$V8,16:$V9,60:178,87:$VS,93:$VT,98:179,99:591,229:$VU1,237:590,242:592,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},{233:[1,593]},{233:[2,425]},{233:[2,426]},{13:$V8,16:$V9,38:[1,594],60:350,87:$VS,97:595,98:351,99:352,100:$VT1,229:$VU1,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Vv2,[2,274]),{48:[1,596]},{48:[2,321]},o($VW1,[2,38]),o($VW1,[2,39]),o($VZ1,[2,74]),o($VZ1,[2,337]),{46:[2,343]},o($Vo2,[2,79]),{46:$VM,62:597},{46:[2,348]},{46:[2,349]},{37:[1,598]},{37:[1,599]},o($Vq2,[2,380],{205:600,276:[1,601]}),o($Ve2,[2,385]),o([13,16,34,35,38,87,93,224,229,243,244,297,298,299,300,301,302,303,304,305,306,307,308,309,310,328],[2,110],{329:[1,602]}),{13:$V8,16:$V9,35:[1,608],60:605,195:[1,606],213:603,214:604,217:[1,607],310:$Vb},o($Vt2,[2,394]),{38:[1,609]},{48:[1,610]},{48:[2,411]},{48:[2,412]},o($VP1,[2,89]),o($VK1,[2,353]),o($VP1,[2,169]),o($Vv,$Vw,{245:116,249:118,253:119,257:120,265:121,269:122,36:611,217:$Vx,271:$Vz,332:$VA}),o($VP1,[2,178]),{293:[1,612]},{13:$V8,16:$V9,34:$VD1,60:294,193:613,195:$VE1,310:$Vb},o($VG1,[2,419]),o($VG1,[2,420]),o($Vw2,[2,135]),o($V82,[2,48]),o($Vv2,[2,275]),o($Vx2,[2,322],{149:614,326:[1,615]}),o($Vo2,[2,80]),{34:[1,616]},{34:[1,617]},o([46,48,90,119,167,168,170,173,174,225,326],[2,106],{206:618,191:[1,619]}),o($Vq,[2,379]),o($Ve2,[2,387]),o($Vy2,[2,112]),o($Vy2,[2,391],{215:620,330:621,26:[1,623],331:[1,622],332:[1,624]}),o($Vz2,[2,113]),o($Vz2,[2,114]),{13:$V8,16:$V9,35:[1,628],60:629,93:[1,627],195:$VA2,218:625,219:626,222:$VB2,310:$Vb},o($Ve2,$Vf2,{209:470,208:632}),o($Vj2,[2,28]),{233:[1,633]},{38:[1,634]},{294:635,300:$V_,301:$V$,302:$V01,303:$V11},{13:$V8,16:$V9,60:178,87:$VS,93:$VT,98:179,99:637,229:$VU1,238:636,242:638,243:$VV,244:$VW,261:187,263:188,294:183,297:$VX,298:$VY,299:$VZ,300:$V_,301:$V$,302:$V01,303:$V11,304:$V21,305:$V31,306:$V41,307:$V51,308:$V61,309:$V71,310:$Vb},o($Vq,$VG,{152:146,150:639,151:640,48:$VC2,119:$VC2}),o($Vx2,[2,323]),{38:[1,641]},{38:[1,642]},o($Vq2,[2,381]),o($Vq2,[2,107],{209:470,207:643,208:644,13:$Vf2,16:$Vf2,35:$Vf2,195:$Vf2,217:$Vf2,222:$Vf2,310:$Vf2,34:[1,645]}),o($Vy2,[2,111]),o($Vy2,[2,392]),o($Vy2,[2,388]),o($Vy2,[2,389]),o($Vy2,[2,390]),o($Vz2,[2,115]),o($Vz2,[2,117]),o($Vz2,[2,118]),o($VD2,[2,395],{220:646}),o($Vz2,[2,120]),o($Vz2,[2,121]),{13:$V8,16:$V9,60:647,195:[1,648],310:$Vb},{38:[1,649]},o($Vr2,[2,132]),o($VP1,[2,170]),{38:[2,179]},{48:[1,650]},{48:[2,421]},{48:[2,422]},o($Vz1,[2,69]),o($Vz1,[2,325]),o($Vo2,[2,82]),o($Vo2,[2,83]),o($Vq,$V32,{196:397,194:651}),o($Vq,[2,382]),o($Vq,[2,383]),{13:$V8,16:$V9,38:[2,397],60:629,195:$VA2,219:653,221:652,222:$VB2,310:$Vb},o($Vz2,[2,122]),o($Vz2,[2,123]),o($Vz2,[2,116]),{233:[1,654]},o($Vq2,[2,108]),{38:[1,655]},{38:[2,398],328:[1,656]},o($Vw2,[2,134]),o($Vz2,[2,119]),o($VD2,[2,396])],
+defaultActions: {5:[2,204],6:[2,205],8:[2,203],26:[2,1],27:[2,3],28:[2,215],77:[2,49],86:[2,294],100:[2,251],107:[2,357],220:[2,438],248:[2,459],287:[2,235],288:[2,93],314:[2,407],315:[2,408],407:[2,415],408:[2,416],438:[2,318],439:[2,319],500:[2,462],501:[2,463],505:[2,417],506:[2,418],518:[2,11],519:[2,227],520:[2,12],521:[2,229],528:[2,344],529:[2,345],554:[2,469],558:[2,425],559:[2,426],563:[2,321],568:[2,343],571:[2,348],572:[2,349],582:[2,411],583:[2,412],635:[2,179],637:[2,421],638:[2,422]},
+parseError: function parseError (str, hash) {
+    if (hash.recoverable) {
+        this.trace(str);
+    } else {
+        var error = new Error(str);
+        error.hash = hash;
+        throw error;
+    }
+},
+parse: function parse(input) {
+    var self = this, stack = [0], tstack = [], vstack = [null], lstack = [], table = this.table, yytext = '', yylineno = 0, yyleng = 0, recovering = 0, TERROR = 2, EOF = 1;
+    var args = lstack.slice.call(arguments, 1);
+    var lexer = Object.create(this.lexer);
+    var sharedState = { yy: {} };
+    for (var k in this.yy) {
+        if (Object.prototype.hasOwnProperty.call(this.yy, k)) {
+            sharedState.yy[k] = this.yy[k];
+        }
+    }
+    lexer.setInput(input, sharedState.yy);
+    sharedState.yy.lexer = lexer;
+    sharedState.yy.parser = this;
+    if (typeof lexer.yylloc == 'undefined') {
+        lexer.yylloc = {};
+    }
+    var yyloc = lexer.yylloc;
+    lstack.push(yyloc);
+    var ranges = lexer.options && lexer.options.ranges;
+    if (typeof sharedState.yy.parseError === 'function') {
+        this.parseError = sharedState.yy.parseError;
+    } else {
+        this.parseError = Object.getPrototypeOf(this).parseError;
+    }
+    function popStack(n) {
+        stack.length = stack.length - 2 * n;
+        vstack.length = vstack.length - n;
+        lstack.length = lstack.length - n;
+    }
+    _token_stack:
+        var lex = function () {
+            var token;
+            token = lexer.lex() || EOF;
+            if (typeof token !== 'number') {
+                token = self.symbols_[token] || token;
+            }
+            return token;
+        };
+    var symbol, preErrorSymbol, state, action, a, r, yyval = {}, p, len, newState, expected;
+    while (true) {
+        state = stack[stack.length - 1];
+        if (this.defaultActions[state]) {
+            action = this.defaultActions[state];
+        } else {
+            if (symbol === null || typeof symbol == 'undefined') {
+                symbol = lex();
+            }
+            action = table[state] && table[state][symbol];
+        }
+                    if (typeof action === 'undefined' || !action.length || !action[0]) {
+                var errStr = '';
+                expected = [];
+                for (p in table[state]) {
+                    if (this.terminals_[p] && p > TERROR) {
+                        expected.push('\'' + this.terminals_[p] + '\'');
+                    }
+                }
+                if (lexer.showPosition) {
+                    errStr = 'Parse error on line ' + (yylineno + 1) + ':\n' + lexer.showPosition() + '\nExpecting ' + expected.join(', ') + ', got \'' + (this.terminals_[symbol] || symbol) + '\'';
+                } else {
+                    errStr = 'Parse error on line ' + (yylineno + 1) + ': Unexpected ' + (symbol == EOF ? 'end of input' : '\'' + (this.terminals_[symbol] || symbol) + '\'');
+                }
+                this.parseError(errStr, {
+                    text: lexer.match,
+                    token: this.terminals_[symbol] || symbol,
+                    line: lexer.yylineno,
+                    loc: yyloc,
+                    expected: expected
+                });
+            }
+        if (action[0] instanceof Array && action.length > 1) {
+            throw new Error('Parse Error: multiple actions possible at state: ' + state + ', token: ' + symbol);
+        }
+        switch (action[0]) {
+        case 1:
+            stack.push(symbol);
+            vstack.push(lexer.yytext);
+            lstack.push(lexer.yylloc);
+            stack.push(action[1]);
+            symbol = null;
+            if (!preErrorSymbol) {
+                yyleng = lexer.yyleng;
+                yytext = lexer.yytext;
+                yylineno = lexer.yylineno;
+                yyloc = lexer.yylloc;
+                if (recovering > 0) {
+                    recovering--;
+                }
+            } else {
+                symbol = preErrorSymbol;
+                preErrorSymbol = null;
+            }
+            break;
+        case 2:
+            len = this.productions_[action[1]][1];
+            yyval.$ = vstack[vstack.length - len];
+            yyval._$ = {
+                first_line: lstack[lstack.length - (len || 1)].first_line,
+                last_line: lstack[lstack.length - 1].last_line,
+                first_column: lstack[lstack.length - (len || 1)].first_column,
+                last_column: lstack[lstack.length - 1].last_column
+            };
+            if (ranges) {
+                yyval._$.range = [
+                    lstack[lstack.length - (len || 1)].range[0],
+                    lstack[lstack.length - 1].range[1]
+                ];
+            }
+            r = this.performAction.apply(yyval, [
+                yytext,
+                yyleng,
+                yylineno,
+                sharedState.yy,
+                action[1],
+                vstack,
+                lstack
+            ].concat(args));
+            if (typeof r !== 'undefined') {
+                return r;
+            }
+            if (len) {
+                stack = stack.slice(0, -1 * len * 2);
+                vstack = vstack.slice(0, -1 * len);
+                lstack = lstack.slice(0, -1 * len);
+            }
+            stack.push(this.productions_[action[1]][0]);
+            vstack.push(yyval.$);
+            lstack.push(yyval._$);
+            newState = table[stack[stack.length - 2]][stack[stack.length - 1]];
+            stack.push(newState);
+            break;
+        case 3:
+            return true;
+        }
+    }
+    return true;
+}};
+
+  /*
+    SPARQL parser in the Jison parser generator format.
+  */
+
+  var Wildcard = __cmncwpk_require__("./node_modules/sparqljs/lib/Wildcard.js")/* .Wildcard */ .R;
+
+  // Common namespaces and entities
+  var RDF = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+      RDF_TYPE  = RDF + 'type',
+      RDF_FIRST = RDF + 'first',
+      RDF_REST  = RDF + 'rest',
+      RDF_NIL   = RDF + 'nil',
+      XSD = 'http://www.w3.org/2001/XMLSchema#',
+      XSD_INTEGER  = XSD + 'integer',
+      XSD_DECIMAL  = XSD + 'decimal',
+      XSD_DOUBLE   = XSD + 'double',
+      XSD_BOOLEAN  = XSD + 'boolean';
+
+  var base = '', basePath = '', baseRoot = '';
+
+  // Returns a lowercase version of the given string
+  function lowercase(string) {
+    return string.toLowerCase();
+  }
+
+  // Appends the item to the array and returns the array
+  function appendTo(array, item) {
+    return array.push(item), array;
+  }
+
+  // Appends the items to the array and returns the array
+  function appendAllTo(array, items) {
+    return array.push.apply(array, items), array;
+  }
+
+  // Extends a base object with properties of other objects
+  function extend(base) {
+    if (!base) base = {};
+    for (var i = 1, l = arguments.length, arg; i < l && (arg = arguments[i] || {}); i++)
+      for (var name in arg)
+        base[name] = arg[name];
+    return base;
+  }
+
+  // Creates an array that contains all items of the given arrays
+  function unionAll() {
+    var union = [];
+    for (var i = 0, l = arguments.length; i < l; i++)
+      union = union.concat.apply(union, arguments[i]);
+    return union;
+  }
+
+  // Resolves an IRI against a base path
+  function resolveIRI(iri) {
+    // Strip off possible angular brackets
+    if (iri[0] === '<')
+      iri = iri.substring(1, iri.length - 1);
+    // Return absolute IRIs unmodified
+    if (/^[a-z]+:/i.test(iri))
+      return iri;
+    if (!Parser.base)
+      throw new Error('Cannot resolve relative IRI ' + iri + ' because no base IRI was set.');
+    if (base !== Parser.base) {
+      base = Parser.base;
+      basePath = base.replace(/[^\/:]*$/, '');
+      baseRoot = base.match(/^(?:[a-z]+:\/*)?[^\/]*/)[0];
+    }
+    switch (iri[0]) {
+    // An empty relative IRI indicates the base IRI
+    case undefined:
+      return base;
+    // Resolve relative fragment IRIs against the base IRI
+    case '#':
+      return base + iri;
+    // Resolve relative query string IRIs by replacing the query string
+    case '?':
+      return base.replace(/(?:\?.*)?$/, iri);
+    // Resolve root relative IRIs at the root of the base IRI
+    case '/':
+      return baseRoot + iri;
+    // Resolve all other IRIs at the base IRI's path
+    default:
+      return basePath + iri;
+    }
+  }
+
+  // If the item is a variable, ensures it starts with a question mark
+  function toVar(variable) {
+    if (variable) {
+      var first = variable[0];
+      if (first === '?' || first === '$') return Parser.factory.variable(variable.substr(1));
+    }
+    return variable;
+  }
+
+  // Creates an operation with the given name and arguments
+  function operation(operatorName, args) {
+    return { type: 'operation', operator: operatorName, args: args || [] };
+  }
+
+  // Creates an expression with the given type and attributes
+  function expression(expr, attr) {
+    var expression = { expression: expr === '*'? new Wildcard() : expr };
+    if (attr)
+      for (var a in attr)
+        expression[a] = attr[a];
+    return expression;
+  }
+
+  // Creates a path with the given type and items
+  function path(type, items) {
+    return { type: 'path', pathType: type, items: items };
+  }
+
+  // Transforms a list of operations types and arguments into a tree of operations
+  function createOperationTree(initialExpression, operationList) {
+    for (var i = 0, l = operationList.length, item; i < l && (item = operationList[i]); i++)
+      initialExpression = operation(item[0], [initialExpression, item[1]]);
+    return initialExpression;
+  }
+
+  // Group datasets by default and named
+  function groupDatasets(fromClauses, groupName) {
+    var defaults = [], named = [], l = fromClauses.length, fromClause, group = {};
+    if (!l)
+      return null;
+    for (var i = 0; i < l && (fromClause = fromClauses[i]); i++)
+      (fromClause.named ? named : defaults).push(fromClause.iri);
+    group[groupName || 'from'] = { default: defaults, named: named };
+    return group;
+  }
+
+  // Converts the string to a number
+  function toInt(string) {
+    return parseInt(string, 10);
+  }
+
+  // Transforms a possibly single group into its patterns
+  function degroupSingle(group) {
+    return group.type === 'group' && group.patterns.length === 1 ? group.patterns[0] : group;
+  }
+
+  // Creates a literal with the given value and type
+  function createTypedLiteral(value, type) {
+    if (type && type.termType !== 'NamedNode'){
+      type = Parser.factory.namedNode(type);
+    }
+    return Parser.factory.literal(value, type);
+  }
+
+  // Creates a literal with the given value and language
+  function createLangLiteral(value, lang) {
+    return Parser.factory.literal(value, lang);
+  }
+
+  // Creates a triple with the given subject, predicate, and object
+  function triple(subject, predicate, object) {
+    var triple = {};
+    if (subject   != null) triple.subject   = subject;
+    if (predicate != null) triple.predicate = predicate;
+    if (object    != null) triple.object    = object;
+    return triple;
+  }
+
+  // Creates a new blank node
+  function blank(name) {
+    if (typeof name === 'string') {  // Only use name if a name is given
+      if (name.startsWith('e_')) return Parser.factory.blankNode(name);
+      return Parser.factory.blankNode('e_' + name);
+    }
+    return Parser.factory.blankNode('g_' + blankId++);
+  };
+  var blankId = 0;
+  Parser._resetBlanks = function () { blankId = 0; }
+
+  // Regular expression and replacement strings to escape strings
+  var escapeSequence = /\\u([a-fA-F0-9]{4})|\\U([a-fA-F0-9]{8})|\\(.)/g,
+      escapeReplacements = { '\\': '\\', "'": "'", '"': '"',
+                             't': '\t', 'b': '\b', 'n': '\n', 'r': '\r', 'f': '\f' },
+      partialSurrogatesWithoutEndpoint = /[\uD800-\uDBFF]([^\uDC00-\uDFFF]|$)/,
+      fromCharCode = String.fromCharCode;
+
+  // Translates escape codes in the string into their textual equivalent
+  function unescapeString(string, trimLength) {
+    string = string.substring(trimLength, string.length - trimLength);
+    try {
+      string = string.replace(escapeSequence, function (sequence, unicode4, unicode8, escapedChar) {
+        var charCode;
+        if (unicode4) {
+          charCode = parseInt(unicode4, 16);
+          if (isNaN(charCode)) throw new Error(); // can never happen (regex), but helps performance
+          return fromCharCode(charCode);
+        }
+        else if (unicode8) {
+          charCode = parseInt(unicode8, 16);
+          if (isNaN(charCode)) throw new Error(); // can never happen (regex), but helps performance
+          if (charCode < 0xFFFF) return fromCharCode(charCode);
+          return fromCharCode(0xD800 + ((charCode -= 0x10000) >> 10), 0xDC00 + (charCode & 0x3FF));
+        }
+        else {
+          var replacement = escapeReplacements[escapedChar];
+          if (!replacement) throw new Error();
+          return replacement;
+        }
+      });
+    }
+    catch (error) { return ''; }
+
+    // Test for invalid unicode surrogate pairs
+    if (partialSurrogatesWithoutEndpoint.exec(string)) {
+      throw new Error('Invalid unicode codepoint of surrogate pair without corresponding codepoint in ' + string);
+    }
+
+    return string;
+  }
+
+  // Creates a list, collecting its (possibly blank) items and triples associated with those items
+  function createList(objects) {
+    var list = blank(), head = list, listItems = [], listTriples, triples = [];
+    objects.forEach(function (o) { listItems.push(o.entity); appendAllTo(triples, o.triples); });
+
+    // Build an RDF list out of the items
+    for (var i = 0, j = 0, l = listItems.length, listTriples = Array(l * 2); i < l;)
+      listTriples[j++] = triple(head, Parser.factory.namedNode(RDF_FIRST), listItems[i]),
+      listTriples[j++] = triple(head, Parser.factory.namedNode(RDF_REST),  head = ++i < l ? blank() : Parser.factory.namedNode(RDF_NIL));
+
+    // Return the list's identifier, its triples, and the triples associated with its items
+    return { entity: list, triples: appendAllTo(listTriples, triples) };
+  }
+
+  // Creates a blank node identifier, collecting triples with that blank node as subject
+  function createAnonymousObject(propertyList) {
+    var entity = blank();
+    return {
+      entity: entity,
+      triples: propertyList.map(function (t) { return extend(triple(entity), t); })
+    };
+  }
+
+  // Collects all (possibly blank) objects, and triples that have them as subject
+  function objectListToTriples(predicate, objectList, otherTriples) {
+    var objects = [], triples = [];
+    objectList.forEach(function (l) {
+      objects.push(triple(null, predicate, l.entity));
+      appendAllTo(triples, l.triples);
+    });
+    return unionAll(objects, otherTriples || [], triples);
+  }
+
+  // Simplifies groups by merging adjacent BGPs
+  function mergeAdjacentBGPs(groups) {
+    var merged = [], currentBgp;
+    for (var i = 0, group; group = groups[i]; i++) {
+      switch (group.type) {
+        // Add a BGP's triples to the current BGP
+        case 'bgp':
+          if (group.triples.length) {
+            if (!currentBgp)
+              appendTo(merged, currentBgp = group);
+            else
+              appendAllTo(currentBgp.triples, group.triples);
+          }
+          break;
+        // All other groups break up a BGP
+        default:
+          // Only add the group if its pattern is non-empty
+          if (!group.patterns || group.patterns.length > 0) {
+            appendTo(merged, group);
+            currentBgp = null;
+          }
+      }
+    }
+    return merged;
+  }
+
+  // Return the id of an expression
+  function getExpressionId(expression) {
+    return expression.variable ? expression.variable.value : expression.value || expression.expression.value;
+  }
+
+  // Get all "aggregate"'s from an expression
+  function getAggregatesOfExpression(expression) {
+    if (!expression) {
+      return [];
+    }
+    if (expression.type === 'aggregate') {
+      return [expression];
+    } else if (expression.type === "operation") {
+      const aggregates = [];
+      for (const arg of expression.args) {
+        aggregates.push(...getAggregatesOfExpression(arg));
+      }
+      return aggregates;
+    }
+    return [];
+  }
+
+  // Get all variables used in an expression
+  function getVariablesFromExpression(expression) {
+    const variables = new Set();
+    const visitExpression = function (expr) {
+      if (!expr) { return; }
+      if (expr.termType === "Variable") {
+        variables.add(expr);
+      } else if (expr.type === "operation") {
+        expr.args.forEach(visitExpression);
+      }
+    };
+    visitExpression(expression);
+    return variables;
+  }
+
+  // Helper function to flatten arrays
+  function flatten(input, depth = 1, stack = []) {
+    for (const item of input) {
+        if (depth > 0 && item instanceof Array) {
+          flatten(item, depth - 1, stack);
+        } else {
+          stack.push(item);
+        }
+    }
+    return stack;
+  }
+
+  function isVariable(term) {
+    return term.termType === 'Variable';
+  }
+
+  function getBoundVarsFromGroupGraphPattern(pattern) {
+    if (pattern.triples) {
+      const boundVars = [];
+      for (const triple of pattern.triples) {
+        if (isVariable(triple.subject)) boundVars.push(triple.subject.value);
+        if (isVariable(triple.predicate)) boundVars.push(triple.predicate.value);
+        if (isVariable(triple.object)) boundVars.push(triple.object.value);
+      }
+      return boundVars;
+    } else if (pattern.patterns) {
+      const boundVars = [];
+      for (const pat of pattern.patterns) {
+        boundVars.push(...getBoundVarsFromGroupGraphPattern(pat));
+      }
+      return boundVars;
+    }
+    return [];
+  }
+
+  // Helper function to find duplicates in array
+  function getDuplicatesInArray(array) {
+    const sortedArray = array.slice().sort();
+    const duplicates = [];
+    for (let i = 0; i < sortedArray.length - 1; i++) {
+      if (sortedArray[i + 1] == sortedArray[i]) {
+        duplicates.push(sortedArray[i]);
+      }
+    }
+    return duplicates;
+  }
+
+  function ensureSparqlStar(value) {
+    if (!Parser.sparqlStar) {
+      throw new Error('SPARQL* support is not enabled');
+    }
+    return value;
+  }
+
+  function ensureNoVariables(operations) {
+    for (const operation of operations) {
+      if (operation.type === 'graph' && operation.name.termType === 'Variable') {
+        throw new Error('Detected illegal variable in GRAPH');
+      }
+      if (operation.type === 'bgp' || operation.type === 'graph') {
+        for (const triple of operation.triples) {
+          if (triple.subject.termType === 'Variable' ||
+              triple.predicate.termType === 'Variable' ||
+              triple.object.termType === 'Variable') {
+            throw new Error('Detected illegal variable in BGP');
+          }
+        }
+      }
+    }
+    return operations;
+  }
+
+  function ensureNoBnodes(operations) {
+    for (const operation of operations) {
+      if (operation.type === 'bgp') {
+        for (const triple of operation.triples) {
+          if (triple.subject.termType === 'BlankNode' ||
+              triple.predicate.termType === 'BlankNode' ||
+              triple.object.termType === 'BlankNode') {
+            throw new Error('Detected illegal blank node in BGP');
+          }
+        }
+      }
+    }
+    return operations;
+  }
+/* generated by jison-lex 0.3.4 */
+var lexer = (function(){
+var lexer = ({
+
+EOF:1,
+
+parseError:function parseError(str, hash) {
+        if (this.yy.parser) {
+            this.yy.parser.parseError(str, hash);
+        } else {
+            throw new Error(str);
+        }
+    },
+
+// resets the lexer, sets new input
+setInput:function (input, yy) {
+        this.yy = yy || this.yy || {};
+        this._input = input;
+        this._more = this._backtrack = this.done = false;
+        this.yylineno = this.yyleng = 0;
+        this.yytext = this.matched = this.match = '';
+        this.conditionStack = ['INITIAL'];
+        this.yylloc = {
+            first_line: 1,
+            first_column: 0,
+            last_line: 1,
+            last_column: 0
+        };
+        if (this.options.ranges) {
+            this.yylloc.range = [0,0];
+        }
+        this.offset = 0;
+        return this;
+    },
+
+// consumes and returns one char from the input
+input:function () {
+        var ch = this._input[0];
+        this.yytext += ch;
+        this.yyleng++;
+        this.offset++;
+        this.match += ch;
+        this.matched += ch;
+        var lines = ch.match(/(?:\r\n?|\n).*/g);
+        if (lines) {
+            this.yylineno++;
+            this.yylloc.last_line++;
+        } else {
+            this.yylloc.last_column++;
+        }
+        if (this.options.ranges) {
+            this.yylloc.range[1]++;
+        }
+
+        this._input = this._input.slice(1);
+        return ch;
+    },
+
+// unshifts one char (or a string) into the input
+unput:function (ch) {
+        var len = ch.length;
+        var lines = ch.split(/(?:\r\n?|\n)/g);
+
+        this._input = ch + this._input;
+        this.yytext = this.yytext.substr(0, this.yytext.length - len);
+        //this.yyleng -= len;
+        this.offset -= len;
+        var oldLines = this.match.split(/(?:\r\n?|\n)/g);
+        this.match = this.match.substr(0, this.match.length - 1);
+        this.matched = this.matched.substr(0, this.matched.length - 1);
+
+        if (lines.length - 1) {
+            this.yylineno -= lines.length - 1;
+        }
+        var r = this.yylloc.range;
+
+        this.yylloc = {
+            first_line: this.yylloc.first_line,
+            last_line: this.yylineno + 1,
+            first_column: this.yylloc.first_column,
+            last_column: lines ?
+                (lines.length === oldLines.length ? this.yylloc.first_column : 0)
+                 + oldLines[oldLines.length - lines.length].length - lines[0].length :
+              this.yylloc.first_column - len
+        };
+
+        if (this.options.ranges) {
+            this.yylloc.range = [r[0], r[0] + this.yyleng - len];
+        }
+        this.yyleng = this.yytext.length;
+        return this;
+    },
+
+// When called from action, caches matched text and appends it on next action
+more:function () {
+        this._more = true;
+        return this;
+    },
+
+// When called from action, signals the lexer that this rule fails to match the input, so the next matching rule (regex) should be tested instead.
+reject:function () {
+        if (this.options.backtrack_lexer) {
+            this._backtrack = true;
+        } else {
+            return this.parseError('Lexical error on line ' + (this.yylineno + 1) + '. You can only invoke reject() in the lexer when the lexer is of the backtracking persuasion (options.backtrack_lexer = true).\n' + this.showPosition(), {
+                text: "",
+                token: null,
+                line: this.yylineno
+            });
+
+        }
+        return this;
+    },
+
+// retain first n characters of the match
+less:function (n) {
+        this.unput(this.match.slice(n));
+    },
+
+// displays already matched input, i.e. for error messages
+pastInput:function () {
+        var past = this.matched.substr(0, this.matched.length - this.match.length);
+        return (past.length > 20 ? '...':'') + past.substr(-20).replace(/\n/g, "");
+    },
+
+// displays upcoming input, i.e. for error messages
+upcomingInput:function () {
+        var next = this.match;
+        if (next.length < 20) {
+            next += this._input.substr(0, 20-next.length);
+        }
+        return (next.substr(0,20) + (next.length > 20 ? '...' : '')).replace(/\n/g, "");
+    },
+
+// displays the character position where the lexing error occurred, i.e. for error messages
+showPosition:function () {
+        var pre = this.pastInput();
+        var c = new Array(pre.length + 1).join("-");
+        return pre + this.upcomingInput() + "\n" + c + "^";
+    },
+
+// test the lexed token: return FALSE when not a match, otherwise return token
+test_match:function(match, indexed_rule) {
+        var token,
+            lines,
+            backup;
+
+        if (this.options.backtrack_lexer) {
+            // save context
+            backup = {
+                yylineno: this.yylineno,
+                yylloc: {
+                    first_line: this.yylloc.first_line,
+                    last_line: this.last_line,
+                    first_column: this.yylloc.first_column,
+                    last_column: this.yylloc.last_column
+                },
+                yytext: this.yytext,
+                match: this.match,
+                matches: this.matches,
+                matched: this.matched,
+                yyleng: this.yyleng,
+                offset: this.offset,
+                _more: this._more,
+                _input: this._input,
+                yy: this.yy,
+                conditionStack: this.conditionStack.slice(0),
+                done: this.done
+            };
+            if (this.options.ranges) {
+                backup.yylloc.range = this.yylloc.range.slice(0);
+            }
+        }
+
+        lines = match[0].match(/(?:\r\n?|\n).*/g);
+        if (lines) {
+            this.yylineno += lines.length;
+        }
+        this.yylloc = {
+            first_line: this.yylloc.last_line,
+            last_line: this.yylineno + 1,
+            first_column: this.yylloc.last_column,
+            last_column: lines ?
+                         lines[lines.length - 1].length - lines[lines.length - 1].match(/\r?\n?/)[0].length :
+                         this.yylloc.last_column + match[0].length
+        };
+        this.yytext += match[0];
+        this.match += match[0];
+        this.matches = match;
+        this.yyleng = this.yytext.length;
+        if (this.options.ranges) {
+            this.yylloc.range = [this.offset, this.offset += this.yyleng];
+        }
+        this._more = false;
+        this._backtrack = false;
+        this._input = this._input.slice(match[0].length);
+        this.matched += match[0];
+        token = this.performAction.call(this, this.yy, this, indexed_rule, this.conditionStack[this.conditionStack.length - 1]);
+        if (this.done && this._input) {
+            this.done = false;
+        }
+        if (token) {
+            return token;
+        } else if (this._backtrack) {
+            // recover context
+            for (var k in backup) {
+                this[k] = backup[k];
+            }
+            return false; // rule action called reject() implying the next rule should be tested instead.
+        }
+        return false;
+    },
+
+// return next match in input
+next:function () {
+        if (this.done) {
+            return this.EOF;
+        }
+        if (!this._input) {
+            this.done = true;
+        }
+
+        var token,
+            match,
+            tempMatch,
+            index;
+        if (!this._more) {
+            this.yytext = '';
+            this.match = '';
+        }
+        var rules = this._currentRules();
+        for (var i = 0; i < rules.length; i++) {
+            tempMatch = this._input.match(this.rules[rules[i]]);
+            if (tempMatch && (!match || tempMatch[0].length > match[0].length)) {
+                match = tempMatch;
+                index = i;
+                if (this.options.backtrack_lexer) {
+                    token = this.test_match(tempMatch, rules[i]);
+                    if (token !== false) {
+                        return token;
+                    } else if (this._backtrack) {
+                        match = false;
+                        continue; // rule action called reject() implying a rule MISmatch.
+                    } else {
+                        // else: this is a lexer rule which consumes input without producing a token (e.g. whitespace)
+                        return false;
+                    }
+                } else if (!this.options.flex) {
+                    break;
+                }
+            }
+        }
+        if (match) {
+            token = this.test_match(match, rules[index]);
+            if (token !== false) {
+                return token;
+            }
+            // else: this is a lexer rule which consumes input without producing a token (e.g. whitespace)
+            return false;
+        }
+        if (this._input === "") {
+            return this.EOF;
+        } else {
+            return this.parseError('Lexical error on line ' + (this.yylineno + 1) + '. Unrecognized text.\n' + this.showPosition(), {
+                text: "",
+                token: null,
+                line: this.yylineno
+            });
+        }
+    },
+
+// return next match that has a token
+lex:function lex () {
+        var r = this.next();
+        if (r) {
+            return r;
+        } else {
+            return this.lex();
+        }
+    },
+
+// activates a new lexer condition state (pushes the new lexer condition state onto the condition stack)
+begin:function begin (condition) {
+        this.conditionStack.push(condition);
+    },
+
+// pop the previously active lexer condition state off the condition stack
+popState:function popState () {
+        var n = this.conditionStack.length - 1;
+        if (n > 0) {
+            return this.conditionStack.pop();
+        } else {
+            return this.conditionStack[0];
+        }
+    },
+
+// produce the lexer rule set which is active for the currently active lexer condition state
+_currentRules:function _currentRules () {
+        if (this.conditionStack.length && this.conditionStack[this.conditionStack.length - 1]) {
+            return this.conditions[this.conditionStack[this.conditionStack.length - 1]].rules;
+        } else {
+            return this.conditions["INITIAL"].rules;
+        }
+    },
+
+// return the currently active lexer condition state; when an index argument is provided it produces the N-th previous condition state, if available
+topState:function topState (n) {
+        n = this.conditionStack.length - 1 - Math.abs(n || 0);
+        if (n >= 0) {
+            return this.conditionStack[n];
+        } else {
+            return "INITIAL";
+        }
+    },
+
+// alias for begin(condition)
+pushState:function pushState (condition) {
+        this.begin(condition);
+    },
+
+// return the number of states currently on the stack
+stateStackSize:function stateStackSize() {
+        return this.conditionStack.length;
+    },
+options: {"flex":true,"case-insensitive":true},
+performAction: function anonymous(yy,yy_,$avoiding_name_collisions,YY_START) {
+var YYSTATE=YY_START;
+switch($avoiding_name_collisions) {
+case 0:/* ignore */
+break;
+case 1:return 12
+break;
+case 2:return 15
+break;
+case 3:return 28
+break;
+case 4:return 314
+break;
+case 5:return 315
+break;
+case 6:return 35
+break;
+case 7:return 37
+break;
+case 8:return 38
+break;
+case 9:return 26
+break;
+case 10:return 41
+break;
+case 11:return 45
+break;
+case 12:return 46
+break;
+case 13:return 48
+break;
+case 14:return 50
+break;
+case 15:return 55
+break;
+case 16:return 58
+break;
+case 17:return 318
+break;
+case 18:return 68
+break;
+case 19:return 69
+break;
+case 20:return 75
+break;
+case 21:return 78
+break;
+case 22:return 81
+break;
+case 23:return 83
+break;
+case 24:return 86
+break;
+case 25:return 88
+break;
+case 26:return 90
+break;
+case 27:return 191
+break;
+case 28:return 107
+break;
+case 29:return 319
+break;
+case 30:return 140
+break;
+case 31:return 320
+break;
+case 32:return 321
+break;
+case 33:return 117
+break;
+case 34:return 322
+break;
+case 35:return 116
+break;
+case 36:return 323
+break;
+case 37:return 324
+break;
+case 38:return 120
+break;
+case 39:return 122
+break;
+case 40:return 123
+break;
+case 41:return 138
+break;
+case 42:return 132
+break;
+case 43:return 133
+break;
+case 44:return 135
+break;
+case 45:return 141
+break;
+case 46:return 119
+break;
+case 47:return 325
+break;
+case 48:return 326
+break;
+case 49:return 167
+break;
+case 50:return 170
+break;
+case 51:return 174
+break;
+case 52:return 100
+break;
+case 53:return 168
+break;
+case 54:return 327
+break;
+case 55:return 173
+break;
+case 56:return 229
+break;
+case 57:return 233
+break;
+case 58:return 276
+break;
+case 59:return 195
+break;
+case 60:return 328
+break;
+case 61:return 329
+break;
+case 62:return 222
+break;
+case 63:return 331
+break;
+case 64:return 332
+break;
+case 65:return 217
+break;
+case 66:return 224
+break;
+case 67:return 225
+break;
+case 68:return 248
+break;
+case 69:return 252
+break;
+case 70:return 293
+break;
+case 71:return 333
+break;
+case 72:return 334
+break;
+case 73:return 335
+break;
+case 74:return 336
+break;
+case 75:return 337
+break;
+case 76:return 256
+break;
+case 77:return 338
+break;
+case 78:return 271
+break;
+case 79:return 279
+break;
+case 80:return 280
+break;
+case 81:return 273
+break;
+case 82:return 274
+break;
+case 83:return 275
+break;
+case 84:return 339
+break;
+case 85:return 340
+break;
+case 86:return 277
+break;
+case 87:return 342
+break;
+case 88:return 341
+break;
+case 89:return 343
+break;
+case 90:return 282
+break;
+case 91:return 283
+break;
+case 92:return 286
+break;
+case 93:return 288
+break;
+case 94:return 292
+break;
+case 95:return 296
+break;
+case 96:return 299
+break;
+case 97:return 13
+break;
+case 98:return 16
+break;
+case 99:return 310
+break;
+case 100:return 243
+break;
+case 101:return 34
+break;
+case 102:return 295
+break;
+case 103:return 87
+break;
+case 104:return 297
+break;
+case 105:return 298
+break;
+case 106:return 304
+break;
+case 107:return 305
+break;
+case 108:return 306
+break;
+case 109:return 307
+break;
+case 110:return 308
+break;
+case 111:return 309
+break;
+case 112:return 'EXPONENT'
+break;
+case 113:return 300
+break;
+case 114:return 301
+break;
+case 115:return 302
+break;
+case 116:return 303
+break;
+case 117:return 93
+break;
+case 118:return 244
+break;
+case 119:return 6
+break;
+case 120:return 'INVALID'
+break;
+case 121:console.log(yy_.yytext);
+break;
+}
+},
+rules: [/^(?:\s+|(#[^\n\r]*))/i,/^(?:BASE)/i,/^(?:PREFIX)/i,/^(?:SELECT)/i,/^(?:DISTINCT)/i,/^(?:REDUCED)/i,/^(?:\()/i,/^(?:AS)/i,/^(?:\))/i,/^(?:\*)/i,/^(?:CONSTRUCT)/i,/^(?:WHERE)/i,/^(?:\{)/i,/^(?:\})/i,/^(?:DESCRIBE)/i,/^(?:ASK)/i,/^(?:FROM)/i,/^(?:NAMED)/i,/^(?:GROUP)/i,/^(?:BY)/i,/^(?:HAVING)/i,/^(?:ORDER)/i,/^(?:ASC)/i,/^(?:DESC)/i,/^(?:LIMIT)/i,/^(?:OFFSET)/i,/^(?:VALUES)/i,/^(?:;)/i,/^(?:LOAD)/i,/^(?:SILENT)/i,/^(?:INTO)/i,/^(?:CLEAR)/i,/^(?:DROP)/i,/^(?:CREATE)/i,/^(?:ADD)/i,/^(?:TO)/i,/^(?:MOVE)/i,/^(?:COPY)/i,/^(?:INSERT((\s+|(#[^\n\r]*)\n\r?)+)DATA)/i,/^(?:DELETE((\s+|(#[^\n\r]*)\n\r?)+)DATA)/i,/^(?:DELETE((\s+|(#[^\n\r]*)\n\r?)+)WHERE)/i,/^(?:WITH)/i,/^(?:DELETE)/i,/^(?:INSERT)/i,/^(?:USING)/i,/^(?:DEFAULT)/i,/^(?:GRAPH)/i,/^(?:ALL)/i,/^(?:\.)/i,/^(?:OPTIONAL)/i,/^(?:SERVICE)/i,/^(?:BIND)/i,/^(?:UNDEF)/i,/^(?:MINUS)/i,/^(?:UNION)/i,/^(?:FILTER)/i,/^(?:<<)/i,/^(?:>>)/i,/^(?:,)/i,/^(?:a)/i,/^(?:\|)/i,/^(?:\/)/i,/^(?:\^)/i,/^(?:\?)/i,/^(?:\+)/i,/^(?:!)/i,/^(?:\[)/i,/^(?:\])/i,/^(?:\|\|)/i,/^(?:&&)/i,/^(?:=)/i,/^(?:!=)/i,/^(?:<)/i,/^(?:>)/i,/^(?:<=)/i,/^(?:>=)/i,/^(?:IN)/i,/^(?:NOT)/i,/^(?:-)/i,/^(?:BOUND)/i,/^(?:BNODE)/i,/^(?:(RAND|NOW|UUID|STRUUID))/i,/^(?:(LANG|DATATYPE|IRI|URI|ABS|CEIL|FLOOR|ROUND|STRLEN|STR|UCASE|LCASE|ENCODE_FOR_URI|YEAR|MONTH|DAY|HOURS|MINUTES|SECONDS|TIMEZONE|TZ|MD5|SHA1|SHA256|SHA384|SHA512|isIRI|isURI|isBLANK|isLITERAL|isNUMERIC))/i,/^(?:(LANGMATCHES|CONTAINS|STRSTARTS|STRENDS|STRBEFORE|STRAFTER|STRLANG|STRDT|sameTerm))/i,/^(?:CONCAT)/i,/^(?:COALESCE)/i,/^(?:IF)/i,/^(?:REGEX)/i,/^(?:SUBSTR)/i,/^(?:REPLACE)/i,/^(?:EXISTS)/i,/^(?:COUNT)/i,/^(?:SUM|MIN|MAX|AVG|SAMPLE)/i,/^(?:GROUP_CONCAT)/i,/^(?:SEPARATOR)/i,/^(?:\^\^)/i,/^(?:true|false)/i,/^(?:(<(?:[^<>\"\{\}\|\^`\\\u0000-\u0020])*>))/i,/^(?:((([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])(?:(?:(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])|\.)*(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040]))?)?:))/i,/^(?:(((([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])(?:(?:(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])|\.)*(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040]))?)?:)((?:((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|:|[0-9]|((%([0-9A-Fa-f])([0-9A-Fa-f]))|(\\(_|~|\.|-|!|\$|&|'|\(|\)|\*|\+|,|;|=|\/|\?|#|@|%))))(?:(?:(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])|\.|:|((%([0-9A-Fa-f])([0-9A-Fa-f]))|(\\(_|~|\.|-|!|\$|&|'|\(|\)|\*|\+|,|;|=|\/|\?|#|@|%))))*(?:(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])|:|((%([0-9A-Fa-f])([0-9A-Fa-f]))|(\\(_|~|\.|-|!|\$|&|'|\(|\)|\*|\+|,|;|=|\/|\?|#|@|%)))))?)))/i,/^(?:(_:(?:((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|[0-9])(?:(?:(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])|\.)*(((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|-|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040]))?))/i,/^(?:([\?\$]((?:((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|[0-9])(?:((?:([A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02FF\u0370-\u037D\u037F-\u1FFF\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF\uF900-\uFDCF\uFDF0-\uFFFD]|[\uD800-\uDB7F][\uDC00-\uDFFF])|_))|[0-9]|\u00B7|[\u0300-\u036F\u203F-\u2040])*)))/i,/^(?:(@[a-zA-Z]+(?:-[a-zA-Z0-9]+)*))/i,/^(?:([0-9]+))/i,/^(?:([0-9]*\.[0-9]+))/i,/^(?:([0-9]+\.[0-9]*([eE][+-]?[0-9]+)|\.([0-9])+([eE][+-]?[0-9]+)|([0-9])+([eE][+-]?[0-9]+)))/i,/^(?:(\+([0-9]+)))/i,/^(?:(\+([0-9]*\.[0-9]+)))/i,/^(?:(\+([0-9]+\.[0-9]*([eE][+-]?[0-9]+)|\.([0-9])+([eE][+-]?[0-9]+)|([0-9])+([eE][+-]?[0-9]+))))/i,/^(?:(-([0-9]+)))/i,/^(?:(-([0-9]*\.[0-9]+)))/i,/^(?:(-([0-9]+\.[0-9]*([eE][+-]?[0-9]+)|\.([0-9])+([eE][+-]?[0-9]+)|([0-9])+([eE][+-]?[0-9]+))))/i,/^(?:([eE][+-]?[0-9]+))/i,/^(?:('(?:(?:[^\u0027\u005C\u000A\u000D])|(\\[tbnrf\\\"']|\\u([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])|\\U([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])))*'))/i,/^(?:("(?:(?:[^\u0022\u005C\u000A\u000D])|(\\[tbnrf\\\"']|\\u([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])|\\U([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])))*"))/i,/^(?:('''(?:(?:'|'')?(?:[^'\\]|(\\[tbnrf\\\"']|\\u([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])|\\U([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f]))))*'''))/i,/^(?:("""(?:(?:"|"")?(?:[^\"\\]|(\\[tbnrf\\\"']|\\u([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])|\\U([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f])([0-9A-Fa-f]))))*"""))/i,/^(?:(\((\u0020|\u0009|\u000D|\u000A)*\)))/i,/^(?:(\[(\u0020|\u0009|\u000D|\u000A)*\]))/i,/^(?:$)/i,/^(?:.)/i,/^(?:.)/i],
+conditions: {"INITIAL":{"rules":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121],"inclusive":true}}
+});
+return lexer;
+})();
+parser.lexer = lexer;
+function Parser () {
+  this.yy = {};
+}
+Parser.prototype = parser;parser.Parser = Parser;
+return new Parser;
+})();
+
+
+if (true) {
+exports.parser = SparqlParser;
+exports.Parser = SparqlParser.Parser;
+exports.parse = function () { return SparqlParser.parse.apply(SparqlParser, arguments); };
+exports.main = function commonjsMain (args) {
+    if (!args[1]) {
+        console.log('Usage: '+args[0]+' FILE');
+        process.exit(1);
+    }
+    var source = __cmncwpk_require__("fs").readFileSync(__cmncwpk_require__("path").normalize(args[1]), "utf8");
+    return exports.parser.parse(source);
+};
+if ( true && __cmncwpk_require__.c[__cmncwpk_require__.s] === module) {
+  exports.main(process.argv.slice(1));
+}
+}
+
+/***/ }),
+
+/***/ "./node_modules/sparqljs/lib/Wildcard.js":
+/***/ ((module) => {
+
+
+// Wildcard constructor
+class Wildcard {
+  constructor() {
+    return WILDCARD || this;
+  }
+
+  equals(other) {
+    return other && (this.termType === other.termType);
+  }
+}
+
+Object.defineProperty(Wildcard.prototype, 'value', {
+  enumerable: true,
+  value: '*',
+});
+
+Object.defineProperty(Wildcard.prototype, 'termType', {
+  enumerable: true,
+  value: 'Wildcard',
+});
+
+
+// Wildcard singleton
+var WILDCARD = new Wildcard();
+
+module.exports.R = Wildcard;
+
+
+/***/ }),
+
+/***/ "./node_modules/sparqljs/sparql.js":
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
+
+var Parser = __cmncwpk_require__("./node_modules/sparqljs/lib/SparqlParser.js").Parser;
+var Generator = __cmncwpk_require__("./node_modules/sparqljs/lib/SparqlGenerator.js");
+var Wildcard = __cmncwpk_require__("./node_modules/sparqljs/lib/Wildcard.js")/* .Wildcard */ .R;
+var { DataFactory } = __cmncwpk_require__("rdf-data-factory");
+
+module.exports = {
+  /**
+   * Creates a SPARQL parser with the given pre-defined prefixes and base IRI
+   * @param options {
+   *   prefixes?: { [prefix: string]: string },
+   *   baseIRI?: string,
+   *   factory?: import('rdf-js').DataFactory,
+   *   sparqlStar?: boolean,
+   * }
+   */
+  Parser: function ({ prefixes, baseIRI, factory, sparqlStar, skipUngroupedVariableCheck } = {}) {
+    // Create a copy of the prefixes
+    var prefixesCopy = {};
+    for (var prefix in prefixes || {})
+      prefixesCopy[prefix] = prefixes[prefix];
+
+    // Create a new parser with the given prefixes
+    // (Workaround for https://github.com/zaach/jison/issues/241)
+    var parser = new Parser();
+    parser.parse = function () {
+      Parser.base = baseIRI || '';
+      Parser.prefixes = Object.create(prefixesCopy);
+      Parser.factory = factory || new DataFactory();
+      Parser.sparqlStar = Boolean(sparqlStar);
+      Parser.skipUngroupedVariableCheck = Boolean(skipUngroupedVariableCheck)
+      return Parser.prototype.parse.apply(parser, arguments);
+    };
+    parser._resetBlanks = Parser._resetBlanks;
+    return parser;
+  },
+  Generator: Generator,
+  Wildcard: Wildcard,
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/uuid/dist/esm-browser/index.js":
 /***/ ((__unused_webpack_module, __cmncwpk_exports__, __cmncwpk_require__) => {
 
@@ -29632,27 +34590,35 @@ module.exports = require("asynciterator");;
 
 /***/ }),
 
+/***/ "crypto":
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");;
+
+/***/ }),
+
+/***/ "fs":
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");;
+
+/***/ }),
+
+/***/ "path":
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");;
+
+/***/ }),
+
 /***/ "rdf-data-factory":
 /***/ ((module) => {
 
 "use strict";
 module.exports = require("rdf-data-factory");;
-
-/***/ }),
-
-/***/ "sparqlalgebrajs":
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("sparqlalgebrajs");;
-
-/***/ }),
-
-/***/ "sparqljs":
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("sparqljs");;
 
 /***/ })
 
@@ -29670,17 +34636,23 @@ module.exports = require("sparqljs");;
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __cmncwpk_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__cmncwpk_modules__[moduleId].call(module.exports, module, module.exports, __cmncwpk_require__);
 /******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the module cache
+/******/ 	__cmncwpk_require__.c = __cmncwpk_module_cache__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
@@ -29723,46 +34695,22 @@ module.exports = require("sparqljs");;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	(() => {
+/******/ 		__cmncwpk_require__.nmd = (module) => {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-var __cmncwpk_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-(() => {
-var exports = __cmncwpk_exports__;
-
-(() => {
-
-  const isNode = typeof process !== 'undefined'
-    && process.versions != null
-    && process.versions.node != null;
-
-  // The Webpack bundle of this package is built using the "target: browser"
-  // option (see webpack.config.js). This leads some packages to assume the
-  // availability of the Web Crypto API through the global "crypto" object.
-  // As we don't have that in Node.js but usage seems to be limited to the
-  // crypto.getRandomValues() method, we use Node.js' own crypto module to
-  // create a polyfill.
-
-  if (isNode && typeof crypto === 'undefined') {
-
-    const crypto = eval('require(\'crypto\')');
-
-    __cmncwpk_require__.g.crypto = {};
-
-    __cmncwpk_require__.g.crypto.getRandomValues = (array) => {
-      crypto.randomFillSync(array);
-      return array;
-    };
-
-  }
-
-})();
-
-exports.newEngine = () => {
-  return __cmncwpk_require__("./engine.js");
-};
-
-})();
-
-module.exports = __cmncwpk_exports__;
+/******/ 	
+/******/ 	// module cache are used so entry inlining is disabled
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	var __cmncwpk_exports__ = __cmncwpk_require__(__cmncwpk_require__.s = "./index.js");
+/******/ 	module.exports = __cmncwpk_exports__;
+/******/ 	
 /******/ })()
 ;
