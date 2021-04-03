@@ -76,6 +76,8 @@ const ignoredPackagesToEmptyModuleAliases = [
 // used. We trick webpack into resolving them to a local empty module.
 const unusedPackagesToEmptyModuleAliases = [
   '@comunica/actor-sparql-serialize-tree', // @see https://github.com/comunica/comunica/blob/2d0818c64e5bfbbb334ecbccb7b5a98a69263d1c/packages/actor-init-sparql/index-browser.ts#L3
+  'fs',
+  'path',
   'stream',
   'readable-stream',
 ].reduce((acc, moduleName) => {
@@ -88,10 +90,8 @@ const unusedPackagesToEmptyModuleAliases = [
 // dependencies. We add them as "commonjs2" externals, which causes Webpack to
 // to add the relevant require() invocations where needed.
 const nativeModulesExternals = [
-  'fs',
   'os',
   'url',
-  'path',
   'util',
   'http',
   'https',
