@@ -118,6 +118,8 @@ const replacementExternals = {
 const peerDependenciesExternals = [
   'asynciterator',
   'rdf-data-factory',
+  'sparqlalgebrajs',
+  'sparqljs',
 ].reduce((acc, moduleName) => {
   acc[moduleName] = `commonjs2 ${moduleName}`;
   return acc;
