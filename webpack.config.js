@@ -9,6 +9,7 @@ const path = require('path');
 const ignoredPackagesToEmptyModuleAliases = [
   '@comunica/actor-http-memento',
   '@comunica/actor-http-native',
+  '@comunica/actor-http-node-fetch',
   '@comunica/actor-init-hello-world',
   '@comunica/actor-init-http',
   '@comunica/actor-init-rdf-dereference',

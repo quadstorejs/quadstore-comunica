@@ -4,12 +4,15 @@
 /***/ "./engine.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const df_299_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
+const df_287_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-join/Bus/RdfJoin'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
@@ -25,9 +28,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_context_p
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/Bus/RdfResolveQuadPattern'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Bus_RdfUpdateQuads = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-update-quads/Bus/RdfUpdateQuads'
@@ -53,6 +53,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-join-nestedloop/index.js").ActorRdfJoinNestedLoop)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/join.json#myRdfJoinActorNestedLoop',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_join_Bus_RdfJoin
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
@@ -90,14 +98,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const df_579_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_617_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
-  'name': 'df_579_0',
+  'name': 'df_617_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const df_579_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_617_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
-  'name': 'df_579_1',
+  'name': 'df_617_1',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
@@ -111,14 +119,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/index.js").ActorRdfResolveQuadPatternRdfJsSource)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-rdfjs.json#myRdfRdfJsSourceQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#mediatorResolveQuadPattern',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-quads-rdfjs-store/index.js").ActorRdfUpdateQuadsRdfJsStore)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateQuadsRdfJsStore',
@@ -164,11 +164,11 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
   'mediatorSparqlSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize,
-  'mediatorSparqlSerializeMediaTypeCombiner': df_579_0,
-  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_579_1,
+  'mediatorSparqlSerializeMediaTypeCombiner': df_617_0,
+  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_617_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': df_299_0,
+  'logger': df_287_0,
   'contextKeyShortcuts': {
   'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
   'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
@@ -183,51 +183,13 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'lenient': '@comunica/actor-init-sparql:lenient',
   'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
   'httpAuth': '@comunica/bus-http:auth',
-  'readOnly': '@comunica/bus-query-operation:readOnly'
+  'fetch': '@comunica/bus-http:fetch',
+  'readOnly': '@comunica/bus-query-operation:readOnly',
+  'extensionFunctions': '@comunica/actor-init-sparql:extensionFunctions',
+  'extensionFunctionCreator': '@comunica/actor-init-sparql:extensionFunctionCreator'
 },
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
-  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
@@ -327,6 +289,52 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myMinusQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myNopQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-nop/index.js").ActorQueryOperationNop)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myNopQueryOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
+  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCompositeUpdateOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-update-compositeupdate/index.js").ActorQueryOperationUpdateCompositeUpdate)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-update.json#myCompositeUpdateOperator',
@@ -383,20 +391,11 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinMultiActor,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorSymmetricHash,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_join_json_myRdfJoinActorNestedLoop,
-  urn_comunica_sparqlinit,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
+  urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
@@ -417,8 +416,18 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myNopQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCompositeUpdateOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myDeleteInsertOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLoadQueryOperator,
@@ -912,8 +921,9 @@ __exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-context-preproc
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.KEY_CONTEXT_DESTINATION = exports.KEY_CONTEXT_SOURCES = exports.ActorContextPreprocessSourceToDestination = void 0;
+exports.ActorContextPreprocessSourceToDestination = void 0;
 const bus_context_preprocess_1 = __cmncwpk_require__("./node_modules/@comunica/bus-context-preprocess/index.js");
+const context_entries_1 = __cmncwpk_require__("./node_modules/@comunica/context-entries/index.js");
 /**
  * A comunica Source To Destination Context Preprocess Actor.
  */
@@ -925,18 +935,17 @@ class ActorContextPreprocessSourceToDestination extends bus_context_preprocess_1
         return true;
     }
     async run(action) {
-        if (action.context && action.context.get(exports.KEY_CONTEXT_SOURCES) && !action.context.get(exports.KEY_CONTEXT_DESTINATION)) {
-            const sources = action.context.get(exports.KEY_CONTEXT_SOURCES);
+        if (action.context && action.context.get(context_entries_1.KeysRdfResolveQuadPattern.sources) &&
+            !action.context.get(context_entries_1.KeysRdfUpdateQuads.destination)) {
+            const sources = action.context.get(context_entries_1.KeysRdfResolveQuadPattern.sources);
             if (sources.length === 1) {
-                return { context: action.context.set(exports.KEY_CONTEXT_DESTINATION, sources[0]) };
+                return { context: action.context.set(context_entries_1.KeysRdfUpdateQuads.destination, sources[0]) };
             }
         }
         return action;
     }
 }
 exports.ActorContextPreprocessSourceToDestination = ActorContextPreprocessSourceToDestination;
-exports.KEY_CONTEXT_SOURCES = '@comunica/bus-rdf-resolve-quad-pattern:sources';
-exports.KEY_CONTEXT_DESTINATION = '@comunica/bus-rdf-update-quads:destination';
 //# sourceMappingURL=ActorContextPreprocessSourceToDestination.js.map
 
 /***/ }),
@@ -994,7 +1003,6 @@ class ActorHttpProxy extends bus_http_1.ActorHttp {
         return { time: Number.POSITIVE_INFINITY };
     }
     async run(action) {
-        var _a;
         const requestedUrl = typeof action.input === 'string' ? action.input : action.input.url;
         if (!action.context) {
             throw new Error('Illegal state: missing context');
@@ -1003,7 +1011,12 @@ class ActorHttpProxy extends bus_http_1.ActorHttp {
         // Send a request for the modified request
         const output = await this.mediatorHttp.mediate(Object.assign(Object.assign({}, await proxyHandler.getProxy(action)), { context: action.context.delete(context_entries_1.KeysHttpProxy.httpProxyHandler) }));
         // Modify the response URL
-        output.url = (_a = output.headers.get('x-final-url')) !== null && _a !== void 0 ? _a : requestedUrl;
+        // use defineProperty to allow modification of unmodifiable objects
+        Object.defineProperty(output, 'url', {
+            configurable: true,
+            enumerable: true,
+            get: () => { var _a; return (_a = output.headers.get('x-final-url')) !== null && _a !== void 0 ? _a : requestedUrl; },
+        });
         return output;
     }
 }
@@ -1061,7 +1074,7 @@ exports.ProxyHandlerStatic = ProxyHandlerStatic;
 /***/ "./node_modules/@comunica/actor-init-sparql/engine-default.js":
 /***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
 
-const df_299_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
+const df_317_0 = new (__cmncwpk_require__("./node_modules/@comunica/logger-void/index.js").LoggerVoid)(undefined);
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-init/Bus/Init'
 });
@@ -1083,6 +1096,18 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-serialize/Bus/RdfSerialize'
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata/Bus/RdfMetadata'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata-extract/Bus/RdfMetadataExtract'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_hypermedia_Bus_RdfUpdateHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-update-hypermedia/Bus/RdfUpdateHypermedia'
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Bus_RdfUpdateQuads = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-update-quads/Bus/RdfUpdateQuads'
 });
@@ -1092,20 +1117,11 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resol
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-hypermedia/Bus/RdfResolveHypermedia'
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata-extract/Bus/RdfMetadataExtract'
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-metadata/Bus/RdfMetadata'
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-hypermedia-links/Bus/RdfResolveHypermediaLinks'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_queue_Bus_RdfResolveHypermediaLinksQueue = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-hypermedia-links-queue/Bus/RdfResolveHypermediaLinksQueue'
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-http-invalidate/Bus/HttpInvalidate'
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_optimize_query_operation_Bus_OptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/core/index.js").Bus)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-optimize-query-operation/Bus/OptimizeQueryOperation'
@@ -1136,7 +1152,7 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#mediatorHttp',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpNative)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_myHttpFetcher = new (__cmncwpk_require__("./require-empty.js").ActorHttpNodeFetch)({
   'agentOptions': '{ "keepAlive": true, "maxSockets": 5 }',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/http.json#myHttpFetcher',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_Bus_Http
@@ -1280,19 +1296,83 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-serializers.json#myRdfSerializeJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerializeMediatypes = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+  'field': 'mediaTypes',
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mediatorRdfSerializeMediatypes',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#mediatorRdfSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const df_717_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
-  'field': 'mediaTypes',
-  'name': 'df_717_0',
+const df_757_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+  'field': 'mediaTypeFormats',
+  'name': 'df_757_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
 });
-const df_717_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
-  'field': 'mediaTypeFormats',
-  'name': 'df_717_1',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_serialize_Bus_RdfSerialize
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadata',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataPrimaryTopic)({
+  'metadataToData': false,
+  'dataToMetadataOnInvalidMetadataGraph': true,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataPrimaryTopic',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataAll)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataAll',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+  'field': 'metadata',
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadataExtract',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractPatchSparqlUpdate = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-patch-sparql-update/index.js").ActorRdfMetadataExtractPatchSparqlUpdate)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractPatchSparqlUpdate',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractAllowHttpMethods = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-allow-http-methods/index.js").ActorRdfMetadataExtractAllowHttpMethods)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractAllowHttpMethods',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractPutAccepted = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-put-accepted/index.js").ActorRdfMetadataExtractPutAccepted)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractPutAccepted',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraControls)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraControls',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraCount)({
+  'predicates': [
+  'http://www.w3.org/ns/hydra/core#totalItems',
+  'http://rdfs.org/ns/void#triples'
+],
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraCount',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractSparqlService)({
+  'inferHttpsEndpoint': true,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#myRdfMetadataExtractSparqlService',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_mediatorRdfUpdateHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#mediatorRdfUpdateHypermedia',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_hypermedia_Bus_RdfUpdateHypermedia
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Actor_RdfUpdateQuads_Hypermedia_httpInvalidator_default = new (__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/index.js").ActorHttpInvalidateListenable)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-update-quads/Actor/RdfUpdateQuads/Hypermedia/httpInvalidator#default',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_rdf_resolve_quad_pattern_hypermedia_Actor_RdfResolveQuadPattern_Hypermedia_httpInvalidator_default = new (__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/index.js").ActorHttpInvalidateListenable)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-rdf-resolve-quad-pattern-hypermedia/Actor/RdfResolveQuadPattern/Hypermedia/httpInvalidator#default',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-quads-rdfjs-store/index.js").ActorRdfUpdateQuadsRdfJsStore)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateQuadsRdfJsStore',
@@ -1321,41 +1401,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfResolveHypermedia',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractSparqlService)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#myRdfMetadataExtractSparqlService',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
-  'field': 'metadata',
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadataExtract',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraControls = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraControls)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraControls',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataExtractHydraCount)({
-  'predicates': [
-  'http://www.w3.org/ns/hydra/core#totalItems',
-  'http://rdfs.org/ns/void#triples'
-],
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataExtractHydraCount',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_extract_Bus_RdfMetadataExtract
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorMetadata',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataPrimaryTopic = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataPrimaryTopic)({
-  'metadataToData': false,
-  'dataToMetadataOnInvalidMetadataGraph': true,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataPrimaryTopic',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataAll = new (__cmncwpk_require__("./require-empty.js").ActorRdfMetadataAll)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myRdfMetadataAll',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_metadata_Bus_RdfMetadata
-});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfResolveHypermediaLinks = new (__cmncwpk_require__("./node_modules/@comunica/mediator-race/index.js").MediatorRace)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#mediatorRdfResolveHypermediaLinks',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_Bus_RdfResolveHypermediaLinks
@@ -1371,14 +1416,6 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaLinksQueue = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-hypermedia-links-queue-fifo/index.js").ActorRdfResolveHypermediaLinksQueueFifo)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myHypermediaLinksQueue',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_links_queue_Bus_RdfResolveHypermediaLinksQueue
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_rdf_resolve_quad_pattern_hypermedia_Actor_RdfResolveQuadPattern_Hypermedia_httpInvalidator_default = new (__cmncwpk_require__("./node_modules/@comunica/bus-http-invalidate/index.js").ActorHttpInvalidateListenable)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-rdf-resolve-quad-pattern-hypermedia/Actor/RdfResolveQuadPattern/Hypermedia/httpInvalidator#default',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate = new (__cmncwpk_require__("./node_modules/@comunica/mediator-all/index.js").MediatorAll)({
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorHttpInvalidate',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_http_invalidate_Bus_HttpInvalidate
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorOptimizeQueryOperation = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-pipeline/index.js").MediatorCombinePipeline)({
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorOptimizeQueryOperation',
@@ -1420,14 +1457,14 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-init.json#mediatorSparqlSerialize',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const df_703_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_743_0 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypes',
-  'name': 'df_703_0',
+  'name': 'df_743_0',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
-const df_703_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
+const df_743_1 = new (__cmncwpk_require__("./node_modules/@comunica/mediator-combine-union/index.js").MediatorCombineUnion)({
   'field': 'mediaTypeFormats',
-  'name': 'df_703_1',
+  'name': 'df_743_1',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeJson)({
@@ -1548,14 +1585,30 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserJsonLd',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_Bus_RdfParse
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaPatchSparqlUpdate = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/index.js").ActorRdfUpdateHypermediaPatchSparqlUpdate)({
+  'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateHypermediaPatchSparqlUpdate',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_hypermedia_Bus_RdfUpdateHypermedia
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaSparql = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/index.js").ActorRdfUpdateHypermediaSparql)({
+  'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
+  'checkUrlSuffixSparql': true,
+  'checkUrlSuffixUpdate': true,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateHypermediaSparql',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_hypermedia_Bus_RdfUpdateHypermedia
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaSparql)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
   'checkUrlSuffix': true,
+  'forceHttpGet': false,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#mySparqlQuadPatternResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver = new (__cmncwpk_require__("./require-empty.js").ActorQueryOperationSparqlEndpoint)({
   'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
+  'forceHttpGet': false,
+  'checkUrlSuffixSparql': true,
+  'checkUrlSuffixUpdate': true,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-sparql.json#mySparqlEndpointResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
@@ -1581,23 +1634,19 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-parsers.json#myRdfParserHtmlScript',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_parse_html_Bus_RdfParseHtml
 });
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaPutLdp = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/index.js").ActorRdfUpdateHypermediaPutLdp)({
+  'mediatorHttp': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_http_json_mediatorHttp,
+  'mediatorRdfSerializeMediatypes': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerializeMediatypes,
+  'mediatorRdfSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateHypermediaPutLdp',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_hypermedia_Bus_RdfUpdateHypermedia
+});
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer = new (__cmncwpk_require__("./require-empty.js").ActorSparqlSerializeRdf)({
   'mediatorRdfSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerialize,
-  'mediatorMediaTypeCombiner': df_717_0,
-  'mediatorMediaTypeFormatCombiner': df_717_1,
+  'mediatorMediaTypeCombiner': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mediatorRdfSerializeMediatypes,
+  'mediatorMediaTypeFormatCombiner': df_757_0,
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-serializers.json#myRdfSparqlSerializer',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_sparql_serialize_Bus_SparqlSerialize
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-federated/index.js").ActorRdfResolveQuadPatternFederated)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'skipEmptyPatterns': false,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
-  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveHypermediaQpf)({
   'mediatorMetadata': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata,
@@ -1609,6 +1658,27 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'graphUri': 'http://www.w3.org/ns/sparql-service-description#graph',
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-hypermedia.json#myHypermediaQpfResolver',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_hypermedia_Bus_RdfResolveHypermedia
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsHypermedia = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-quads-hypermedia/index.js").ActorRdfUpdateQuadsHypermedia)({
+  'mediatorRdfDereference': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference,
+  'mediatorMetadata': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadata,
+  'mediatorMetadataExtract': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorMetadataExtract,
+  'mediatorRdfUpdateHypermedia': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_mediatorRdfUpdateHypermedia,
+  'cacheSize': 100,
+  'httpInvalidator': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Actor_RdfUpdateQuads_Hypermedia_httpInvalidator_default,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/rdf-update-rdfjs.json#myRdfUpdateQuadsHypermedia',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_update_quads_Bus_RdfUpdateQuads
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver = new (__cmncwpk_require__("./node_modules/@comunica/actor-rdf-resolve-quad-pattern-federated/index.js").ActorRdfResolveQuadPatternFederated)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'skipEmptyPatterns': false,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/resolve-federated.json#myFederatedQuadPatternResolver',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_rdf_resolve_quad_pattern_Bus_RdfResolveQuadPattern
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-quadpattern/index.js").ActorQueryOperationQuadpattern)({
+  'mediatorResolveQuadPattern': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorResolveQuadPattern,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myQuadPatternQueryOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver = new (__cmncwpk_require__("./require-empty.js").ActorRdfResolveQuadPatternHypermedia)({
   'mediatorRdfDereference': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_mediatorRdfDereference,
@@ -1677,11 +1747,11 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
   'mediatorSparqlParse': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlParse,
   'mediatorSparqlSerialize': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorSparqlSerialize,
-  'mediatorSparqlSerializeMediaTypeCombiner': df_703_0,
-  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_703_1,
+  'mediatorSparqlSerializeMediaTypeCombiner': df_743_0,
+  'mediatorSparqlSerializeMediaTypeFormatCombiner': df_743_1,
   'mediatorContextPreprocess': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorContextPreprocess,
   'mediatorHttpInvalidate': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_init_json_mediatorHttpInvalidate,
-  'logger': df_299_0,
+  'logger': df_317_0,
   'contextKeyShortcuts': {
   'source': '@comunica/bus-rdf-resolve-quad-pattern:source',
   'sources': '@comunica/bus-rdf-resolve-quad-pattern:sources',
@@ -1696,10 +1766,54 @@ const urn_comunica_sparqlinit = new (__cmncwpk_require__("./node_modules/@comuni
   'lenient': '@comunica/actor-init-sparql:lenient',
   'httpIncludeCredentials': '@comunica/bus-http:include-credentials',
   'httpAuth': '@comunica/bus-http:auth',
-  'readOnly': '@comunica/bus-query-operation:readOnly'
+  'fetch': '@comunica/bus-http:fetch',
+  'readOnly': '@comunica/bus-query-operation:readOnly',
+  'extensionFunctions': '@comunica/actor-init-sparql:extensionFunctions',
+  'extensionFunctionCreator': '@comunica/actor-init-sparql:extensionFunctionCreator'
 },
   'name': 'urn:comunica:sparqlinit',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_init_Bus_Init
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
+  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
+});
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
+  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
+  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-ask/index.js").ActorQueryOperationAsk)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
@@ -1799,45 +1913,9 @@ const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sp
   'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myMinusQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-alt/index.js").ActorQueryOperationPathAlt)({
+const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myNopQueryOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-nop/index.js").ActorQueryOperationNop)({
   'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myAltPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-inv/index.js").ActorQueryOperationPathInv)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myInvPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-link/index.js").ActorQueryOperationPathLink)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myLinkPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-nps/index.js").ActorQueryOperationPathNps)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myNpsPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-one-or-more/index.js").ActorQueryOperationPathOneOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myOneOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-seq/index.js").ActorQueryOperationPathSeq)({
-  'mediatorJoin': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorRdfJoin,
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#mySeqPathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-more/index.js").ActorQueryOperationPathZeroOrMore)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrMorePathOperator',
-  'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
-});
-const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-path-zero-or-one/index.js").ActorQueryOperationPathZeroOrOne)({
-  'mediatorQueryOperation': https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mediatorQueryOperation,
-  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperator-path.json#myZeroOrOnePathOperator',
+  'name': 'https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-init-sparql/^1.0.0/config/sets/sparql-queryoperators.json#myNopQueryOperator',
   'bus': https___linkedsoftwaredependencies_org_bundles_npm__comunica_bus_query_operation_Bus_QueryOperation
 });
 const https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCompositeUpdateOperator = new (__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-update-compositeupdate/index.js").ActorQueryOperationUpdateCompositeUpdate)({
@@ -1911,11 +1989,15 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_parsers_json_myRdfParserHtmlScript,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializerN3,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_serializers_json_myRdfSerializeJsonLd,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsHypermedia,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractPatchSparqlUpdate,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaPatchSparqlUpdate,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractAllowHttpMethods,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractPutAccepted,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaPutLdp,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateHypermediaSparql,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_rdf_update_rdfjs_json_myRdfUpdateQuadsRdfJsStore,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_federated_json_myFederatedQuadPatternResolver,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaQpfResolver,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myHypermediaNoneResolver,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myQuadPatternHypermediaResolver,
@@ -1927,9 +2009,20 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_hypermedia_json_myRdfMetadataExtractHydraCount,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_rdfjs_json_myRdfRdfJsSourceQuadPatternResolver,
   urn_comunica_sparqlinit,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlQuadPatternResolver,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_myRdfMetadataExtractSparqlService,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_resolve_sparql_json_mySparqlEndpointResolver,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_graphql_parsers_json_myGraphqlParser,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_optimize_json_myJoinBgpOptimizer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_parsers_json_mySparqlParser,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myAskQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myServiceQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_mySliceQueryOperator,
@@ -1950,26 +2043,9 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myProjectQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myUnionQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myMinusQueryOperator,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myNopQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myValuesQueryOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myQuadPatternQueryOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myAltPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myInvPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myLinkPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myNpsPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myOneOrMorePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_mySeqPathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrMorePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_path_json_myZeroOrOnePathOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCompositeUpdateOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myDeleteInsertOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperators_json_myLoadQueryOperator,
@@ -1979,7 +2055,17 @@ const urn_comunica_my = ({
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myAddOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myMoveOperator,
   https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myCopyOperator,
-  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myActorContextPreprocessSourceToDestination
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_queryoperator_update_json_myActorContextPreprocessSourceToDestination,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myJsonSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myRdfSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySimpleSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlCsvSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlJsonSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlTsvSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_mySparqlXmlSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myStatsSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTableSparqlSerializer,
+  https___linkedsoftwaredependencies_org_bundles_npm__comunica_actor_init_sparql__1_0_0_config_sets_sparql_serializers_json_myTreeSparqlSerializer
 ]
 });
 module.exports = urn_comunica_sparqlinit;
@@ -2149,7 +2235,9 @@ class ActorInitSparql extends bus_init_1.ActorInit {
             operation = bus_query_operation_1.materializeOperation(operation, bus_query_operation_1.ensureBindings(bindings));
         }
         // Optimize the query operation
-        operation = (await this.mediatorOptimizeQueryOperation.mediate({ context, operation })).operation;
+        const mediatorResult = await this.mediatorOptimizeQueryOperation.mediate({ context, operation });
+        operation = mediatorResult.operation;
+        context = mediatorResult.context || context;
         // Save original query in context
         context = context.set(context_entries_1.KeysInitSparql.query, operation);
         // Execute query
@@ -3129,7 +3217,7 @@ class ActorQueryOperationExtend extends bus_query_operation_1.ActorQueryOperatio
     }
     async testOperation(pattern, context) {
         // Will throw error for unsupported opperations
-        const _ = Boolean(new sparqlee_1.AsyncEvaluator(pattern.expression));
+        const _ = Boolean(new sparqlee_1.AsyncEvaluator(pattern.expression, bus_query_operation_1.ActorQueryOperation.getAsyncExpressionContext(context, this.mediatorQueryOperation)));
         return true;
     }
     async runOperation(pattern, context) {
@@ -3229,7 +3317,21 @@ class ActorQueryOperationFilterSparqlee extends bus_query_operation_1.ActorQuery
                 }
             }
             catch (error) {
-                if (!sparqlee_1.isExpressionError(error)) {
+                // We ignore all Expression errors.
+                // Other errors (likely programming mistakes) are still propagated.
+                //
+                // > Specifically, FILTERs eliminate any solutions that,
+                // > when substituted into the expression, either result in
+                // > an effective boolean value of false or produce an error.
+                // > ...
+                // > These errors have no effect outside of FILTER evaluation.
+                // https://www.w3.org/TR/sparql11-query/#expressions
+                if (sparqlee_1.isExpressionError(error)) {
+                    // In many cases, this is a user error, where the user should manually cast the variable to a string.
+                    // In order to help users debug this, we should report these errors via the logger as warnings.
+                    this.logWarn(context, 'Error occurred while filtering.', () => ({ error, bindings: item.toJS() }));
+                }
+                else {
                     bindingsStream.emit('error', error);
                 }
             }
@@ -3497,7 +3599,7 @@ class ActorQueryOperationGroup extends bus_query_operation_1.ActorQueryOperation
     async testOperation(pattern, context) {
         for (const aggregate of pattern.aggregates) {
             // Will throw for unsupported expressions
-            const _ = new sparqlee_1.SyncEvaluator(aggregate.expression);
+            const _ = new sparqlee_1.AsyncEvaluator(aggregate.expression, bus_query_operation_1.ActorQueryOperation.getAsyncExpressionContext(context));
         }
         return true;
     }
@@ -3513,7 +3615,7 @@ class ActorQueryOperationGroup extends bus_query_operation_1.ActorQueryOperation
             ...pattern.variables.map(x => rdf_string_1.termToString(x)),
             ...aggregates.map(agg => rdf_string_1.termToString(agg.variable)),
         ];
-        const sparqleeConfig = Object.assign({}, bus_query_operation_1.ActorQueryOperation.getExpressionContext(context));
+        const sparqleeConfig = bus_query_operation_1.ActorQueryOperation.getAsyncExpressionContext(context);
         // Return a new promise that completes when the stream has ended or when
         // an error occurs
         return new Promise((resolve, reject) => {
@@ -3522,9 +3624,9 @@ class ActorQueryOperationGroup extends bus_query_operation_1.ActorQueryOperation
             // We can only return when the binding stream ends, when that happens
             // we return the identified groups. Which are nothing more than Bindings
             // of the grouping variables merged with the aggregate variables
-            output.bindingsStream.on('end', () => {
+            output.bindingsStream.on('end', async () => {
                 try {
-                    const bindingsStream = new asynciterator_1.ArrayIterator(groups.collectResults(), { autoStart: false });
+                    const bindingsStream = new asynciterator_1.ArrayIterator(await groups.collectResults(), { autoStart: false });
                     const { metadata } = output;
                     resolve({ type: 'bindings', bindingsStream, metadata, variables, canContainUndefs: output.canContainUndefs });
                 }
@@ -3538,12 +3640,7 @@ class ActorQueryOperationGroup extends bus_query_operation_1.ActorQueryOperation
             // We need to bind this after the 'error' and 'end' listeners to avoid the
             // stream having ended before those listeners are bound.
             output.bindingsStream.on('data', bindings => {
-                try {
-                    groups.consumeBindings(bindings);
-                }
-                catch (error) {
-                    reject(error);
-                }
+                groups.consumeBindings(bindings).catch(reject);
             });
         });
     }
@@ -3572,10 +3669,13 @@ class GroupsState {
         this.pattern = pattern;
         this.sparqleeConfig = sparqleeConfig;
         this.groups = new Map();
+        this.groupsInitializer = new Map();
         this.groupVariables = new Set(this.pattern.variables.map(x => rdf_string_1.termToString(x)));
         this.distinctHashes = pattern.aggregates.some(({ distinct }) => distinct) ?
             new Map() :
             null;
+        this.waitCounter = 1;
+        this.resultHasBeenCalled = false;
     }
     /**
      * - Consumes a stream binding
@@ -3585,52 +3685,69 @@ class GroupsState {
      * @param {Bindings} bindings - The Bindings to consume
      */
     consumeBindings(bindings) {
+        const check = this.resultCheck();
+        if (check) {
+            return check;
+        }
+        // We increment the counter and decrement him when put action is performed.
+        this.waitCounter++;
         // Select the bindings on which we group
         const grouper = bindings
             .filter((_, variable) => this.groupVariables.has(variable))
             .toMap();
         const groupHash = this.hashBindings(grouper);
         // First member of group -> create new group
-        let group = this.groups.get(groupHash);
-        if (!group) {
+        let groupInitializer = this.groupsInitializer.get(groupHash);
+        let res;
+        if (!groupInitializer) {
             // Initialize state for all aggregators for new group
-            const aggregators = {};
-            for (const aggregate of this.pattern.aggregates) {
-                const key = rdf_string_1.termToString(aggregate.variable);
-                aggregators[key] = new sparqlee_1.AggregateEvaluator(aggregate, this.sparqleeConfig);
-                aggregators[key].put(bindings);
-            }
-            group = { aggregators, bindings: grouper };
-            this.groups.set(groupHash, group);
-            if (this.distinctHashes) {
-                const bindingsHash = this.hashBindings(bindings);
-                this.distinctHashes.set(groupHash, new Set([bindingsHash]));
-            }
+            groupInitializer = (async () => {
+                const aggregators = {};
+                await Promise.all(this.pattern.aggregates.map(async (aggregate) => {
+                    const key = rdf_string_1.termToString(aggregate.variable);
+                    aggregators[key] = new sparqlee_1.AsyncAggregateEvaluator(aggregate, this.sparqleeConfig);
+                    await aggregators[key].put(bindings);
+                }));
+                if (this.distinctHashes) {
+                    const bindingsHash = this.hashBindings(bindings);
+                    this.distinctHashes.set(groupHash, new Set([bindingsHash]));
+                }
+                const group = { aggregators, bindings: grouper };
+                this.groups.set(groupHash, group);
+                this.subtractWaitCounterAndCollect();
+                return group;
+            })();
+            this.groupsInitializer.set(groupHash, groupInitializer);
+            res = groupInitializer;
         }
         else {
-            // Group already exists
-            // Update all the aggregators with the input binding
-            for (const aggregate of this.pattern.aggregates) {
-                // If distinct, check first wether we have inserted these values already
-                if (aggregate.distinct) {
-                    const hash = this.hashBindings(bindings);
-                    if (this.distinctHashes.get(groupHash).has(hash)) {
-                        continue;
-                    }
-                    else {
+            const groupInitializerDefined = groupInitializer;
+            res = (async () => {
+                const group = await groupInitializerDefined;
+                await Promise.all(this.pattern.aggregates.map(async (aggregate) => {
+                    // If distinct, check first whether we have inserted these values already
+                    if (aggregate.distinct) {
+                        const hash = this.hashBindings(bindings);
+                        if (this.distinctHashes.get(groupHash).has(hash)) {
+                            return;
+                        }
                         this.distinctHashes.get(groupHash).add(hash);
                     }
-                }
-                const variable = rdf_string_1.termToString(aggregate.variable);
-                group.aggregators[variable].put(bindings);
-            }
+                    const variable = rdf_string_1.termToString(aggregate.variable);
+                    await group.aggregators[variable].put(bindings);
+                }));
+            })().then(() => {
+                this.subtractWaitCounterAndCollect();
+            });
+        }
+        return res;
+    }
+    subtractWaitCounterAndCollect() {
+        if (--this.waitCounter === 0) {
+            this.handleResultCollection();
         }
     }
-    /**
-     * Collect the result of the current state. This returns a Bindings per group,
-     * and a (possibly empty) Bindings in case the no Bindings have been consumed yet.
-     */
-    collectResults() {
+    handleResultCollection() {
         // Collect groups
         let rows = [...this.groups].map(([_, group]) => {
             const { bindings: groupBindings, aggregators } = group;
@@ -3654,14 +3771,37 @@ class GroupsState {
             const single = {};
             for (const aggregate of this.pattern.aggregates) {
                 const key = rdf_string_1.termToString(aggregate.variable);
-                const value = sparqlee_1.AggregateEvaluator.emptyValue(aggregate);
+                const value = sparqlee_1.AsyncAggregateEvaluator.emptyValue(aggregate);
                 if (value !== undefined) {
                     single[key] = value;
                 }
             }
             rows = [bus_query_operation_1.Bindings(single)];
         }
-        return rows;
+        this.waitResolver(rows);
+    }
+    resultCheck() {
+        if (this.resultHasBeenCalled) {
+            return Promise.reject(new Error('Calling any function after calling collectResult is invalid.'));
+        }
+    }
+    /**
+     * Collect the result of the final state. This returns a Bindings per group,
+     * and a (possibly empty) Bindings in case no Bindings have been consumed yet.
+     * You can only call this method once, after calling this method,
+     * calling any function on this will result in an error being thrown.
+     */
+    collectResults() {
+        const check = this.resultCheck();
+        if (check) {
+            return check;
+        }
+        this.resultHasBeenCalled = true;
+        const res = new Promise(resolve => {
+            this.waitResolver = resolve;
+        });
+        this.subtractWaitCounterAndCollect();
+        return res;
     }
     /**
      * @param {Bindings} bindings - Bindings to hash
@@ -4006,6 +4146,62 @@ exports.BindingsIndex = BindingsIndex;
 
 /***/ }),
 
+/***/ "./node_modules/@comunica/actor-query-operation-nop/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-query-operation-nop/lib/ActorQueryOperationNop.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-query-operation-nop/lib/ActorQueryOperationNop.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorQueryOperationNop = void 0;
+const bus_query_operation_1 = __cmncwpk_require__("./node_modules/@comunica/bus-query-operation/index.js");
+const asynciterator_1 = __cmncwpk_require__("asynciterator");
+/**
+ * A [Query Operation](https://github.com/comunica/comunica/tree/master/packages/bus-query-operation)
+ * actor that handles SPARQL nop operations.
+ */
+class ActorQueryOperationNop extends bus_query_operation_1.ActorQueryOperationTypedMediated {
+    constructor(args) {
+        super(args, 'nop');
+    }
+    async testOperation(pattern, context) {
+        return true;
+    }
+    async runOperation(pattern, context) {
+        return {
+            bindingsStream: new asynciterator_1.SingletonIterator(bus_query_operation_1.Bindings({})),
+            metadata: () => Promise.resolve({ totalItems: 1 }),
+            type: 'bindings',
+            variables: [],
+            canContainUndefs: false,
+        };
+    }
+}
+exports.ActorQueryOperationNop = ActorQueryOperationNop;
+//# sourceMappingURL=ActorQueryOperationNop.js.map
+
+/***/ }),
+
 /***/ "./node_modules/@comunica/actor-query-operation-orderby-sparqlee/index.js":
 /***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
@@ -4051,7 +4247,7 @@ class ActorQueryOperationOrderBySparqlee extends bus_query_operation_1.ActorQuer
         // Will throw error for unsupported operators
         for (let expr of pattern.expressions) {
             expr = this.extractSortExpression(expr);
-            const _ = new sparqlee_1.AsyncEvaluator(expr);
+            const _ = new sparqlee_1.AsyncEvaluator(expr, bus_query_operation_1.ActorQueryOperation.getAsyncExpressionContext(context));
         }
         return true;
     }
@@ -4075,6 +4271,9 @@ class ActorQueryOperationOrderBySparqlee extends bus_query_operation_1.ActorQuer
                     push({ bindings, result });
                 }
                 catch (error) {
+                    // We ignore all Expression errors.
+                    // Other errors (likely programming mistakes) are still propagated.
+                    // I can't recall where this is defined in the spec.
                     if (!sparqlee_1.isExpressionError(error)) {
                         bindingsStream.emit('error', error);
                     }
@@ -4905,10 +5104,11 @@ class ActorQueryOperationProject extends bus_query_operation_1.ActorQueryOperati
         // Resolve the input
         const output = bus_query_operation_1.ActorQueryOperation.getSafeBindings(await this.mediatorQueryOperation.mediate({ operation: pattern.input, context }));
         // Find all variables that should be deleted from the input stream.
-        const variables = pattern.variables.map(x => rdf_string_1.termToString(x));
+        const variables = pattern.variables.map(x => x.termType === 'Wildcard' ? '*' : rdf_string_1.termToString(x));
         const deleteVariables = output.variables.filter(variable => !variables.includes(variable));
         // Error if there are variables that are not bound in the input stream.
-        const missingVariables = variables.filter(variable => !output.variables.includes(variable));
+        const missingVariables = variables.filter(variable => !output.variables.includes(variable) &&
+            variable !== '*');
         if (missingVariables.length > 0) {
             throw new Error(`Variables '${missingVariables}' are used in the projection result, but are not assigned.`);
         }
@@ -5561,9 +5761,19 @@ class ActorQueryOperationClear extends bus_query_operation_1.ActorQueryOperation
     }
     async runOperation(pattern, context) {
         // Delegate to update-quads bus
+        let graphs;
+        if (pattern.source === 'DEFAULT') {
+            graphs = DF.defaultGraph();
+        }
+        else if (typeof pattern.source === 'string') {
+            graphs = pattern.source;
+        }
+        else {
+            graphs = [pattern.source];
+        }
         const { updateResult } = await this.mediatorUpdateQuads.mediate({
             deleteGraphs: {
-                graphs: pattern.source === 'DEFAULT' ? DF.defaultGraph() : pattern.source,
+                graphs,
                 requireExistence: !pattern.silent,
                 dropGraphs: false,
             },
@@ -5751,8 +5961,8 @@ class ActorQueryOperationCreate extends bus_query_operation_1.ActorQueryOperatio
     async runOperation(pattern, context) {
         // Delegate to update-quads bus
         const { updateResult } = await this.mediatorUpdateQuads.mediate({
-            createGraph: {
-                graph: pattern.source,
+            createGraphs: {
+                graphs: [pattern.source],
                 requireNonExistence: !pattern.silent,
             },
             context,
@@ -5892,9 +6102,19 @@ class ActorQueryOperationDrop extends bus_query_operation_1.ActorQueryOperationT
     }
     async runOperation(pattern, context) {
         // Delegate to update-quads bus
+        let graphs;
+        if (pattern.source === 'DEFAULT') {
+            graphs = DF.defaultGraph();
+        }
+        else if (typeof pattern.source === 'string') {
+            graphs = pattern.source;
+        }
+        else {
+            graphs = [pattern.source];
+        }
         const { updateResult } = await this.mediatorUpdateQuads.mediate({
             deleteGraphs: {
-                graphs: pattern.source === 'DEFAULT' ? DF.defaultGraph() : pattern.source,
+                graphs,
                 requireExistence: !pattern.silent,
                 dropGraphs: true,
             },
@@ -6361,6 +6581,165 @@ class ActorRdfJoinSymmetricHash extends bus_rdf_join_1.ActorRdfJoin {
 }
 exports.ActorRdfJoinSymmetricHash = ActorRdfJoinSymmetricHash;
 //# sourceMappingURL=ActorRdfJoinSymmetricHash.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-allow-http-methods/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-allow-http-methods/lib/ActorRdfMetadataExtractAllowHttpMethods.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-allow-http-methods/lib/ActorRdfMetadataExtractAllowHttpMethods.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfMetadataExtractAllowHttpMethods = void 0;
+const bus_rdf_metadata_extract_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/index.js");
+/**
+ * A comunica Allow HTTP Methods RDF Metadata Extract Actor.
+ */
+class ActorRdfMetadataExtractAllowHttpMethods extends bus_rdf_metadata_extract_1.ActorRdfMetadataExtract {
+    constructor(args) {
+        super(args);
+    }
+    async test(action) {
+        return true;
+    }
+    async run(action) {
+        const metadata = {};
+        if (action.headers && action.headers.allow) {
+            metadata.allowHttpMethods = action.headers.allow.split(/, */u);
+        }
+        return { metadata };
+    }
+}
+exports.ActorRdfMetadataExtractAllowHttpMethods = ActorRdfMetadataExtractAllowHttpMethods;
+//# sourceMappingURL=ActorRdfMetadataExtractAllowHttpMethods.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-patch-sparql-update/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-patch-sparql-update/lib/ActorRdfMetadataExtractPatchSparqlUpdate.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-patch-sparql-update/lib/ActorRdfMetadataExtractPatchSparqlUpdate.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfMetadataExtractPatchSparqlUpdate = void 0;
+const bus_rdf_metadata_extract_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/index.js");
+/**
+ * A comunica Patch SPARQL Update RDF Metadata Extract Actor.
+ */
+class ActorRdfMetadataExtractPatchSparqlUpdate extends bus_rdf_metadata_extract_1.ActorRdfMetadataExtract {
+    constructor(args) {
+        super(args);
+    }
+    async test(action) {
+        return true;
+    }
+    async run(action) {
+        const metadata = {};
+        // The ms-author-via header is added for backwards-compatibility with old Solid servers
+        if (action.headers &&
+            ((action.headers['accept-patch'] && action.headers['accept-patch'].includes('application/sparql-update')) ||
+                (action.headers['ms-author-via'] && action.headers['ms-author-via'].includes('SPARQL')))) {
+            metadata.patchSparqlUpdate = true;
+        }
+        return { metadata };
+    }
+}
+exports.ActorRdfMetadataExtractPatchSparqlUpdate = ActorRdfMetadataExtractPatchSparqlUpdate;
+//# sourceMappingURL=ActorRdfMetadataExtractPatchSparqlUpdate.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-put-accepted/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-metadata-extract-put-accepted/lib/ActorRdfMetadataExtractPutAccepted.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-metadata-extract-put-accepted/lib/ActorRdfMetadataExtractPutAccepted.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfMetadataExtractPutAccepted = void 0;
+const bus_rdf_metadata_extract_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/index.js");
+/**
+ * A comunica PUT Accepted RDF Metadata Extract Actor.
+ */
+class ActorRdfMetadataExtractPutAccepted extends bus_rdf_metadata_extract_1.ActorRdfMetadataExtract {
+    constructor(args) {
+        super(args);
+    }
+    async test(action) {
+        return true;
+    }
+    async run(action) {
+        const metadata = {};
+        if (action.headers && action.headers['accept-put']) {
+            metadata.putAccepted = action.headers['accept-put'].split(/, */u);
+        }
+        return { metadata };
+    }
+}
+exports.ActorRdfMetadataExtractPutAccepted = ActorRdfMetadataExtractPutAccepted;
+//# sourceMappingURL=ActorRdfMetadataExtractPutAccepted.js.map
 
 /***/ }),
 
@@ -7014,6 +7393,504 @@ exports.ActorRdfSerializeJsonLd = ActorRdfSerializeJsonLd;
 
 /***/ }),
 
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/lib/ActorRdfUpdateHypermediaPatchSparqlUpdate.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/lib/QuadDestinationPatchSparqlUpdate.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/lib/ActorRdfUpdateHypermediaPatchSparqlUpdate.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfUpdateHypermediaPatchSparqlUpdate = void 0;
+const bus_rdf_update_hypermedia_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-hypermedia/index.js");
+const QuadDestinationPatchSparqlUpdate_1 = __cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/lib/QuadDestinationPatchSparqlUpdate.js");
+/**
+ * A comunica Patch SPARQL Update RDF Update Hypermedia Actor.
+ */
+class ActorRdfUpdateHypermediaPatchSparqlUpdate extends bus_rdf_update_hypermedia_1.ActorRdfUpdateHypermedia {
+    constructor(args) {
+        super(args, 'patchSparqlUpdate');
+    }
+    async testMetadata(action) {
+        if (!action.forceDestinationType && !action.metadata.patchSparqlUpdate) {
+            throw new Error(`Actor ${this.name} could not detect a destination with 'application/sparql-update' as 'Accept-Patch' header.`);
+        }
+        if (!action.forceDestinationType && !action.exists) {
+            throw new Error(`Actor ${this.name} can only patch a destination that already exists.`);
+        }
+        return true;
+    }
+    async run(action) {
+        this.logInfo(action.context, `Identified as patchSparqlUpdate destination: ${action.url}`);
+        return {
+            destination: new QuadDestinationPatchSparqlUpdate_1.QuadDestinationPatchSparqlUpdate(action.url, action.context, this.mediatorHttp),
+        };
+    }
+}
+exports.ActorRdfUpdateHypermediaPatchSparqlUpdate = ActorRdfUpdateHypermediaPatchSparqlUpdate;
+//# sourceMappingURL=ActorRdfUpdateHypermediaPatchSparqlUpdate.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-patch-sparql-update/lib/QuadDestinationPatchSparqlUpdate.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.QuadDestinationPatchSparqlUpdate = void 0;
+const stream_1 = __cmncwpk_require__("./require-empty.js");
+const bus_http_1 = __cmncwpk_require__("./node_modules/@comunica/bus-http/index.js");
+const bus_rdf_update_quads_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/index.js");
+const cross_fetch_1 = __cmncwpk_require__("./require-empty.js");
+const rdf_string_ttl_1 = __cmncwpk_require__("./node_modules/rdf-string-ttl/index.js");
+/**
+ * A quad destination that represents a resource that is patchable via SPARQL Update.
+ */
+class QuadDestinationPatchSparqlUpdate {
+    constructor(url, context, mediatorHttp) {
+        this.url = url;
+        this.context = context;
+        this.mediatorHttp = mediatorHttp;
+    }
+    insert(quads) {
+        return this.wrapSparqlUpdateRequest('INSERT', quads);
+    }
+    async delete(quads) {
+        return this.wrapSparqlUpdateRequest('DELETE', quads);
+    }
+    async wrapSparqlUpdateRequest(type, quads) {
+        // Wrap triples in DATA block
+        const dataWrapped = quads
+            .map((quad) => {
+            let stringQuad = `${rdf_string_ttl_1.termToString(quad.subject)} ${rdf_string_ttl_1.termToString(quad.predicate)} ${rdf_string_ttl_1.termToString(quad.object)} .`;
+            if (quad.graph.termType !== 'DefaultGraph') {
+                stringQuad = `  GRAPH ${rdf_string_ttl_1.termToString(quad.graph)} { ${stringQuad} }\n`;
+            }
+            else {
+                stringQuad = `  ${stringQuad}\n`;
+            }
+            return stringQuad;
+        })
+            .prepend([`${type} DATA {\n`])
+            .append(['}']);
+        const readable = new stream_1.Readable();
+        readable._read = () => true;
+        dataWrapped.on('data', (quad) => readable.push(quad));
+        dataWrapped.on('end', () => readable.push(null));
+        // Send data in PUT request
+        const headers = new cross_fetch_1.Headers({ 'content-type': 'application/sparql-update' });
+        const httpResponse = await this.mediatorHttp.mediate({
+            context: this.context,
+            init: {
+                headers,
+                method: 'PATCH',
+                body: bus_http_1.ActorHttp.toWebReadableStream(readable),
+            },
+            input: this.url,
+        });
+        await bus_rdf_update_quads_1.validateHttpResponse(this.url, httpResponse);
+    }
+    async deleteGraphs(graphs, requireExistence, dropGraphs) {
+        throw new Error(`Patch-based SPARQL Update destinations don't support named graphs`);
+    }
+    async createGraphs(graphs, requireNonExistence) {
+        throw new Error(`Patch-based SPARQL Update destinations don't support named graphs`);
+    }
+}
+exports.QuadDestinationPatchSparqlUpdate = QuadDestinationPatchSparqlUpdate;
+//# sourceMappingURL=QuadDestinationPatchSparqlUpdate.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/lib/ActorRdfUpdateHypermediaPutLdp.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/lib/QuadDestinationPutLdp.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/lib/ActorRdfUpdateHypermediaPutLdp.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfUpdateHypermediaPutLdp = void 0;
+const bus_rdf_update_hypermedia_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-hypermedia/index.js");
+const QuadDestinationPutLdp_1 = __cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/lib/QuadDestinationPutLdp.js");
+/**
+ * A comunica Post LDP RDF Update Hypermedia Actor.
+ */
+class ActorRdfUpdateHypermediaPutLdp extends bus_rdf_update_hypermedia_1.ActorRdfUpdateHypermedia {
+    constructor(args) {
+        super(args, 'putLdp');
+    }
+    async testMetadata(action) {
+        if (!action.forceDestinationType) {
+            if (!action.metadata.allowHttpMethods || !action.metadata.allowHttpMethods.includes('PUT')) {
+                throw new Error(`Actor ${this.name} could not detect a destination with 'Allow: PUT' header.`);
+            }
+            if (action.exists) {
+                throw new Error(`Actor ${this.name} can only put on a destination that does not already exists.`);
+            }
+        }
+        return true;
+    }
+    async run(action) {
+        this.logInfo(action.context, `Identified as putLdp destination: ${action.url}`);
+        return {
+            destination: new QuadDestinationPutLdp_1.QuadDestinationPutLdp(action.url, action.context, action.metadata.putAccepted || [], this.mediatorHttp, this.mediatorRdfSerializeMediatypes, this.mediatorRdfSerialize),
+        };
+    }
+}
+exports.ActorRdfUpdateHypermediaPutLdp = ActorRdfUpdateHypermediaPutLdp;
+//# sourceMappingURL=ActorRdfUpdateHypermediaPutLdp.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-put-ldp/lib/QuadDestinationPutLdp.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.QuadDestinationPutLdp = void 0;
+const bus_http_1 = __cmncwpk_require__("./node_modules/@comunica/bus-http/index.js");
+const bus_rdf_update_quads_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/index.js");
+const cross_fetch_1 = __cmncwpk_require__("./require-empty.js");
+/**
+ * A quad destination that represents a resource that can be PUT.
+ */
+class QuadDestinationPutLdp {
+    constructor(url, context, mediaTypes, mediatorHttp, mediatorRdfSerializeMediatypes, mediatorRdfSerialize) {
+        this.url = url;
+        this.context = context;
+        this.mediaTypes = mediaTypes;
+        this.mediatorHttp = mediatorHttp;
+        this.mediatorRdfSerializeMediatypes = mediatorRdfSerializeMediatypes;
+        this.mediatorRdfSerialize = mediatorRdfSerialize;
+    }
+    insert(quads) {
+        return this.wrapRdfUpdateRequest('INSERT', quads);
+    }
+    async delete(quads) {
+        throw new Error(`Put-based LDP destinations don't support deletions`);
+    }
+    async wrapRdfUpdateRequest(type, quads) {
+        // Determine media type for serialization
+        const { mediaTypes } = await this.mediatorRdfSerializeMediatypes.mediate({ context: this.context, mediaTypes: true });
+        const availableMediaTypes = this.mediaTypes
+            .filter(mediaType => mediaType in mediaTypes);
+        // Fallback to our own preferred media type
+        const mediaType = availableMediaTypes.length > 0 ?
+            availableMediaTypes[0] :
+            Object.keys(mediaTypes).sort((typeA, typeB) => mediaTypes[typeB] - mediaTypes[typeA])[0];
+        // Serialize quads
+        const { handle: { data } } = await this.mediatorRdfSerialize.mediate({
+            handle: { quadStream: quads },
+            handleMediaType: mediaType,
+        });
+        // Send data in (LDP) PUT request
+        const headers = new cross_fetch_1.Headers({ 'content-type': mediaType });
+        const httpResponse = await this.mediatorHttp.mediate({
+            context: this.context,
+            init: {
+                headers,
+                method: 'PUT',
+                body: bus_http_1.ActorHttp.toWebReadableStream(data),
+            },
+            input: this.url,
+        });
+        await bus_rdf_update_quads_1.validateHttpResponse(this.url, httpResponse);
+    }
+    async deleteGraphs(graphs, requireExistence, dropGraphs) {
+        throw new Error(`Put-based LDP destinations don't support named graphs`);
+    }
+    async createGraphs(graphs, requireNonExistence) {
+        throw new Error(`Put-based LDP destinations don't support named graphs`);
+    }
+}
+exports.QuadDestinationPutLdp = QuadDestinationPutLdp;
+//# sourceMappingURL=QuadDestinationPutLdp.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/lib/ActorRdfUpdateHypermediaSparql.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/lib/QuadDestinationSparql.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/lib/ActorRdfUpdateHypermediaSparql.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfUpdateHypermediaSparql = void 0;
+const bus_rdf_update_hypermedia_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-hypermedia/index.js");
+const QuadDestinationSparql_1 = __cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/lib/QuadDestinationSparql.js");
+/**
+ * A comunica SPARQL RDF Update Hypermedia Actor.
+ */
+class ActorRdfUpdateHypermediaSparql extends bus_rdf_update_hypermedia_1.ActorRdfUpdateHypermedia {
+    constructor(args) {
+        super(args, 'sparql');
+    }
+    async testMetadata(action) {
+        if (!action.forceDestinationType && !action.metadata.sparqlService &&
+            !(this.checkUrlSuffixSparql && action.url.endsWith('/sparql')) &&
+            !(this.checkUrlSuffixUpdate && action.url.endsWith('/update'))) {
+            throw new Error(`Actor ${this.name} could not detect a SPARQL service description or URL ending on /sparql or /update.`);
+        }
+        return true;
+    }
+    async run(action) {
+        this.logInfo(action.context, `Identified as sparql destination: ${action.url}`);
+        return {
+            destination: new QuadDestinationSparql_1.QuadDestinationSparql(action.metadata.sparqlService || action.url, action.context, this.mediatorHttp),
+        };
+    }
+}
+exports.ActorRdfUpdateHypermediaSparql = ActorRdfUpdateHypermediaSparql;
+//# sourceMappingURL=ActorRdfUpdateHypermediaSparql.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-hypermedia-sparql/lib/QuadDestinationSparql.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.QuadDestinationSparql = void 0;
+const fetch_sparql_endpoint_1 = __cmncwpk_require__("./require-empty.js");
+const rdf_string_ttl_1 = __cmncwpk_require__("./node_modules/rdf-string-ttl/index.js");
+const stringifyStream = __cmncwpk_require__("./node_modules/stream-to-string/index.js");
+/**
+ * A quad destination that represents an LDP resource.
+ */
+class QuadDestinationSparql {
+    constructor(url, context, mediatorHttp) {
+        this.url = url;
+        this.context = context;
+        this.mediatorHttp = mediatorHttp;
+        this.endpointFetcher = new fetch_sparql_endpoint_1.SparqlEndpointFetcher({
+            fetch: (input, init) => this.mediatorHttp.mediate({ input, init, context: this.context }),
+            prefixVariableQuestionMark: true,
+        });
+    }
+    insert(quads) {
+        return this.wrapSparqlUpdateRequest('INSERT', quads);
+    }
+    async delete(quads) {
+        return this.wrapSparqlUpdateRequest('DELETE', quads);
+    }
+    async wrapSparqlUpdateRequest(type, quads) {
+        // Wrap triples in DATA block
+        const dataWrapped = quads
+            .map((quad) => {
+            let stringQuad = `${rdf_string_ttl_1.termToString(quad.subject)} ${rdf_string_ttl_1.termToString(quad.predicate)} ${rdf_string_ttl_1.termToString(quad.object)} .`;
+            if (quad.graph.termType !== 'DefaultGraph') {
+                stringQuad = `  GRAPH ${rdf_string_ttl_1.termToString(quad.graph)} { ${stringQuad} }\n`;
+            }
+            else {
+                stringQuad = `  ${stringQuad}\n`;
+            }
+            return stringQuad;
+        })
+            .prepend([`${type} DATA {\n`])
+            .append(['}']);
+        // Serialize query stream to string
+        const query = await stringifyStream(dataWrapped);
+        // Send update query to endpoint
+        await this.endpointFetcher.fetchUpdate(this.url, query);
+    }
+    async deleteGraphs(graphsIn, requireExistence, dropGraphs) {
+        const graphs = Array.isArray(graphsIn) ?
+            graphsIn :
+            [graphsIn];
+        const queries = [];
+        for (const graph of graphs) {
+            let graphValue;
+            if (typeof graph === 'string') {
+                graphValue = graph;
+            }
+            else if (graph.termType === 'DefaultGraph') {
+                graphValue = 'DEFAULT';
+            }
+            else {
+                graphValue = `GRAPH <${graph.value}>`;
+            }
+            queries.push(`${dropGraphs ? 'DROP' : 'CLEAR'} ${requireExistence ? '' : 'SILENT '}${graphValue}`);
+        }
+        await this.endpointFetcher.fetchUpdate(this.url, queries.join('; '));
+    }
+    async createGraphs(graphs, requireNonExistence) {
+        const queries = [];
+        for (const graph of graphs) {
+            queries.push(`CREATE${requireNonExistence ? '' : ' SILENT'} GRAPH <${graph.value}>`);
+        }
+        await this.endpointFetcher.fetchUpdate(this.url, queries.join('; '));
+    }
+}
+exports.QuadDestinationSparql = QuadDestinationSparql;
+//# sourceMappingURL=QuadDestinationSparql.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-quads-hypermedia/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/actor-rdf-update-quads-hypermedia/lib/ActorRdfUpdateQuadsHypermedia.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/actor-rdf-update-quads-hypermedia/lib/ActorRdfUpdateQuadsHypermedia.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfUpdateQuadsHypermedia = void 0;
+const bus_rdf_update_quads_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/index.js");
+const LRUCache = __cmncwpk_require__("./node_modules/lru-cache/index.js");
+/**
+ * A comunica Hypermedia RDF Update Quads Actor.
+ */
+class ActorRdfUpdateQuadsHypermedia extends bus_rdf_update_quads_1.ActorRdfUpdateQuadsDestination {
+    constructor(args) {
+        super(args);
+        this.cache = this.cacheSize ? new LRUCache({ max: this.cacheSize }) : undefined;
+        const cache = this.cache;
+        if (cache) {
+            this.httpInvalidator.addInvalidateListener(({ url }) => url ? cache.del(url) : cache.reset());
+        }
+    }
+    async test(action) {
+        const url = this.getContextDestinationUrl(this.getContextDestination(action.context));
+        if (!url) {
+            throw new Error(`Actor ${this.name} can only update quads against a single destination URL.`);
+        }
+        return true;
+    }
+    getDestination(context) {
+        const dataDestination = this.getContextDestination(context);
+        let url = this.getContextDestinationUrl(dataDestination);
+        // Try to read from cache
+        if (this.cache && this.cache.has(url)) {
+            return this.cache.get(url);
+        }
+        // Otherwise, call mediators
+        const ret = (async () => {
+            let metadata;
+            let exists;
+            try {
+                // Dereference destination URL
+                const rdfDereferenceOutput = await this.mediatorRdfDereference
+                    .mediate({ context, url, acceptErrors: true });
+                exists = rdfDereferenceOutput.exists;
+                url = rdfDereferenceOutput.url;
+                // Determine the metadata
+                const rdfMetadataOuput = await this.mediatorMetadata.mediate({ context, url, quads: rdfDereferenceOutput.quads, triples: rdfDereferenceOutput.triples });
+                metadata = (await this.mediatorMetadataExtract.mediate({
+                    context,
+                    url,
+                    metadata: rdfMetadataOuput.metadata,
+                    headers: rdfDereferenceOutput.headers,
+                })).metadata;
+            }
+            catch (_a) {
+                metadata = {};
+                exists = false;
+            }
+            // Obtain destination
+            const { destination } = await this.mediatorRdfUpdateHypermedia.mediate({
+                context,
+                url,
+                metadata,
+                exists,
+                forceDestinationType: bus_rdf_update_quads_1.getDataDestinationType(dataDestination),
+            });
+            return destination;
+        })();
+        if (this.cache) {
+            this.cache.set(url, ret);
+        }
+        return ret;
+    }
+}
+exports.ActorRdfUpdateQuadsHypermedia = ActorRdfUpdateQuadsHypermedia;
+//# sourceMappingURL=ActorRdfUpdateQuadsHypermedia.js.map
+
+/***/ }),
+
 /***/ "./node_modules/@comunica/actor-rdf-update-quads-rdfjs-store/index.js":
 /***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
@@ -7123,23 +8000,26 @@ class RdfJsQuadDestination {
                 break;
             default:
                 // Delete the default graph or a named graph
-                return await this.promisifyEventEmitter(this.store.deleteGraph(graphs));
+                for (const graph of Array.isArray(graphs) ? graphs : [graphs]) {
+                    await this.promisifyEventEmitter(this.store.deleteGraph(graph));
+                }
         }
     }
-    createGraph(graph, requireNonExistence) {
+    async createGraphs(graphs, requireNonExistence) {
         // We don't have to create anything, since RDF/JS stores don't record empty graphs.
         // The only check we have to do is error on existence
         if (requireNonExistence) {
-            const eventEmitter = this.store.match(undefined, undefined, undefined, graph);
-            return new Promise((resolve, reject) => {
-                eventEmitter.once('data', () => {
-                    reject(new Error(`Unable to create graph ${graph.value} as it already exists`));
+            for (const graph of graphs) {
+                const eventEmitter = this.store.match(undefined, undefined, undefined, graph);
+                await new Promise((resolve, reject) => {
+                    eventEmitter.once('data', () => {
+                        reject(new Error(`Unable to create graph ${graph.value} as it already exists`));
+                    });
+                    eventEmitter.on('end', resolve);
+                    eventEmitter.on('error', reject);
                 });
-                eventEmitter.on('end', resolve);
-                eventEmitter.on('error', reject);
-            });
+            }
         }
-        return Promise.resolve();
     }
 }
 exports.RdfJsQuadDestination = RdfJsQuadDestination;
@@ -7194,9 +8074,6 @@ class ActorSparqlParseAlgebra extends bus_sparql_parse_1.ActorSparqlParse {
     }
     async run(action) {
         const parser = new sparqljs_1.Parser({ prefixes: this.prefixes, baseIRI: action.baseIRI });
-        // Resets the identifier counter used for blank nodes
-        // provides nicer and more consistent output if there are multiple calls
-        parser._resetBlanks();
         const parsedSyntax = parser.parse(action.query);
         const baseIRI = parsedSyntax.type === 'query' ? parsedSyntax.base : undefined;
         return {
@@ -7342,7 +8219,7 @@ const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
  * A comunica actor for context-preprocess events.
  *
  * Actor types:
- * * Input:  IActionContextPreprocess:      A context that will be processed.
+ * * Input:  IAction:      A context that will be processed.
  * * Test:   <none>
  * * Output: IActorContextPreprocessOutput: The resulting context.
  *
@@ -7438,7 +8315,7 @@ class ActorHttpInvalidateListenable extends ActorHttpInvalidate_1.ActorHttpInval
         for (const listener of this.invalidateListeners) {
             listener(action);
         }
-        return true;
+        return {};
     }
 }
 exports.ActorHttpInvalidateListenable = ActorHttpInvalidateListenable;
@@ -7476,8 +8353,9 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.KEY_CONTEXT_AUTH = exports.KEY_CONTEXT_INCLUDE_CREDENTIALS = exports.ActorHttp = void 0;
 const context_entries_1 = __cmncwpk_require__("./node_modules/@comunica/context-entries/index.js");
 const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+const readable_web_to_node_stream_1 = __cmncwpk_require__("./node_modules/readable-web-to-node-stream/lib/index.js");
 const isStream = __cmncwpk_require__("./node_modules/is-stream/index.js");
-const toNodeReadable = __cmncwpk_require__("./require-empty.js").toNodeReadable;
+const toWebReadableStream = __cmncwpk_require__("./require-empty.js").toWebReadableStream;
 /**
  * A base actor for listening to HTTP events.
  *
@@ -7495,13 +8373,23 @@ class ActorHttp extends core_1.Actor {
         super(args);
     }
     /**
-     * Converts a WhatWG streams to Node streams if required.
+     * Converts WhatWG streams to Node streams if required.
      * Returns the input in case the stream already is a Node stream.
      * @param {ReadableStream} body
      * @returns {NodeJS.ReadableStream}
      */
     static toNodeReadable(body) {
-        return isStream(body) ? body : toNodeReadable(body);
+        return isStream(body) || body === null ?
+            body :
+            new readable_web_to_node_stream_1.ReadableWebToNodeStream(body);
+    }
+    /**
+     * Converts Node streams to WhatWG streams.
+     * @param {NodeJS.ReadableStream} body
+     * @returns {ReadableStream}
+     */
+    static toWebReadableStream(body) {
+        return toWebReadableStream(body);
     }
     /**
      * Convert the given headers object into a raw hash.
@@ -7804,7 +8692,18 @@ class ActorQueryOperation extends core_1.Actor {
         if (context) {
             const now = context.get(context_entries_1.KeysInitSparql.queryTimestamp);
             const baseIRI = context.get(context_entries_1.KeysInitSparql.baseIRI);
-            return { now, baseIRI };
+            // Handle two variants of providing extension functions
+            if (context.has(context_entries_1.KeysInitSparql.extensionFunctionCreator) && context.has(context_entries_1.KeysInitSparql.extensionFunctions)) {
+                throw new Error('Illegal simultaneous usage of extensionFunctionCreator and extensionFunctions in context');
+            }
+            let extensionFunctionCreator = context.get(context_entries_1.KeysInitSparql.extensionFunctionCreator);
+            // Convert dictionary-based variant to callback
+            const extensionFunctions = context
+                .get(context_entries_1.KeysInitSparql.extensionFunctions);
+            if (extensionFunctions) {
+                extensionFunctionCreator = functionNamedNode => extensionFunctions[functionNamedNode.value];
+            }
+            return { now, baseIRI, extensionFunctionCreator };
         }
         return {};
     }
@@ -8086,7 +8985,7 @@ function materializeOperation(operation, bindings, strictTargetVariables = false
             // Otherwise, we just filter out the bound variables.
             if (strictTargetVariables) {
                 for (const variable of op.variables) {
-                    if (bindings.has(rdf_string_1.termToString(variable))) {
+                    if (variable.termType !== 'Wildcard' && bindings.has(rdf_string_1.termToString(variable))) {
                         throw new Error(`Tried to bind variable ${rdf_string_1.termToString(variable)} in a SELECT operator.`);
                     }
                 }
@@ -8095,7 +8994,8 @@ function materializeOperation(operation, bindings, strictTargetVariables = false
                     result: op,
                 };
             }
-            const variables = op.variables.filter(variable => !bindings.has(rdf_string_1.termToString(variable)));
+            const variables = op.variables.filter(variable => variable.termType !== 'Wildcard' &&
+                !bindings.has(rdf_string_1.termToString(variable)));
             return {
                 recurse: true,
                 result: factory.createProject(op.input, variables),
@@ -8353,6 +9253,131 @@ class ActorRdfJoin extends core_1.Actor {
 }
 exports.ActorRdfJoin = ActorRdfJoin;
 //# sourceMappingURL=ActorRdfJoin.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-metadata-extract/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/lib/ActorRdfMetadataExtract.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/lib/ActorRdfMetadataExtractQuery.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/lib/GraphQlQueryEngine.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-metadata-extract/lib/ActorRdfMetadataExtract.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfMetadataExtract = void 0;
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+/**
+ * A comunica actor for rdf-metadata-extract events.
+ *
+ * Actor types:
+ * * Input:  IActionRdfMetadataExtract:      A metadata quad stream
+ * * Test:   <none>
+ * * Output: IActorRdfMetadataExtractOutput: A metadata hash.
+ *
+ * @see IActionRdfDereference
+ * @see IActorRdfDereferenceOutput
+ */
+class ActorRdfMetadataExtract extends core_1.Actor {
+    constructor(args) {
+        super(args);
+    }
+}
+exports.ActorRdfMetadataExtract = ActorRdfMetadataExtract;
+//# sourceMappingURL=ActorRdfMetadataExtract.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-metadata-extract/lib/ActorRdfMetadataExtractQuery.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfMetadataExtractQuery = void 0;
+const graphql_ld_1 = __cmncwpk_require__("./node_modules/graphql-ld/index.js");
+const rdf_store_stream_1 = __cmncwpk_require__("./node_modules/rdf-store-stream/index.js");
+const ActorRdfMetadataExtract_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/lib/ActorRdfMetadataExtract.js");
+const GraphQlQueryEngine_1 = __cmncwpk_require__("./node_modules/@comunica/bus-rdf-metadata-extract/lib/GraphQlQueryEngine.js");
+/**
+ * An {@link ActorRdfMetadataExtract} that extracts metadata based on a GraphQL-LD query.
+ *
+ * It exposes the {@link #queryData} method using which a query can be applied over the metadata stream.
+ * For efficiency reasons, the query (and JSON-LD context) must be passed via the actor constructor
+ * so that these can be pre-compiled.
+ *
+ * @see ActorRdfMetadataExtract
+ */
+class ActorRdfMetadataExtractQuery extends ActorRdfMetadataExtract_1.ActorRdfMetadataExtract {
+    constructor(context, query, args) {
+        super(args);
+        // Pre-parse GraphQL-LD query
+        this.graphqlClient = new graphql_ld_1.Client({
+            context,
+            queryEngine: new GraphQlQueryEngine_1.GraphQlQueryEngine(this.queryEngine),
+        });
+        this.sparqlOperation = this.graphqlClient.graphQlToSparql({ query });
+    }
+    /**
+     * Execute the configured query on the given metadata stream.
+     * @param {RDF.Stream} dataStream A quad stream to query on.
+     * @return The GraphQL query results.
+     */
+    async queryData(dataStream, initialBindings) {
+        // Load metadata quads into store
+        const store = await rdf_store_stream_1.storeStream(dataStream);
+        // Execute query against out in-memory store
+        const { data } = await this.graphqlClient.query(Object.assign(Object.assign({}, await this.sparqlOperation), { queryEngineOptions: { source: { type: 'rdfjsSource', value: store }, initialBindings } }));
+        return data;
+    }
+}
+exports.ActorRdfMetadataExtractQuery = ActorRdfMetadataExtractQuery;
+//# sourceMappingURL=ActorRdfMetadataExtractQuery.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-metadata-extract/lib/GraphQlQueryEngine.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.GraphQlQueryEngine = void 0;
+const stringifyStream = __cmncwpk_require__("./node_modules/stream-to-string/index.js");
+/**
+ * A comunica-based GraphQL-LD query engine.
+ */
+class GraphQlQueryEngine {
+    constructor(comunicaEngine) {
+        this.comunicaEngine = comunicaEngine;
+    }
+    async query(query, options) {
+        const { data } = await this.comunicaEngine.resultToString(await this.comunicaEngine.query(query, options), 'application/sparql-results+json');
+        return JSON.parse(await stringifyStream(data));
+    }
+}
+exports.GraphQlQueryEngine = GraphQlQueryEngine;
+//# sourceMappingURL=GraphQlQueryEngine.js.map
 
 /***/ }),
 
@@ -8818,6 +9843,63 @@ exports.ActorRdfSerializeFixedMediaTypes = ActorRdfSerializeFixedMediaTypes;
 
 /***/ }),
 
+/***/ "./node_modules/@comunica/bus-rdf-update-hypermedia/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-hypermedia/lib/ActorRdfUpdateHypermedia.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-update-hypermedia/lib/ActorRdfUpdateHypermedia.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ActorRdfUpdateHypermedia = void 0;
+const core_1 = __cmncwpk_require__("./node_modules/@comunica/core/index.js");
+/**
+ * A comunica actor for rdf-update-hypermedia events.
+ *
+ * Actor types:
+ * * Input:  IActionRdfUpdateHypermedia:      The metadata in the document.
+ * * Test:   <none>
+ * * Output: IActorRdfUpdateHypermediaOutput: An RDF destination.
+ *
+ * @see IActionRdfUpdateHypermedia
+ * @see IActorRdfUpdateHypermediaOutput
+ */
+class ActorRdfUpdateHypermedia extends core_1.Actor {
+    constructor(args, destinationType) {
+        super(args);
+        this.destinationType = destinationType;
+    }
+    async test(action) {
+        if (action.forceDestinationType && this.destinationType !== action.forceDestinationType) {
+            throw new Error(`Actor ${this.name} is not able to handle destination type ${action.forceDestinationType}.`);
+        }
+        return this.testMetadata(action);
+    }
+}
+exports.ActorRdfUpdateHypermedia = ActorRdfUpdateHypermedia;
+//# sourceMappingURL=ActorRdfUpdateHypermedia.js.map
+
+/***/ }),
+
 /***/ "./node_modules/@comunica/bus-rdf-update-quads/index.js":
 /***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
 
@@ -8836,6 +9918,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 __exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/lib/ActorRdfUpdateQuads.js"), exports);
 __exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/lib/ActorRdfUpdateQuadsDestination.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/@comunica/bus-rdf-update-quads/lib/IQuadDestination.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -8959,8 +10042,8 @@ class ActorRdfUpdateQuadsDestination extends ActorRdfUpdateQuads_1.ActorRdfUpdat
             action.deleteGraphs ?
                 destination.deleteGraphs(action.deleteGraphs.graphs, action.deleteGraphs.requireExistence, action.deleteGraphs.dropGraphs) :
                 Promise.resolve(),
-            action.createGraph ?
-                destination.createGraph(action.createGraph.graph, action.createGraph.requireNonExistence) :
+            action.createGraphs ?
+                destination.createGraphs(action.createGraphs.graphs, action.createGraphs.requireNonExistence) :
                 Promise.resolve(),
         ]).then(() => {
             // Return void
@@ -8970,6 +10053,40 @@ class ActorRdfUpdateQuadsDestination extends ActorRdfUpdateQuads_1.ActorRdfUpdat
 }
 exports.ActorRdfUpdateQuadsDestination = ActorRdfUpdateQuadsDestination;
 //# sourceMappingURL=ActorRdfUpdateQuadsDestination.js.map
+
+/***/ }),
+
+/***/ "./node_modules/@comunica/bus-rdf-update-quads/lib/IQuadDestination.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.validateHttpResponse = void 0;
+const bus_http_1 = __cmncwpk_require__("./node_modules/@comunica/bus-http/index.js");
+const stringifyStream = __cmncwpk_require__("./node_modules/stream-to-string/index.js");
+/**
+ * Check if the http response is valid, and throw an error if not.
+ * @param url The original URL that was to be updated.
+ * @param httpResponse The update response.
+ */
+async function validateHttpResponse(url, httpResponse) {
+    var _a;
+    // Check if update was successful
+    if (httpResponse.status >= 400) {
+        // Consume the body, to avoid process to hang
+        let bodyString = 'empty response';
+        if (httpResponse.body) {
+            const responseStream = bus_http_1.ActorHttp.toNodeReadable(httpResponse.body);
+            bodyString = await stringifyStream(responseStream);
+        }
+        throw new Error(`Could not update ${url} (HTTP status ${httpResponse.status}):\n${bodyString}`);
+    }
+    // Close response body, as we don't need it
+    await ((_a = httpResponse.body) === null || _a === void 0 ? void 0 : _a.cancel());
+}
+exports.validateHttpResponse = validateHttpResponse;
+//# sourceMappingURL=IQuadDestination.js.map
 
 /***/ }),
 
@@ -9150,6 +10267,10 @@ var KeysHttp;
      * @range {string} Authentication for a source as a "username:password"-pair.
      */
     KeysHttp["auth"] = "@comunica/bus-http:auth";
+    /**
+     * @range {(input: RequestInfo, init?: RequestInit) => Promise<Response>} Fetch function implementation.
+     */
+    KeysHttp["fetch"] = "@comunica/bus-http:fetch";
 })(KeysHttp = exports.KeysHttp || (exports.KeysHttp = {}));
 var KeysHttpMemento;
 (function (KeysHttpMemento) {
@@ -9196,6 +10317,26 @@ var KeysInitSparql;
      *                 This is required for certain SPARQL operations such as NOW().
      */
     KeysInitSparql["queryTimestamp"] = "@comunica/actor-init-sparql:queryTimestamp";
+    /**
+     * @range {functionNamedNode: RDF.NamedNode) => ((args: RDF.Term[]) => Promise<RDF.Term>) | undefined}
+     * Extension function creator for a given function IRI.
+     * Returned value should be an async function implementation.
+     * Undefined may be returned if no implementation exists for the given function IRI.
+     *
+     * The dictionary-based extensionFunctions context entry may be used instead, but not simultaneously.
+     */
+    KeysInitSparql["extensionFunctionCreator"] = "@comunica/actor-init-sparql:extensionFunctionCreator";
+    /**
+     * @range {Record<string, (args: RDF.Term[]) => Promise<RDF.Term>>} Dictionary of extension functions.
+     * Key is the IRI of the function, and value is the async function implementation.
+     *
+     * The callback-based extensionFunctionCreator context entry may be used instead, but not simultaneously.
+     */
+    KeysInitSparql["extensionFunctions"] = "@comunica/actor-init-sparql:extensionFunctions";
+    /**
+     * @range {ICliArgsHandler[]} Enables manipulation of the CLI arguments and their processing.
+     */
+    KeysInitSparql["cliArgsHandlers"] = "@comunica/actor-init-sparql:cliArgsHandlers";
 })(KeysInitSparql = exports.KeysInitSparql || (exports.KeysInitSparql = {}));
 var KeysQueryOperation;
 (function (KeysQueryOperation) {
@@ -9244,6 +10385,10 @@ var KeysRdfParseJsonLd;
      * @range {boolean}
      */
     KeysRdfParseJsonLd["strictValues"] = "@comunica/actor-rdf-parse-jsonld:strictValues";
+    /**
+     * @range {Record<string, any>}
+     */
+    KeysRdfParseJsonLd["parserOptions"] = "@comunica/actor-rdf-parse-jsonld:parserOptions";
 })(KeysRdfParseJsonLd = exports.KeysRdfParseJsonLd || (exports.KeysRdfParseJsonLd = {}));
 var KeysRdfResolveQuadPattern;
 (function (KeysRdfResolveQuadPattern) {
@@ -10135,7 +11280,7 @@ class MediatorCombinePipeline extends core_1.Mediator {
         // and each actor output as input to the following actor.
         let handle = action;
         for (const actor of testResults.map(result => result.actor)) {
-            handle = await actor.runObservable(handle);
+            handle = Object.assign(Object.assign({}, handle), await actor.runObservable(handle));
         }
         // Return the final actor output
         return handle;
@@ -10371,6 +11516,261 @@ class MediatorRace extends core_1.Mediator {
 }
 exports.MediatorRace = MediatorRace;
 //# sourceMappingURL=MediatorRace.js.map
+
+/***/ }),
+
+/***/ "./node_modules/JSONStream/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+
+var Parser = __cmncwpk_require__("./require-empty.js")
+  , through = __cmncwpk_require__("./require-empty.js")
+
+var bufferFrom = Buffer.from && Buffer.from !== Uint8Array.from
+
+/*
+
+  the value of this.stack that creationix's jsonparse has is weird.
+
+  it makes this code ugly, but his problem is way harder that mine,
+  so i'll forgive him.
+
+*/
+
+exports.parse = function (path, map) {
+  var header, footer
+  var parser = new Parser()
+  var stream = through(function (chunk) {
+    if('string' === typeof chunk)
+      chunk = bufferFrom ? Buffer.from(chunk) : new Buffer(chunk)
+    parser.write(chunk)
+  },
+  function (data) {
+    if(data)
+      stream.write(data)
+    if (header)
+        stream.emit('header', header)
+    if (footer)
+      stream.emit('footer', footer)
+    stream.queue(null)
+  })
+
+  if('string' === typeof path)
+    path = path.split('.').map(function (e) {
+      if (e === '$*')
+        return {emitKey: true}
+      else if (e === '*')
+        return true
+      else if (e === '') // '..'.split('.') returns an empty string
+        return {recurse: true}
+      else
+        return e
+    })
+
+
+  var count = 0, _key
+  if(!path || !path.length)
+    path = null
+
+  parser.onValue = function (value) {
+    if (!this.root)
+      stream.root = value
+
+    if(! path) return
+
+    var i = 0 // iterates on path
+    var j  = 0 // iterates on stack
+    var emitKey = false;
+    var emitPath = false;
+    while (i < path.length) {
+      var key = path[i]
+      var c
+      j++
+
+      if (key && !key.recurse) {
+        c = (j === this.stack.length) ? this : this.stack[j]
+        if (!c) return
+        if (! check(key, c.key)) {
+          setHeaderFooter(c.key, value)
+          return
+        }
+        emitKey = !!key.emitKey;
+        emitPath = !!key.emitPath;
+        i++
+      } else {
+        i++
+        var nextKey = path[i]
+        if (! nextKey) return
+        while (true) {
+          c = (j === this.stack.length) ? this : this.stack[j]
+          if (!c) return
+          if (check(nextKey, c.key)) {
+            i++;
+            if (!Object.isFrozen(this.stack[j]))
+              this.stack[j].value = null
+            break
+          } else {
+            setHeaderFooter(c.key, value)
+          }
+          j++
+        }
+      }
+
+    }
+
+    // emit header
+    if (header) {
+      stream.emit('header', header);
+      header = false;
+    }
+    if (j !== this.stack.length) return
+
+    count ++
+    var actualPath = this.stack.slice(1).map(function(element) { return element.key }).concat([this.key])
+    var data = value
+    if(null != data)
+      if(null != (data = map ? map(data, actualPath) : data)) {
+        if (emitKey || emitPath) {
+          data = { value: data };
+          if (emitKey)
+            data["key"] = this.key;
+          if (emitPath)
+            data["path"] = actualPath;
+        }
+
+        stream.queue(data)
+      }
+    if (this.value) delete this.value[this.key]
+    for(var k in this.stack)
+      if (!Object.isFrozen(this.stack[k]))
+        this.stack[k].value = null
+  }
+  parser._onToken = parser.onToken;
+
+  parser.onToken = function (token, value) {
+    parser._onToken(token, value);
+    if (this.stack.length === 0) {
+      if (stream.root) {
+        if(!path)
+          stream.queue(stream.root)
+        count = 0;
+        stream.root = null;
+      }
+    }
+  }
+
+  parser.onError = function (err) {
+    if(err.message.indexOf("at position") > -1)
+      err.message = "Invalid JSON (" + err.message + ")";
+    stream.emit('error', err)
+  }
+
+  return stream
+
+  function setHeaderFooter(key, value) {
+    // header has not been emitted yet
+    if (header !== false) {
+      header = header || {}
+      header[key] = value
+    }
+
+    // footer has not been emitted yet but header has
+    if (footer !== false && header === false) {
+      footer = footer || {}
+      footer[key] = value
+    }
+  }
+}
+
+function check (x, y) {
+  if ('string' === typeof x)
+    return y == x
+  else if (x && 'function' === typeof x.exec)
+    return x.exec(y)
+  else if ('boolean' === typeof x || 'object' === typeof x)
+    return x
+  else if ('function' === typeof x)
+    return x(y)
+  return false
+}
+
+exports.stringify = function (op, sep, cl, indent) {
+  indent = indent || 0
+  if (op === false){
+    op = ''
+    sep = '\n'
+    cl = ''
+  } else if (op == null) {
+
+    op = '[\n'
+    sep = '\n,\n'
+    cl = '\n]\n'
+
+  }
+
+  //else, what ever you like
+
+  var stream
+    , first = true
+    , anyData = false
+  stream = through(function (data) {
+    anyData = true
+    try {
+      var json = JSON.stringify(data, null, indent)
+    } catch (err) {
+      return stream.emit('error', err)
+    }
+    if(first) { first = false ; stream.queue(op + json)}
+    else stream.queue(sep + json)
+  },
+  function (data) {
+    if(!anyData)
+      stream.queue(op)
+    stream.queue(cl)
+    stream.queue(null)
+  })
+
+  return stream
+}
+
+exports.stringifyObject = function (op, sep, cl, indent) {
+  indent = indent || 0
+  if (op === false){
+    op = ''
+    sep = '\n'
+    cl = ''
+  } else if (op == null) {
+
+    op = '{\n'
+    sep = '\n,\n'
+    cl = '\n}\n'
+
+  }
+
+  //else, what ever you like
+
+  var first = true
+  var anyData = false
+  var stream = through(function (data) {
+    anyData = true
+    var json = JSON.stringify(data[0]) + ':' + JSON.stringify(data[1], null, indent)
+    if(first) { first = false ; this.queue(op + json)}
+    else this.queue(sep + json)
+  },
+  function (data) {
+    if(!anyData) this.queue(op)
+    this.queue(cl)
+
+    this.queue(null)
+  })
+
+  return stream
+}
+
+
+
 
 /***/ }),
 
@@ -10821,10 +12221,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 
 
   /*
-   *  decimal.js v10.2.1
+   *  decimal.js v10.3.1
    *  An arbitrary-precision Decimal type for JavaScript.
    *  https://github.com/MikeMcl/decimal.js
-   *  Copyright (c) 2020 Michael Mclaughlin <M8ch88l@gmail.com>
+   *  Copyright (c) 2021 Michael Mclaughlin <M8ch88l@gmail.com>
    *  MIT Licence
    */
 
@@ -10923,6 +12323,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
     invalidArgument = decimalError + 'Invalid argument: ',
     precisionLimitExceeded = decimalError + 'Precision limit exceeded',
     cryptoUnavailable = decimalError + 'crypto unavailable',
+    tag = '[object Decimal]',
 
     mathfloor = Math.floor,
     mathpow = Math.pow,
@@ -10940,7 +12341,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
     PI_PRECISION = PI.length - 1,
 
     // Decimal.prototype object
-    P = { name: '[object Decimal]' };
+    P = { toStringTag: tag };
 
 
   // Decimal prototype methods
@@ -10949,6 +12350,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   /*
    *  absoluteValue             abs
    *  ceil
+   *  clampedTo                 clamp
    *  comparedTo                cmp
    *  cosine                    cos
    *  cubeRoot                  cbrt
@@ -11027,6 +12429,27 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
    */
   P.ceil = function () {
     return finalise(new this.constructor(this), this.e + 1, 2);
+  };
+
+
+  /*
+   * Return a new Decimal whose value is the value of this Decimal clamped to the range
+   * delineated by `min` and `max`.
+   *
+   * min {number|string|Decimal}
+   * max {number|string|Decimal}
+   *
+   */
+  P.clampedTo = P.clamp = function (min, max) {
+    var k,
+      x = this,
+      Ctor = x.constructor;
+    min = new Ctor(min);
+    max = new Ctor(max);
+    if (!min.s || !max.s) return new Ctor(NaN);
+    if (min.gt(max)) throw Error(invalidArgument + max);
+    k = x.cmp(min);
+    return k < 0 ? min : x.cmp(max) > 0 ? max : new Ctor(x);
   };
 
 
@@ -13263,18 +14686,6 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   };
 
 
-  /*
-  // Add aliases to match BigDecimal method names.
-  // P.add = P.plus;
-  P.subtract = P.minus;
-  P.multiply = P.times;
-  P.divide = P.div;
-  P.remainder = P.mod;
-  P.compareTo = P.cmp;
-  P.negate = P.neg;
-   */
-
-
   // Helper functions for Decimal.prototype (P) and/or Decimal methods, and their callers.
 
 
@@ -13446,13 +14857,15 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
    *
    */
   function cosine(Ctor, x) {
-    var k, y,
-      len = x.d.length;
+    var k, len, y;
+
+    if (x.isZero()) return x;
 
     // Argument reduction: cos(4x) = 8*(cos^4(x) - cos^2(x)) + 1
     // i.e. cos(x) = 8*(cos^4(x/4) - cos^2(x/4)) + 1
 
     // Estimate the optimum number of times to use the argument reduction.
+    len = x.d.length;
     if (len < 32) {
       k = Math.ceil(len / 3);
       y = (1 / tinyPow(4, k)).toString();
@@ -14404,7 +15817,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   function parseOther(x, str) {
     var base, Ctor, divisor, i, isFloat, len, p, xd, xe;
 
-    if (str === 'Infinity' || str === 'NaN') {
+    if (str.indexOf('_') > -1) {
+      str = str.replace(/(\d)_(?=\d)/g, '$1');
+      if (isDecimal.test(str)) return parseDecimal(x, str);
+    } else if (str === 'Infinity' || str === 'NaN') {
       if (!+str) x.s = NaN;
       x.e = NaN;
       x.d = null;
@@ -14482,7 +15898,9 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
     var k,
       len = x.d.length;
 
-    if (len < 3) return taylorSeries(Ctor, 2, x, x);
+    if (len < 3) {
+      return x.isZero() ? x : taylorSeries(Ctor, 2, x, x);
+    }
 
     // Argument reduction: sin(5x) = 16*sin^5(x) - 20*sin^3(x) + 5*sin(x)
     // i.e. sin(x) = 16*sin^5(x/5) - 20*sin^3(x/5) + 5*sin(x/5)
@@ -14748,6 +16166,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
    *  atan2
    *  cbrt
    *  ceil
+   *  clamp
    *  clone
    *  config
    *  cos
@@ -14773,6 +16192,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
    *  sinh
    *  sqrt
    *  sub
+   *  sum
    *  tan
    *  tanh
    *  trunc
@@ -14967,6 +16387,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 
 
   /*
+   * Return a new Decimal whose value is `x` clamped to the range delineated by `min` and `max`.
+   *
+   * x {number|string|Decimal}
+   * min {number|string|Decimal}
+   * max {number|string|Decimal}
+   *
+   */
+  function clamp(x, min, max) {
+    return new this(x).clamp(min, max);
+  }
+
+
+  /*
    * Configure global settings for a Decimal constructor.
    *
    * `obj` is an object with one or more of the following properties,
@@ -15079,7 +16512,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
       x.constructor = Decimal;
 
       // Duplicate.
-      if (v instanceof Decimal) {
+      if (isDecimalInstance(v)) {
         x.s = v.s;
 
         if (external) {
@@ -15199,6 +16632,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
     Decimal.atan2 = atan2;
     Decimal.cbrt = cbrt;          // ES6
     Decimal.ceil = ceil;
+    Decimal.clamp = clamp;
     Decimal.cos = cos;
     Decimal.cosh = cosh;          // ES6
     Decimal.div = div;
@@ -15221,6 +16655,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
     Decimal.sinh = sinh;          // ES6
     Decimal.sqrt = sqrt;
     Decimal.sub = sub;
+    Decimal.sum = sum;
     Decimal.tan = tan;
     Decimal.tanh = tanh;          // ES6
     Decimal.trunc = trunc;        // ES6
@@ -15315,7 +16750,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
    *
    */
   function isDecimalInstance(obj) {
-    return obj instanceof Decimal || obj && obj.name === '[object Decimal]' || false;
+    return obj instanceof Decimal || obj && obj.toStringTag === tag || false;
   }
 
 
@@ -15616,6 +17051,28 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 
 
   /*
+   * Return a new Decimal whose value is the sum of the arguments, rounded to `precision`
+   * significant digits using rounding mode `rounding`.
+   *
+   * Only the result is rounded, not the intermediate calculations.
+   *
+   * arguments {number|string|Decimal}
+   *
+   */
+  function sum() {
+    var i = 0,
+      args = arguments,
+      x = new this(args[i]);
+
+    external = false;
+    for (; x.s && ++i < args.length;) x = x.plus(args[i]);
+    external = true;
+
+    return finalise(x, this.precision, this.rounding);
+  }
+
+
+  /*
    * Return a new Decimal whose value is the tangent of `x`, rounded to `precision` significant
    * digits using rounding mode `rounding`.
    *
@@ -15652,7 +17109,7 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
 
   // Create and configure initial Decimal constructor.
   Decimal = clone(DEFAULTS);
-
+  Decimal.prototype.constructor = Decimal;
   Decimal['default'] = Decimal.Decimal = Decimal;
 
   // Create the internal constants from their string values.
@@ -15674,6 +17131,126 @@ var __WEBPACK_AMD_DEFINE_RESULT__;;(function (globalScope) {
   } else {}
 })(this);
 
+
+/***/ }),
+
+/***/ "./node_modules/graphql-ld/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/graphql-ld/lib/Client.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/graphql-ld/lib/IQueryEngine.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/graphql-ld/lib/Client.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Client = void 0;
+const graphql_to_sparql_1 = __cmncwpk_require__("./require-empty.js");
+const jsonld_context_parser_1 = __cmncwpk_require__("./require-empty.js");
+const sparqljson_to_tree_1 = __cmncwpk_require__("./node_modules/sparqljson-to-tree/index.js");
+/**
+ * A GraphQL-LD client.
+ *
+ * Typical usage:
+ * ```
+ * const client = new Client({ context, queryEngine });
+ * const { data } = await client.query({ query: `{ books { name author { name } } }` });
+ * ```
+ */
+class Client {
+    constructor(args) {
+        this.context = (args.contextParser || new jsonld_context_parser_1.ContextParser()).parse(args.context, { baseIRI: args.baseIRI });
+        this.queryEngine = args.queryEngine;
+        this.graphqlToSparqlConverter = args.graphqlToSparqlConverter ||
+            new graphql_to_sparql_1.Converter({ dataFactory: args.dataFactory, requireContext: true });
+        this.sparqlJsonToTreeConverter = args.sparqlJsonToTreeConverter ||
+            new sparqljson_to_tree_1.Converter({ dataFactory: args.dataFactory, materializeRdfJsTerms: true });
+    }
+    /**
+     * Execute a GraphQL-LD query.
+     *
+     * There are three ways of invoking this methods:
+     * 1. with a GraphQL query string and optional variables:
+     *    `client.query({ query: `{...}`, variables: { varName: 123 } })`
+     * 2. with a parsed GraphQL query and optional variables:
+     *    `client.query({ query: gql`{...}`, variables: { varName: 123 } })`
+     * 3. with a SPARQL algebra object and a singularizeVariables object
+     *    `client.query({ sparqlAlgebra, singularizeVariables })`
+     *    This corresponds to the result of {@link Client#graphQlToSparql}.
+     *
+     * @param {QueryArgs} args Query+variables, or SPARQL algebra+singularize variables.
+     * @return {Promise<ExecutionResult>} A promise resolving to a GraphQL result.
+     */
+    query(args) {
+        return __awaiter(this, void 0, void 0, function* () {
+            // Convert GraphQL to SPARQL
+            const { sparqlAlgebra, singularizeVariables } = 'query' in args
+                ? yield this.graphQlToSparql({ query: args.query, variables: args.variables }) : args;
+            // Execute SPARQL query
+            const sparqlJsonResult = yield this.queryEngine.query(sparqlAlgebra, args.queryEngineOptions);
+            // Convert SPARQL response to GraphQL response
+            const data = this.sparqlJsonToTreeConverter.sparqlJsonResultsToTree(sparqlJsonResult, { singularizeVariables });
+            return { data };
+        });
+    }
+    /**
+     * Convert a GraphQL query to SPARQL algebra and a singularize variables object.
+     * @param {string | DocumentNode} query
+     * @param {{[p: string]: any}} variables
+     * @return {Promise<IGraphQlToSparqlResult>}
+     */
+    graphQlToSparql({ query, variables }) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const singularizeVariables = {};
+            const options = {
+                singularizeVariables,
+                variablesDict: {},
+            };
+            const sparqlAlgebra = yield this.graphqlToSparqlConverter
+                .graphqlToSparqlAlgebra(query, (yield this.context).getContextRaw(), options);
+            return { sparqlAlgebra, singularizeVariables };
+        });
+    }
+}
+exports.Client = Client;
+//# sourceMappingURL=Client.js.map
+
+/***/ }),
+
+/***/ "./node_modules/graphql-ld/lib/IQueryEngine.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+//# sourceMappingURL=IQueryEngine.js.map
 
 /***/ }),
 
@@ -22025,8 +23602,7 @@ isStream.duplex = stream =>
 
 isStream.transform = stream =>
 	isStream.duplex(stream) &&
-	typeof stream._transform === 'function' &&
-	typeof stream._transformState === 'object';
+	typeof stream._transform === 'function';
 
 module.exports = isStream;
 
@@ -23298,6 +24874,692 @@ assert.equal = function assertEqual(l, r, msg) {
 
 /***/ }),
 
+/***/ "./node_modules/rdf-literal/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getSupportedJavaScriptPrimitives = exports.getSupportedRdfDatatypes = exports.getTermRaw = exports.toRdf = exports.fromRdf = void 0;
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const handler_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/handler/index.js");
+const Translator_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js");
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/index.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/ITypeHandler.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js"), exports);
+const DF = new rdf_data_factory_1.DataFactory();
+// Construct translator with built-in handlers
+const translator = new Translator_1.Translator();
+translator.registerHandler(new handler_1.TypeHandlerString(), handler_1.TypeHandlerString.TYPES.map(t => DF.namedNode(t)), ['string']);
+translator.registerHandler(new handler_1.TypeHandlerBoolean(), [handler_1.TypeHandlerBoolean.TYPE].map(t => DF.namedNode(t)), ['boolean']);
+translator.registerHandler(new handler_1.TypeHandlerNumberDouble(), handler_1.TypeHandlerNumberDouble.TYPES.map(t => DF.namedNode(t)), ['number']);
+translator.registerHandler(new handler_1.TypeHandlerNumberInteger(), handler_1.TypeHandlerNumberInteger.TYPES.map(t => DF.namedNode(t)), ['number']);
+translator.registerHandler(new handler_1.TypeHandlerDate(), handler_1.TypeHandlerDate.TYPES.map(t => DF.namedNode(t)), ['object']);
+/**
+ * Convert the given RDF literal to an JavaScript primitive.
+ * @param {Literal} literal An RDF literal value.
+ * @param {boolean} validate If the literal value should be validated against the datatype.
+ * @return {any} A JavaScript primitive value.
+ */
+function fromRdf(literal, validate) {
+    return translator.fromRdf(literal, validate);
+}
+exports.fromRdf = fromRdf;
+/**
+ * Convert the given JavaScript primitive to an RDF literal.
+ * @param value A JavaScript primitive value.
+ * @param options Options for RDF conversion. May also be a data factory.
+ * @return {Literal} An RDF literal value.
+ */
+function toRdf(value, options) {
+    // Backwards-compatibility to accept data factory as option arg.
+    if (options && 'namedNode' in options) {
+        options = { dataFactory: options };
+    }
+    // Set default data factory
+    options = options || {};
+    if (options && !options.dataFactory) {
+        options.dataFactory = DF;
+    }
+    return translator.toRdf(value, options);
+}
+exports.toRdf = toRdf;
+/**
+ * Get the raw value of the given term.
+ * If it is a literal, {@link fromRdf} will be called.
+ * Otherwise {@link .value} will be returned.
+ * @param {Term} term Any RDF term.
+ * @param {boolean} validate If the literal value should be validated against the datatype.
+ * @return {any} A JavaScript primitive value.
+ */
+function getTermRaw(term, validate) {
+    if (term.termType === 'Literal') {
+        return fromRdf(term, validate);
+    }
+    return term.value;
+}
+exports.getTermRaw = getTermRaw;
+/**
+ * @return {NamedNode[]} An array of all supported RDF datatypes.
+ */
+function getSupportedRdfDatatypes() {
+    return translator.getSupportedRdfDatatypes();
+}
+exports.getSupportedRdfDatatypes = getSupportedRdfDatatypes;
+/**
+ * @return {string[]} An array of all supported JavaScript types.
+ */
+function getSupportedJavaScriptPrimitives() {
+    return translator.getSupportedJavaScriptPrimitives();
+}
+exports.getSupportedJavaScriptPrimitives = getSupportedJavaScriptPrimitives;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/ITypeHandler.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+//# sourceMappingURL=ITypeHandler.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/Translator.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Translator = void 0;
+/**
+ * Translates between an RDF literal and a JavaScript primitive.
+ */
+class Translator {
+    constructor() {
+        this.supportedRdfDatatypes = [];
+        this.fromRdfHandlers = {};
+        this.toRdfHandlers = {};
+    }
+    static incorrectRdfDataType(literal) {
+        throw new Error(`Invalid RDF ${literal.datatype.value} value: '${literal.value}'`);
+    }
+    registerHandler(handler, rdfDatatypes, javaScriptDataTypes) {
+        for (const rdfDatatype of rdfDatatypes) {
+            this.supportedRdfDatatypes.push(rdfDatatype);
+            this.fromRdfHandlers[rdfDatatype.value] = handler;
+        }
+        for (const javaScriptDataType of javaScriptDataTypes) {
+            let existingToRdfHandlers = this.toRdfHandlers[javaScriptDataType];
+            if (!existingToRdfHandlers) {
+                this.toRdfHandlers[javaScriptDataType] = existingToRdfHandlers = [];
+            }
+            existingToRdfHandlers.push(handler);
+        }
+    }
+    fromRdf(literal, validate) {
+        const handler = this.fromRdfHandlers[literal.datatype.value];
+        if (handler) {
+            return handler.fromRdf(literal, validate);
+        }
+        else {
+            return literal.value;
+        }
+    }
+    toRdf(value, options) {
+        const handlers = this.toRdfHandlers[typeof value];
+        if (handlers) {
+            for (const handler of handlers) {
+                const ret = handler.toRdf(value, options);
+                if (ret) {
+                    return ret;
+                }
+            }
+        }
+        throw new Error(`Invalid JavaScript value: '${value}'`);
+    }
+    /**
+     * @return {NamedNode[]} An array of all supported RDF datatypes.
+     */
+    getSupportedRdfDatatypes() {
+        return this.supportedRdfDatatypes;
+    }
+    /**
+     * @return {string[]} An array of all supported JavaScript types.
+     */
+    getSupportedJavaScriptPrimitives() {
+        return Object.keys(this.toRdfHandlers);
+    }
+}
+exports.Translator = Translator;
+//# sourceMappingURL=Translator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/TypeHandlerBoolean.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TypeHandlerBoolean = void 0;
+const Translator_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js");
+/**
+ * Translates booleans.
+ */
+class TypeHandlerBoolean {
+    fromRdf(literal, validate) {
+        switch (literal.value) {
+            case 'true':
+                return true;
+            case 'false':
+                return false;
+            case '1':
+                return true;
+            case '0':
+                return false;
+        }
+        if (validate) {
+            Translator_1.Translator.incorrectRdfDataType(literal);
+        }
+        return false;
+    }
+    toRdf(value, { datatype, dataFactory }) {
+        return dataFactory.literal(value ? 'true' : 'false', datatype || dataFactory.namedNode(TypeHandlerBoolean.TYPE));
+    }
+}
+exports.TypeHandlerBoolean = TypeHandlerBoolean;
+TypeHandlerBoolean.TYPE = 'http://www.w3.org/2001/XMLSchema#boolean';
+//# sourceMappingURL=TypeHandlerBoolean.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/TypeHandlerDate.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TypeHandlerDate = void 0;
+const Translator_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js");
+/**
+ * Translates dates.
+ */
+class TypeHandlerDate {
+    fromRdf(literal, validate) {
+        if (validate && !literal.value.match(TypeHandlerDate
+            .VALIDATORS[literal.datatype.value.substr(33, literal.datatype.value.length)])) {
+            Translator_1.Translator.incorrectRdfDataType(literal);
+        }
+        switch (literal.datatype.value) {
+            case 'http://www.w3.org/2001/XMLSchema#gDay':
+                return new Date(0, 0, parseInt(literal.value, 10));
+            case 'http://www.w3.org/2001/XMLSchema#gMonthDay':
+                const partsMonthDay = literal.value.split('-');
+                return new Date(0, parseInt(partsMonthDay[0], 10) - 1, parseInt(partsMonthDay[1], 10));
+            case 'http://www.w3.org/2001/XMLSchema#gYear':
+                return new Date(literal.value + '-01-01');
+            case 'http://www.w3.org/2001/XMLSchema#gYearMonth':
+                return new Date(literal.value + '-01');
+            default:
+                return new Date(literal.value);
+        }
+    }
+    toRdf(value, { datatype, dataFactory }) {
+        datatype = datatype || dataFactory.namedNode(TypeHandlerDate.TYPES[0]);
+        // Assume date values
+        if (!(value instanceof Date)) {
+            return null;
+        }
+        const date = value;
+        let valueString;
+        switch (datatype.value) {
+            case 'http://www.w3.org/2001/XMLSchema#gDay':
+                valueString = String(date.getUTCDate());
+                break;
+            case 'http://www.w3.org/2001/XMLSchema#gMonthDay':
+                valueString = (date.getUTCMonth() + 1) + '-' + date.getUTCDate();
+                break;
+            case 'http://www.w3.org/2001/XMLSchema#gYear':
+                valueString = String(date.getUTCFullYear());
+                break;
+            case 'http://www.w3.org/2001/XMLSchema#gYearMonth':
+                valueString = date.getUTCFullYear() + '-' + (date.getUTCMonth() + 1);
+                break;
+            case 'http://www.w3.org/2001/XMLSchema#date':
+                valueString = date.toISOString().replace(/T.*$/, '');
+                break;
+            default:
+                valueString = date.toISOString();
+        }
+        return dataFactory.literal(valueString, datatype);
+    }
+}
+exports.TypeHandlerDate = TypeHandlerDate;
+TypeHandlerDate.TYPES = [
+    'http://www.w3.org/2001/XMLSchema#dateTime',
+    'http://www.w3.org/2001/XMLSchema#date',
+    'http://www.w3.org/2001/XMLSchema#gDay',
+    'http://www.w3.org/2001/XMLSchema#gMonthDay',
+    'http://www.w3.org/2001/XMLSchema#gYear',
+    'http://www.w3.org/2001/XMLSchema#gYearMonth',
+];
+TypeHandlerDate.VALIDATORS = {
+    date: /^[0-9]+-[0-9][0-9]-[0-9][0-9]Z?$/,
+    dateTime: /^[0-9]+-[0-9][0-9]-[0-9][0-9]T[0-9][0-9]:[0-9][0-9]:[0-9][0-9](\.[0-9][0-9][0-9])?((Z?)|([\+-][0-9][0-9]:[0-9][0-9]))$/,
+    gDay: /^[0-9]+$/,
+    gMonthDay: /^[0-9]+-[0-9][0-9]$/,
+    gYear: /^[0-9]+$/,
+    gYearMonth: /^[0-9]+-[0-9][0-9]$/,
+};
+//# sourceMappingURL=TypeHandlerDate.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/TypeHandlerNumberDouble.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TypeHandlerNumberDouble = void 0;
+const Translator_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js");
+/**
+ * Translates double numbers.
+ */
+class TypeHandlerNumberDouble {
+    fromRdf(literal, validate) {
+        const parsed = parseFloat(literal.value);
+        if (validate) {
+            if (isNaN(parsed)) {
+                Translator_1.Translator.incorrectRdfDataType(literal);
+            }
+            // TODO: validate more
+        }
+        return parsed;
+    }
+    toRdf(value, { datatype, dataFactory }) {
+        datatype = datatype || dataFactory.namedNode(TypeHandlerNumberDouble.TYPES[0]);
+        if (isNaN(value)) {
+            return dataFactory.literal('NaN', datatype);
+        }
+        if (!isFinite(value)) {
+            return dataFactory.literal(value > 0 ? 'INF' : '-INF', datatype);
+        }
+        if (value % 1 === 0) {
+            return null;
+        }
+        return dataFactory.literal(value.toExponential(15).replace(/(\d)0*e\+?/, '$1E'), datatype);
+    }
+}
+exports.TypeHandlerNumberDouble = TypeHandlerNumberDouble;
+TypeHandlerNumberDouble.TYPES = [
+    'http://www.w3.org/2001/XMLSchema#double',
+    'http://www.w3.org/2001/XMLSchema#decimal',
+    'http://www.w3.org/2001/XMLSchema#float',
+];
+//# sourceMappingURL=TypeHandlerNumberDouble.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/TypeHandlerNumberInteger.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TypeHandlerNumberInteger = void 0;
+const Translator_1 = __cmncwpk_require__("./node_modules/rdf-literal/lib/Translator.js");
+/**
+ * Translates integer numbers.
+ */
+class TypeHandlerNumberInteger {
+    fromRdf(literal, validate) {
+        const parsed = parseInt(literal.value, 10);
+        if (validate) {
+            if (isNaN(parsed) || literal.value.indexOf('.') >= 0) {
+                Translator_1.Translator.incorrectRdfDataType(literal);
+            }
+            // TODO: validate more
+        }
+        return parsed;
+    }
+    toRdf(value, { datatype, dataFactory }) {
+        return dataFactory.literal(String(value), datatype
+            || (value <= TypeHandlerNumberInteger.MAX_INT && value >= TypeHandlerNumberInteger.MIN_INT
+                ? dataFactory.namedNode(TypeHandlerNumberInteger.TYPES[0])
+                : dataFactory.namedNode(TypeHandlerNumberInteger.TYPES[1])));
+    }
+}
+exports.TypeHandlerNumberInteger = TypeHandlerNumberInteger;
+TypeHandlerNumberInteger.TYPES = [
+    'http://www.w3.org/2001/XMLSchema#integer',
+    'http://www.w3.org/2001/XMLSchema#long',
+    'http://www.w3.org/2001/XMLSchema#int',
+    'http://www.w3.org/2001/XMLSchema#byte',
+    'http://www.w3.org/2001/XMLSchema#short',
+    'http://www.w3.org/2001/XMLSchema#negativeInteger',
+    'http://www.w3.org/2001/XMLSchema#nonNegativeInteger',
+    'http://www.w3.org/2001/XMLSchema#nonPositiveInteger',
+    'http://www.w3.org/2001/XMLSchema#positiveInteger',
+    'http://www.w3.org/2001/XMLSchema#unsignedByte',
+    'http://www.w3.org/2001/XMLSchema#unsignedInt',
+    'http://www.w3.org/2001/XMLSchema#unsignedLong',
+    'http://www.w3.org/2001/XMLSchema#unsignedShort',
+];
+TypeHandlerNumberInteger.MAX_INT = 2147483647;
+TypeHandlerNumberInteger.MIN_INT = -2147483648;
+//# sourceMappingURL=TypeHandlerNumberInteger.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/TypeHandlerString.js":
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TypeHandlerString = void 0;
+/**
+ * Translates strings.
+ */
+class TypeHandlerString {
+    fromRdf(literal) {
+        return literal.value;
+    }
+    toRdf(value, { datatype, dataFactory }) {
+        return dataFactory.literal(value, datatype);
+    }
+}
+exports.TypeHandlerString = TypeHandlerString;
+TypeHandlerString.TYPES = [
+    'http://www.w3.org/2001/XMLSchema#string',
+    'http://www.w3.org/2001/XMLSchema#normalizedString',
+    'http://www.w3.org/2001/XMLSchema#anyURI',
+    'http://www.w3.org/2001/XMLSchema#base64Binary',
+    'http://www.w3.org/2001/XMLSchema#language',
+    'http://www.w3.org/2001/XMLSchema#Name',
+    'http://www.w3.org/2001/XMLSchema#NCName',
+    'http://www.w3.org/2001/XMLSchema#NMTOKEN',
+    'http://www.w3.org/2001/XMLSchema#token',
+    'http://www.w3.org/2001/XMLSchema#hexBinary',
+    'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString',
+    'http://www.w3.org/2001/XMLSchema#time',
+    'http://www.w3.org/2001/XMLSchema#duration',
+];
+//# sourceMappingURL=TypeHandlerString.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-literal/lib/handler/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/TypeHandlerBoolean.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/TypeHandlerDate.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/TypeHandlerNumberDouble.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/TypeHandlerNumberInteger.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/rdf-literal/lib/handler/TypeHandlerString.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-store-stream/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.storeStream = void 0;
+const n3_1 = __cmncwpk_require__("./require-empty.js");
+/**
+ * Import all quads in the given stream into a new RDF store.
+ *
+ * The whole stream will be consumed for this,
+ * and the promise will resolve once the stream's end event is emitted.
+ *
+ * @param {Stream<Q extends BaseQuad>} stream An RDF stream containing the quads to import into the store.
+ * @return {Promise<Store<Q extends BaseQuad>>} A promise resolving to an RDF store.
+ */
+function storeStream(stream) {
+    const store = new n3_1.Store();
+    return new Promise((resolve, reject) => store.import(stream)
+        .on('error', reject)
+        .once('end', () => resolve(store)));
+}
+exports.storeStream = storeStream;
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-string-ttl/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.termToString = exports.stringToTerm = exports.stringQuadToQuad = exports.quadToStringQuad = exports.getLiteralValue = exports.getLiteralType = exports.getLiteralLanguage = void 0;
+const TermUtil_1 = __cmncwpk_require__("./node_modules/rdf-string-ttl/lib/TermUtil.js");
+Object.defineProperty(exports, "getLiteralLanguage", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralLanguage; } }));
+Object.defineProperty(exports, "getLiteralType", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralType; } }));
+Object.defineProperty(exports, "getLiteralValue", ({ enumerable: true, get: function () { return TermUtil_1.getLiteralValue; } }));
+Object.defineProperty(exports, "quadToStringQuad", ({ enumerable: true, get: function () { return TermUtil_1.quadToStringQuad; } }));
+Object.defineProperty(exports, "stringQuadToQuad", ({ enumerable: true, get: function () { return TermUtil_1.stringQuadToQuad; } }));
+Object.defineProperty(exports, "stringToTerm", ({ enumerable: true, get: function () { return TermUtil_1.stringToTerm; } }));
+Object.defineProperty(exports, "termToString", ({ enumerable: true, get: function () { return TermUtil_1.termToString; } }));
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/rdf-string-ttl/lib/TermUtil.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.stringQuadToQuad = exports.quadToStringQuad = exports.stringToTerm = exports.getLiteralLanguage = exports.getLiteralType = exports.getLiteralValue = exports.termToString = void 0;
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const FACTORY = new rdf_data_factory_1.DataFactory();
+/**
+ * Utility methods for converting between string-based RDF representations and RDFJS objects.
+ *
+ * RDF Terms are represented as follows:
+ * * Blank nodes: '_:myBlankNode'
+ * * Variables:   '_myVariable'
+ * * Literals:    '"myString"', '"myLanguageString"@en-us', '"<p>e</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML>'
+ * * URIs:        '<http://example.org>'
+ *
+ * Quads/triples are represented as hashes with 'subject', 'predicate', 'object' and 'graph' (optional)
+ * as keys, and string-based RDF terms as values.
+ */
+/**
+ * Convert an RDFJS term to a string-based representation.
+ * @param {RDF.Term} term An RDFJS term.
+ * @return {string} A string-based term representation.
+ */
+function termToString(term) {
+    // TODO: remove nasty any casts when this TS bug has been fixed: https://github.com/microsoft/TypeScript/issues/26933
+    if (!term) {
+        return undefined;
+    }
+    switch (term.termType) {
+        case 'NamedNode': return ('<' + term.value + '>');
+        case 'BlankNode': return ('_:' + term.value);
+        case 'Literal':
+            const literalValue = term;
+            return ('"' + literalValue.value.replace(/"/ug, '\\"') + '"' +
+                (literalValue.datatype &&
+                    literalValue.datatype.value !== 'http://www.w3.org/2001/XMLSchema#string' &&
+                    literalValue.datatype.value !== 'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString' ?
+                    '^^<' + literalValue.datatype.value + '>' : '') +
+                (literalValue.language ? '@' + literalValue.language : ''));
+        case 'Quad': return `<<${termToString(term.subject)} ${termToString(term.predicate)} ${termToString(term.object)}${term.graph.termType === 'DefaultGraph' ? '' : ' ' + termToString(term.graph)}>>`;
+        case 'Variable': return ('?' + term.value);
+        case 'DefaultGraph': return term.value;
+    }
+}
+exports.termToString = termToString;
+/**
+ * Get the string value of a literal.
+ * @param {string} literalValue An RDF literal enclosed by '"'.
+ * @return {string} The literal value inside the '"'.
+ */
+function getLiteralValue(literalValue) {
+    const match = /^"([^]*)"((\^\^.*)|(@.*))?$/.exec(literalValue);
+    if (!match) {
+        throw new Error(literalValue + ' is not a literal');
+    }
+    return match[1].replace(/\\"/ug, '"');
+}
+exports.getLiteralValue = getLiteralValue;
+/**
+ * Get the datatype of the given literal.
+ * @param {string} literalValue An RDF literal.
+ * @return {string} The datatype of the literal.
+ */
+function getLiteralType(literalValue) {
+    const match = /^"[^]*"(?:\^\^<([^"]+)>|(@)[^@"]+)?$/.exec(literalValue);
+    if (!match) {
+        throw new Error(literalValue + ' is not a literal');
+    }
+    return match[1] || (match[2]
+        ? 'http://www.w3.org/1999/02/22-rdf-syntax-ns#langString' : 'http://www.w3.org/2001/XMLSchema#string');
+}
+exports.getLiteralType = getLiteralType;
+/**
+ * Get the language of the given literal.
+ * @param {string} literalValue An RDF literal.
+ * @return {string} The language of the literal.
+ */
+function getLiteralLanguage(literalValue) {
+    const match = /^"[^]*"(?:@([^@"]+)|\^\^[^"]+)?$/.exec(literalValue);
+    if (!match) {
+        throw new Error(literalValue + ' is not a literal');
+    }
+    return match[1] ? match[1].toLowerCase() : '';
+}
+exports.getLiteralLanguage = getLiteralLanguage;
+/**
+ * Transform a string-based RDF term to an RDFJS term.
+ * @param {string} value A string-based RDF-term.
+ * @param {RDF.DataFactory} dataFactory An optional datafactory to create terms with.
+ * @return {RDF.Term} An RDF-JS term.
+ */
+function stringToTerm(value, dataFactory) {
+    dataFactory = dataFactory || FACTORY;
+    if (!value || !value.length) {
+        return dataFactory.defaultGraph();
+    }
+    switch (value[0]) {
+        case '_': return dataFactory.blankNode(value.substr(2));
+        case '?':
+            if (!dataFactory.variable) {
+                throw new Error(`Missing 'variable()' method on the given DataFactory`);
+            }
+            return dataFactory.variable(value.substr(1));
+        case '"':
+            const language = getLiteralLanguage(value);
+            const type = dataFactory.namedNode(getLiteralType(value));
+            return dataFactory.literal(getLiteralValue(value), language || type);
+        case '<':
+        default:
+            if (value.startsWith('<<') && value.endsWith('>>')) {
+                // Iterate character-by-character to detect spaces that are *not* wrapped in <<>>
+                const terms = value.slice(2, -2);
+                const stringTerms = [];
+                let ignoreTags = 0;
+                let lastIndex = 0;
+                for (let i = 0; i < terms.length; i++) {
+                    const char = terms[i];
+                    if (char === '<')
+                        ignoreTags++;
+                    if (char === '>') {
+                        if (ignoreTags === 0) {
+                            throw new Error('Found closing tag without opening tag in ' + value);
+                        }
+                        else {
+                            ignoreTags--;
+                        }
+                    }
+                    if (char === ' ' && ignoreTags === 0) {
+                        stringTerms.push(terms.slice(lastIndex, i));
+                        lastIndex = i + 1;
+                    }
+                }
+                if (ignoreTags !== 0) {
+                    throw new Error('Found opening tag without closing tag in ' + value);
+                }
+                stringTerms.push(terms.slice(lastIndex, terms.length));
+                // We require 3 or 4 components
+                if (stringTerms.length !== 3 && stringTerms.length !== 4) {
+                    throw new Error('Nested quad syntax error ' + value);
+                }
+                return dataFactory.quad(stringToTerm(stringTerms[0]), stringToTerm(stringTerms[1]), stringToTerm(stringTerms[2]), stringTerms[3] ? stringToTerm(stringTerms[3]) : undefined);
+            }
+            if (value.charAt(0) !== '<' || value.charAt(value.length - 1) !== '>') {
+                throw new Error(`Detected invalid iri for named node (must be wrapped in <>): ${value}`);
+            }
+            return dataFactory.namedNode(value.substring(1, value.length - 1));
+    }
+}
+exports.stringToTerm = stringToTerm;
+/**
+ * Convert an RDFJS quad to a string-based quad representation.
+ * @param {Quad} q An RDFJS quad.
+ * @return {IStringQuad} A hash with string-based quad terms.
+ * @template Q The type of quad, defaults to RDF.Quad.
+ */
+function quadToStringQuad(q) {
+    // tslint:disable:object-literal-sort-keys
+    return {
+        subject: termToString(q.subject),
+        predicate: termToString(q.predicate),
+        object: termToString(q.object),
+        graph: termToString(q.graph),
+    };
+    // tslint:enable:object-literal-sort-keys
+}
+exports.quadToStringQuad = quadToStringQuad;
+/**
+ * Convert a string-based quad representation to an RDFJS quad.
+ * @param {IStringQuad} stringQuad A hash with string-based quad terms.
+ * @param {RDF.DataFactory} dataFactory An optional datafactory to create terms with.
+ * @return {Q} An RDFJS quad.
+ * @template Q The type of quad, defaults to RDF.Quad.
+ */
+function stringQuadToQuad(stringQuad, dataFactory) {
+    dataFactory = dataFactory || FACTORY;
+    return dataFactory.quad(stringToTerm(stringQuad.subject, dataFactory), stringToTerm(stringQuad.predicate, dataFactory), stringToTerm(stringQuad.object, dataFactory), stringToTerm(stringQuad.graph, dataFactory));
+}
+exports.stringQuadToQuad = stringQuadToQuad;
+//# sourceMappingURL=TermUtil.js.map
+
+/***/ }),
+
 /***/ "./node_modules/rdf-string/index.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
@@ -23505,31 +25767,32 @@ exports.stringQuadToQuad = stringQuadToQuad;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TRIPLE_TERM_NAMES = exports.someTerms = exports.everyTerms = exports.reduceTerms = exports.mapTerms = exports.filterQuadTermNames = exports.filterTerms = exports.forEachTerms = exports.collectNamedTerms = exports.getNamedTerms = exports.getTermsNested = exports.getTerms = exports.QUAD_TERM_NAMES = exports.matchPatternComplete = exports.matchPattern = exports.getDefaultGraphs = exports.getVariables = exports.getLiterals = exports.getBlankNodes = exports.getNamedNodes = exports.getTermsOfType = exports.uniqTerms = exports.TERM_TYPES = void 0;
 const QuadTermUtil_1 = __cmncwpk_require__("./node_modules/rdf-terms/lib/QuadTermUtil.js");
-exports.collectNamedTerms = QuadTermUtil_1.collectNamedTerms;
-exports.everyTerms = QuadTermUtil_1.everyTerms;
-exports.filterQuadTermNames = QuadTermUtil_1.filterQuadTermNames;
-exports.filterTerms = QuadTermUtil_1.filterTerms;
-exports.forEachTerms = QuadTermUtil_1.forEachTerms;
-exports.getNamedTerms = QuadTermUtil_1.getNamedTerms;
-exports.getTerms = QuadTermUtil_1.getTerms;
-exports.getTermsNested = QuadTermUtil_1.getTermsNested;
-exports.mapTerms = QuadTermUtil_1.mapTerms;
-exports.matchPattern = QuadTermUtil_1.matchPattern;
-exports.matchPatternComplete = QuadTermUtil_1.matchPatternComplete;
-exports.QUAD_TERM_NAMES = QuadTermUtil_1.QUAD_TERM_NAMES;
-exports.reduceTerms = QuadTermUtil_1.reduceTerms;
-exports.someTerms = QuadTermUtil_1.someTerms;
-exports.TRIPLE_TERM_NAMES = QuadTermUtil_1.TRIPLE_TERM_NAMES;
+Object.defineProperty(exports, "collectNamedTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.collectNamedTerms; } }));
+Object.defineProperty(exports, "everyTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.everyTerms; } }));
+Object.defineProperty(exports, "filterQuadTermNames", ({ enumerable: true, get: function () { return QuadTermUtil_1.filterQuadTermNames; } }));
+Object.defineProperty(exports, "filterTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.filterTerms; } }));
+Object.defineProperty(exports, "forEachTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.forEachTerms; } }));
+Object.defineProperty(exports, "getNamedTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.getNamedTerms; } }));
+Object.defineProperty(exports, "getTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.getTerms; } }));
+Object.defineProperty(exports, "getTermsNested", ({ enumerable: true, get: function () { return QuadTermUtil_1.getTermsNested; } }));
+Object.defineProperty(exports, "mapTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.mapTerms; } }));
+Object.defineProperty(exports, "matchPattern", ({ enumerable: true, get: function () { return QuadTermUtil_1.matchPattern; } }));
+Object.defineProperty(exports, "matchPatternComplete", ({ enumerable: true, get: function () { return QuadTermUtil_1.matchPatternComplete; } }));
+Object.defineProperty(exports, "QUAD_TERM_NAMES", ({ enumerable: true, get: function () { return QuadTermUtil_1.QUAD_TERM_NAMES; } }));
+Object.defineProperty(exports, "reduceTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.reduceTerms; } }));
+Object.defineProperty(exports, "someTerms", ({ enumerable: true, get: function () { return QuadTermUtil_1.someTerms; } }));
+Object.defineProperty(exports, "TRIPLE_TERM_NAMES", ({ enumerable: true, get: function () { return QuadTermUtil_1.TRIPLE_TERM_NAMES; } }));
 const TermUtil_1 = __cmncwpk_require__("./node_modules/rdf-terms/lib/TermUtil.js");
-exports.getBlankNodes = TermUtil_1.getBlankNodes;
-exports.getDefaultGraphs = TermUtil_1.getDefaultGraphs;
-exports.getLiterals = TermUtil_1.getLiterals;
-exports.getNamedNodes = TermUtil_1.getNamedNodes;
-exports.getTermsOfType = TermUtil_1.getTermsOfType;
-exports.getVariables = TermUtil_1.getVariables;
-exports.TERM_TYPES = TermUtil_1.TERM_TYPES;
-exports.uniqTerms = TermUtil_1.uniqTerms;
+Object.defineProperty(exports, "getBlankNodes", ({ enumerable: true, get: function () { return TermUtil_1.getBlankNodes; } }));
+Object.defineProperty(exports, "getDefaultGraphs", ({ enumerable: true, get: function () { return TermUtil_1.getDefaultGraphs; } }));
+Object.defineProperty(exports, "getLiterals", ({ enumerable: true, get: function () { return TermUtil_1.getLiterals; } }));
+Object.defineProperty(exports, "getNamedNodes", ({ enumerable: true, get: function () { return TermUtil_1.getNamedNodes; } }));
+Object.defineProperty(exports, "getTermsOfType", ({ enumerable: true, get: function () { return TermUtil_1.getTermsOfType; } }));
+Object.defineProperty(exports, "getVariables", ({ enumerable: true, get: function () { return TermUtil_1.getVariables; } }));
+Object.defineProperty(exports, "TERM_TYPES", ({ enumerable: true, get: function () { return TermUtil_1.TERM_TYPES; } }));
+Object.defineProperty(exports, "uniqTerms", ({ enumerable: true, get: function () { return TermUtil_1.uniqTerms; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -23540,6 +25803,7 @@ exports.uniqTerms = TermUtil_1.uniqTerms;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.matchPatternComplete = exports.matchPattern = exports.matchTerm = exports.someTerms = exports.everyTerms = exports.reduceTerms = exports.mapTerms = exports.filterQuadTermNames = exports.filterTerms = exports.forEachTerms = exports.collectNamedTerms = exports.getNamedTerms = exports.getTermsNested = exports.getTerms = exports.TRIPLE_TERM_NAMES = exports.QUAD_TERM_NAMES = void 0;
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const DF = new rdf_data_factory_1.DataFactory();
 /**
@@ -23803,6 +26067,7 @@ exports.matchPatternComplete = matchPatternComplete;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getQuads = exports.getDefaultGraphs = exports.getVariables = exports.getLiterals = exports.getBlankNodes = exports.getNamedNodes = exports.getTermsOfType = exports.uniqTerms = exports.TERM_TYPES = void 0;
 /**
  * All known term types.
  * @see RDF.Term
@@ -23886,6 +26151,82 @@ function getQuads(terms) {
 }
 exports.getQuads = getQuads;
 //# sourceMappingURL=TermUtil.js.map
+
+/***/ }),
+
+/***/ "./node_modules/readable-web-to-node-stream/lib/index.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ReadableWebToNodeStream = void 0;
+const readable_stream_1 = __cmncwpk_require__("readable-stream");
+/**
+ * Converts a Web-API stream into Node stream.Readable class
+ * Node stream readable: https://nodejs.org/api/stream.html#stream_readable_streams
+ * Web API readable-stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+ * Node readable stream: https://nodejs.org/api/stream.html#stream_readable_streams
+ */
+class ReadableWebToNodeStream extends readable_stream_1.Readable {
+    /**
+     *
+     * @param stream Readable​Stream: https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream
+     */
+    constructor(stream) {
+        super();
+        this.bytesRead = 0;
+        this.released = false;
+        this.reader = stream.getReader();
+    }
+    /**
+     * Implementation of readable._read(size).
+     * When readable._read() is called, if data is available from the resource,
+     * the implementation should begin pushing that data into the read queue
+     * https://nodejs.org/api/stream.html#stream_readable_read_size_1
+     */
+    async _read() {
+        // Should start pushing data into the queue
+        // Read data from the underlying Web-API-readable-stream
+        if (this.released) {
+            this.push(null); // Signal EOF
+            return;
+        }
+        this.pendingRead = this.reader.read();
+        const data = await this.pendingRead;
+        // clear the promise before pushing pushing new data to the queue and allow sequential calls to _read()
+        delete this.pendingRead;
+        if (data.done || this.released) {
+            this.push(null); // Signal EOF
+        }
+        else {
+            this.bytesRead += data.value.length;
+            this.push(data.value); // Push new data to the queue
+        }
+    }
+    /**
+     * If there is no unresolved read call to Web-API Readable​Stream immediately returns;
+     * otherwise will wait until the read is resolved.
+     */
+    async waitForReadToComplete() {
+        if (this.pendingRead) {
+            await this.pendingRead;
+        }
+    }
+    /**
+     * Close wrapper
+     */
+    async close() {
+        await this.syncAndRelease();
+    }
+    async syncAndRelease() {
+        this.released = true;
+        await this.waitForReadToComplete();
+        await this.reader.releaseLock();
+    }
+}
+exports.ReadableWebToNodeStream = ReadableWebToNodeStream;
+//# sourceMappingURL=index.js.map
 
 /***/ }),
 
@@ -24879,7 +27220,8 @@ function isCharacterAllowedAfterRelativePathSegment(character) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.orderTypes = exports.isExpressionError = exports.ExpressionError = exports.AggregateEvaluator = exports.SyncEvaluator = exports.AsyncEvaluator = void 0;
+exports.AsyncAggregateEvaluator = exports.orderTypes = exports.isExpressionError = exports.ExpressionError = exports.AggregateEvaluator = exports.SyncEvaluator = exports.AsyncEvaluator = void 0;
+// TODO: this form is deprecated, we should not rename these types. Should change in next mayor update.
 var AsyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/AsyncEvaluator.js");
 Object.defineProperty(exports, "AsyncEvaluator", ({ enumerable: true, get: function () { return AsyncEvaluator_1.AsyncEvaluator; } }));
 var SyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
@@ -24891,313 +27233,28 @@ Object.defineProperty(exports, "ExpressionError", ({ enumerable: true, get: func
 Object.defineProperty(exports, "isExpressionError", ({ enumerable: true, get: function () { return Errors_1.isExpressionError; } }));
 var Ordering_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Ordering.js");
 Object.defineProperty(exports, "orderTypes", ({ enumerable: true, get: function () { return Ordering_1.orderTypes; } }));
+var AsyncAggregateEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/AsyncAggregateEvaluator.js");
+Object.defineProperty(exports, "AsyncAggregateEvaluator", ({ enumerable: true, get: function () { return AsyncAggregateEvaluator_1.AsyncAggregateEvaluator; } }));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
 
-/***/ "./node_modules/sparqlee/dist/lib/Transformation.js":
+/***/ "./node_modules/sparqlee/dist/lib/Aggregators.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.transformExistence = exports.transformAggregate = exports.transformNamed = exports.transformLiteral = exports.transformRDFTermUnsafe = exports.transformAlgebra = void 0;
-const RDFString = __cmncwpk_require__("./node_modules/rdf-string/index.js");
-const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
-const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
-const P = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const functions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
-const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-function transformAlgebra(expr) {
-    if (!expr) {
-        throw new Err.InvalidExpression(expr);
-    }
-    const types = sparqlalgebrajs_1.Algebra.expressionTypes;
-    switch (expr.expressionType) {
-        case types.TERM:
-            return transformTerm(expr);
-        case types.OPERATOR:
-            return transformOperator(expr);
-        case types.NAMED:
-            return transformNamed(expr);
-        case types.EXISTENCE:
-            return transformExistence(expr);
-        case types.AGGREGATE:
-            return transformAggregate(expr);
-        case types.WILDCARD:
-            return transformWildcard(expr);
-        default: throw new Err.InvalidExpressionType(expr);
-    }
-}
-exports.transformAlgebra = transformAlgebra;
-/**
- * Transforms an RDF term to the internal representation of a term,
- * assuming it is not a variable, which would be an expression (internally).
- *
- * @param term RDF term to transform into internal representation of a term
- */
-function transformRDFTermUnsafe(term) {
-    return transformTerm({
-        term,
-        type: 'expression',
-        expressionType: 'term',
-    });
-}
-exports.transformRDFTermUnsafe = transformRDFTermUnsafe;
-function transformTerm(term) {
-    if (!term.term) {
-        throw new Err.InvalidExpression(term);
-    }
-    switch (term.term.termType) {
-        case 'Variable': return new E.Variable(RDFString.termToString(term.term));
-        case 'Literal': return transformLiteral(term.term);
-        case 'NamedNode': return new E.NamedNode(term.term.value);
-        case 'BlankNode': return new E.BlankNode(term.term.value);
-        default: throw new Err.InvalidTermType(term);
-    }
-}
-function transformWildcard(term) {
-    if (!term.wildcard) {
-        throw new Err.InvalidExpression(term);
-    }
-    return new E.NamedNode(term.wildcard.value);
-}
-// TODO: Maybe do this with a map?
-// tslint:disable-next-line:no-any
-function transformLiteral(lit) {
-    if (!lit.datatype) {
-        return (lit.language)
-            ? new E.LangStringLiteral(lit.value, lit.language)
-            : new E.StringLiteral(lit.value);
-    }
-    switch (lit.datatype.value) {
-        case null:
-        case undefined:
-        case '': {
-            return (lit.language)
-                ? new E.LangStringLiteral(lit.value, lit.language)
-                : new E.StringLiteral(lit.value);
-        }
-        case Consts_1.TypeURL.XSD_STRING:
-            return new E.StringLiteral(lit.value);
-        case Consts_1.TypeURL.RDF_LANG_STRING:
-            return new E.LangStringLiteral(lit.value, lit.language);
-        case Consts_1.TypeURL.XSD_DATE_TIME:
-        case Consts_1.TypeURL.XSD_DATE: {
-            const val = new Date(lit.value);
-            if (isNaN(val.getTime())) {
-                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
-            }
-            return new E.DateTimeLiteral(new Date(lit.value), lit.value);
-        }
-        case Consts_1.TypeURL.XSD_BOOLEAN: {
-            if (lit.value !== 'true' && lit.value !== 'false' && lit.value !== '1' && lit.value !== '0') {
-                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
-            }
-            return new E.BooleanLiteral(lit.value === 'true' || lit.value === '1', lit.value);
-        }
-        case Consts_1.TypeURL.XSD_INTEGER:
-        case Consts_1.TypeURL.XSD_DECIMAL:
-        case Consts_1.TypeURL.XSD_NEGATIVE_INTEGER:
-        case Consts_1.TypeURL.XSD_NON_NEGATIVE_INTEGER:
-        case Consts_1.TypeURL.XSD_NON_POSITIVE_INTEGER:
-        case Consts_1.TypeURL.XSD_POSITIVE_INTEGER:
-        case Consts_1.TypeURL.XSD_LONG:
-        case Consts_1.TypeURL.XSD_SHORT:
-        case Consts_1.TypeURL.XSD_BYTE:
-        case Consts_1.TypeURL.XSD_UNSIGNED_LONG:
-        case Consts_1.TypeURL.XSD_UNSIGNED_INT:
-        case Consts_1.TypeURL.XSD_UNSIGNED_SHORT:
-        case Consts_1.TypeURL.XSD_UNSIGNED_BYTE:
-        case Consts_1.TypeURL.XSD_INT: {
-            const val = P.parseXSDDecimal(lit.value);
-            if (val === undefined) {
-                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
-            }
-            return new E.NumericLiteral(val, lit.datatype, lit.value);
-        }
-        case Consts_1.TypeURL.XSD_FLOAT:
-        case Consts_1.TypeURL.XSD_DOUBLE: {
-            const val = P.parseXSDFloat(lit.value);
-            if (val === undefined) {
-                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
-            }
-            return new E.NumericLiteral(val, lit.datatype, lit.value);
-        }
-        default: return new E.Literal(lit.value, lit.datatype, lit.value);
-    }
-}
-exports.transformLiteral = transformLiteral;
-function transformOperator(expr) {
-    if (C.SpecialOperators.contains(expr.operator)) {
-        const op = expr.operator;
-        const args = expr.args.map((a) => transformAlgebra(a));
-        const func = functions_1.specialFunctions.get(op);
-        if (!func.checkArity(args)) {
-            throw new Err.InvalidArity(args, op);
-        }
-        return new E.SpecialOperator(args, func.applyAsync, func.applySync);
-    }
-    else {
-        if (!C.Operators.contains(expr.operator)) {
-            throw new Err.UnknownOperator(expr.operator);
-        }
-        const op = expr.operator;
-        const args = expr.args.map((a) => transformAlgebra(a));
-        const func = functions_1.regularFunctions.get(op);
-        if (!hasCorrectArity(args, func.arity)) {
-            throw new Err.InvalidArity(args, op);
-        }
-        return new E.Operator(args, func.apply);
-    }
-}
-// TODO: Support passing functions to override default behaviour;
-function transformNamed(expr) {
-    const funcName = expr.name.value;
-    if (!C.NamedOperators.contains(funcName)) {
-        throw new Err.UnknownNamedOperator(expr.name.value);
-    }
-    // tslint:disable-next-line:no-any
-    const op = expr.name.value;
-    const args = expr.args.map((a) => transformAlgebra(a));
-    const func = functions_1.namedFunctions.get(op);
-    return new E.Named(expr.name, args, func.apply);
-}
-exports.transformNamed = transformNamed;
-function hasCorrectArity(args, arity) {
-    // Infinity is used to represent var-args, so it's always correct.
-    if (arity === Infinity) {
-        return true;
-    }
-    // If the function has overloaded arity, the actual arity needs to be present.
-    if (Array.isArray(arity)) {
-        return arity.indexOf(args.length) >= 0;
-    }
-    return args.length === arity;
-}
-function transformAggregate(expr) {
-    const name = expr.aggregator;
-    return new E.Aggregate(name, expr);
-}
-exports.transformAggregate = transformAggregate;
-function transformExistence(expr) {
-    return new E.Existence(expr);
-}
-exports.transformExistence = transformExistence;
-//# sourceMappingURL=Transformation.js.map
-
-/***/ }),
-
-/***/ "./node_modules/sparqlee/dist/lib/evaluators/AggregateEvaluator.js":
-/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
-
-"use strict";
-
-// tslint:disable:object-literal-sort-keys
-// tslint:disable:max-classes-per-file
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.aggregators = exports.AggregateEvaluator = void 0;
+exports.aggregators = exports.BaseAggregator = void 0;
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const functions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
 const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
-const Parsing_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const SyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
 const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Parsing_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
 const DF = new rdf_data_factory_1.DataFactory();
-// TODO: Support hooks
-class AggregateEvaluator {
-    constructor(expr, config, throwError) {
-        this.throwError = false;
-        this.expression = expr;
-        this.evaluator = new SyncEvaluator_1.SyncEvaluator(expr.expression, config);
-        this.aggregator = new exports.aggregators[expr.aggregator](expr);
-        this.throwError = throwError;
-    }
-    /**
-     * The spec says to throw an error when a set function is called on an empty
-     * set (unless explicitly mentioned otherwise like COUNT).
-     * However, aggregate error handling says to not bind the result in case of an
-     * error. So to simplify logic in the caller, we return undefined by default.
-     *
-     * @param throwError wether this function should respect the spec and throw an error if no empty value is defined
-     */
-    static emptyValue(expr, throwError = false) {
-        const val = exports.aggregators[expr.aggregator].emptyValue();
-        if (val === undefined && throwError) {
-            throw new Err.EmptyAggregateError();
-        }
-        return val;
-    }
-    /**
-     * Put a binding from the result stream in the aggregate state.
-     *
-     * If any binding evaluation errors, the corresponding aggregate variable should be unbound.
-     * If this happens, calling @see result() will return @constant undefined
-     *
-     * @param bindings the bindings to pass to the expression
-     */
-    put(bindings) {
-        this.init(bindings);
-        if (this.state) {
-            this.put = this.__put;
-            this.result = this.__result;
-        }
-    }
-    result() {
-        return this.aggregator.constructor.emptyValue();
-    }
-    /**
-     * The actual put method. When the first binding has been given, and the state
-     * of the evaluators initialised. The .put API function will be replaced with this
-     * function, which implements the behaviour we want.
-     *
-     * @param bindings the bindings to pass to the expression
-     */
-    __put(bindings) {
-        try {
-            const term = this.evaluator.evaluate(bindings);
-            this.state = this.aggregator.put(this.state, term);
-        }
-        catch (err) {
-            this.safeThrow(err);
-        }
-    }
-    /**
-     * The actual result method. When the first binding has been given, and the state
-     * of the evaluators initialised. The .result API function will be replaced with this
-     * function, which implements the behaviour we want.
-     *
-     * @param bindings the bindings to pass to the expression
-     */
-    __result() {
-        return this.aggregator.result(this.state);
-    }
-    init(start) {
-        try {
-            const startTerm = this.evaluator.evaluate(start);
-            this.state = this.aggregator.init(startTerm);
-        }
-        catch (err) {
-            this.safeThrow(err);
-        }
-    }
-    safeThrow(err) {
-        if (this.throwError) {
-            throw err;
-        }
-        else {
-            this.put = () => { return; };
-            this.result = () => undefined;
-        }
-    }
-}
-exports.AggregateEvaluator = AggregateEvaluator;
 class BaseAggregator {
     constructor(expr) {
         this.distinct = expr.distinct;
@@ -25207,9 +27264,10 @@ class BaseAggregator {
         return undefined;
     }
 }
+exports.BaseAggregator = BaseAggregator;
 class Count extends BaseAggregator {
     static emptyValue() {
-        return Helpers_1.number(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
+        return (0, Helpers_1.number)(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
     }
     init(start) {
         return 1;
@@ -25218,16 +27276,16 @@ class Count extends BaseAggregator {
         return state + 1;
     }
     result(state) {
-        return Helpers_1.number(state, Consts_1.TypeURL.XSD_INTEGER).toRDF();
+        return (0, Helpers_1.number)(state, Consts_1.TypeURL.XSD_INTEGER).toRDF();
     }
 }
 class Sum extends BaseAggregator {
     constructor() {
         super(...arguments);
-        this.summer = functions_1.regularFunctions.get(C.RegularOperator.ADDITION);
+        this.summer = functions_1.regularFunctions[C.RegularOperator.ADDITION];
     }
     static emptyValue() {
-        return Helpers_1.number(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
+        return (0, Helpers_1.number)(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
     }
     init(start) {
         const { value, type } = extractNumericValueAndTypeOrError(start);
@@ -25288,11 +27346,11 @@ class Max extends BaseAggregator {
 class Average extends BaseAggregator {
     constructor() {
         super(...arguments);
-        this.summer = functions_1.regularFunctions.get(C.RegularOperator.ADDITION);
-        this.divider = functions_1.regularFunctions.get(C.RegularOperator.DIVISION);
+        this.summer = functions_1.regularFunctions[C.RegularOperator.ADDITION];
+        this.divider = functions_1.regularFunctions[C.RegularOperator.DIVISION];
     }
     static emptyValue() {
-        return Helpers_1.number(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
+        return (0, Helpers_1.number)(0, Consts_1.TypeURL.XSD_INTEGER).toRDF();
     }
     init(start) {
         const { value, type } = extractNumericValueAndTypeOrError(start);
@@ -25316,7 +27374,7 @@ class Average extends BaseAggregator {
 }
 class GroupConcat extends BaseAggregator {
     static emptyValue() {
-        return Helpers_1.string('').toRDF();
+        return (0, Helpers_1.string)('').toRDF();
     }
     init(start) {
         return start.value;
@@ -25325,7 +27383,7 @@ class GroupConcat extends BaseAggregator {
         return state + this.separator + term.value;
     }
     result(state) {
-        return Helpers_1.string(state).toRDF();
+        return (0, Helpers_1.string)(state).toRDF();
     }
 }
 class Sample extends BaseAggregator {
@@ -25333,7 +27391,8 @@ class Sample extends BaseAggregator {
         return start;
     }
     put(state, term) {
-        return state; // First value is our sample
+        // First value is our sample
+        return state;
     }
     result(state) {
         return state;
@@ -25351,23 +27410,376 @@ exports.aggregators = {
 function extractNumericValueAndTypeOrError(term) {
     // TODO: Check behaviour
     if (term.termType !== 'Literal') {
-        throw new Error('Term with value ' + term.value + ' has type ' + term.termType + ' and is not a numeric literal');
+        throw new Error(`Term with value ${term.value} has type ${term.termType} and is not a numeric literal`);
     }
-    else if (!C.NumericTypeURLs.contains(term.datatype.value)) {
-        throw new Error('Term datatype ' + term.datatype.value + ' with value ' + term.value + ' has type ' + term.termType + ' and is not a numeric literal');
+    else if (!C.NumericTypeURLs.has(term.datatype.value)) {
+        throw new Error(`Term datatype ${term.datatype.value} with value ${term.value} has type ${term.termType} and is not a numeric literal`);
     }
     const type = term.datatype.value;
-    const value = Parsing_1.parseXSDFloat(term.value);
+    const value = (0, Parsing_1.parseXSDFloat)(term.value);
     return { type, value };
 }
 function extractValue(extremeTerm, term) {
     if (term.termType !== 'Literal') {
-        throw new Error('Term with value ' + term.value + ' has type ' + term.termType + ' and is not a literal');
+        throw new Error(`Term with value ${term.value} has type ${term.termType} and is not a literal`);
     }
-    const transformedLit = Transformation_1.transformLiteral(term);
+    const transformedLit = (0, Transformation_1.transformLiteral)(term);
     return { type: transformedLit.typeURL.value, value: transformedLit.typedValue };
 }
+//# sourceMappingURL=Aggregators.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlee/dist/lib/Transformation.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.transformExistence = exports.transformAggregate = exports.transformLiteral = exports.transformRDFTermUnsafe = exports.transformAlgebra = void 0;
+const RDFString = __cmncwpk_require__("./node_modules/rdf-string/index.js");
+const sparqlalgebrajs_1 = __cmncwpk_require__("sparqlalgebrajs");
+const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const functions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
+const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Errors_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const P = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
+function transformAlgebra(expr, creatorConfig) {
+    if (!expr) {
+        throw new Err.InvalidExpression(expr);
+    }
+    const types = sparqlalgebrajs_1.Algebra.expressionTypes;
+    switch (expr.expressionType) {
+        case types.TERM:
+            return transformTerm(expr);
+        case types.OPERATOR:
+            return transformOperator(expr, creatorConfig);
+        case types.NAMED:
+            return transformNamed(expr, creatorConfig);
+        case types.EXISTENCE:
+            return transformExistence(expr);
+        case types.AGGREGATE:
+            return transformAggregate(expr);
+        case types.WILDCARD:
+            return transformWildcard(expr);
+        default: throw new Err.InvalidExpressionType(expr);
+    }
+}
+exports.transformAlgebra = transformAlgebra;
+/**
+ * Transforms an RDF term to the internal representation of a term,
+ * assuming it is not a variable, which would be an expression (internally).
+ *
+ * @param term RDF term to transform into internal representation of a term
+ */
+function transformRDFTermUnsafe(term) {
+    return transformTerm({
+        term,
+        type: 'expression',
+        expressionType: 'term',
+    });
+}
+exports.transformRDFTermUnsafe = transformRDFTermUnsafe;
+function transformTerm(term) {
+    if (!term.term) {
+        throw new Err.InvalidExpression(term);
+    }
+    switch (term.term.termType) {
+        case 'Variable': return new E.Variable(RDFString.termToString(term.term));
+        case 'Literal': return transformLiteral(term.term);
+        case 'NamedNode': return new E.NamedNode(term.term.value);
+        case 'BlankNode': return new E.BlankNode(term.term.value);
+        default: throw new Err.InvalidTermType(term);
+    }
+}
+function transformWildcard(term) {
+    if (!term.wildcard) {
+        throw new Err.InvalidExpression(term);
+    }
+    return new E.NamedNode(term.wildcard.value);
+}
+// TODO: Maybe do this with a map?
+function transformLiteral(lit) {
+    if (!lit.datatype) {
+        return lit.language ?
+            new E.LangStringLiteral(lit.value, lit.language) :
+            new E.StringLiteral(lit.value);
+    }
+    switch (lit.datatype.value) {
+        case null:
+        case undefined:
+        case '': {
+            return lit.language ?
+                new E.LangStringLiteral(lit.value, lit.language) :
+                new E.StringLiteral(lit.value);
+        }
+        case Consts_1.TypeURL.XSD_STRING:
+            return new E.StringLiteral(lit.value);
+        case Consts_1.TypeURL.RDF_LANG_STRING:
+            return new E.LangStringLiteral(lit.value, lit.language);
+        case Consts_1.TypeURL.XSD_DATE_TIME:
+        case Consts_1.TypeURL.XSD_DATE: {
+            const dateVal = new Date(lit.value);
+            if (Number.isNaN(dateVal.getTime())) {
+                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
+            }
+            return new E.DateTimeLiteral(new Date(lit.value), lit.value);
+        }
+        case Consts_1.TypeURL.XSD_BOOLEAN: {
+            if (lit.value !== 'true' && lit.value !== 'false' && lit.value !== '1' && lit.value !== '0') {
+                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
+            }
+            return new E.BooleanLiteral(lit.value === 'true' || lit.value === '1', lit.value);
+        }
+        case Consts_1.TypeURL.XSD_INTEGER:
+        case Consts_1.TypeURL.XSD_DECIMAL:
+        case Consts_1.TypeURL.XSD_NEGATIVE_INTEGER:
+        case Consts_1.TypeURL.XSD_NON_NEGATIVE_INTEGER:
+        case Consts_1.TypeURL.XSD_NON_POSITIVE_INTEGER:
+        case Consts_1.TypeURL.XSD_POSITIVE_INTEGER:
+        case Consts_1.TypeURL.XSD_LONG:
+        case Consts_1.TypeURL.XSD_SHORT:
+        case Consts_1.TypeURL.XSD_BYTE:
+        case Consts_1.TypeURL.XSD_UNSIGNED_LONG:
+        case Consts_1.TypeURL.XSD_UNSIGNED_INT:
+        case Consts_1.TypeURL.XSD_UNSIGNED_SHORT:
+        case Consts_1.TypeURL.XSD_UNSIGNED_BYTE:
+        case Consts_1.TypeURL.XSD_INT: {
+            const intVal = P.parseXSDDecimal(lit.value);
+            if (intVal === undefined) {
+                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
+            }
+            return new E.NumericLiteral(intVal, lit.datatype, lit.value);
+        }
+        case Consts_1.TypeURL.XSD_FLOAT:
+        case Consts_1.TypeURL.XSD_DOUBLE: {
+            const doubleVal = P.parseXSDFloat(lit.value);
+            if (doubleVal === undefined) {
+                return new E.NonLexicalLiteral(undefined, lit.datatype, lit.value);
+            }
+            return new E.NumericLiteral(doubleVal, lit.datatype, lit.value);
+        }
+        default: return new E.Literal(lit.value, lit.datatype, lit.value);
+    }
+}
+exports.transformLiteral = transformLiteral;
+function transformOperator(expr, creatorConfig) {
+    if (C.SpecialOperators.has(expr.operator)) {
+        const specialOp = expr.operator;
+        const specialArgs = expr.args.map(arg => transformAlgebra(arg, creatorConfig));
+        const specialFunc = functions_1.specialFunctions[specialOp];
+        if (!specialFunc.checkArity(specialArgs)) {
+            throw new Err.InvalidArity(specialArgs, specialOp);
+        }
+        return new E.SpecialOperator(specialArgs, specialFunc.applyAsync, specialFunc.applySync);
+    }
+    if (!C.Operators.has(expr.operator)) {
+        throw new Err.UnknownOperator(expr.operator);
+    }
+    const regularOp = expr.operator;
+    const regularArgs = expr.args.map(arg => transformAlgebra(arg, creatorConfig));
+    const regularFunc = functions_1.regularFunctions[regularOp];
+    if (!hasCorrectArity(regularArgs, regularFunc.arity)) {
+        throw new Err.InvalidArity(regularArgs, regularOp);
+    }
+    return new E.Operator(regularArgs, regularFunc.apply);
+}
+function wrapSyncFunction(func, name) {
+    return args => {
+        try {
+            const res = func(args.map(arg => arg.toRDF()));
+            return transformRDFTermUnsafe(res);
+        }
+        catch (error) {
+            throw new Errors_1.ExtensionFunctionError(name, error);
+        }
+    };
+}
+function wrapAsyncFunction(func, name) {
+    return async (args) => {
+        try {
+            const res = await func(args.map(arg => arg.toRDF()));
+            return transformRDFTermUnsafe(res);
+        }
+        catch (error) {
+            throw new Errors_1.ExtensionFunctionError(name, error);
+        }
+    };
+}
+// TODO: Support passing functions to override default behaviour;
+function transformNamed(expr, creatorConfig) {
+    const funcName = expr.name.value;
+    const args = expr.args.map(arg => transformAlgebra(arg, creatorConfig));
+    if (C.NamedOperators.has(funcName)) {
+        // Return a basic named expression
+        const op = expr.name.value;
+        const namedFunc = functions_1.namedFunctions[op];
+        return new E.Named(expr.name, args, namedFunc.apply);
+    }
+    if (creatorConfig.type === 'sync') {
+        // Expression might be extension function, check this for the sync
+        const syncExtensionFunc = creatorConfig.creator(expr.name);
+        if (syncExtensionFunc) {
+            const simpleAppl = wrapSyncFunction(syncExtensionFunc, expr.name.value);
+            return new E.SyncExtension(expr.name, args, simpleAppl);
+        }
+    }
+    else {
+        // The expression might be an extension function, check this for the async case
+        const asyncExtensionFunc = creatorConfig.creator(expr.name);
+        if (asyncExtensionFunc) {
+            const asyncAppl = wrapAsyncFunction(asyncExtensionFunc, expr.name.value);
+            return new E.AsyncExtension(expr.name, args, asyncAppl);
+        }
+    }
+    throw new Err.UnknownNamedOperator(expr.name.value);
+}
+function hasCorrectArity(args, arity) {
+    // Infinity is used to represent var-args, so it's always correct.
+    if (arity === Number.POSITIVE_INFINITY) {
+        return true;
+    }
+    // If the function has overloaded arity, the actual arity needs to be present.
+    if (Array.isArray(arity)) {
+        return arity.includes(args.length);
+    }
+    return args.length === arity;
+}
+function transformAggregate(expr) {
+    const name = expr.aggregator;
+    return new E.Aggregate(name, expr);
+}
+exports.transformAggregate = transformAggregate;
+function transformExistence(expr) {
+    return new E.Existence(expr);
+}
+exports.transformExistence = transformExistence;
+//# sourceMappingURL=Transformation.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlee/dist/lib/evaluators/AggregateEvaluator.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AggregateEvaluator = void 0;
+const BaseAggregateEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/BaseAggregateEvaluator.js");
+const SyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/SyncEvaluator.js");
+// TODO: Support hooks & change name to SyncAggregateEvaluator
+class AggregateEvaluator extends BaseAggregateEvaluator_1.BaseAggregateEvaluator {
+    constructor(expr, config, throwError) {
+        super(expr, throwError);
+        this.evaluator = new SyncEvaluator_1.SyncEvaluator(expr.expression, config);
+    }
+    put(bindings) {
+        this.init(bindings);
+    }
+    __put(bindings) {
+        try {
+            const term = this.evaluator.evaluate(bindings);
+            this.state = this.aggregator.put(this.state, term);
+        }
+        catch (error) {
+            this.safeThrow(error);
+        }
+    }
+    safeThrow(err) {
+        if (this.throwError) {
+            throw err;
+        }
+        else {
+            // eslint-disable-next-line @typescript-eslint/no-empty-function
+            this.put = () => { };
+            // eslint-disable-next-line unicorn/no-useless-undefined
+            this.result = () => undefined;
+        }
+    }
+    init(start) {
+        try {
+            const startTerm = this.evaluator.evaluate(start);
+            this.state = this.aggregator.init(startTerm);
+            if (this.state) {
+                this.put = this.__put.bind(this);
+                this.result = this.__result.bind(this);
+            }
+        }
+        catch (error) {
+            this.safeThrow(error);
+        }
+    }
+}
+exports.AggregateEvaluator = AggregateEvaluator;
 //# sourceMappingURL=AggregateEvaluator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlee/dist/lib/evaluators/AsyncAggregateEvaluator.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AsyncAggregateEvaluator = void 0;
+const AsyncEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/AsyncEvaluator.js");
+const BaseAggregateEvaluator_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/evaluators/BaseAggregateEvaluator.js");
+class AsyncAggregateEvaluator extends BaseAggregateEvaluator_1.BaseAggregateEvaluator {
+    constructor(expr, config, throwError) {
+        super(expr, throwError);
+        this.evaluator = new AsyncEvaluator_1.AsyncEvaluator(expr.expression, config);
+        this.errorOccurred = false;
+    }
+    put(bindings) {
+        return this.init(bindings);
+    }
+    async __put(bindings) {
+        try {
+            const term = await this.evaluator.evaluate(bindings);
+            this.state = this.aggregator.put(this.state, term);
+        }
+        catch (error) {
+            this.safeThrow(error);
+        }
+    }
+    safeThrow(err) {
+        if (this.throwError) {
+            throw err;
+        }
+        else {
+            // eslint-disable-next-line @typescript-eslint/no-empty-function
+            this.put = async () => { };
+            // eslint-disable-next-line unicorn/no-useless-undefined
+            this.result = () => undefined;
+            this.errorOccurred = true;
+        }
+    }
+    async init(start) {
+        try {
+            const startTerm = await this.evaluator.evaluate(start);
+            if (!startTerm || this.errorOccurred) {
+                return;
+            }
+            if (this.state) {
+                // Another put already initialized this, we should just handle the put as in __put and not init anymore
+                this.state = this.aggregator.put(this.state, startTerm);
+                return;
+            }
+            this.state = this.aggregator.init(startTerm);
+            if (this.state) {
+                this.put = this.__put.bind(this);
+                this.result = this.__result.bind(this);
+            }
+        }
+        catch (error) {
+            this.safeThrow(error);
+        }
+    }
+}
+exports.AsyncAggregateEvaluator = AsyncAggregateEvaluator;
+//# sourceMappingURL=AsyncAggregateEvaluator.js.map
 
 /***/ }),
 
@@ -25384,7 +27796,6 @@ class AsyncEvaluator {
     constructor(algExpr, config = {}) {
         this.algExpr = algExpr;
         this.config = config;
-        this.expr = Transformation_1.transformAlgebra(algExpr);
         const context = {
             now: config.now || new Date(Date.now()),
             bnode: config.bnode || undefined,
@@ -25392,27 +27803,77 @@ class AsyncEvaluator {
             exists: config.exists,
             aggregate: config.aggregate,
         };
+        const extensionFunctionCreator = 
+        // eslint-disable-next-line unicorn/no-useless-undefined
+        config.extensionFunctionCreator || (() => undefined);
+        this.expr = (0, Transformation_1.transformAlgebra)(algExpr, { type: 'async', creator: extensionFunctionCreator });
         this.evaluator = new RecursiveExpressionEvaluator_1.AsyncRecursiveEvaluator(context);
     }
     async evaluate(mapping) {
         const result = await this.evaluator.evaluate(this.expr, mapping);
-        return log(result).toRDF();
+        return result.toRDF();
     }
     async evaluateAsEBV(mapping) {
         const result = await this.evaluator.evaluate(this.expr, mapping);
-        return log(result).coerceEBV();
+        return result.coerceEBV();
     }
     async evaluateAsInternal(mapping) {
         const result = await this.evaluator.evaluate(this.expr, mapping);
-        return log(result);
+        return result;
     }
 }
 exports.AsyncEvaluator = AsyncEvaluator;
-function log(val) {
-    // console.log(val);
-    return val;
-}
 //# sourceMappingURL=AsyncEvaluator.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlee/dist/lib/evaluators/BaseAggregateEvaluator.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.BaseAggregateEvaluator = void 0;
+const Aggregators_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Aggregators.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+class BaseAggregateEvaluator {
+    constructor(expr, throwError) {
+        this.throwError = false;
+        this.expression = expr;
+        this.aggregator = new Aggregators_1.aggregators[expr.aggregator](expr);
+        this.throwError = throwError;
+    }
+    /**
+     * The spec says to throw an error when a set function is called on an empty
+     * set (unless explicitly mentioned otherwise like COUNT).
+     * However, aggregate error handling says to not bind the result in case of an
+     * error. So to simplify logic in the caller, we return undefined by default.
+     *
+     * @param throwError whether this function should respect the spec and throw an error if no empty value is defined
+     */
+    static emptyValue(expr, throwError = false) {
+        const val = Aggregators_1.aggregators[expr.aggregator].emptyValue();
+        if (val === undefined && throwError) {
+            throw new Err.EmptyAggregateError();
+        }
+        return val;
+    }
+    result() {
+        return this.aggregator.constructor.emptyValue();
+    }
+    /**
+     * The actual result method. When the first binding has been given, and the state
+     * of the evaluators initialised. The .result API function will be replaced with this
+     * function, which implements the behaviour we want.
+     *
+     * @param bindings the bindings to pass to the expression
+     */
+    __result() {
+        return this.aggregator.result(this.state);
+    }
+}
+exports.BaseAggregateEvaluator = BaseAggregateEvaluator;
+//# sourceMappingURL=BaseAggregateEvaluator.js.map
 
 /***/ }),
 
@@ -25422,10 +27883,10 @@ function log(val) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.UnsupportedOperation = exports.SyncRecursiveEvaluator = exports.AsyncRecursiveEvaluator = void 0;
+exports.SyncRecursiveEvaluator = exports.AsyncRecursiveEvaluator = void 0;
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
-const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const sharedEvaluators = {
     term(expr, mapping) {
         return expr;
@@ -25435,7 +27896,7 @@ const sharedEvaluators = {
         if (!term) {
             throw new Err.UnboundVariableError(expr.name, mapping);
         }
-        return Transformation_1.transformRDFTermUnsafe(term);
+        return (0, Transformation_1.transformRDFTermUnsafe)(term);
     },
 };
 class AsyncRecursiveEvaluator {
@@ -25443,14 +27904,15 @@ class AsyncRecursiveEvaluator {
         this.context = context;
         this.subEvaluators = {
             // Shared
-            [E.ExpressionType.Term]: sharedEvaluators.term,
-            [E.ExpressionType.Variable]: sharedEvaluators.variable,
+            [E.ExpressionType.Term]: sharedEvaluators.term.bind(this),
+            [E.ExpressionType.Variable]: sharedEvaluators.variable.bind(this),
             // Async
-            [E.ExpressionType.Operator]: this.evalOperator,
-            [E.ExpressionType.SpecialOperator]: this.evalSpecialOperator,
-            [E.ExpressionType.Named]: this.evalNamed,
-            [E.ExpressionType.Existence]: this.evalExistence,
-            [E.ExpressionType.Aggregate]: this.evalAggregate,
+            [E.ExpressionType.Operator]: this.evalOperator.bind(this),
+            [E.ExpressionType.SpecialOperator]: this.evalSpecialOperator.bind(this),
+            [E.ExpressionType.Named]: this.evalNamed.bind(this),
+            [E.ExpressionType.Existence]: this.evalExistence.bind(this),
+            [E.ExpressionType.Aggregate]: this.evalAggregate.bind(this),
+            [E.ExpressionType.AsyncExtension]: this.evalAsyncExtension.bind(this),
         };
     }
     async evaluate(expr, mapping) {
@@ -25461,7 +27923,7 @@ class AsyncRecursiveEvaluator {
         return evaluator.bind(this)(expr, mapping);
     }
     async evalOperator(expr, mapping) {
-        const argPromises = expr.args.map((arg) => this.evaluate(arg, mapping));
+        const argPromises = expr.args.map(arg => this.evaluate(arg, mapping));
         const argResults = await Promise.all(argPromises);
         return expr.apply(argResults);
     }
@@ -25479,10 +27941,15 @@ class AsyncRecursiveEvaluator {
         };
         return expr.applyAsync(context);
     }
+    async _evalAsyncArgs(args, mapping) {
+        const argPromises = args.map(arg => this.evaluate(arg, mapping));
+        return await Promise.all(argPromises);
+    }
     async evalNamed(expr, mapping) {
-        const argPromises = expr.args.map((arg) => this.evaluate(arg, mapping));
-        const argResults = await Promise.all(argPromises);
-        return expr.apply(argResults);
+        return expr.apply(await this._evalAsyncArgs(expr.args, mapping));
+    }
+    async evalAsyncExtension(expr, mapping) {
+        return await expr.apply(await this._evalAsyncArgs(expr.args, mapping));
     }
     async evalExistence(expr, mapping) {
         if (!this.context.exists) {
@@ -25497,7 +27964,7 @@ class AsyncRecursiveEvaluator {
         if (!this.context.aggregate) {
             throw new Err.NoExistenceHook();
         }
-        return Transformation_1.transformRDFTermUnsafe(await this
+        return (0, Transformation_1.transformRDFTermUnsafe)(await this
             .context
             .aggregate(expr.expression));
     }
@@ -25508,14 +27975,15 @@ class SyncRecursiveEvaluator {
         this.context = context;
         this.subEvaluators = {
             // Shared
-            [E.ExpressionType.Term]: sharedEvaluators.term,
-            [E.ExpressionType.Variable]: sharedEvaluators.variable,
+            [E.ExpressionType.Term]: sharedEvaluators.term.bind(this),
+            [E.ExpressionType.Variable]: sharedEvaluators.variable.bind(this),
             // Sync
-            [E.ExpressionType.Operator]: this.evalOperator,
-            [E.ExpressionType.SpecialOperator]: this.evalSpecialOperator,
-            [E.ExpressionType.Named]: this.evalNamed,
-            [E.ExpressionType.Existence]: this.evalExistence,
-            [E.ExpressionType.Aggregate]: this.evalAggregate,
+            [E.ExpressionType.Operator]: this.evalOperator.bind(this),
+            [E.ExpressionType.SpecialOperator]: this.evalSpecialOperator.bind(this),
+            [E.ExpressionType.Named]: this.evalNamed.bind(this),
+            [E.ExpressionType.Existence]: this.evalExistence.bind(this),
+            [E.ExpressionType.Aggregate]: this.evalAggregate.bind(this),
+            [E.ExpressionType.SyncExtension]: this.evalSyncExtension.bind(this),
         };
     }
     evaluate(expr, mapping) {
@@ -25526,7 +27994,7 @@ class SyncRecursiveEvaluator {
         return evaluator.bind(this)(expr, mapping);
     }
     evalOperator(expr, mapping) {
-        const args = expr.args.map((arg) => this.evaluate(arg, mapping));
+        const args = expr.args.map(arg => this.evaluate(arg, mapping));
         return expr.apply(args);
     }
     evalSpecialOperator(expr, mapping) {
@@ -25544,7 +28012,11 @@ class SyncRecursiveEvaluator {
         return expr.applySync(context);
     }
     evalNamed(expr, mapping) {
-        const args = expr.args.map((arg) => this.evaluate(arg, mapping));
+        const args = expr.args.map(arg => this.evaluate(arg, mapping));
+        return expr.apply(args);
+    }
+    evalSyncExtension(expr, mapping) {
+        const args = expr.args.map(arg => this.evaluate(arg, mapping));
         return expr.apply(args);
     }
     evalExistence(expr, mapping) {
@@ -25559,18 +28031,12 @@ class SyncRecursiveEvaluator {
         if (!this.context.aggregate) {
             throw new Err.NoAggregator();
         }
-        return Transformation_1.transformRDFTermUnsafe(this
+        return (0, Transformation_1.transformRDFTermUnsafe)(this
             .context
             .aggregate(expr.expression));
     }
 }
 exports.SyncRecursiveEvaluator = SyncRecursiveEvaluator;
-class UnsupportedOperation extends Error {
-    constructor(operation) {
-        super(`Operation '${operation}' is unsupported in SimpleEvaluator`);
-    }
-}
-exports.UnsupportedOperation = UnsupportedOperation;
 //# sourceMappingURL=RecursiveExpressionEvaluator.js.map
 
 /***/ }),
@@ -25588,7 +28054,6 @@ class SyncEvaluator {
     constructor(algExpr, config = {}) {
         this.algExpr = algExpr;
         this.config = config;
-        this.expr = Transformation_1.transformAlgebra(algExpr);
         const context = {
             now: config.now || new Date(Date.now()),
             bnode: config.bnode || undefined,
@@ -25596,26 +28061,26 @@ class SyncEvaluator {
             exists: config.exists,
             aggregate: config.aggregate,
         };
+        const extensionFunctionCreator = 
+        // eslint-disable-next-line unicorn/no-useless-undefined
+        config.extensionFunctionCreator || (() => undefined);
+        this.expr = (0, Transformation_1.transformAlgebra)(algExpr, { type: 'sync', creator: extensionFunctionCreator });
         this.evaluator = new RecursiveExpressionEvaluator_1.SyncRecursiveEvaluator(context);
     }
     evaluate(mapping) {
         const result = this.evaluator.evaluate(this.expr, mapping);
-        return log(result).toRDF();
+        return result.toRDF();
     }
     evaluateAsEBV(mapping) {
         const result = this.evaluator.evaluate(this.expr, mapping);
-        return log(result).coerceEBV();
+        return result.coerceEBV();
     }
     evaluateAsInternal(mapping) {
         const result = this.evaluator.evaluate(this.expr, mapping);
-        return log(result);
+        return result;
     }
 }
 exports.SyncEvaluator = SyncEvaluator;
-function log(val) {
-    // console.log(val);
-    return val;
-}
 //# sourceMappingURL=SyncEvaluator.js.map
 
 /***/ }),
@@ -25637,6 +28102,27 @@ class Aggregate {
 }
 exports.Aggregate = Aggregate;
 //# sourceMappingURL=Aggregate.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqlee/dist/lib/expressions/AsyncExtension.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AsyncExtension = void 0;
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+class AsyncExtension {
+    constructor(name, args, apply) {
+        this.name = name;
+        this.args = args;
+        this.apply = apply;
+        this.expressionType = Expressions_1.ExpressionType.AsyncExtension;
+    }
+}
+exports.AsyncExtension = AsyncExtension;
+//# sourceMappingURL=AsyncExtension.js.map
 
 /***/ }),
 
@@ -25675,6 +28161,8 @@ var ExpressionType;
     ExpressionType["SpecialOperator"] = "specialOperator";
     ExpressionType["Term"] = "term";
     ExpressionType["Variable"] = "variable";
+    ExpressionType["AsyncExtension"] = "asyncExtension";
+    ExpressionType["SyncExtension"] = "syncExtension";
 })(ExpressionType = exports.ExpressionType || (exports.ExpressionType = {}));
 //# sourceMappingURL=Expressions.js.map
 
@@ -25742,6 +28230,27 @@ exports.SpecialOperator = SpecialOperator;
 
 /***/ }),
 
+/***/ "./node_modules/sparqlee/dist/lib/expressions/SyncExtension.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SyncExtension = void 0;
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
+class SyncExtension {
+    constructor(name, args, apply) {
+        this.name = name;
+        this.args = args;
+        this.apply = apply;
+        this.expressionType = Expressions_1.ExpressionType.SyncExtension;
+    }
+}
+exports.SyncExtension = SyncExtension;
+//# sourceMappingURL=SyncExtension.js.map
+
+/***/ }),
+
 /***/ "./node_modules/sparqlee/dist/lib/expressions/Term.js":
 /***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
 
@@ -25750,9 +28259,9 @@ exports.SpecialOperator = SpecialOperator;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.NonLexicalLiteral = exports.StringLiteral = exports.LangStringLiteral = exports.DateTimeLiteral = exports.BooleanLiteral = exports.NumericLiteral = exports.Literal = exports.BlankNode = exports.NamedNode = exports.Term = void 0;
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
-const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
 const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
+const Expressions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Expressions.js");
 const DF = new rdf_data_factory_1.DataFactory();
 class Term {
     constructor() {
@@ -25813,6 +28322,7 @@ class Literal extends Term {
         return DF.literal(this.strValue || this.str(), this.language || this.typeURL);
     }
     str() {
+        // eslint-disable-next-line @typescript-eslint/no-base-to-string
         return this.strValue || this.typedValue.toString();
     }
 }
@@ -25823,21 +28333,22 @@ class NumericLiteral extends Literal {
     }
     toRDF() {
         const term = super.toRDF();
-        if (!isFinite(this.typedValue)) {
+        if (!Number.isFinite(this.typedValue)) {
             term.value = term.value.replace('Infinity', 'INF');
         }
         return term;
     }
     str() {
-        return this.strValue
-            || NumericLiteral.specificFormatters[this.type](this.typedValue);
+        return this.strValue ||
+            NumericLiteral.specificFormatters[this.type](this.typedValue);
     }
 }
 exports.NumericLiteral = NumericLiteral;
 NumericLiteral.specificFormatters = {
-    integer: (value) => value.toFixed(),
-    float: (value) => value.toString(),
-    decimal: (value) => value.toString(),
+    // Avoid emitting non lexical integers
+    integer: value => value.toFixed(0),
+    float: value => value.toString(),
+    decimal: value => value.toString(),
     // // Be consistent with float
     // decimal: (value) => {
     //   const jsDecimal = value.toString();
@@ -25846,16 +28357,16 @@ NumericLiteral.specificFormatters = {
     //     : jsDecimal + '.0';
     // },
     // https://www.w3.org/TR/xmlschema-2/#double
-    double: (value) => {
+    double(value) {
         const jsExponential = value.toExponential();
         const [jsMantisse, jsExponent] = jsExponential.split('e');
-        // leading + must be removed for integer
+        // Leading + must be removed for integer
         // https://www.w3.org/TR/xmlschema-2/#integer
-        const exponent = jsExponent.replace(/\+/, '');
+        const exponent = jsExponent.replace(/\+/u, '');
         // SPARQL test suite prefers trailing zero's
-        const mantisse = jsMantisse.match(/\./)
-            ? jsMantisse
-            : jsMantisse + '.0';
+        const mantisse = jsMantisse.includes('.') ?
+            jsMantisse :
+            `${jsMantisse}.0`;
         return `${mantisse}E${exponent}`;
     },
 };
@@ -25871,7 +28382,7 @@ class BooleanLiteral extends Literal {
 }
 exports.BooleanLiteral = BooleanLiteral;
 class DateTimeLiteral extends Literal {
-    // strValue is mandatory here because toISOString will always add
+    // StrValue is mandatory here because toISOString will always add
     // milliseconds, even if they were not present.
     constructor(typedValue, strValue) {
         super(typedValue, C.make(C.TypeURL.XSD_DATE_TIME), strValue);
@@ -25887,7 +28398,7 @@ class LangStringLiteral extends Literal {
         this.language = language;
     }
     coerceEBV() {
-        return this.strValue.length !== 0;
+        return this.strValue.length > 0;
     }
 }
 exports.LangStringLiteral = LangStringLiteral;
@@ -25901,11 +28412,11 @@ class StringLiteral extends Literal {
         this.typedValue = typedValue;
     }
     coerceEBV() {
-        return this.strValue.length !== 0;
+        return this.strValue.length > 0;
     }
 }
 exports.StringLiteral = StringLiteral;
-/*
+/**
  * This class is used when a literal is parsed, and it's value is
  * an invalid lexical form for it's datatype. The spec defines value with
  * invalid lexical form are still valid terms, and as such we can not error
@@ -25930,8 +28441,8 @@ class NonLexicalLiteral extends Literal {
         this.shouldBeCategory = C.type(typeURL.value);
     }
     coerceEBV() {
-        const isNumericOrBool = C.PrimitiveNumericTypes.contains(this.shouldBeCategory)
-            || this.shouldBeCategory === 'boolean';
+        const isNumericOrBool = C.PrimitiveNumericTypes.has(this.shouldBeCategory) ||
+            this.shouldBeCategory === 'boolean';
         if (isNumericOrBool) {
             return false;
         }
@@ -25986,6 +28497,8 @@ __exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/S
 __exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Named.js"), exports);
 __exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Aggregate.js"), exports);
 __exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/Existence.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/AsyncExtension.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/SyncExtension.js"), exports);
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -26026,26 +28539,25 @@ class BaseFunction {
      * terms.
      */
     monomorph(args) {
-        return ( false
+        return  false ||
             // TODO: Maybe use non primitive types first?
-            || this.overloads.get(Typer.asConcreteTypes(args))
-            || this.overloads.get(Typer.asTermTypes(args))
-            || this.overloads.get(Typer.asGenericTerms(args)));
+            this.overloads.get(Typer.asConcreteTypes(args)) ||
+            this.overloads.get(Typer.asTermTypes(args)) ||
+            this.overloads.get(Typer.asGenericTerms(args));
     }
 }
 exports.BaseFunction = BaseFunction;
-class Typer {
-    static asConcreteTypes(args) {
-        // tslint:disable-next-line:no-any
-        return immutable_1.List(args.map((a) => a.type || a.termType));
-    }
-    static asTermTypes(args) {
-        return immutable_1.List(args.map((a) => a.termType));
-    }
-    static asGenericTerms(args) {
-        return immutable_1.List(Array(args.length).fill('term'));
-    }
-}
+const Typer = {
+    asConcreteTypes(args) {
+        return (0, immutable_1.List)(args.map((term) => term.type || term.termType));
+    },
+    asTermTypes(args) {
+        return (0, immutable_1.List)(args.map((term) => term.termType));
+    },
+    asGenericTerms(args) {
+        return (0, immutable_1.List)(Array.from({ length: args.length }).fill('term'));
+    },
+};
 // Regular Functions ----------------------------------------------------------
 /**
  * Varying kinds of functions take arguments of different types on which the
@@ -26087,7 +28599,7 @@ class NamedFunction extends BaseFunction {
 }
 exports.NamedFunction = NamedFunction;
 // Special Functions ----------------------------------------------------------
-/*
+/**
  * Special Functions are those that don't really fit in sensible categories and
  * have extremely heterogeneous signatures that make them impossible to abstract
  * over. They are small in number, and their behaviour is often complex and open
@@ -26116,12 +28628,12 @@ exports.SpecialFunction = SpecialFunction;
 function defaultArityCheck(arity) {
     return (args) => {
         // Infinity is used to represent var-args, so it's always correct.
-        if (arity === Infinity) {
+        if (arity === Number.POSITIVE_INFINITY) {
             return true;
         }
         // If the function has overloaded arity, the actual arity needs to be present.
         if (Array.isArray(arity)) {
-            return arity.indexOf(args.length) >= 0;
+            return arity.includes(args.length);
         }
         return args.length === arity;
     };
@@ -26171,12 +28683,13 @@ exports.promote = promote;
  * definitions for the SPARQL functions.
  */
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.typeCheckLit = exports.log = exports.dateTime = exports.langString = exports.string = exports.numberFromString = exports.number = exports.bool = exports.map = exports.Impl = exports.Builder = exports.declare = void 0;
+exports.typeCheckLit = exports.dateTime = exports.langString = exports.string = exports.numberFromString = exports.number = exports.bool = exports.map = exports.Impl = exports.Builder = exports.declare = void 0;
+// eslint-disable-next-line no-redeclare
 const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
 const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Core_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Core.js");
 function declare() {
     return new Builder();
@@ -26189,69 +28702,52 @@ class Builder {
     collect() {
         return map(this.implementations);
     }
-    log() {
-        // tslint:disable-next-line:no-console
-        console.log(this.implementations);
-        return this;
-    }
     add(impl) {
         this.implementations.push(impl);
         return this;
     }
     set(argTypes, func) {
-        const types = immutable_1.List(argTypes);
+        const types = (0, immutable_1.List)(argTypes);
         return this.add(new Impl({ types, func }));
     }
     copy({ from, to }) {
         const last = this.implementations.length - 1;
-        const _from = immutable_1.List(from);
+        const _from = (0, immutable_1.List)(from);
         for (let i = last; i >= 0; i--) {
             const impl = this.implementations[i];
-            if (impl.get('types').equals(_from)) {
-                return this.set(to, impl.get('func'));
+            if (impl.types.equals(_from)) {
+                return this.set(to, impl.func);
             }
         }
         throw new Err.UnexpectedError('Tried to copy implementation, but types not found', { from, to });
     }
     onUnary(type, op) {
-        return this.set([type], ([val]) => {
-            return op(val);
-        });
+        return this.set([type], ([val]) => op(val));
     }
     onUnaryTyped(type, op) {
-        return this.set([type], ([val]) => {
-            return op(val.typedValue);
-        });
+        return this.set([type], ([val]) => op(val.typedValue));
     }
     onBinary(types, op) {
-        return this.set(types, ([left, right]) => {
-            return op(left, right);
-        });
+        return this.set(types, ([left, right]) => op(left, right));
     }
     onBinaryTyped(types, op) {
-        return this.set(types, ([left, right]) => {
-            return op(left.typedValue, right.typedValue);
-        });
+        return this.set(types, ([left, right]) => op(left.typedValue, right.typedValue));
     }
     onTernaryTyped(types, op) {
-        return this.set(types, ([a1, a2, a3]) => {
-            return op(a1.typedValue, a2.typedValue, a3.typedValue);
-        });
+        return this.set(types, ([a1, a2, a3]) => op(a1.typedValue, a2.typedValue, a3.typedValue));
     }
     onTernary(types, op) {
-        return this.set(types, ([a1, a2, a3]) => {
-            return op(a1, a2, a3);
-        });
+        return this.set(types, ([a1, a2, a3]) => op(a1, a2, a3));
     }
     onQuaternaryTyped(types, op) {
-        return this.set(types, ([a1, a2, a3, a4]) => {
-            return op(a1.typedValue, a2.typedValue, a3.typedValue, a4.typedValue);
-        });
+        return this.set(types, ([a1, a2, a3, a4]) => op(a1.typedValue, a2.typedValue, a3.typedValue, a4.typedValue));
     }
     unimplemented(msg) {
         for (let arity = 0; arity <= 5; arity++) {
-            const types = Array(arity).fill('term');
-            const func = (_args) => { throw new Err.UnimplementedError(msg); };
+            const types = Array.from({ length: arity }).fill('term');
+            const func = (_args) => {
+                throw new Err.UnimplementedError(msg);
+            };
             this.set(types, func);
         }
         return this;
@@ -26317,7 +28813,7 @@ class Builder {
      */
     arithmetic(op) {
         return this.numeric(([left, right]) => {
-            const promotionType = Core_1.promote(left.type, right.type);
+            const promotionType = (0, Core_1.promote)(left.type, right.type);
             const resultType = C.decategorize(promotionType);
             return number(op(left.typedValue, right.typedValue), resultType);
         });
@@ -26388,31 +28884,31 @@ class Builder {
         });
     }
     chain(impls) {
-        this.implementations = this.implementations.concat(impls);
+        this.implementations = [...this.implementations, ...impls];
         return this;
     }
 }
 exports.Builder = Builder;
 const implDefaults = {
-    types: [],
+    types: (0, immutable_1.List)(),
     func() {
         const msg = 'Implementation not set yet declared as implemented';
         throw new Err.UnexpectedError(msg);
     },
 };
-class Impl extends immutable_1.Record(implDefaults) {
-    constructor(params) { super(params); }
-    get(value) {
-        return super.get(value);
+class Impl {
+    constructor(params) {
+        this.init(params || implDefaults);
     }
-    toPair() {
-        return [this.get('types'), this.get('func')];
+    init(params) {
+        this.types = params.types;
+        this.func = params.func;
     }
 }
 exports.Impl = Impl;
 function map(implementations) {
-    const typeImplPair = implementations.map((i) => i.toPair());
-    return immutable_1.Map(typeImplPair);
+    const typeImplPair = implementations.map(i => [i.types, i.func]);
+    return (0, immutable_1.Map)(typeImplPair);
 }
 exports.map = map;
 // ----------------------------------------------------------------------------
@@ -26431,12 +28927,12 @@ function numberFromString(str, dt) {
     return new E.NumericLiteral(num, C.make(dt || Consts_1.TypeURL.XSD_FLOAT), undefined);
 }
 exports.numberFromString = numberFromString;
-function string(s) {
-    return new E.StringLiteral(s);
+function string(str) {
+    return new E.StringLiteral(str);
 }
 exports.string = string;
-function langString(s, lang) {
-    return new E.LangStringLiteral(s, lang);
+function langString(str, lang) {
+    return new E.LangStringLiteral(str, lang);
 }
 exports.langString = langString;
 function dateTime(date, str) {
@@ -26446,18 +28942,10 @@ exports.dateTime = dateTime;
 // ----------------------------------------------------------------------------
 // Util
 // ----------------------------------------------------------------------------
-// tslint:disable-next-line:no-any
-function log(val, ...args) {
-    // tslint:disable-next-line:no-console
-    console.log(val, args);
-    return val;
-}
-exports.log = log;
 function typeCheckLit(term, allowed, args, op) {
     if (term.termType !== 'literal') {
         throw new Err.InvalidArgumentTypes(args, op);
     }
-    // tslint:disable-next-line:no-any
     const lit = term;
     if (!allowed.includes(lit.type)) {
         throw new Err.InvalidArgumentTypes(args, op);
@@ -26476,9 +28964,8 @@ exports.typeCheckLit = typeCheckLit;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.namedDefinitions = void 0;
-const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
-const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Parsing_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
 const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
 // ----------------------------------------------------------------------------
@@ -26490,117 +28977,117 @@ const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/function
 // https://www.w3.org/TR/sparql11-query/#
 // https://www.w3.org/TR/xpath-functions/#casting-from-primitive-to-primitive
 // ----------------------------------------------------------------------------
-const toString = {
+const xsdToString = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.string(Helpers_1.number(val.typedValue).str()))
-        .onBoolean1Typed((val) => Helpers_1.string(Helpers_1.bool(val).str()))
-        .onTerm1((val) => Helpers_1.string(val.str()))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1((val) => (0, Helpers_1.string)((0, Helpers_1.number)(val.typedValue).str()))
+        .onBoolean1Typed(val => (0, Helpers_1.string)((0, Helpers_1.bool)(val).str()))
+        .onTerm1((val) => (0, Helpers_1.string)(val.str()))
         .collect(),
 };
-const toFloat = {
+const xsdToFloat = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.number(val.typedValue))
-        .onBoolean1Typed((val) => Helpers_1.number(val ? 1 : 0))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1((val) => (0, Helpers_1.number)(val.typedValue))
+        .onBoolean1Typed(val => (0, Helpers_1.number)(val ? 1 : 0))
         .onUnary('string', (val) => {
-        const result = Parsing_1.parseXSDFloat(val.str());
+        const result = (0, Parsing_1.parseXSDFloat)(val.str());
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_FLOAT);
         }
-        return Helpers_1.number(result);
+        return (0, Helpers_1.number)(result);
     })
         .copy({ from: ['string'], to: ['nonlexical'] })
         .collect(),
 };
-const toDouble = {
+const xsdToDouble = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.number(val.typedValue, Consts_1.TypeURL.XSD_DOUBLE))
-        .onBoolean1Typed((val) => Helpers_1.number(val ? 1 : 0, Consts_1.TypeURL.XSD_DOUBLE))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1((val) => (0, Helpers_1.number)(val.typedValue, Consts_1.TypeURL.XSD_DOUBLE))
+        .onBoolean1Typed(val => (0, Helpers_1.number)(val ? 1 : 0, Consts_1.TypeURL.XSD_DOUBLE))
         .onUnary('string', (val) => {
-        const result = Parsing_1.parseXSDFloat(val.str());
+        const result = (0, Parsing_1.parseXSDFloat)(val.str());
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_DOUBLE);
         }
-        return Helpers_1.number(result, Consts_1.TypeURL.XSD_DOUBLE);
+        return (0, Helpers_1.number)(result, Consts_1.TypeURL.XSD_DOUBLE);
     })
         .copy({ from: ['string'], to: ['nonlexical'] })
         .collect(),
 };
-const toDecimal = {
+const xsdToDecimal = {
     arity: 1,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .onNumeric1((val) => {
-        const result = Parsing_1.parseXSDDecimal(val.str());
+        const result = (0, Parsing_1.parseXSDDecimal)(val.str());
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_DECIMAL);
         }
-        return Helpers_1.number(result, Consts_1.TypeURL.XSD_DECIMAL);
+        return (0, Helpers_1.number)(result, Consts_1.TypeURL.XSD_DECIMAL);
     })
         .onString1((val) => {
         const str = val.str();
-        const result = /^(\-|\+)?([0-9]+(\.[0-9]+)?)$/.test(str) ? Parsing_1.parseXSDDecimal(str) : undefined;
+        const result = /^([+-])?(\d+(\.\d+)?)$/u.test(str) ? (0, Parsing_1.parseXSDDecimal)(str) : undefined;
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_DECIMAL);
         }
-        return Helpers_1.number(result, Consts_1.TypeURL.XSD_DECIMAL);
+        return (0, Helpers_1.number)(result, Consts_1.TypeURL.XSD_DECIMAL);
     })
         .copy({ from: ['string'], to: ['nonlexical'] })
-        .onBoolean1Typed((val) => Helpers_1.number(val ? 1 : 0, Consts_1.TypeURL.XSD_DECIMAL))
+        .onBoolean1Typed(val => (0, Helpers_1.number)(val ? 1 : 0, Consts_1.TypeURL.XSD_DECIMAL))
         .collect(),
 };
-const toInteger = {
+const xsdToInteger = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onBoolean1Typed((val) => Helpers_1.number(val ? 1 : 0, Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onBoolean1Typed(val => (0, Helpers_1.number)(val ? 1 : 0, Consts_1.TypeURL.XSD_INTEGER))
         .onNumeric1((val) => {
-        const result = Parsing_1.parseXSDInteger(val.str());
+        const result = (0, Parsing_1.parseXSDInteger)(val.str());
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_INTEGER);
         }
-        return Helpers_1.number(result, Consts_1.TypeURL.XSD_INTEGER);
+        return (0, Helpers_1.number)(result, Consts_1.TypeURL.XSD_INTEGER);
     })
         .onString1((val) => {
         const str = val.str();
-        const result = /^[0-9]+$/.test(str) ? Parsing_1.parseXSDInteger(str) : undefined;
+        const result = /^\d+$/u.test(str) ? (0, Parsing_1.parseXSDInteger)(str) : undefined;
         if (result === undefined) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_INTEGER);
         }
-        return Helpers_1.number(result, Consts_1.TypeURL.XSD_INTEGER);
+        return (0, Helpers_1.number)(result, Consts_1.TypeURL.XSD_INTEGER);
     })
         .copy({ from: ['integer'], to: ['nonlexical'] })
         .collect(),
 };
-const toDatetime = {
+const xsdToDatetime = {
     arity: 1,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .onUnary('date', (val) => val)
         .onUnary('string', (val) => {
         const date = new Date(val.str());
-        if (isNaN(date.getTime())) {
+        if (Number.isNaN(date.getTime())) {
             throw new Err.CastError(val, Consts_1.TypeURL.XSD_DATE_TIME);
         }
-        return Helpers_1.dateTime(date, val.str());
+        return (0, Helpers_1.dateTime)(date, val.str());
     })
         .copy({ from: ['string'], to: ['nonlexical'] })
         .collect(),
 };
-const toBoolean = {
+const xsdToBoolean = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.bool(val.coerceEBV()))
-        .onUnary('boolean', (val) => Helpers_1.bool(val.coerceEBV()))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1((val) => (0, Helpers_1.bool)(val.coerceEBV()))
+        .onUnary('boolean', (val) => (0, Helpers_1.bool)(val.coerceEBV()))
         .onUnary('string', (val) => {
         switch (val.str()) {
             case 'true':
-                return Helpers_1.bool(true);
+                return (0, Helpers_1.bool)(true);
             case 'false':
-                return Helpers_1.bool(false);
+                return (0, Helpers_1.bool)(false);
             case '1':
-                return Helpers_1.bool(true);
+                return (0, Helpers_1.bool)(true);
             case '0':
-                return Helpers_1.bool(false);
+                return (0, Helpers_1.bool)(false);
             default:
                 throw new Err.CastError(val, Consts_1.TypeURL.XSD_BOOLEAN);
         }
@@ -26612,21 +29099,20 @@ const toBoolean = {
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
-const _definitions = {
+exports.namedDefinitions = {
     // --------------------------------------------------------------------------
     // XPath Constructor functions
     // https://www.w3.org/TR/sparql11-query/#FunctionMapping
     // --------------------------------------------------------------------------
-    [Consts_1.TypeURL.XSD_STRING]: toString,
-    [Consts_1.TypeURL.XSD_FLOAT]: toFloat,
-    [Consts_1.TypeURL.XSD_DOUBLE]: toDouble,
-    [Consts_1.TypeURL.XSD_DECIMAL]: toDecimal,
-    [Consts_1.TypeURL.XSD_INTEGER]: toInteger,
-    [Consts_1.TypeURL.XSD_DATE_TIME]: toDatetime,
-    [Consts_1.TypeURL.XSD_DATE]: toDatetime,
-    [Consts_1.TypeURL.XSD_BOOLEAN]: toBoolean,
+    [Consts_1.TypeURL.XSD_STRING]: xsdToString,
+    [Consts_1.TypeURL.XSD_FLOAT]: xsdToFloat,
+    [Consts_1.TypeURL.XSD_DOUBLE]: xsdToDouble,
+    [Consts_1.TypeURL.XSD_DECIMAL]: xsdToDecimal,
+    [Consts_1.TypeURL.XSD_INTEGER]: xsdToInteger,
+    [Consts_1.TypeURL.XSD_DATE_TIME]: xsdToDatetime,
+    [Consts_1.TypeURL.XSD_DATE]: xsdToDatetime,
+    [Consts_1.TypeURL.XSD_BOOLEAN]: xsdToBoolean,
 };
-exports.namedDefinitions = immutable_1.Map(_definitions);
 //# sourceMappingURL=NamedFunctions.js.map
 
 /***/ }),
@@ -26638,20 +29124,19 @@ exports.namedDefinitions = immutable_1.Map(_definitions);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.definitions = void 0;
-const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
-const hash_js_1 = __cmncwpk_require__("./node_modules/hash.js/lib/hash.js");
-const spark_md5_1 = __cmncwpk_require__("./node_modules/spark-md5/spark-md5.js");
 const decimal_js_1 = __cmncwpk_require__("./node_modules/decimal.js/decimal.js");
+const hash_js_1 = __cmncwpk_require__("./node_modules/hash.js/lib/hash.js");
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const spark_md5_1 = __cmncwpk_require__("./node_modules/spark-md5/spark-md5.js");
 const uuid = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/index.js");
-const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
+const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
 const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
+const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
 const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const P = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Parsing.js");
-const X = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/XPathFunctions.js");
-const Consts_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
-const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/Transformation.js");
 const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
+const X = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/XPathFunctions.js");
 const DF = new rdf_data_factory_1.DataFactory();
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -26663,61 +29148,61 @@ const DF = new rdf_data_factory_1.DataFactory();
 // ----------------------------------------------------------------------------
 const not = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onTerm1((val) => Helpers_1.bool(!val.coerceEBV()))
+    overloads: (0, Helpers_1.declare)()
+        .onTerm1(val => (0, Helpers_1.bool)(!val.coerceEBV()))
         .collect(),
 };
 const unaryPlus = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.number(val.typedValue, val.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(val => (0, Helpers_1.number)(val.typedValue, val.typeURL.value))
         .collect(),
 };
 const unaryMinus = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((val) => Helpers_1.number(-val.typedValue, val.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(val => (0, Helpers_1.number)(-val.typedValue, val.typeURL.value))
         .collect(),
 };
 const multiplication = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .arithmetic((left, right) => decimal_js_1.Decimal.mul(left, right).toNumber())
         .collect(),
 };
 const division = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .arithmetic((left, right) => decimal_js_1.Decimal.div(left, right).toNumber())
         .onBinaryTyped(['integer', 'integer'], (left, right) => {
         if (right === 0) {
             throw new Err.ExpressionError('Integer division by 0');
         }
-        return Helpers_1.number(decimal_js_1.Decimal.div(left, right).toNumber(), Consts_1.TypeURL.XSD_DECIMAL);
+        return (0, Helpers_1.number)(decimal_js_1.Decimal.div(left, right).toNumber(), Consts_1.TypeURL.XSD_DECIMAL);
     })
         .collect(),
 };
 const addition = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .arithmetic((left, right) => decimal_js_1.Decimal.add(left, right).toNumber())
         .collect(),
 };
 const subtraction = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .arithmetic((left, right) => decimal_js_1.Decimal.sub(left, right).toNumber())
         .collect(),
 };
 // https://www.w3.org/TR/sparql11-query/#func-RDFterm-equal
 const equality = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left === right)
         .stringTest((left, right) => left.localeCompare(right) === 0)
         .booleanTest((left, right) => left === right)
         .dateTimeTest((left, right) => left.getTime() === right.getTime())
-        .set(['term', 'term'], ([left, right]) => Helpers_1.bool(RDFTermEqual(left, right)))
+        .set(['term', 'term'], ([left, right]) => (0, Helpers_1.bool)(RDFTermEqual(left, right)))
         .collect(),
 };
 function RDFTermEqual(_left, _right) {
@@ -26731,17 +29216,17 @@ function RDFTermEqual(_left, _right) {
 }
 const inequality = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left !== right)
         .stringTest((left, right) => left.localeCompare(right) !== 0)
         .booleanTest((left, right) => left !== right)
         .dateTimeTest((left, right) => left.getTime() !== right.getTime())
-        .set(['term', 'term'], ([left, right]) => Helpers_1.bool(!RDFTermEqual(left, right)))
+        .set(['term', 'term'], ([left, right]) => (0, Helpers_1.bool)(!RDFTermEqual(left, right)))
         .collect(),
 };
 const lesserThan = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left < right)
         .stringTest((left, right) => left.localeCompare(right) === -1)
         .booleanTest((left, right) => left < right)
@@ -26750,7 +29235,7 @@ const lesserThan = {
 };
 const greaterThan = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left > right)
         .stringTest((left, right) => left.localeCompare(right) === 1)
         .booleanTest((left, right) => left > right)
@@ -26759,7 +29244,7 @@ const greaterThan = {
 };
 const lesserThanEqual = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left <= right)
         .stringTest((left, right) => left.localeCompare(right) !== 1)
         .booleanTest((left, right) => left <= right)
@@ -26768,7 +29253,7 @@ const lesserThanEqual = {
 };
 const greaterThanEqual = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .numberTest((left, right) => left >= right)
         .stringTest((left, right) => left.localeCompare(right) !== -1)
         .booleanTest((left, right) => left >= right)
@@ -26781,45 +29266,45 @@ const greaterThanEqual = {
 // ----------------------------------------------------------------------------
 const isIRI = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onTerm1((term) => Helpers_1.bool(term.termType === 'namedNode'))
+    overloads: (0, Helpers_1.declare)()
+        .onTerm1(term => (0, Helpers_1.bool)(term.termType === 'namedNode'))
         .collect(),
 };
 const isBlank = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onTerm1((term) => Helpers_1.bool(term.termType === 'blankNode'))
+    overloads: (0, Helpers_1.declare)()
+        .onTerm1(term => (0, Helpers_1.bool)(term.termType === 'blankNode'))
         .collect(),
 };
 const isLiteral = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onTerm1((term) => Helpers_1.bool(term.termType === 'literal'))
+    overloads: (0, Helpers_1.declare)()
+        .onTerm1(term => (0, Helpers_1.bool)(term.termType === 'literal'))
         .collect(),
 };
 const isNumeric = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((term) => Helpers_1.bool(true))
-        .onTerm1((term) => Helpers_1.bool(false))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(term => (0, Helpers_1.bool)(true))
+        .onTerm1(term => (0, Helpers_1.bool)(false))
         .collect(),
 };
-const toString = {
+const STR = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onTerm1((term) => Helpers_1.string(term.str()))
+    overloads: (0, Helpers_1.declare)()
+        .onTerm1(term => (0, Helpers_1.string)(term.str()))
         .collect(),
 };
 const lang = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onLiteral1((lit) => Helpers_1.string(lit.language || ''))
+    overloads: (0, Helpers_1.declare)()
+        .onLiteral1(lit => (0, Helpers_1.string)(lit.language || ''))
         .collect(),
 };
 const datatype = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onLiteral1((lit) => new E.NamedNode(lit.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onLiteral1(lit => new E.NamedNode(lit.typeURL.value))
         .collect(),
 };
 // See special operators
@@ -26828,29 +29313,29 @@ const datatype = {
 // const BNODE = {};
 const STRDT = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .onBinary(['string', 'namedNode'], (str, iri) => {
         const lit = DF.literal(str.typedValue, DF.namedNode(iri.value));
-        return Transformation_1.transformLiteral(lit);
+        return (0, Transformation_1.transformLiteral)(lit);
     })
         .collect(),
 };
 const STRLANG = {
     arity: 2,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .onBinaryTyped(['string', 'string'], (val, language) => new E.LangStringLiteral(val, language.toLowerCase()))
         .collect(),
 };
 const UUID = {
     arity: 0,
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .set([], () => new E.NamedNode(`urn:uuid:${uuid.v4()}`))
         .collect(),
 };
 const STRUUID = {
     arity: 0,
-    overloads: Helpers_1.declare()
-        .set([], () => Helpers_1.string(uuid.v4()))
+    overloads: (0, Helpers_1.declare)()
+        .set([], () => (0, Helpers_1.string)(uuid.v4()))
         .collect(),
 };
 // ----------------------------------------------------------------------------
@@ -26859,137 +29344,133 @@ const STRUUID = {
 // ----------------------------------------------------------------------------
 const STRLEN = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onStringly1((str) => Helpers_1.number([...str.typedValue].length, Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onStringly1(str => (0, Helpers_1.number)([...str.typedValue].length, Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const SUBSTR = {
     arity: [2, 3],
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'integer'], (source, startingLoc) => {
-        return Helpers_1.string([...source].slice(startingLoc - 1).join(''));
-    })
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'integer'], (source, startingLoc) => (0, Helpers_1.string)([...source].slice(startingLoc - 1).join('')))
         .onBinary(['langString', 'integer'], (source, startingLoc) => {
         const sub = [...source.typedValue].slice(startingLoc.typedValue - 1).join('');
-        return Helpers_1.langString(sub, source.language);
+        return (0, Helpers_1.langString)(sub, source.language);
     })
-        .onTernaryTyped(['string', 'integer', 'integer'], (source, startingLoc, length) => {
-        return Helpers_1.string([...source].slice(startingLoc - 1, length).join(''));
-    })
+        .onTernaryTyped(['string', 'integer', 'integer'], (source, startingLoc, length) => (0, Helpers_1.string)([...source].slice(startingLoc - 1, length).join('')))
         .onTernary(['langString', 'integer', 'integer'], (source, startingLoc, length) => {
         const sub = [...source.typedValue].slice(startingLoc.typedValue - 1, length.typedValue).join('');
-        return Helpers_1.langString(sub, source.language);
+        return (0, Helpers_1.langString)(sub, source.language);
     })
         .collect(),
 };
 const UCASE = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((lit) => Helpers_1.string(lit.toUpperCase()))
-        .onLangString1((lit) => Helpers_1.langString(lit.typedValue.toUpperCase(), lit.language))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(lit => (0, Helpers_1.string)(lit.toUpperCase()))
+        .onLangString1(lit => (0, Helpers_1.langString)(lit.typedValue.toUpperCase(), lit.language))
         .collect(),
 };
 const LCASE = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((lit) => Helpers_1.string(lit.toLowerCase()))
-        .onLangString1((lit) => Helpers_1.langString(lit.typedValue.toLowerCase(), lit.language))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(lit => (0, Helpers_1.string)(lit.toLowerCase()))
+        .onLangString1(lit => (0, Helpers_1.langString)(lit.typedValue.toLowerCase(), lit.language))
         .collect(),
 };
 const STRSTARTS = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.startsWith(arg2)))
-        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.startsWith(arg2)))
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.startsWith(arg2)))
+        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.startsWith(arg2)))
         .onBinary(['langString', 'langString'], (arg1, arg2) => {
         if (arg1.language !== arg2.language) {
             throw new Err.IncompatibleLanguageOperation(arg1, arg2);
         }
-        return Helpers_1.bool(arg1.typedValue.startsWith(arg2.typedValue));
+        return (0, Helpers_1.bool)(arg1.typedValue.startsWith(arg2.typedValue));
     })
         .collect(),
 };
 const STRENDS = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.endsWith(arg2)))
-        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.endsWith(arg2)))
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.endsWith(arg2)))
+        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.endsWith(arg2)))
         .onBinary(['langString', 'langString'], (arg1, arg2) => {
         if (arg1.language !== arg2.language) {
             throw new Err.IncompatibleLanguageOperation(arg1, arg2);
         }
-        return Helpers_1.bool(arg1.typedValue.endsWith(arg2.typedValue));
+        return (0, Helpers_1.bool)(arg1.typedValue.endsWith(arg2.typedValue));
     })
         .collect(),
 };
 const CONTAINS = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.includes(arg2)))
-        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => Helpers_1.bool(arg1.includes(arg2)))
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.includes(arg2)))
+        .onBinaryTyped(['langString', 'string'], (arg1, arg2) => (0, Helpers_1.bool)(arg1.includes(arg2)))
         .onBinary(['langString', 'langString'], (arg1, arg2) => {
         if (arg1.language !== arg2.language) {
             throw new Err.IncompatibleLanguageOperation(arg1, arg2);
         }
-        return Helpers_1.bool(arg1.typedValue.includes(arg2.typedValue));
+        return (0, Helpers_1.bool)(arg1.typedValue.includes(arg2.typedValue));
     })
         .collect(),
 };
 const STRBEFORE = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (arg1, arg2) => Helpers_1.string(arg1.substr(0, arg1.indexOf(arg2))))
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (arg1, arg2) => (0, Helpers_1.string)(arg1.slice(0, Math.max(0, arg1.indexOf(arg2)))))
         .onBinary(['langString', 'string'], (arg1, arg2) => {
         const [a1, a2] = [arg1.typedValue, arg2.typedValue];
-        const sub = arg1.typedValue.substr(0, a1.indexOf(a2));
-        return (sub || !a2) ? Helpers_1.langString(sub, arg1.language) : Helpers_1.string(sub);
+        const sub = arg1.typedValue.slice(0, Math.max(0, a1.indexOf(a2)));
+        return sub || !a2 ? (0, Helpers_1.langString)(sub, arg1.language) : (0, Helpers_1.string)(sub);
     })
         .onBinary(['langString', 'langString'], (arg1, arg2) => {
         if (arg1.language !== arg2.language) {
             throw new Err.IncompatibleLanguageOperation(arg1, arg2);
         }
         const [a1, a2] = [arg1.typedValue, arg2.typedValue];
-        const sub = arg1.typedValue.substr(0, a1.indexOf(a2));
-        return (sub || !a2) ? Helpers_1.langString(sub, arg1.language) : Helpers_1.string(sub);
+        const sub = arg1.typedValue.slice(0, Math.max(0, a1.indexOf(a2)));
+        return sub || !a2 ? (0, Helpers_1.langString)(sub, arg1.language) : (0, Helpers_1.string)(sub);
     })
         .collect(),
 };
 const STRAFTER = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (arg1, arg2) => Helpers_1.string(arg1.substr(arg1.indexOf(arg2)).substr(arg2.length)))
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (arg1, arg2) => (0, Helpers_1.string)(arg1.slice(arg1.indexOf(arg2)).slice(arg2.length)))
         .onBinary(['langString', 'string'], (arg1, arg2) => {
         const [a1, a2] = [arg1.typedValue, arg2.typedValue];
-        const sub = a1.substr(a1.indexOf(a2)).substr(a2.length);
-        return (sub || !a2) ? Helpers_1.langString(sub, arg1.language) : Helpers_1.string(sub);
+        const sub = a1.slice(a1.indexOf(a2)).slice(a2.length);
+        return sub || !a2 ? (0, Helpers_1.langString)(sub, arg1.language) : (0, Helpers_1.string)(sub);
     })
         .onBinary(['langString', 'langString'], (arg1, arg2) => {
         if (arg1.language !== arg2.language) {
             throw new Err.IncompatibleLanguageOperation(arg1, arg2);
         }
         const [a1, a2] = [arg1.typedValue, arg2.typedValue];
-        const sub = a1.substr(a1.indexOf(a2)).substr(a2.length);
-        return (sub || !a2) ? Helpers_1.langString(sub, arg1.language) : Helpers_1.string(sub);
+        const sub = a1.slice(a1.indexOf(a2)).slice(a2.length);
+        return sub || !a2 ? (0, Helpers_1.langString)(sub, arg1.language) : (0, Helpers_1.string)(sub);
     })
         .collect(),
 };
 const ENCODE_FOR_URI = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onStringly1Typed((val) => Helpers_1.string(encodeURI(val))).collect(),
+    overloads: (0, Helpers_1.declare)()
+        .onStringly1Typed(val => (0, Helpers_1.string)(encodeURI(val))).collect(),
 };
 // See special operators
 // const CONCAT = {}
 const langmatches = {
     arity: 2,
-    overloads: Helpers_1.declare()
-        .onBinaryTyped(['string', 'string'], (tag, range) => Helpers_1.bool(X.langMatches(tag, range))).collect(),
+    overloads: (0, Helpers_1.declare)()
+        .onBinaryTyped(['string', 'string'], (tag, range) => (0, Helpers_1.bool)(X.langMatches(tag, range))).collect(),
 };
-const regex2 = (text, pattern) => Helpers_1.bool(X.matches(text, pattern));
-const regex3 = (text, pattern, flags) => Helpers_1.bool(X.matches(text, pattern, flags));
+const regex2 = (text, pattern) => (0, Helpers_1.bool)(X.matches(text, pattern));
+const regex3 = (text, pattern, flags) => (0, Helpers_1.bool)(X.matches(text, pattern, flags));
 const REGEX = {
     arity: [2, 3],
-    overloads: Helpers_1.declare()
+    overloads: (0, Helpers_1.declare)()
         .onBinaryTyped(['string', 'string'], regex2)
         .onBinaryTyped(['langString', 'string'], regex2)
         .onTernaryTyped(['string', 'string', 'string'], regex3)
@@ -26998,16 +29479,16 @@ const REGEX = {
 };
 const REPLACE = {
     arity: [3, 4],
-    overloads: Helpers_1.declare()
-        .onTernaryTyped(['string', 'string', 'string'], (arg, pattern, replacement) => Helpers_1.string(X.replace(arg, pattern, replacement)))
+    overloads: (0, Helpers_1.declare)()
+        .onTernaryTyped(['string', 'string', 'string'], (arg, pattern, replacement) => (0, Helpers_1.string)(X.replace(arg, pattern, replacement)))
         .set(['langString', 'string', 'string'], ([arg, pattern, replacement]) => {
         const result = X.replace(arg.typedValue, pattern.typedValue, replacement.typedValue);
-        return Helpers_1.langString(result, arg.language);
+        return (0, Helpers_1.langString)(result, arg.language);
     })
-        .onQuaternaryTyped(['string', 'string', 'string', 'string'], (arg, pattern, replacement, flags) => Helpers_1.string(X.replace(arg, pattern, replacement, flags)))
+        .onQuaternaryTyped(['string', 'string', 'string', 'string'], (arg, pattern, replacement, flags) => (0, Helpers_1.string)(X.replace(arg, pattern, replacement, flags)))
         .set(['langString', 'string', 'string', 'string'], ([arg, pattern, replacement, flags]) => {
         const result = X.replace(arg.typedValue, pattern.typedValue, replacement.typedValue, flags.typedValue);
-        return Helpers_1.langString(result, arg.language);
+        return (0, Helpers_1.langString)(result, arg.language);
     })
         .collect(),
 };
@@ -27017,32 +29498,32 @@ const REPLACE = {
 // ----------------------------------------------------------------------------
 const abs = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((num) => Helpers_1.number(Math.abs(num.typedValue), num.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(num => (0, Helpers_1.number)(Math.abs(num.typedValue), num.typeURL.value))
         .collect(),
 };
 const round = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((num) => Helpers_1.number(Math.round(num.typedValue), num.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(num => (0, Helpers_1.number)(Math.round(num.typedValue), num.typeURL.value))
         .collect(),
 };
 const ceil = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((num) => Helpers_1.number(Math.ceil(num.typedValue), num.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(num => (0, Helpers_1.number)(Math.ceil(num.typedValue), num.typeURL.value))
         .collect(),
 };
 const floor = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onNumeric1((num) => Helpers_1.number(Math.floor(num.typedValue), num.typeURL.value))
+    overloads: (0, Helpers_1.declare)()
+        .onNumeric1(num => (0, Helpers_1.number)(Math.floor(num.typedValue), num.typeURL.value))
         .collect(),
 };
 const rand = {
     arity: 0,
-    overloads: Helpers_1.declare()
-        .set([], () => Helpers_1.number(Math.random(), Consts_1.TypeURL.XSD_DOUBLE))
+    overloads: (0, Helpers_1.declare)()
+        .set([], () => (0, Helpers_1.number)(Math.random(), Consts_1.TypeURL.XSD_DOUBLE))
         .collect(),
 };
 // ----------------------------------------------------------------------------
@@ -27056,44 +29537,44 @@ function parseDate(dateLit) {
 // const now = {};
 const year = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).year), Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).year), Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const month = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).month), Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).month), Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const day = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).day), Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).day), Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const hours = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).hours), Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).hours), Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const minutes = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).minutes), Consts_1.TypeURL.XSD_INTEGER))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).minutes), Consts_1.TypeURL.XSD_INTEGER))
         .collect(),
 };
 const seconds = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.number(Number(parseDate(date).seconds), Consts_1.TypeURL.XSD_DECIMAL))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.number)(Number(parseDate(date).seconds), Consts_1.TypeURL.XSD_DECIMAL))
         .collect(),
 };
 const timezone = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => {
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => {
         const duration = X.formatDayTimeDuration(parseDate(date).timezone);
         if (!duration) {
             throw new Err.InvalidTimezoneCall(date.strValue);
@@ -27104,8 +29585,8 @@ const timezone = {
 };
 const tz = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onDateTime1((date) => Helpers_1.string(parseDate(date).timezone))
+    overloads: (0, Helpers_1.declare)()
+        .onDateTime1(date => (0, Helpers_1.string)(parseDate(date).timezone))
         .collect(),
 };
 // ----------------------------------------------------------------------------
@@ -27114,49 +29595,49 @@ const tz = {
 // ----------------------------------------------------------------------------
 const MD5 = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((str) => Helpers_1.string(spark_md5_1.hash(str)))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(str => (0, Helpers_1.string)((0, spark_md5_1.hash)(str)))
         .collect(),
 };
 const SHA1 = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((str) => Helpers_1.string(hash_js_1.sha1().update(str).digest('hex')))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(str => (0, Helpers_1.string)((0, hash_js_1.sha1)().update(str).digest('hex')))
         .collect(),
 };
 const SHA256 = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((str) => Helpers_1.string(hash_js_1.sha256().update(str).digest('hex')))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(str => (0, Helpers_1.string)((0, hash_js_1.sha256)().update(str).digest('hex')))
         .collect(),
 };
 const SHA384 = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((str) => Helpers_1.string(hash_js_1.sha384().update(str).digest('hex')))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(str => (0, Helpers_1.string)((0, hash_js_1.sha384)().update(str).digest('hex')))
         .collect(),
 };
 const SHA512 = {
     arity: 1,
-    overloads: Helpers_1.declare()
-        .onString1Typed((str) => Helpers_1.string(hash_js_1.sha512().update(str).digest('hex')))
+    overloads: (0, Helpers_1.declare)()
+        .onString1Typed(str => (0, Helpers_1.string)((0, hash_js_1.sha512)().update(str).digest('hex')))
         .collect(),
 };
 // End definitions.
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
-/*
+/**
  * Collect all the definitions from above into an object
  */
-const _definitions = {
+exports.definitions = {
     // --------------------------------------------------------------------------
     // Operator Mapping
     // https://www.w3.org/TR/sparql11-query/#OperatorMapping
     // --------------------------------------------------------------------------
     '!': not,
-    'UPLUS': unaryPlus,
-    'UMINUS': unaryMinus,
+    UPLUS: unaryPlus,
+    UMINUS: unaryMinus,
     '*': multiplication,
     '/': division,
     '+': addition,
@@ -27171,71 +29652,70 @@ const _definitions = {
     // Functions on RDF Terms
     // https://www.w3.org/TR/sparql11-query/#func-rdfTerms
     // --------------------------------------------------------------------------
-    'isiri': isIRI,
-    'isblank': isBlank,
-    'isliteral': isLiteral,
-    'isnumeric': isNumeric,
-    'str': toString,
-    'lang': lang,
-    'datatype': datatype,
+    isiri: isIRI,
+    isblank: isBlank,
+    isliteral: isLiteral,
+    isnumeric: isNumeric,
+    str: STR,
+    lang,
+    datatype,
     // 'iri': IRI (see special operators),
     // 'uri': IRI (see special operators),
     // 'BNODE': BNODE (see special operators),
-    'strdt': STRDT,
-    'strlang': STRLANG,
-    'uuid': UUID,
-    'struuid': STRUUID,
+    strdt: STRDT,
+    strlang: STRLANG,
+    uuid: UUID,
+    struuid: STRUUID,
     // --------------------------------------------------------------------------
     // Functions on strings
     // https://www.w3.org/TR/sparql11-query/#func-forms
     // --------------------------------------------------------------------------
-    'strlen': STRLEN,
-    'substr': SUBSTR,
-    'ucase': UCASE,
-    'lcase': LCASE,
-    'strstarts': STRSTARTS,
-    'strends': STRENDS,
-    'contains': CONTAINS,
-    'strbefore': STRBEFORE,
-    'strafter': STRAFTER,
-    'encode_for_uri': ENCODE_FOR_URI,
+    strlen: STRLEN,
+    substr: SUBSTR,
+    ucase: UCASE,
+    lcase: LCASE,
+    strstarts: STRSTARTS,
+    strends: STRENDS,
+    contains: CONTAINS,
+    strbefore: STRBEFORE,
+    strafter: STRAFTER,
+    encode_for_uri: ENCODE_FOR_URI,
     // 'concat': CONCAT (see special operators)
-    'langmatches': langmatches,
-    'regex': REGEX,
-    'replace': REPLACE,
+    langmatches,
+    regex: REGEX,
+    replace: REPLACE,
     // --------------------------------------------------------------------------
     // Functions on numerics
     // https://www.w3.org/TR/sparql11-query/#func-numerics
     // --------------------------------------------------------------------------
-    'abs': abs,
-    'round': round,
-    'ceil': ceil,
-    'floor': floor,
-    'rand': rand,
+    abs,
+    round,
+    ceil,
+    floor,
+    rand,
     // --------------------------------------------------------------------------
     // Functions on Dates and Times
     // https://www.w3.org/TR/sparql11-query/#func-date-time
     // --------------------------------------------------------------------------
     // 'now': now (see special operators),
-    'year': year,
-    'month': month,
-    'day': day,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds,
-    'timezone': timezone,
-    'tz': tz,
+    year,
+    month,
+    day,
+    hours,
+    minutes,
+    seconds,
+    timezone,
+    tz,
     // --------------------------------------------------------------------------
     // Hash functions
     // https://www.w3.org/TR/sparql11-query/#func-hash
     // --------------------------------------------------------------------------
-    'md5': MD5,
-    'sha1': SHA1,
-    'sha256': SHA256,
-    'sha384': SHA384,
-    'sha512': SHA512,
+    md5: MD5,
+    sha1: SHA1,
+    sha256: SHA256,
+    sha384: SHA384,
+    sha512: SHA512,
 };
-exports.definitions = immutable_1.Map(_definitions);
 //# sourceMappingURL=RegularFunctions.js.map
 
 /***/ }),
@@ -27247,14 +29727,13 @@ exports.definitions = immutable_1.Map(_definitions);
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.specialDefinitions = void 0;
-const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const relative_to_absolute_iri_1 = __cmncwpk_require__("./node_modules/relative-to-absolute-iri/index.js");
 const uuid = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/index.js");
 const E = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/expressions/index.js");
 const C = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Consts.js");
 const Err = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/util/Errors.js");
 const Helpers_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Helpers.js");
-const index_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
+const _1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/index.js");
 // ----------------------------------------------------------------------------
 // Functional forms
 // ----------------------------------------------------------------------------
@@ -27264,7 +29743,7 @@ function _bound({ args, mapping }) {
         throw new Err.InvalidArgumentTypes(args, C.SpecialOperator.BOUND);
     }
     const val = mapping.has(variable.name) && !!mapping.get(variable.name);
-    return Helpers_1.bool(val);
+    return (0, Helpers_1.bool)(val);
 }
 // BOUND ----------------------------------------------------------------------
 const bound = {
@@ -27282,29 +29761,29 @@ const ifSPARQL = {
     async applyAsync({ args, mapping, evaluate }) {
         const valFirst = await evaluate(args[0], mapping);
         const ebv = valFirst.coerceEBV();
-        return (ebv)
-            ? evaluate(args[1], mapping)
-            : evaluate(args[2], mapping);
+        return ebv ?
+            evaluate(args[1], mapping) :
+            evaluate(args[2], mapping);
     },
     applySync({ args, mapping, evaluate }) {
         const valFirst = evaluate(args[0], mapping);
         const ebv = valFirst.coerceEBV();
-        return (ebv)
-            ? evaluate(args[1], mapping)
-            : evaluate(args[2], mapping);
+        return ebv ?
+            evaluate(args[1], mapping) :
+            evaluate(args[2], mapping);
     },
 };
 // COALESCE -------------------------------------------------------------------
 const coalesce = {
-    arity: Infinity,
+    arity: Number.POSITIVE_INFINITY,
     async applyAsync({ args, mapping, evaluate }) {
         const errors = [];
         for (const expr of args) {
             try {
                 return await evaluate(expr, mapping);
             }
-            catch (err) {
-                errors.push(err);
+            catch (error) {
+                errors.push(error);
             }
         }
         throw new Err.CoalesceError(errors);
@@ -27315,14 +29794,14 @@ const coalesce = {
             try {
                 return evaluate(expr, mapping);
             }
-            catch (err) {
-                errors.push(err);
+            catch (error) {
+                errors.push(error);
             }
         }
         throw new Err.CoalesceError(errors);
     },
 };
-// logical-or (||) ------------------------------------------------------------
+// Logical-or (||) ------------------------------------------------------------
 // https://www.w3.org/TR/sparql11-query/#func-logical-or
 const logicalOr = {
     arity: 2,
@@ -27332,19 +29811,19 @@ const logicalOr = {
             const leftTerm = await evaluate(leftExpr, mapping);
             const left = leftTerm.coerceEBV();
             if (left) {
-                return Helpers_1.bool(true);
+                return (0, Helpers_1.bool)(true);
             }
             const rightTerm = await evaluate(rightExpr, mapping);
             const right = rightTerm.coerceEBV();
-            return Helpers_1.bool(right);
+            return (0, Helpers_1.bool)(right);
         }
-        catch (leftErr) {
-            const rightTerm = await evaluate(rightExpr, mapping);
-            const right = rightTerm.coerceEBV();
-            if (!right) {
-                throw leftErr;
+        catch (error) {
+            const rightErrorTerm = await evaluate(rightExpr, mapping);
+            const rightError = rightErrorTerm.coerceEBV();
+            if (!rightError) {
+                throw error;
             }
-            return Helpers_1.bool(true);
+            return (0, Helpers_1.bool)(true);
         }
     },
     applySync({ args, mapping, evaluate }) {
@@ -27353,23 +29832,23 @@ const logicalOr = {
             const leftTerm = evaluate(leftExpr, mapping);
             const left = leftTerm.coerceEBV();
             if (left) {
-                return Helpers_1.bool(true);
+                return (0, Helpers_1.bool)(true);
             }
             const rightTerm = evaluate(rightExpr, mapping);
             const right = rightTerm.coerceEBV();
-            return Helpers_1.bool(right);
+            return (0, Helpers_1.bool)(right);
         }
-        catch (leftErr) {
-            const rightTerm = evaluate(rightExpr, mapping);
-            const right = rightTerm.coerceEBV();
-            if (!right) {
-                throw leftErr;
+        catch (error) {
+            const rightErrorTerm = evaluate(rightExpr, mapping);
+            const rightError = rightErrorTerm.coerceEBV();
+            if (!rightError) {
+                throw error;
             }
-            return Helpers_1.bool(true);
+            return (0, Helpers_1.bool)(true);
         }
     },
 };
-// logical-and (&&) -----------------------------------------------------------
+// Logical-and (&&) -----------------------------------------------------------
 // https://www.w3.org/TR/sparql11-query/#func-logical-and
 const logicalAnd = {
     arity: 2,
@@ -27379,19 +29858,19 @@ const logicalAnd = {
             const leftTerm = await evaluate(leftExpr, mapping);
             const left = leftTerm.coerceEBV();
             if (!left) {
-                return Helpers_1.bool(false);
+                return (0, Helpers_1.bool)(false);
             }
             const rightTerm = await evaluate(rightExpr, mapping);
             const right = rightTerm.coerceEBV();
-            return Helpers_1.bool(right);
+            return (0, Helpers_1.bool)(right);
         }
-        catch (leftErr) {
-            const rightTerm = await evaluate(rightExpr, mapping);
-            const right = rightTerm.coerceEBV();
-            if (right) {
-                throw leftErr;
+        catch (error) {
+            const rightErrorTerm = await evaluate(rightExpr, mapping);
+            const rightError = rightErrorTerm.coerceEBV();
+            if (rightError) {
+                throw error;
             }
-            return Helpers_1.bool(false);
+            return (0, Helpers_1.bool)(false);
         }
     },
     applySync({ args, mapping, evaluate }) {
@@ -27400,40 +29879,42 @@ const logicalAnd = {
             const leftTerm = evaluate(leftExpr, mapping);
             const left = leftTerm.coerceEBV();
             if (!left) {
-                return Helpers_1.bool(false);
+                return (0, Helpers_1.bool)(false);
             }
             const rightTerm = evaluate(rightExpr, mapping);
             const right = rightTerm.coerceEBV();
-            return Helpers_1.bool(right);
+            return (0, Helpers_1.bool)(right);
         }
-        catch (leftErr) {
-            const rightTerm = evaluate(rightExpr, mapping);
-            const right = rightTerm.coerceEBV();
-            if (right) {
-                throw leftErr;
+        catch (error) {
+            const rightErrorTerm = evaluate(rightExpr, mapping);
+            const rightError = rightErrorTerm.coerceEBV();
+            if (rightError) {
+                throw error;
             }
-            return Helpers_1.bool(false);
+            return (0, Helpers_1.bool)(false);
         }
     },
 };
-// sameTerm -------------------------------------------------------------------
+// SameTerm -------------------------------------------------------------------
 const sameTerm = {
     arity: 2,
     async applyAsync({ args, mapping, evaluate }) {
-        const [leftExpr, rightExpr] = args.map((a) => evaluate(a, mapping));
+        const [leftExpr, rightExpr] = args.map(arg => evaluate(arg, mapping));
         const left = await leftExpr;
         const right = await rightExpr;
-        return Helpers_1.bool(left.toRDF().equals(right.toRDF()));
+        return (0, Helpers_1.bool)(left.toRDF().equals(right.toRDF()));
     },
     applySync({ args, mapping, evaluate }) {
-        const [left, right] = args.map((a) => evaluate(a, mapping));
-        return Helpers_1.bool(left.toRDF().equals(right.toRDF()));
+        const [left, right] = args.map(arg => evaluate(arg, mapping));
+        return (0, Helpers_1.bool)(left.toRDF().equals(right.toRDF()));
     },
 };
 // IN -------------------------------------------------------------------------
 const inSPARQL = {
-    arity: Infinity,
-    checkArity(args) { return args.length >= 1; },
+    arity: Number.POSITIVE_INFINITY,
+    checkArity(args) {
+        return args.length > 0;
+    },
     async applyAsync({ args, mapping, evaluate, context }) {
         const [leftExpr, ...remaining] = args;
         const left = await evaluate(leftExpr, mapping);
@@ -27447,60 +29928,56 @@ const inSPARQL = {
 };
 async function inRecursiveAsync(needle, { args, mapping, evaluate, context }, results) {
     if (args.length === 0) {
-        const noErrors = results.every((v) => !v);
-        return (noErrors) ? Helpers_1.bool(false) : Promise.reject(new Err.InError(results));
+        const noErrors = results.every(val => !val);
+        return noErrors ? (0, Helpers_1.bool)(false) : Promise.reject(new Err.InError(results));
     }
     try {
         const next = await evaluate(args.shift(), mapping);
-        const isEqual = index_1.regularFunctions.get(C.RegularOperator.EQUAL);
-        if (isEqual.apply([needle, next]).typedValue === true) {
-            return Helpers_1.bool(true);
+        const isEqual = _1.regularFunctions[C.RegularOperator.EQUAL];
+        if (isEqual.apply([needle, next]).typedValue) {
+            return (0, Helpers_1.bool)(true);
         }
-        else {
-            return inRecursiveAsync(needle, { args, mapping, evaluate, context }, [...results, false]);
-        }
+        return inRecursiveAsync(needle, { args, mapping, evaluate, context }, [...results, false]);
     }
-    catch (err) {
-        return inRecursiveAsync(needle, { args, mapping, evaluate, context }, [...results, err]);
+    catch (error) {
+        return inRecursiveAsync(needle, { args, mapping, evaluate, context }, [...results, error]);
     }
 }
 function inRecursiveSync(needle, { args, mapping, evaluate, context }, results) {
     if (args.length === 0) {
-        const noErrors = results.every((v) => !v);
+        const noErrors = results.every(val => !val);
         if (noErrors) {
-            Helpers_1.bool(false);
+            return (0, Helpers_1.bool)(false);
         }
-        else {
-            throw new Err.InError(results);
-        }
+        throw new Err.InError(results);
     }
     try {
         const next = evaluate(args.shift(), mapping);
-        const isEqual = index_1.regularFunctions.get(C.RegularOperator.EQUAL);
-        if (isEqual.apply([needle, next]).typedValue === true) {
-            return Helpers_1.bool(true);
+        const isEqual = _1.regularFunctions[C.RegularOperator.EQUAL];
+        if (isEqual.apply([needle, next]).typedValue) {
+            return (0, Helpers_1.bool)(true);
         }
-        else {
-            return inRecursiveSync(needle, { args, mapping, evaluate, context }, [...results, false]);
-        }
+        return inRecursiveSync(needle, { args, mapping, evaluate, context }, [...results, false]);
     }
-    catch (err) {
-        return inRecursiveSync(needle, { args, mapping, evaluate, context }, [...results, err]);
+    catch (error) {
+        return inRecursiveSync(needle, { args, mapping, evaluate, context }, [...results, error]);
     }
 }
 // NOT IN ---------------------------------------------------------------------
 const notInSPARQL = {
-    arity: Infinity,
-    checkArity(args) { return args.length >= 1; },
+    arity: Number.POSITIVE_INFINITY,
+    checkArity(args) {
+        return args.length > 0;
+    },
     async applyAsync(context) {
-        const _in = index_1.specialFunctions.get(C.SpecialOperator.IN);
+        const _in = _1.specialFunctions[C.SpecialOperator.IN];
         const isIn = await _in.applyAsync(context);
-        return Helpers_1.bool(!isIn.typedValue);
+        return (0, Helpers_1.bool)(!isIn.typedValue);
     },
     applySync(context) {
-        const _in = index_1.specialFunctions.get(C.SpecialOperator.IN);
+        const _in = _1.specialFunctions[C.SpecialOperator.IN];
         const isIn = _in.applySync(context);
-        return Helpers_1.bool(!isIn.typedValue);
+        return (0, Helpers_1.bool)(!isIn.typedValue);
     },
 };
 // ----------------------------------------------------------------------------
@@ -27508,29 +29985,29 @@ const notInSPARQL = {
 // ----------------------------------------------------------------------------
 // CONCAT
 const concat = {
-    arity: Infinity,
+    arity: Number.POSITIVE_INFINITY,
     async applyAsync({ args, evaluate, mapping }) {
         const pLits = args
             .map(async (expr) => evaluate(expr, mapping))
-            .map(async (pTerm) => Helpers_1.typeCheckLit(await pTerm, ['string', 'langString'], args, C.SpecialOperator.CONCAT));
+            .map(async (pTerm) => (0, Helpers_1.typeCheckLit)(await pTerm, ['string', 'langString'], args, C.SpecialOperator.CONCAT));
         const lits = await Promise.all(pLits);
-        const strings = lits.map((lit) => lit.typedValue);
+        const strings = lits.map(lit => lit.typedValue);
         const joined = strings.join('');
         const lang = langAllEqual(lits) ? lits[0].language : undefined;
-        return (lang) ? Helpers_1.langString(joined, lang) : Helpers_1.string(joined);
+        return lang ? (0, Helpers_1.langString)(joined, lang) : (0, Helpers_1.string)(joined);
     },
     applySync({ args, evaluate, mapping }) {
         const lits = args
-            .map((expr) => evaluate(expr, mapping))
-            .map((pTerm) => Helpers_1.typeCheckLit(pTerm, ['string', 'langString'], args, C.SpecialOperator.CONCAT));
-        const strings = lits.map((lit) => lit.typedValue);
+            .map(expr => evaluate(expr, mapping))
+            .map(pTerm => (0, Helpers_1.typeCheckLit)(pTerm, ['string', 'langString'], args, C.SpecialOperator.CONCAT));
+        const strings = lits.map(lit => lit.typedValue);
         const joined = strings.join('');
         const lang = langAllEqual(lits) ? lits[0].language : undefined;
-        return (lang) ? Helpers_1.langString(joined, lang) : Helpers_1.string(joined);
+        return lang ? (0, Helpers_1.langString)(joined, lang) : (0, Helpers_1.string)(joined);
     },
 };
 function langAllEqual(lits) {
-    return lits.length > 0 && lits.every((lit) => lit.language === lits[0].language);
+    return lits.length > 0 && lits.every(lit => lit.language === lits[0].language);
 }
 // ----------------------------------------------------------------------------
 // Context dependant functions
@@ -27557,24 +30034,26 @@ const IRI = {
     },
 };
 function IRI_(input, baseIRI, args) {
-    const lit = (input.termType !== 'namedNode')
-        ? Helpers_1.typeCheckLit(input, ['string'], args, C.SpecialOperator.IRI)
-        : input;
-    const iri = relative_to_absolute_iri_1.resolve(lit.str(), baseIRI || '');
+    const lit = input.termType !== 'namedNode' ?
+        (0, Helpers_1.typeCheckLit)(input, ['string'], args, C.SpecialOperator.IRI) :
+        input;
+    const iri = (0, relative_to_absolute_iri_1.resolve)(lit.str(), baseIRI || '');
     return new E.NamedNode(iri);
 }
 // https://www.w3.org/TR/sparql11-query/#func-bnode
 // id has to be distinct over all id's in dataset
 const BNODE = {
-    arity: Infinity,
-    checkArity(args) { return args.length === 0 || args.length === 1; },
+    arity: Number.POSITIVE_INFINITY,
+    checkArity(args) {
+        return args.length === 0 || args.length === 1;
+    },
     async applyAsync({ args, evaluate, mapping, context }) {
-        const input = (args.length === 1)
-            ? await evaluate(args[0], mapping)
-            : undefined;
-        const strInput = (input)
-            ? Helpers_1.typeCheckLit(input, ['string'], args, C.SpecialOperator.BNODE).str()
-            : undefined;
+        const input = args.length === 1 ?
+            await evaluate(args[0], mapping) :
+            undefined;
+        const strInput = input ?
+            (0, Helpers_1.typeCheckLit)(input, ['string'], args, C.SpecialOperator.BNODE).str() :
+            undefined;
         if (context.bnode) {
             const bnode = await context.bnode(strInput);
             return new E.BlankNode(bnode);
@@ -27582,12 +30061,12 @@ const BNODE = {
         return BNODE_(strInput);
     },
     applySync({ args, evaluate, mapping, context }) {
-        const input = (args.length === 1)
-            ? evaluate(args[0], mapping)
-            : undefined;
-        const strInput = (input)
-            ? Helpers_1.typeCheckLit(input, ['string'], args, C.SpecialOperator.BNODE).str()
-            : undefined;
+        const input = args.length === 1 ?
+            evaluate(args[0], mapping) :
+            undefined;
+        const strInput = input ?
+            (0, Helpers_1.typeCheckLit)(input, ['string'], args, C.SpecialOperator.BNODE).str() :
+            undefined;
         if (context.bnode) {
             const bnode = context.bnode(strInput);
             return new E.BlankNode(bnode);
@@ -27598,28 +30077,27 @@ const BNODE = {
 function BNODE_(input) {
     return new E.BlankNode(input || uuid.v4());
 }
-const _specialDefinitions = {
+exports.specialDefinitions = {
     // --------------------------------------------------------------------------
     // Functional Forms
     // https://www.w3.org/TR/sparql11-query/#func-forms
     // --------------------------------------------------------------------------
-    'bound': bound,
-    'if': ifSPARQL,
-    'coalesce': coalesce,
+    bound,
+    if: ifSPARQL,
+    coalesce,
     '&&': logicalAnd,
     '||': logicalOr,
-    'sameterm': sameTerm,
-    'in': inSPARQL,
-    'notin': notInSPARQL,
+    sameterm: sameTerm,
+    in: inSPARQL,
+    notin: notInSPARQL,
     // Annoying functions
-    'concat': concat,
+    concat,
     // Context dependent functions
-    'now': now,
-    'iri': IRI,
-    'uri': IRI,
-    'BNODE': BNODE,
+    now,
+    iri: IRI,
+    uri: IRI,
+    BNODE,
 };
-exports.specialDefinitions = immutable_1.Map(_specialDefinitions);
 //# sourceMappingURL=SpecialFunctions.js.map
 
 /***/ }),
@@ -27646,7 +30124,7 @@ function replace(arg, pattern, replacement, flags) {
     let reg = new RegExp(pattern, flags);
     if (!reg.global) {
         const flags_ = flags || '';
-        reg = new RegExp(pattern, flags_ + 'g');
+        reg = new RegExp(pattern, `${flags_}g`);
     }
     return arg.replace(reg, replacement);
 }
@@ -27658,8 +30136,8 @@ exports.replace = replace;
 function langMatches(tag, range) {
     const langTags = tag.split('-');
     const rangeTags = range.split('-');
-    if (!_matchLangTag(rangeTags[0], langTags[0])
-        && !_isWildCard(langTags[0])) {
+    if (!_matchLangTag(rangeTags[0], langTags[0]) &&
+        !_isWildCard(langTags[0])) {
         return false;
     }
     let lI = 1;
@@ -27689,7 +30167,7 @@ function _isWildCard(tag) {
     return tag === '*';
 }
 function _matchLangTag(left, right) {
-    const matchInitial = new RegExp(`/${left}/`, 'i');
+    const matchInitial = new RegExp(`/${left}/`, 'iu');
     return matchInitial.test(`/${right}/`);
 }
 /**
@@ -27701,27 +30179,25 @@ function _matchLangTag(left, right) {
  */
 function formatDayTimeDuration(timezone) {
     if (!timezone) {
-        return undefined;
+        return;
     }
-    if (timezone[0] === 'Z') {
+    if (timezone.startsWith('Z')) {
         return 'PT0S';
     }
-    else {
-        // Split string
-        const [sign, h1Raw, h2Raw, _, m1Raw, m2Raw] = timezone;
-        // Cut of leading zero, set to empty string if 0, and append H;
-        const h1 = (h1Raw !== '0') ? h1Raw : '';
-        const h2 = (h1 || h2Raw !== '0') ? h2Raw : '';
-        const hours = (h1 + h2) ? h1 + h2 + 'H' : '';
-        // Same as in hours
-        const m1 = (m1Raw !== '0') ? m1Raw : '';
-        const m2 = (m1 || m2Raw !== '0') ? m2Raw : '';
-        const minutes = (m1 + m2) ? m1 + m2 + 'M' : '';
-        // Concat sign and time and mandatory separators
-        const time = `${hours}${minutes}`;
-        const signNoPlus = (sign === '-') ? '-' : '';
-        return `${signNoPlus}PT${time}`;
-    }
+    // Split string
+    const [sign, h1Raw, h2Raw, _, m1Raw, m2Raw] = timezone;
+    // Cut of leading zero, set to empty string if 0, and append H;
+    const h1 = h1Raw !== '0' ? h1Raw : '';
+    const h2 = h1 || h2Raw !== '0' ? h2Raw : '';
+    const hours = h1 + h2 ? `${h1 + h2}H` : '';
+    // Same as in hours
+    const m1 = m1Raw !== '0' ? m1Raw : '';
+    const m2 = m1 || m2Raw !== '0' ? m2Raw : '';
+    const minutes = m1 + m2 ? `${m1 + m2}M` : '';
+    // Concat sign and time and mandatory separators
+    const time = `${hours}${minutes}`;
+    const signNoPlus = sign === '-' ? '-' : '';
+    return `${signNoPlus}PT${time}`;
 }
 exports.formatDayTimeDuration = formatDayTimeDuration;
 //# sourceMappingURL=XPathFunctions.js.map
@@ -27750,15 +30226,9 @@ const NamedFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/f
 const RegularFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/RegularFunctions.js");
 const SpecialFunctions_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/SpecialFunctions.js");
 __exportStar(__cmncwpk_require__("./node_modules/sparqlee/dist/lib/functions/Core.js"), exports);
-exports.regularFunctions = RegularFunctions_1.definitions
-    .map((def, op) => new Core_1.RegularFunction(op, def))
-    .toMap();
-exports.specialFunctions = SpecialFunctions_1.specialDefinitions
-    .map((def, op) => new Core_1.SpecialFunction(op, def))
-    .toMap();
-exports.namedFunctions = NamedFunctions_1.namedDefinitions
-    .map((def, op) => new Core_1.NamedFunction(op, def))
-    .toMap();
+exports.regularFunctions = Object.fromEntries(Object.entries(RegularFunctions_1.definitions).map(([key, val]) => [key, new Core_1.RegularFunction(key, val)]));
+exports.specialFunctions = Object.fromEntries(Object.entries(SpecialFunctions_1.specialDefinitions).map(([key, val]) => [key, new Core_1.SpecialFunction(key, val)]));
+exports.namedFunctions = Object.fromEntries(Object.entries(NamedFunctions_1.namedDefinitions).map(([key, val]) => [key, new Core_1.NamedFunction(key, val)]));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -27770,9 +30240,7 @@ exports.namedFunctions = NamedFunctions_1.namedDefinitions
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.NamedOperators = exports.SetFunctions = exports.SetFunction = exports.Operators = exports.SpecialOperators = exports.RegularOperators = exports.SpecialOperator = exports.RegularOperator = exports.decategorize = exports.type = exports.PrimitiveNumericTypes = exports.commonTerms = exports.DerivedIntegerTypeURLs = exports.NumericTypeURLs = exports.DerivedIntegerTypeURL = exports.NumericTypeURL = exports.make = exports.TypeURL = exports.EVB_ERR_STR = exports.FALSE_STR = exports.TRUE_STR = void 0;
-// tslint:disable:variable-name
 const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
-const immutable_1 = __cmncwpk_require__("./node_modules/immutable/dist/immutable.js");
 const DF = new rdf_data_factory_1.DataFactory();
 exports.TRUE_STR = '"true"^^xsd:boolean';
 exports.FALSE_STR = '"false"^^xsd:boolean';
@@ -27848,13 +30316,13 @@ var DerivedIntegerTypeURL;
     DerivedIntegerTypeURL["XSD_UNSIGNED_BYTE"] = "http://www.w3.org/2001/XMLSchema#unsignedByte";
     DerivedIntegerTypeURL["XSD_POSITIVE_INTEGER"] = "http://www.w3.org/2001/XMLSchema#positiveInteger";
 })(DerivedIntegerTypeURL = exports.DerivedIntegerTypeURL || (exports.DerivedIntegerTypeURL = {}));
-exports.NumericTypeURLs = immutable_1.Set(Object.values(NumericTypeURL));
-exports.DerivedIntegerTypeURLs = immutable_1.Set(Object.values(DerivedIntegerTypeURL));
+exports.NumericTypeURLs = new Set(Object.values(NumericTypeURL));
+exports.DerivedIntegerTypeURLs = new Set(Object.values(DerivedIntegerTypeURL));
 exports.commonTerms = {
     true: DF.literal('true', DF.namedNode(TypeURL.XSD_BOOLEAN)),
     false: DF.literal('false', DF.namedNode(TypeURL.XSD_BOOLEAN)),
 };
-exports.PrimitiveNumericTypes = immutable_1.Set(['integer', 'decimal', 'float', 'double']);
+exports.PrimitiveNumericTypes = new Set(['integer', 'decimal', 'float', 'double']);
 function type(typeURL) {
     switch (typeURL) {
         case null:
@@ -27888,14 +30356,14 @@ exports.type = type;
 // If datatypes get lost or lose specificity during operations, we can insert a
 // concrete type, since categories should remain the same. This mostly (only)
 // relevant for integer subtypes.
-const _decategorize = immutable_1.Map([
-    ['integer', TypeURL.XSD_INTEGER],
-    ['float', TypeURL.XSD_FLOAT],
-    ['double', TypeURL.XSD_DOUBLE],
-    ['decimal', TypeURL.XSD_DECIMAL],
-]);
+const _decategorize = {
+    integer: TypeURL.XSD_INTEGER,
+    float: TypeURL.XSD_FLOAT,
+    double: TypeURL.XSD_DOUBLE,
+    decimal: TypeURL.XSD_DECIMAL,
+};
 function decategorize(cat) {
-    return _decategorize.get(cat);
+    return _decategorize[cat];
 }
 exports.decategorize = decategorize;
 // TODO: Remove unneeded double typing
@@ -27996,7 +30464,7 @@ var SpecialOperator;
     SpecialOperator["SAME_TERM"] = "sameterm";
     SpecialOperator["IN"] = "in";
     SpecialOperator["NOT_IN"] = "notin";
-    // Annoying functions
+    // Annoying functions - Has variable arity
     SpecialOperator["CONCAT"] = "concat";
     // Context dependant functions
     SpecialOperator["NOW"] = "now";
@@ -28004,9 +30472,9 @@ var SpecialOperator;
     SpecialOperator["URI"] = "uri";
     SpecialOperator["BNODE"] = "BNODE";
 })(SpecialOperator = exports.SpecialOperator || (exports.SpecialOperator = {}));
-exports.RegularOperators = immutable_1.Set(Object.values(RegularOperator));
-exports.SpecialOperators = immutable_1.Set(Object.values(SpecialOperator));
-exports.Operators = exports.RegularOperators.union(exports.SpecialOperators);
+exports.RegularOperators = new Set(Object.values(RegularOperator));
+exports.SpecialOperators = new Set(Object.values(SpecialOperator));
+exports.Operators = new Set([...exports.RegularOperators, ...exports.SpecialOperators]);
 var SetFunction;
 (function (SetFunction) {
     SetFunction["COUNT"] = "count";
@@ -28017,8 +30485,8 @@ var SetFunction;
     SetFunction["GROUP_CONCAT"] = "group_concat";
     SetFunction["SAMPLE"] = "sample";
 })(SetFunction = exports.SetFunction || (exports.SetFunction = {}));
-exports.SetFunctions = immutable_1.Set(Object.values(SetFunction));
-exports.NamedOperators = immutable_1.Set([
+exports.SetFunctions = new Set(Object.values(SetFunction));
+exports.NamedOperators = new Set([
     TypeURL.XSD_STRING,
     TypeURL.XSD_FLOAT,
     TypeURL.XSD_DOUBLE,
@@ -28038,7 +30506,7 @@ exports.NamedOperators = immutable_1.Set([
 "use strict";
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.NoExistenceHook = exports.NoAggregator = exports.UnknownNamedOperator = exports.UnknownOperator = exports.InvalidTermType = exports.InvalidExpressionType = exports.InvalidExpression = exports.InvalidArity = exports.UnimplementedError = exports.UnexpectedError = exports.EmptyAggregateError = exports.IncompatibleLanguageOperation = exports.InvalidTimezoneCall = exports.CastError = exports.InvalidArgumentTypes = exports.InError = exports.CoalesceError = exports.RDFEqualTypeError = exports.EBVCoercionError = exports.UnboundVariableError = exports.InvalidLexicalForm = exports.isExpressionError = exports.ExpressionError = void 0;
+exports.NoExistenceHook = exports.NoAggregator = exports.ExtensionFunctionError = exports.UnknownNamedOperator = exports.UnknownOperator = exports.InvalidTermType = exports.InvalidExpressionType = exports.InvalidExpression = exports.InvalidArity = exports.UnimplementedError = exports.UnexpectedError = exports.EmptyAggregateError = exports.IncompatibleLanguageOperation = exports.InvalidTimezoneCall = exports.CastError = exports.InvalidArgumentTypes = exports.InError = exports.CoalesceError = exports.RDFEqualTypeError = exports.EBVCoercionError = exports.UnboundVariableError = exports.InvalidLexicalForm = exports.isExpressionError = exports.ExpressionError = void 0;
 /**
  * This class of error will be thrown when an expression errors.
  * Various reasons this could happen are:
@@ -28129,8 +30597,9 @@ exports.CoalesceError = CoalesceError;
  */
 class InError extends ExpressionError {
     constructor(errors) {
-        super('Some argument to IN errorred and none where equal. ' +
-            errors.map((err) => `(${err.toString()}) `).join('and '));
+        super(`Some argument to IN errorred and none where equal. ${
+        // eslint-disable-next-line @typescript-eslint/no-base-to-string
+        errors.map(err => `(${err.toString()}) `).join('and ')}`);
         this.errors = errors;
     }
 }
@@ -28239,6 +30708,17 @@ class UnknownNamedOperator extends Error {
     }
 }
 exports.UnknownNamedOperator = UnknownNamedOperator;
+class ExtensionFunctionError extends Error {
+    constructor(name, functionError) {
+        if (functionError instanceof Error) {
+            super(`Error thrown in ${name}: ${functionError.message}${functionError.stack ? `\n${functionError.stack}` : ''}`);
+        }
+        else {
+            super(`Error thrown in ${name}`);
+        }
+    }
+}
+exports.ExtensionFunctionError = ExtensionFunctionError;
 class NoAggregator extends Error {
     constructor(name) {
         super(`Aggregate expression ${pp(name)} found, but no aggregate hook provided.`);
@@ -28251,8 +30731,8 @@ class NoExistenceHook extends Error {
     }
 }
 exports.NoExistenceHook = NoExistenceHook;
-function pp(o) {
-    return JSON.stringify(o);
+function pp(object) {
+    return JSON.stringify(object);
 }
 //# sourceMappingURL=Errors.js.map
 
@@ -28269,13 +30749,11 @@ const Transformation_1 = __cmncwpk_require__("./node_modules/sparqlee/dist/lib/T
 // Determine the relative numerical order of the two given terms.
 function orderTypes(litA, litB, isAscending) {
     if (litA && litA.termType === 'Literal' && litB && litB.termType === 'Literal') {
-        const a = Transformation_1.transformLiteral(litA);
-        const b = Transformation_1.transformLiteral(litB);
-        return order(a, b, isAscending);
+        const myLitA = (0, Transformation_1.transformLiteral)(litA);
+        const myLitB = (0, Transformation_1.transformLiteral)(litB);
+        return order(myLitA, myLitB, isAscending);
     }
-    else {
-        return 0;
-    }
+    return 0;
 }
 exports.orderTypes = orderTypes;
 // Effective ordering
@@ -28308,15 +30786,15 @@ exports.parseXSDDateTime = exports.parseXSDInteger = exports.parseXSDDecimal = e
  */
 function parseXSDFloat(value) {
     const numb = Number(value);
-    if (isNaN(numb)) {
+    if (Number.isNaN(numb)) {
         if (value === 'NaN') {
-            return NaN;
+            return Number.NaN;
         }
         if (value === 'INF') {
-            return Infinity;
+            return Number.POSITIVE_INFINITY;
         }
         if (value === '-INF') {
-            return -Infinity;
+            return Number.NEGATIVE_INFINITY;
         }
         return undefined;
     }
@@ -28333,7 +30811,7 @@ exports.parseXSDFloat = parseXSDFloat;
  */
 function parseXSDDecimal(value) {
     const numb = Number(value);
-    return (isNaN(numb)) ? undefined : numb;
+    return Number.isNaN(numb) ? undefined : numb;
 }
 exports.parseXSDDecimal = parseXSDDecimal;
 /**
@@ -28345,8 +30823,8 @@ exports.parseXSDDecimal = parseXSDDecimal;
  * @param value the string to interpret as a number
  */
 function parseXSDInteger(value) {
-    const numb = parseInt(value, 10);
-    return (isNaN(numb)) ? undefined : numb;
+    const numb = Number.parseInt(value, 10);
+    return Number.isNaN(numb) ? undefined : numb;
 }
 exports.parseXSDInteger = parseXSDInteger;
 /**
@@ -28364,18 +30842,18 @@ exports.parseXSDInteger = parseXSDInteger;
  */
 function parseXSDDateTime(value) {
     const posT = value.indexOf('T');
-    const date = posT >= 0 ? value.substr(0, posT) : value;
+    const date = posT >= 0 ? value.slice(0, Math.max(0, posT)) : value;
     const [year, month, day] = date.split('-');
     let hours = '';
     let minutes = '';
     let seconds = '';
     let timezone = '';
     if (posT >= 0) {
-        const timeAndTimeZone = value.substr(posT + 1);
-        const [time, _timeZoneChopped] = timeAndTimeZone.split(/[\+\-Z]/);
+        const timeAndTimeZone = value.slice(posT + 1);
+        const [time, _timeZoneChopped] = timeAndTimeZone.split(/[+Z-]/u);
         [hours, minutes, seconds] = time.split(':');
-        const timezoneOrNull = new RegExp(/([\+\-Z].*)/).exec(timeAndTimeZone);
-        timezone = (timezoneOrNull) ? timezoneOrNull[0] : '';
+        const timezoneOrNull = /([+Z-].*)/u.exec(timeAndTimeZone);
+        timezone = timezoneOrNull ? timezoneOrNull[0] : '';
     }
     else {
         hours = '00';
@@ -28387,6 +30865,417 @@ function parseXSDDateTime(value) {
 }
 exports.parseXSDDateTime = parseXSDDateTime;
 //# sourceMappingURL=Parsing.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqljson-parse/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/sparqljson-parse/lib/SparqlJsonParser.js"), exports);
+__exportStar(__cmncwpk_require__("./node_modules/sparqljson-parse/lib/SparqlJsonBindingsTransformer.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqljson-parse/lib/SparqlJsonBindingsTransformer.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SparqlJsonBindingsTransformer = void 0;
+const stream_1 = __cmncwpk_require__("./require-empty.js");
+/**
+ * Transforms a stream of SPARQL JSON bindings object to parsed bindings.
+ */
+class SparqlJsonBindingsTransformer extends stream_1.Transform {
+    constructor(parser) {
+        super({ objectMode: true });
+        this.parser = parser;
+    }
+    _transform(chunk, encoding, callback) {
+        callback(null, this.parser.parseJsonBindings(chunk));
+    }
+}
+exports.SparqlJsonBindingsTransformer = SparqlJsonBindingsTransformer;
+//# sourceMappingURL=SparqlJsonBindingsTransformer.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqljson-parse/lib/SparqlJsonParser.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.SparqlJsonParser = void 0;
+const rdf_data_factory_1 = __cmncwpk_require__("rdf-data-factory");
+const SparqlJsonBindingsTransformer_1 = __cmncwpk_require__("./node_modules/sparqljson-parse/lib/SparqlJsonBindingsTransformer.js");
+/**
+ * Parser for the SPARQL 1.1 Query Results JSON format.
+ * @see https://www.w3.org/TR/sparql11-results-json/
+ */
+class SparqlJsonParser {
+    constructor(settings) {
+        settings = settings || {};
+        this.dataFactory = settings.dataFactory || new rdf_data_factory_1.DataFactory();
+        this.prefixVariableQuestionMark = !!settings.prefixVariableQuestionMark;
+    }
+    /**
+     * Convert a SPARQL JSON bindings response to an array of bindings objects.
+     * @param sparqlResponse A SPARQL JSON response.
+     * @return {IBindings[]} An array of bindings.
+     */
+    parseJsonResults(sparqlResponse) {
+        return sparqlResponse.results.bindings.map((rawBindings) => this.parseJsonBindings(rawBindings));
+    }
+    /**
+     * Convert a SPARQL JSON bindings response stream to a stream of bindings objects.
+     *
+     * The bindings stream will emit a 'variables' event that will contain
+     * the array of variables (as RDF.Variable[]), as defined in the response head.
+     *
+     * @param {NodeJS.ReadableStream} sparqlResponseStream A SPARQL JSON response stream.
+     * @return {NodeJS.ReadableStream} A stream of bindings.
+     */
+    parseJsonResultsStream(sparqlResponseStream) {
+        const errorListener = (error) => resultStream.emit('error', error);
+        sparqlResponseStream.on('error', errorListener);
+        const variables = [];
+        sparqlResponseStream
+            .pipe(__cmncwpk_require__("./node_modules/JSONStream/index.js").parse('head.vars.*').on('error', errorListener))
+            .on('data', (variable) => variables.push(this.dataFactory.variable(variable)))
+            .on('end', () => resultStream.emit('variables', variables));
+        const resultStream = sparqlResponseStream
+            .pipe(__cmncwpk_require__("./node_modules/JSONStream/index.js").parse('results.bindings.*').on('error', errorListener))
+            .pipe(new SparqlJsonBindingsTransformer_1.SparqlJsonBindingsTransformer(this));
+        return resultStream;
+    }
+    /**
+     * Convert a SPARQL JSON result binding to a bindings object.
+     * @param rawBindings A SPARQL JSON result binding.
+     * @return {IBindings} A bindings object.
+     */
+    parseJsonBindings(rawBindings) {
+        const bindings = {};
+        for (const key in rawBindings) {
+            const rawValue = rawBindings[key];
+            let value = null;
+            switch (rawValue.type) {
+                case 'bnode':
+                    value = this.dataFactory.blankNode(rawValue.value);
+                    break;
+                case 'literal':
+                    if (rawValue['xml:lang']) {
+                        value = this.dataFactory.literal(rawValue.value, rawValue['xml:lang']);
+                    }
+                    else if (rawValue.datatype) {
+                        value = this.dataFactory.literal(rawValue.value, this.dataFactory.namedNode(rawValue.datatype));
+                    }
+                    else {
+                        value = this.dataFactory.literal(rawValue.value);
+                    }
+                    break;
+                case 'typed-literal':
+                    // Virtuoso uses this non-spec-compliant way of defining typed literals
+                    value = this.dataFactory.literal(rawValue.value, this.dataFactory.namedNode(rawValue.datatype));
+                    break;
+                default:
+                    value = this.dataFactory.namedNode(rawValue.value);
+                    break;
+            }
+            bindings[this.prefixVariableQuestionMark ? ('?' + key) : key] = value;
+        }
+        return bindings;
+    }
+    /**
+     * Convert a SPARQL JSON boolean response to a boolean.
+     * This will throw an error if the given reponse was not a valid boolean response.
+     * @param sparqlResponse A SPARQL JSON response.
+     * @return {IBindings[]} An array of bindings.
+     */
+    parseJsonBoolean(sparqlResponse) {
+        if ('boolean' in sparqlResponse) {
+            return sparqlResponse.boolean;
+        }
+        throw new Error('No valid ASK response was found.');
+    }
+    /**
+     * Convert a SPARQL JSON boolean response stream to a promise resolving to a boolean.
+     * This will reject if the given reponse was not a valid boolean response.
+     * @param {NodeJS.ReadableStream} sparqlResponseStream A SPARQL JSON response stream.
+     * @return {NodeJS.ReadableStream} A stream of bindings.
+     */
+    parseJsonBooleanStream(sparqlResponseStream) {
+        return new Promise((resolve, reject) => {
+            sparqlResponseStream.on('error', reject);
+            sparqlResponseStream.pipe(__cmncwpk_require__("./node_modules/JSONStream/index.js").parse('boolean'))
+                .on('data', resolve)
+                .on('end', () => reject(new Error('No valid ASK response was found.')));
+        });
+    }
+}
+exports.SparqlJsonParser = SparqlJsonParser;
+//# sourceMappingURL=SparqlJsonParser.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqljson-to-tree/index.js":
+/***/ (function(__unused_webpack_module, exports, __cmncwpk_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __exportStar = (this && this.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__exportStar(__cmncwpk_require__("./node_modules/sparqljson-to-tree/lib/Converter.js"), exports);
+//# sourceMappingURL=index.js.map
+
+/***/ }),
+
+/***/ "./node_modules/sparqljson-to-tree/lib/Converter.js":
+/***/ ((__unused_webpack_module, exports, __cmncwpk_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.Converter = void 0;
+const rdf_literal_1 = __cmncwpk_require__("./node_modules/rdf-literal/index.js");
+const sparqljson_parse_1 = __cmncwpk_require__("./node_modules/sparqljson-parse/index.js");
+/**
+ * Converts SPARQL JSON results to a tree-based structure by splitting variables on a certain delimiter.
+ */
+class Converter {
+    constructor(settings) {
+        settings = settings || { delimiter: '_' };
+        settings.prefixVariableQuestionMark = false;
+        this.delimiter = settings.delimiter || '_';
+        this.parser = new sparqljson_parse_1.SparqlJsonParser(settings);
+        this.materializeRdfJsTerms = settings.materializeRdfJsTerms;
+    }
+    /**
+     * Adds a value to a tree.
+     * @param tree A tree datastructure.
+     * @param {string[]} path The path of keys in the tree.
+     * @param {Term} value A value to add.
+     * @param {string} lastKeyPath The accumulated key path (separated by the given delimiter)
+     *                             through recursive calls, can be empty.
+     * @param {ISchema} schema A schema.
+     * @param {string} delimiter The string to join key paths by.
+     */
+    static addValueToTree(tree, path, value, lastKeyPath, schema, delimiter) {
+        const key = path[0];
+        const keyPath = lastKeyPath ? (lastKeyPath + delimiter + key) : key;
+        const singularize = schema.singularizeVariables[keyPath];
+        if (path.length === 1) {
+            // Leaf nodes
+            if (singularize) {
+                if (!tree[key]) {
+                    tree[key] = value;
+                }
+            }
+            else {
+                if (!tree[key]) {
+                    tree[key] = [];
+                }
+                tree[key].push(value);
+            }
+        }
+        else {
+            // Inner nodes
+            let nextNode;
+            if (singularize) {
+                if (!tree[key]) {
+                    tree[key] = {};
+                }
+                nextNode = tree[key];
+            }
+            else {
+                if (!tree[key]) {
+                    tree[key] = [{}];
+                }
+                nextNode = tree[key][0];
+            }
+            Converter.addValueToTree(nextNode, path.slice(1), value, keyPath, schema, delimiter);
+        }
+    }
+    /**
+     * Recursively merge the two given trees.
+     * @param tree1 A first tree (has key priority on literals).
+     * @param tree2 A second tree. All arrays will/should only have a single element.
+     * @return {any} The merged tree.
+     */
+    static mergeTrees(tree1, tree2) {
+        if (typeof tree1 !== typeof tree2) {
+            throw new Error(`Two incompatible tree nodes were found: ${typeof tree1} and ${typeof tree2}`);
+        }
+        if (Array.isArray(tree1) !== Array.isArray(tree2)) {
+            throw new Error(`Two incompatible tree nodes were found: Array?${Array.isArray(tree1)} and Array?${Array.isArray(tree2)}`);
+        }
+        if (typeof tree1 === 'object' && typeof tree2 === 'object') {
+            if (tree1.termType && tree2.termType) {
+                if (tree1.equals(tree2)) {
+                    return { valid: true, result: tree1 };
+                }
+                else {
+                    return { valid: false, result: tree1 };
+                }
+            }
+            if (Array.isArray(tree1) && Array.isArray(tree2)) {
+                if (tree1.length > 0) {
+                    const merged = [];
+                    let valid = false;
+                    for (const tree1Element of tree1) {
+                        const mergedElement = Converter.mergeTrees(tree1Element, tree2[0]);
+                        if (mergedElement.valid) {
+                            valid = true;
+                            merged.push(mergedElement.result);
+                        }
+                        else {
+                            merged.push(tree1Element);
+                        }
+                    }
+                    if (valid) {
+                        return { valid: true, result: merged };
+                    }
+                }
+                return { valid: true, result: tree1.concat(tree2) };
+            }
+            else {
+                const merged = {};
+                for (const key2 in tree2) {
+                    merged[key2] = tree2[key2];
+                }
+                for (const key1 in tree1) {
+                    if (merged[key1]) {
+                        const mergedElement = Converter.mergeTrees(tree1[key1], merged[key1]);
+                        if (mergedElement.valid) {
+                            merged[key1] = mergedElement.result;
+                        }
+                        else {
+                            return { valid: false, result: tree1 };
+                        }
+                    }
+                    else {
+                        merged[key1] = tree1[key1];
+                    }
+                }
+                return { valid: true, result: merged };
+            }
+        }
+        else {
+            throw new Error(`Unmergable tree types: ${typeof tree1} and ${typeof tree2}`);
+        }
+    }
+    /**
+     * Materialize all RDF terms in the given tree to raw values.
+     * This does not mutate the original tree.
+     * @param tree A tree.
+     * @return {any} A materialized tree.
+     */
+    static materializeTree(tree) {
+        if (tree.termType) {
+            return rdf_literal_1.getTermRaw(tree);
+        }
+        else if (Array.isArray(tree)) {
+            return tree.map(Converter.materializeTree);
+        }
+        else {
+            const materialized = {};
+            for (const key in tree) {
+                materialized[key] = Converter.materializeTree(tree[key]);
+            }
+            return materialized;
+        }
+    }
+    /**
+     * Convert a complete SPARQL JSON response to a GraphQL results tree.
+     * @param sparqlResponse A SPARQL JSON response.
+     * @param {ISchema} schema A schema.
+     * @return {any} A GraphQL results tree.
+     */
+    sparqlJsonResultsToTree(sparqlResponse, schema) {
+        return this.bindingsToTree(this.parser.parseJsonResults(sparqlResponse), schema || { singularizeVariables: {} });
+    }
+    /**
+     * Convert an array of bindings to a GraphQL results tree.
+     * @param {IBindings[]} bindingsArray An array of bindings.
+     * @param {ISchema} schema A schema.
+     * @return {any} A GraphQL results tree.
+     */
+    bindingsToTree(bindingsArray, schema) {
+        const singularRoot = schema && schema.singularizeVariables[''];
+        let tree = singularRoot ? {} : [];
+        for (const bindings of bindingsArray) {
+            const subTree = singularRoot ? {} : [{}];
+            for (const key in bindings) {
+                const path = key.split(this.delimiter);
+                const value = bindings[key];
+                Converter.addValueToTree(singularRoot ? subTree : subTree[0], path, value, '', schema, this.delimiter);
+            }
+            tree = Converter.mergeTrees(tree, subTree).result;
+        }
+        if (this.materializeRdfJsTerms) {
+            tree = Converter.materializeTree(tree);
+        }
+        return tree;
+    }
+}
+exports.Converter = Converter;
+//# sourceMappingURL=Converter.js.map
+
+/***/ }),
+
+/***/ "./node_modules/stream-to-string/index.js":
+/***/ ((module, __unused_webpack_exports, __cmncwpk_require__) => {
+
+var Promise = __cmncwpk_require__("./require-empty.js")
+
+module.exports = function (stream, enc, cb) {
+    if (typeof enc === 'function') {
+        cb = enc
+        enc = null
+    }
+    cb = cb || function () {}
+
+    var str = ''
+
+    return new Promise (function (resolve, reject) {
+        stream.on('data', function (data) {
+            str += (typeof enc === 'string') ? data.toString(enc) : data.toString()
+        })
+        stream.on('end', function () {
+            resolve(str)
+            cb(null, str)
+        })
+        stream.on('error', function (err) {
+            reject(err)
+            cb(err)
+        })
+    })
+}
+
 
 /***/ }),
 
@@ -28674,7 +31563,7 @@ function md5ii(a, b, c, d, x, s, t) {
 
 
 function parse(uuid) {
-  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)(uuid)) {
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(uuid)) {
     throw TypeError('Invalid UUID');
   }
 
@@ -28885,7 +31774,7 @@ function stringify(arr) {
   // "undefined" in the uuid)
   // - Invalid input values for the RFC `version` or `variant` fields
 
-  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)(uuid)) {
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(uuid)) {
     throw TypeError('Stringified UUID is invalid');
   }
 
@@ -28929,7 +31818,7 @@ function v1(options, buf, offset) {
   // system entropy.  See #189
 
   if (node == null || clockseq == null) {
-    var seedBytes = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)();
+    var seedBytes = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)();
 
     if (node == null) {
       // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
@@ -28996,7 +31885,7 @@ function v1(options, buf, offset) {
     b[i + n] = node[n];
   }
 
-  return buf || (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)(b);
+  return buf || (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z)(b);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v1);
@@ -29014,7 +31903,7 @@ function v1(options, buf, offset) {
 /* harmony import */ var _md5_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/md5.js");
 
 
-var v3 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v3', 0x30, _md5_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z);
+var v3 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .ZP)('v3', 0x30, _md5_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v3);
 
 /***/ }),
@@ -29053,7 +31942,7 @@ var URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
     }
 
     if (typeof namespace === 'string') {
-      namespace = (0,_parse_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)(namespace);
+      namespace = (0,_parse_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(namespace);
     }
 
     if (namespace.length !== 16) {
@@ -29080,7 +31969,7 @@ var URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
       return buf;
     }
 
-    return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)(bytes);
+    return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z)(bytes);
   } // Function#name is not settable on some platforms (#270)
 
 
@@ -29110,7 +31999,7 @@ var URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
 
 function v4(options, buf, offset) {
   options = options || {};
-  var rnds = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+  var rnds = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
 
   rnds[6] = rnds[6] & 0x0f | 0x40;
   rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
@@ -29125,7 +32014,7 @@ function v4(options, buf, offset) {
     return buf;
   }
 
-  return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z)(rnds);
+  return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z)(rnds);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v4);
@@ -29143,7 +32032,7 @@ function v4(options, buf, offset) {
 /* harmony import */ var _sha1_js__WEBPACK_IMPORTED_MODULE_1__ = __cmncwpk_require__("./node_modules/uuid/dist/esm-browser/sha1.js");
 
 
-var v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v5', 0x50, _sha1_js__WEBPACK_IMPORTED_MODULE_1__/* .default */ .Z);
+var v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .ZP)('v5', 0x50, _sha1_js__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v5);
 
 /***/ }),
@@ -29159,7 +32048,7 @@ var v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .ZP)('v5', 0x50, 
 
 
 function validate(uuid) {
-  return typeof uuid === 'string' && _regex_js__WEBPACK_IMPORTED_MODULE_0__/* .default.test */ .Z.test(uuid);
+  return typeof uuid === 'string' && _regex_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"].test */ .Z.test(uuid);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validate);
@@ -29177,7 +32066,7 @@ function validate(uuid) {
 
 
 function version(uuid) {
-  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* .default */ .Z)(uuid)) {
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__/* ["default"] */ .Z)(uuid)) {
     throw TypeError('Invalid UUID');
   }
 
@@ -29649,7 +32538,7 @@ try {
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("asynciterator");;
+module.exports = require("asynciterator");
 
 /***/ }),
 
@@ -29657,7 +32546,7 @@ module.exports = require("asynciterator");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("rdf-data-factory");;
+module.exports = require("rdf-data-factory");
 
 /***/ }),
 
@@ -29665,7 +32554,7 @@ module.exports = require("rdf-data-factory");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("sparqlalgebrajs");;
+module.exports = require("sparqlalgebrajs");
 
 /***/ }),
 
@@ -29673,7 +32562,15 @@ module.exports = require("sparqlalgebrajs");;
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("sparqljs");;
+module.exports = require("sparqljs");
+
+/***/ }),
+
+/***/ "readable-stream":
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
 
 /***/ })
 
