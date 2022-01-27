@@ -1,50 +1,15 @@
 {
-  "name": "quadstore-comunica",
-  "version": "1.2.0-alpha.0",
-  "description": "This library lets you use the Comunica query engine with quadstore. It is not meant to be used on its own but rather as a dependency of quadstore itself.",
-  "main": "index.bundle.js",
-  "typings": "index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-engine": "comunica-compile-config config/config-default.json  > engine.js",
-    "build": "npm run build-engine && npm run bundle-js && npm run rename-webpack-module-vars",
-    "bundle-js": "webpack --config webpack.config.js",
-    "rename-webpack-module-vars": "mv index.bundle.js b.js && sed -e 's/__webpack_/__cmncwpk_/g' b.js > index.bundle.js && rm b.js",
-    "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json",
-    "publish:alpha": "npm publish --tag alpha",
-    "publish:beta": "npm publish --tag beta"
-  },
-  "homepage": "https://github.com/beautifulinteractions/node-quadstore-comunica",
-  "bugs": "https://github.com/beautifulinteractions/node-quadstore/issues",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/beautifulinteractions/node-quadstore-comunica.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@comunica/types": "^1.22.0"
-  },
-  "devDependencies": {
-    "@comunica/actor-init-sparql": "^1.22.2",
-    "asynciterator": "^3.2.0",
-    "json-loader": "^0.5.7",
-    "rdf-data-factory": "^1.1.0",
-    "sparqlalgebrajs": "^3.0.3",
-    "sparqljs": "^3.5.1",
-    "webpack": "^5.57.1",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "webpack-cli": "^4.9.0"
-  },
-  "peerDependencies": {
-    "asynciterator": "^3.2.0",
-    "rdf-data-factory": "^1.1.0",
-    "sparqlalgebrajs": "^3.0.3",
-    "sparqljs": "^3.5.1"
-  },
-  "files": [
-    "index.d.ts",
-    "index.bundle.js"
+  "workspaces": [
+    "spec",
+    "distribution",
+    "packages/actor-optimize-query-operation-quadstore",
+    "packages/actor-rdf-resolve-quad-pattern-quadstore-source"
   ],
-  "lsd:module": true
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "ts:build": "tsc",
+    "ts:watch": "tsc --watch"
+  }
 }

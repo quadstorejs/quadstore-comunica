@@ -1,0 +1,21 @@
+{
+  "name": "spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "spec:query": "rdf-test-suite -c .rdf-test-suite-cache/ spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl -s http://www.w3.org/TR/sparql11-query/ -o summary",
+    "spec:update": "rdf-test-suite -c .rdf-test-suite-cache/ spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl -s http://www.w3.org/TR/sparql11-update/ -o summary"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/memdown": "^3.0.0",
+    "@types/rdf-js": "^4.0.1",
+    "memdown": "^6.1.1",
+    "quadstore": "^9.2.0-alpha.0",
+    "rdf-data-factory": "^1.1.0",
+    "rdf-test-suite": "^1.18.0"
+  }
+}

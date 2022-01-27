@@ -1,0 +1,12 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^4.0.0/components/context.jsonld",
+    {
+      "npmd": "https://linkedsoftwaredependencies.org/bundles/npm/",
+      "carrqpqs": "npmd:actor-rdf-resolve-quad-pattern-quadstore-source/",
+      "files-carrqpqs": "carrqpqs:^2.0.0/",
+
+      "ActorRdfResolveQuadPatternQuadstoreSource": "carrqpqs:Actor/RdfResolveQuadPattern/QuadstoreSource"
+    }
+  ]
+}

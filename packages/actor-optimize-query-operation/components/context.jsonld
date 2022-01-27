@@ -1,0 +1,12 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/core/^2.0.0/components/context.jsonld",
+    {
+      "npmd": "https://linkedsoftwaredependencies.org/bundles/npm/",
+      "caoqoq": "npmd:actor-optimize-query-operation-quadstore/",
+      "files-caoqoq": "caoqoq:^2.0.0/",
+
+      "ActorOptimizeQueryOperationQuadstore": "caoqoq:Actor/OptimizeQueryOperation/Quadstore"
+    }
+  ]
+}

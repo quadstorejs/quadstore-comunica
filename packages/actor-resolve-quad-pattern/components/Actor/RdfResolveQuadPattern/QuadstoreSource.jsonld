@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/actor-rdf-resolve-quad-pattern-quadstore-source/^2.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source/^2.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/bus-rdf-resolve-quad-pattern/^2.0.0/components/context.jsonld"
+  ],
+  "@id": "npmd:actor-rdf-resolve-quad-pattern-quadstore-source",
+  "components": [
+    {
+      "@id": "carrqpqs:Actor/RdfResolveQuadPattern/QuadstoreSource",
+      "@type": "Class",
+      "extends": "carrqprs:components/ActorRdfResolveQuadPatternRdfJsSource.jsonld#ActorRdfResolveQuadPatternRdfJsSource",
+      "requireElement": "ActorRdfResolveQuadPatternQuadstoreSource",
+      "comment": "A comunica RDFJS Source RDF Resolve Quad Pattern Actor.",
+
+    }
+  ]
+}

@@ -4,13 +4,14 @@
 This package provides a SPARQL query engine for [quadstore][3] based on the
 [Comunica][1] framework.
 
-Current version(s): `1.2.0-alpha.0` available on NPM under the `alpha` tag, using `comunica@1.22.3`. 
+Current version(s): `1.2.0-alpha.0` available on NPM under the `alpha` tag,
+using `comunica@1.22.3`. 
 
 ## Usage
 
-```
-import {Quadstore} from 'quadstore';
-import {newEngine} from 'quadstore-comunica';
+```typescript
+import { Quadstore } from 'quadstore';
+import { newEngine } from 'quadstore-comunica';
 
 const store = new Quadstore({ 
   /* other options... */ 
@@ -18,15 +19,31 @@ const store = new Quadstore({
 });
 ```
 
+## Repository structure
+
+This repository is a monorepo that contains a custom configuration/distribution
+of Comunica. It includes the following projects and packages:
+
+| Package                                     | Published as         | Notes                                    |
+|---------------------------------------------|----------------------|------------------------------------------| 
+| `distribution/`                             | `quadstore-comunica` | Configuration files and build system     |
+| `spec/`                                     | -                    | Testing against SPARQL spec(s)           |
+| `packages/actor-optimize-query-operation/`  | -                    | Quadstore-specific optimization actor    |
+| `packages/actor-resolve-quad-pattern/`      | -                    | Quadstore-specific quad resolution actor |
+
 ## Build process
 
-This package and the SPARQL query engine it contains are optimized for bundle
-size and dependency count.
+The SPARQL query engine is optimized for bundle size and dependency count.
 
 The engine is first built using Comunica's runner, then bundled into a single
 file using Webpack **5.x** and finally published in its bundled form to NPM. 
 Dependencies shared with [quadstore][0] appear as `peerDependencies` in 
-`package.json`.
+`distribution/package.json`.
+
+```shell
+cd distribution
+npm run build
+```
 
 The bundle is intentionally kept un-minified to facilitate debugging and
 preservation.
@@ -50,7 +67,25 @@ See also [this PR to vercel/ncc](https://github.com/vercel/ncc/pull/633).
 Issues should be reported in quadstore's [issue tracker][2].
 See also the [quadstore][0] and [comunica][1] repositories.
 
-[0]: https://github.com/beautifulinteractions/node-quadstore
+## Linking Comunica
+
+When working against a local version of Comunica we need to link all of its
+packages into this project's `node_modules` directory. The following commands
+can help:
+
+```shell
+# Move to Comunica's directory.
+cd /to/comunica/dir
+
+# Prep all packages to be linked into a different project.
+./node_modules/.bin/lerna --no-progress --loglevel warn exec -- yarn link
+
+# Print a list of commands to be used in the root of whatever project depends
+# on Comunica to link all packages into the project's node_modules.
+./node_modules/.bin/lerna --no-progress --loglevel warn list | sed 's/^/yarn link /'
+```
+
+[0]: https://github.com/belayeng/quadstore
 [1]: https://github.com/comunica/comunica
-[2]: https://github.com/beautifulinteractions/node-quadstore/issues
-[3]: https://github.com/beautifulinteractions/node-quadstore#optscomunica
+[2]: https://github.com/belayeng/quadstore/issues
+[3]: https://github.com/belayeng/quadstore#optscomunica

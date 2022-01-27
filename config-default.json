@@ -1,0 +1,37 @@
+{
+  "@context": [
+    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^2.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/config-query-sparql/^2.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/runner/^2.0.0/components/context.jsonld"
+  ],
+  "@id": "urn:comunica:my",
+  "@type": "Runner",
+  "import": [
+    "files-qc:config/context-preprocess/actors.json",
+    "files-qc:config/context-preprocess/mediators.json",
+    "files-qc:config/hash-bindings/actors.json",
+    "files-qc:config/hash-bindings/mediators.json",
+
+    "files-qc:config/init/actors.json",
+    "files-qc:config/optimize-query-operation/actors.json",
+    "files-qc:config/optimize-query-operation/mediators.json",
+    "files-qc:config/query-operation/actors.json",
+    "files-qc:config/query-operation/mediators.json",
+    "files-qc:config/query-parse/actors.json",
+    "files-qc:config/query-parse/mediators.json",
+
+    "files-qc:config/rdf-join/actors.json",
+    "files-qc:config/rdf-join/mediators.json",
+    "files-qc:config/rdf-join-selectivity/actors.json",
+    "files-qc:config/rdf-join-selectivity/mediators.json",
+
+    "files-qc:config/rdf-resolve-quad-pattern/actors-rdfjs.json",
+    "files-qc:config/rdf-resolve-quad-pattern/mediators.json",
+
+    "files-qc:config/rdf-update-quads/actors-rdfjs.json",
+    "files-qc:config/rdf-update-quads/mediators.json",
+
+    "files-qc:config/quadstore-optimizations/actors.json"
+  ]
+}
+

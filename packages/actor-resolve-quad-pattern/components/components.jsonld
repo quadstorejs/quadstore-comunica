@@ -1,0 +1,9 @@
+{
+  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/actor-rdf-resolve-quad-pattern-quadstore-source/^2.0.0/components/context.jsonld",
+  "@id": "npmd:actor-rdf-resolve-quad-pattern-quadstore-source",
+  "@type": "Module",
+  "requireName": "actor-rdf-resolve-quad-pattern-quadstore-source",
+  "import": [
+    "files-carrqpqs:components/Actor/RdfResolveQuadPattern/QuadstoreSource.jsonld"
+  ]
+}

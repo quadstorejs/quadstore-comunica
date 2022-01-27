@@ -1,0 +1,9 @@
+{
+  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/actor-optimize-query-operation-quadstore/^2.0.0/components/context.jsonld",
+  "@id": "npmd:actor-optimize-query-operation-quadstore",
+  "@type": "Module",
+  "requireName": "actor-optimize-query-operation-quadstore",
+  "import": [
+    "files-caoqoq:components/Actor/OptimizeQueryOperation/Quadstore.jsonld"
+  ]
+}
