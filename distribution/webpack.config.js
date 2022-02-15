@@ -3,7 +3,7 @@ const path = require('path');
 
 // These packages are required by other modules but their exports are never
 // used. We trick webpack into resolving them to a local empty module.
-const alias = [
+const aliasToEmpty = [
   'readable-web-to-node-stream',
   'stream',
   'readable-stream',
@@ -13,6 +13,12 @@ const alias = [
   acc[moduleName] = path.join(__dirname, 'require-empty.js');
   return acc;
 }, {});
+
+// These packages are replaced with alternatives that are smaller and/or
+// faster.
+const aliasToSubs = {
+  immutable: path.resolve(__dirname, '..', 'packages', 'immutable-map'),
+};
 
 // These modules are dependencies of both this configuration of Comunica
 // and quadstore itself. We don't need to bundle them as they are always
@@ -50,7 +56,10 @@ module.exports = {
     ],
   },
   resolve: {
-    alias,
+    alias: {
+      ...aliasToEmpty,
+      ...aliasToSubs,
+    },
   },
   externals,
 };
