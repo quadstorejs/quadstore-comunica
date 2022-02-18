@@ -24,14 +24,13 @@
   "license": "ISC",
   "devDependencies": {
     "json-loader": "^0.5.7",
-    "quadstore": "^10.0.0-alpha.0",
-    "typed-immutable-map": "^0.1.0-alpha.2",
     "webpack": "^5.69.1",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
-    "asynciterator": "^3.2.1"
+    "asynciterator": "^3.2.1",
+    "quadstore": "^10.0.0-alpha.0"
   },
   "dependencies": {
     "@rdfjs/types": "^1.1.0"
