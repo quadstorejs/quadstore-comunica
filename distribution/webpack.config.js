@@ -17,7 +17,7 @@ const aliasToEmpty = [
 // These packages are replaced with alternatives that are smaller and/or
 // faster.
 const aliasToSubs = {
-  immutable: path.resolve(__dirname, '..', 'packages', 'immutable-map'),
+  immutable: path.resolve(__dirname, '..', 'packages', 'immutable'),
 };
 
 // These modules are dependencies of both this configuration of Comunica

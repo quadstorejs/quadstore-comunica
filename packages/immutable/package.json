@@ -1,5 +1,5 @@
 {
-  "name": "immutable-map",
+  "name": "immutable",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,5 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "typed-immutable-map": "^0.1.0-alpha.2"
   }
 }
