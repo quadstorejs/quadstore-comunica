@@ -1,7 +1,6 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^2.0.0/components/context.jsonld",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/config-query-sparql/^2.0.0/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^2.0.0/components/context.jsonld"
   ],
   "import": [
     "qc:config/context-preprocess/actors.json",
@@ -24,10 +23,12 @@
 
     "qc:config/rdf-join/actors.json",
     "qc:config/rdf-join/mediators.json",
+    "qc:config/rdf-join-entries-sort/actors.json",
+    "qc:config/rdf-join-entries-sort/mediators.json",
     "qc:config/rdf-join-selectivity/actors.json",
     "qc:config/rdf-join-selectivity/mediators.json",
 
-    "qc:config/rdf-resolve-quad-pattern/actors-rdfjs.json",
+    "qc:config/rdf-resolve-quad-pattern/actors.json",
     "qc:config/rdf-resolve-quad-pattern/mediators.json",
     "qc:config/rdf-serialize/actors.json",
     "qc:config/rdf-serialize/mediators.json",

@@ -1,29 +1,10 @@
 
-import {
-  Quad,
-  Term,
-} from 'rdf-js';
-import {
-  IQueryEngine,
-  IQueryResult,
-  IUpdateEngine,
-  IQueryResultBindings,
-  IQueryResultBoolean,
-  IQueryResultQuads,
-} from 'rdf-test-suite';
-import {
-  Quadstore,
-  BindingArrayResult,
-  BooleanResult,
-  QuadArrayResult,
-  ResultType,
-  getBindingComparator,
-  getQuadComparator,
-  TermName,
-} from 'quadstore';
+import { Quadstore, TermName } from 'quadstore';
 import memdown from 'memdown';
 import { DataFactory } from 'rdf-data-factory';
-import { newEngine } from 'quadstore-comunica';
+import { Engine, __engine } from 'quadstore-comunica';
+import { IQueryEngine, IUpdateEngine, QueryResultBindings, QueryResultBoolean, QueryResultQuads } from 'rdf-test-suite';
+import { Quad, Bindings } from '@rdfjs/types';
 
 const indexes: TermName[][] = [
   [ 'subject', 'predicate', 'object', 'graph' ],
@@ -52,138 +33,55 @@ const indexes: TermName[][] = [
   [ 'graph', 'object', 'predicate', 'subject' ]
 ];
 
-class RdfStoreQueryEngine implements IQueryEngine, IUpdateEngine {
-
-  async parse(query: string, options: Record<string, any>) {
-    // @ts-ignore
-    return newEngine().actorInitQuery.mediatorQueryParse.mediate({ query, baseIRI: options.baseIRI });
-  }
-
-  async update(data: Quad[], queryString: string, options: Record<string, any>): Promise<Quad[]> {
-    try {
-      const store = new Quadstore({
-        dataFactory: new DataFactory(),
-        backend: memdown(),
-        // @ts-ignore
-        comunica: newEngine(),
-        indexes,
-      });
-      await store.open();
-      await store.multiPut(data);
-      await store.sparql(queryString, options);
-      const results = (await store.get({}));
-      await store.close();
-      return results.items;
-    } catch (err) {
-      return [];
-    }
-  }
-
-  async query(data: Quad[], queryString: string, options: Record<string, any>): Promise<IQueryResult> {
-    try {
-      const store = new Quadstore({
-        dataFactory: new DataFactory(),
-        backend: memdown(),
-        // @ts-ignore
-        comunica: newEngine(),
-        indexes,
-      });
-      await store.open();
-      await store.multiPut(data);
-      const results = await store.sparql(queryString, options);
-      let preparedResults: IQueryResult;
-      switch (results.type) {
-        case ResultType.BINDINGS:
-          preparedResults = await this.prepareBindingResult(results);
-          break;
-        case ResultType.QUADS:
-          preparedResults = await this.prepareQuadResult(results);
-          break;
-        case ResultType.BOOLEAN:
-          preparedResults = await this.prepareBooleanResult(results);
-          break;
-        default:
-          throw new Error(`Unsupported`);
-      }
-      await store.close();
-      return preparedResults;
-    } catch (err) {
-      console.error(err);
-      return this.prepareBindingResult({ type: ResultType.BINDINGS, variables: [], items: [] });
-    }
-  }
-
-  async prepareBooleanResult(result: BooleanResult): Promise<IQueryResultBoolean> {
-    return {
-      type: 'boolean',
-      value: result.value,
-      equals(that: IQueryResult, laxCardinality?: boolean): boolean {
-        return that.type === 'boolean' && that.value === result.value;
-      },
-    };
-  }
-
-  async prepareBindingResult(result: BindingArrayResult): Promise<IQueryResultBindings> {
-    return {
-      type: 'bindings',
-      value: result.items,
-      checkOrder: false,
-      variables: result.variables,
-      equals: (that, laxCardinality?: boolean): boolean => {
-        if (that.type !== 'bindings') {
-          return false;
-        }
-        return this.compareBindingResult(result.items, that.value, result.variables, laxCardinality);
-      },
-    };
-  }
-
-  compareBindingResult(
-    actualBindings: {[variable: string]: Term}[],
-    expectedBindings: {[variable: string]: Term}[],
-    variables: string[],
-    laxCardinality?: boolean,
-  ): boolean {
-    const comparator = getBindingComparator(variables);
-    actualBindings.sort(comparator);
-    expectedBindings.sort(comparator);
-    for (let i = 0, n = Math.min(actualBindings.length, expectedBindings.length); i < n; i += 1) {
-      if (comparator(actualBindings[i], expectedBindings[i]) !== 0) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  async prepareQuadResult(result: QuadArrayResult): Promise<IQueryResultQuads> {
-    return {
-      type: 'quads',
-      value: result.items,
-      equals: (that, laxCardinality?: boolean): boolean => {
-        if (that.type !== 'quads') {
-          return false;
-        }
-        return this.compareQuadResult(result.items, that.value, laxCardinality);
-      },
-    };
-  }
-
-  compareQuadResult(
-    actualQuads: Quad[],
-    expectedQuads: Quad[],
-    laxCardinality?: boolean,
-  ): boolean {
-    const comparator = getQuadComparator();
-    actualQuads.sort(comparator);
-    expectedQuads.sort(comparator);
-    for (let i = 0, n = Math.min(actualQuads.length, expectedQuads.length); i < n; i += 1) {
-      if (comparator(actualQuads[i], expectedQuads[i]) !== 0) {
-        return false;
-      }
-    }
-    return true;
-  }
-
+async function source(data: Quad[]) {
+  const store = new Quadstore({
+    dataFactory: new DataFactory(),
+    backend: memdown(),
+    indexes,
+  });
+  await store.open();
+  await store.multiPut(data);
+  return store;
 }
 
-module.exports = new RdfStoreQueryEngine();
+const adapter: IQueryEngine & IUpdateEngine = {
+
+  async parse(query, options) {
+    // @ts-ignore
+    return __engine.actorInitQuery.mediatorQueryParse.mediate({ query: query, baseIRI: options.baseIRI });
+  },
+
+  async query(data, queryString, options) {
+    const store = await source(data);
+    const engine = new Engine(store);
+    const result = await engine.query(queryString, {
+      baseIRI: options.baseIRI
+    });
+    switch (result.resultType) {
+      case 'boolean':
+        return new QueryResultBoolean(await result.execute());
+      case 'quads':
+        return new QueryResultQuads(await require('arrayify-stream')(await result.execute()));
+      case 'bindings': {
+        const variables = (await result.metadata()).variables.map(variable => `?${variable.value}`);
+        const bindingsRaw: Bindings[] = (await require('arrayify-stream')(await result.execute()));
+        const bindingsArr = bindingsRaw.map(b => Object.fromEntries([...b].map(([k, v]) => [`?${k.value}`, v])));
+        return new QueryResultBindings(variables, bindingsArr, false);
+      }
+      default:
+        throw new Error('unexpected');
+    }
+  },
+
+  async update(data, queryString, options) {
+    const store = await source(data);
+    const engine = new Engine(store);
+    const result = await engine.query(queryString, {
+      baseIRI: options.baseIRI
+    });
+    await result.execute();
+    return (await store.get({})).items;
+  },
+};
+
+module.exports = adapter;

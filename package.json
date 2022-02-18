@@ -2,7 +2,9 @@
   "workspaces": [
     "spec",
     "distribution",
-    "packages/immutable-map",
+    "packages/immutable-map"
+  ],
+  "__workspaces": [
     "packages/actor-optimize-query-operation-quadstore",
     "packages/actor-rdf-resolve-quad-pattern-quadstore-source"
   ],

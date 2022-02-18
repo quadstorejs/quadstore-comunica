@@ -26,7 +26,6 @@ const aliasToSubs = {
 // These should show up in our `peerDependencies`.
 const externals = [
   'asynciterator',
-  'rdf-data-factory',
 ].reduce((acc, moduleName) => {
   acc[moduleName] = `commonjs2 ${moduleName}`;
   return acc;

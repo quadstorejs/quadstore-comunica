@@ -89,3 +89,20 @@ cd /to/comunica/dir
 [1]: https://github.com/comunica/comunica
 [2]: https://github.com/belayeng/quadstore/issues
 [3]: https://github.com/belayeng/quadstore#optscomunica
+
+
+
+## SPARQL spec
+
+We're using the [`rdf-test-suite`][s4] package to validate our
+support for SPARQL queries against official test suites published by the W3C.
+
+We're currently testing against the following manifests:
+
+- [SPARQL 1.1][s2] / [QUERY][s3]: 289/290 tests passing (`npm run spec:query`)
+- [SPARQL 1.1][s2] / [UPDATE][s5]: 155/156 tests passing (`npm run spec:update`)
+
+[s2]: https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl
+[s3]: http://www.w3.org/TR/sparql11-query/
+[s5]: http://www.w3.org/TR/sparql11-update/
+[s4]: https://www.npmjs.com/package/rdf-test-suite
