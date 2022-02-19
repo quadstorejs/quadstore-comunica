@@ -2,7 +2,8 @@
   "workspaces": [
     "spec",
     "distribution",
-    "packages/immutable"
+    "packages/immutable",
+    "packages/uuid"
   ],
   "__workspaces": [
     "packages/actor-optimize-query-operation-quadstore",

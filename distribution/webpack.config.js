@@ -4,6 +4,7 @@ const path = require('path');
 // These packages are required by other modules but their exports are never
 // used. We trick webpack into resolving them to a local empty module.
 const aliasToEmpty = [
+  'promise-polyfill',
   'readable-web-to-node-stream',
   'stream',
   'readable-stream',
@@ -17,6 +18,7 @@ const aliasToEmpty = [
 // These packages are replaced with alternatives that are smaller and/or
 // faster.
 const aliasToSubs = {
+  uuid: path.resolve(__dirname, '..', 'packages', 'uuid'),
   immutable: path.resolve(__dirname, '..', 'packages', 'immutable'),
 };
 
@@ -44,6 +46,7 @@ module.exports = {
   optimization: {
     minimize: false,
     moduleIds: 'named',
+    usedExports: true,
     concatenateModules: false,
   },
   module: {
@@ -58,6 +61,17 @@ module.exports = {
     alias: {
       ...aliasToEmpty,
       ...aliasToSubs,
+
+      // For some reason, two identical copies of sparqljs are ending up in the
+      // bundle, one imported by Comunica itself and the other imported by
+      // sparqlalgebrajs . This forces Webpack to resolve sparqljs to the same
+      // package.
+      sparqljs: path.resolve(__dirname, '..', 'node_modules', 'sparqljs'),
+
+      // For some reason, two identical copies of rdf-data-factory are ending
+      // up in the bundle. This forces Webpack to resolve them to the same
+      // package.
+      'rdf-data-factory': path.resolve(__dirname, '..', 'node_modules', 'rdf-data-factory'),
     },
   },
   externals,

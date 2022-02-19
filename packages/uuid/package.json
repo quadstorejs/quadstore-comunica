@@ -1,5 +1,5 @@
 {
-  "name": "immutable",
+  "name": "uuid",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typed-immutable-map": "^0.1.0"
+    "uuid-random": "^1.3.2"
   }
 }
