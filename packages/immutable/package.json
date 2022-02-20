@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "typed-immutable-map": "^0.1.0"
+    "typed-immutable-map": "^0.1.1"
   }
 }

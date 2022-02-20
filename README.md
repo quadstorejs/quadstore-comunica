@@ -21,6 +21,9 @@ Issues should be reported in quadstore's [issue tracker][i2]. See also the
 - [API](#api)
   - [`Engine` class](#engine-class)
   - [`engine.query()`](#enginequery)
+  - [`query.resultType`](#queryresulttype)
+  - [`query.metadata()`](#querymetadata)
+  - [`query.execute()`](#queryexecute)
   - [`engine.queryBindings()`](#enginequerybindings)
   - [`engine.queryQuads()`](#enginequeryquads)
   - [`engine.queryVoid()`](#enginequeryvoid)
@@ -89,7 +92,15 @@ const query = await engine.query(`SELECT ...`);
 
 TBD
 
+### `query.resultType`
+
+TBD
+
 ### `query.metadata()`
+
+TBD 
+
+### `query.execute()`
 
 TBD
 
@@ -139,7 +150,10 @@ Dependencies shared with [quadstore][0] appear as `peerDependencies` in
 ```shell
 npm install         # run in the project's root dir, will install all
                     # dependencies across all packages
-                    
+
+# link Comunica's packages into this project (see below)
+# after the release of Comunica 2.0 this will not be necessary anymore. 
+      
 npm run ts:build    # run in the project's root dir, will compile all TS files
                     # across all packages
                     
