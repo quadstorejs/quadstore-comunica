@@ -211,5 +211,8 @@
     "index.d.ts",
     "index.bundle.js"
   ],
-  "lsd:module": true
+  "lsd:module": true,
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
