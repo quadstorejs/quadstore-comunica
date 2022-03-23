@@ -14,7 +14,7 @@
     "@types/memdown": "^3.0.0",
     "@types/rdf-js": "^4.0.1",
     "memdown": "^6.1.1",
-    "quadstore": "^10.0.0-alpha.0",
+    "quadstore": "^10.0.0",
     "rdf-data-factory": "^1.1.0",
     "rdf-test-suite": "^1.18.0"
   }
