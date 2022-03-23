@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install -g npm@7
+      - run: 'if [[ $(node -e "process.stdout.write(process.version)") = v14* ]]; then npm i -g npm@7; fi'
       - run: npm install
       - run: npm run ts:build
       - run: cd engine && npm run build
