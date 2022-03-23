@@ -1,18 +1,17 @@
 
 # Comunica for quadstore
 
-This package provides a SPARQL query engine for [quadstore][i0] built on the
-[Comunica][i1] framework and implementing the [RDF/JS Query specification][i3].
-
-Current version(s): `2.0.0` available on NPM under the `latest` tag,
-using `comunica@2.0.1`.
-
-Issues should be reported in quadstore's [issue tracker][i2]. See also the
-[quadstore][i0] and [comunica][i1] repositories.
+A SPARQL query engine for [quadstore][i0] built on the [Comunica][i1]
+framework (version 2.0.1) and implementing the 
+[RDF/JS Query specification][i3].
 
 Practical examples of how to use the engine can be found in the
-`[/examples`][i6] folder. These examples complement the 
+[`/examples`][i6] folder from the repository. These examples complement the
 [RDF/JS Queryable][i4] specification and [Comunica's documentation][i5].
+See also the [quadstore][i0] and [comunica][i1] repositories.
+
+For usage in browsers, please refer to
+[the instructions on quadstore's repository][i7].
 
 [i0]: https://github.com/belayeng/quadstore
 [i1]: https://github.com/comunica/comunica
@@ -21,6 +20,24 @@ Practical examples of how to use the engine can be found in the
 [i4]: https://rdf.js.org/query-spec/#queryable-interfaces
 [i5]: https://comunica.dev/docs/query/getting_started/query_app/#3--executing-sparql-select-queries
 [i6]: https://github.com/belayeng/quadstore-comunica/tree/master/examples
+[i7]: https://github.com/belayeng/quadstore#browser-usage
+
+## Basic usage
+
+```typescript
+import memdown from 'memdown';
+import {DataFactory} from 'rdf-data-factory';
+import {Quadstore} from 'quadstore';
+import {Engine} from 'quadstore-comunica';
+
+const backend = memdown();
+const df = new DataFactory();
+const store = new Quadstore({backend, dataFactory: df});
+const engine = new Engine(store);
+
+const query = await engine.query('SELECT * {?s ?p ?o}');
+const bindingsStream = await query.execute();
+```
 
 ## SPARQL coverage
 
