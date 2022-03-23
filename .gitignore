@@ -331,9 +331,9 @@ node_modules
 package-lock.json
 yarn.lock
 *.LICENSE.*
-distribution/index.bundle.js
-distribution/engine.js
-distribution/componentsjs-error-state.json
+engine/index.bundle.js
+engine/engine.js
+engine/componentsjs-error-state.json
 packages/**/lib/**/*.js
 packages/**/lib/**/*.js.map
 packages/**/lib/**/*.d.ts
@@ -346,6 +346,9 @@ packages/**/bin/**/*.d.ts
 packages/**/index.js
 packages/**/index.js.map
 packages/**/index.d.ts
+examples/**/*.js
+examples/**/*.js.map
+examples/**/*.d.ts
 spec/*.js
 spec/*.d.ts
 spec/.rdf-test-suite-cache

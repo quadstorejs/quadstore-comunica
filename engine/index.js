@@ -20,6 +20,8 @@
     }
 })();
 
+const empty = Object.create(null);
+
 const { QueryEngineBase } = require('@comunica/actor-init-query');
 const engine = new QueryEngineBase(require('./engine.js'));
 
@@ -32,29 +34,29 @@ class Engine {
 
     getContext(context) {
         return {
-            ...(context || {}),
+            ...context,
             source: this.store,
             destination: this.store,
         };
     }
 
-    query(query, context) {
+    query(query, context = empty) {
         return engine.query(query, this.getContext(context));
     }
 
-    queryVoid(query, context) {
+    queryVoid(query, context = empty) {
         return engine.queryVoid(query, this.getContext(context));
     }
 
-    queryBindings(query, context) {
+    queryBindings(query, context = empty) {
         return engine.queryBindings(query, this.getContext(context));
     }
 
-    queryQuads(query, context) {
+    queryQuads(query, context = empty) {
         return engine.queryQuads(query, this.getContext(context));
     }
 
-    queryBoolean(query, context) {
+    queryBoolean(query, context = empty) {
         return engine.queryBoolean(query, this.getContext(context));
     }
 

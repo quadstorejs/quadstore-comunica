@@ -1,7 +1,8 @@
 {
   "workspaces": [
     "spec",
-    "distribution",
+    "engine",
+    "examples",
     "packages/immutable",
     "packages/uuid"
   ],

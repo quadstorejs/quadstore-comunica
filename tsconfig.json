@@ -73,7 +73,8 @@
     "packages/*/index-browser.ts",
     "packages/*/bin/**/*",
     "packages/*/lib/**/*",
-    "distribution/**/*",
+    "examples/**/*",
+    "engine/**/*",
     "spec/**/*"
   ],
   "exclude": [

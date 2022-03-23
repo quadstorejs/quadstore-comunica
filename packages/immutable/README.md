@@ -1,13 +1,12 @@
 
-# immutable-replacement
+# immutable
 
-This package provides an alternative implementation of [immutable][1]'s
-persistent data structures, tailored for use within Comunica.
+This package is used as a replacement for the well-known [`immutable`][1]
+package by `quadstore-comunica`'s build system.
 
-The goal for this alternative implementation is to maintain similar performance
-levels while significantly reducing the size of the package itself.
+This package only exports a `Map` class, which is the only export amongst
+all of `immutable`'s exports that Comunica actually uses.
 
-This package *is not a universal replacement for immutable* as it only
-implements the specific data structures required by Comunica.
+This package is not published to NPM.
 
 [1]: https://immutable-js.com

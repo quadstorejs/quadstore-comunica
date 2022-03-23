@@ -9,7 +9,7 @@
     "spec:update": "rdf-test-suite -c .rdf-test-suite-cache/ spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl -s http://www.w3.org/TR/sparql11-update/ -o summary"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@types/memdown": "^3.0.0",
     "@types/rdf-js": "^4.0.1",

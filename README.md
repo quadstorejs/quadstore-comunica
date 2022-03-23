@@ -1,139 +1,23 @@
 
 # Comunica for quadstore
 
-This package provides a SPARQL query engine for [quadstore][i0] built on the
-[Comunica][i1] framework and implementing the [RDF/JS Query specification][i3].
+This monorepo hosts a number of packages that comprise the build system of
+`quadstore-comunica`, a SPARQL query engine powered by [Comunica][i1] and
+optimized for use with [`quadstore`][i2], both browser-side and server-side. 
 
-Current version(s): `2.0.0-beta.0` available on NPM under the `latest` tag,
-using `comunica@2.0.1-alpha.9.0`. 
+[i1]: https://comunica.dev
+[i2]: https://www.npmjs.com/package/quadstore
 
-Issues should be reported in quadstore's [issue tracker][i2]. See also the
-[quadstore][i0] and [comunica][i1] repositories.
+## Directory structure
 
-[i0]: https://github.com/belayeng/quadstore
-[i1]: https://github.com/comunica/comunica
-[i2]: https://github.com/belayeng/quadstore/issues
-[i3]: https://rdf.js.org/query-spec/
+| dir          | description                                                    |
+|:-------------|:---------------------------------------------------------------|
+| `./engine`   | the actual `quadstore-comunica` package and query engine       |
+| `./spec`     | SPARQL testing suite package                                   |
+| `./packages` | dependencies and replacements used within `quadstore-comunica` |
+| `./examples` | runnable usage examples                                        |
 
-## Table of contents
-
-- [Example usage](#example-usage)
-- [API](#api)
-  - [`Engine` class](#engine-class)
-  - [`engine.query()`](#enginequery)
-  - [`query.resultType`](#queryresulttype)
-  - [`query.metadata()`](#querymetadata)
-  - [`query.execute()`](#queryexecute)
-  - [`engine.queryBindings()`](#enginequerybindings)
-  - [`engine.queryQuads()`](#enginequeryquads)
-  - [`engine.queryVoid()`](#enginequeryvoid)
-  - [`engine.queryBoolean()`](#enginequeryboolean)
-- [SPARQL coverage](#sparql-coverage)
-- [Build process](#build-process)
-  - [Nested bundles](#nested-bundles)
-  - [Linking Comunica](#linking-comunica)
-
-## Example Usage
-
-```typescript
-import memdown from 'memdown';
-import {DataFactory} from 'rdf-data-factory';
-import {Quadstore} from 'quadstore';
-import {Engine} from 'quadstore-comunica';
-
-// Any implementation of AbstractLevelDOWN can be used.
-// For server-side persistence, use `leveldown` or `rocksdb`.
-const backend = memdown();
-
-// Implementation of the RDF/JS DataFactory interface
-const df = new DataFactory();
-
-// Store and query engine are separate modules
-const store = new Quadstore({backend, dataFactory: df});
-const engine = new Engine(store);
-
-// Put a single quad into the store using Quadstore's API
-store.put(df.quad(
-  df.namedNode('http://example.com/subject'),
-  df.namedNode('http://example.com/predicate'),
-  df.namedNode('http://example.com/object'),
-  df.defaultGraph(),
-));
-
-// Queries the store via RDF/JS Query interfaces
-const query = await engine.query('SELECT * {?s ?p ?o}');
-const bindingsStream = await query.execute();
-```
-
-## API
-
-### `Engine` class
-
-The engine class implements the `StringQueryable`, `StringSparqlQueryable`,
-`AlgebraQueryable` and `AlgebraSparqlQueryable` interfaces from the
-[RDF/JS Query specification][a1]. Its constructor must be invoked with an 
-instance of `Quadstore`.
-
-```typescript
-import { Quadstore } from 'quadstore';
-import { Engine } from 'quadstore-comunica';
-
-const store = new Quadstore({ /* ... */ });
-const engine = new Engine(store);
-```
-
-[a1]: https://rdf.js.org/query-spec/
-
-### `engine.query()`
-
-```typescript
-const query = await engine.query(`SELECT ...`);
-```
-
-TBD
-
-### `query.resultType`
-
-TBD
-
-### `query.metadata()`
-
-TBD 
-
-### `query.execute()`
-
-TBD
-
-### `engine.queryBindings()`
-
-TBD
-
-### `engine.queryQuads()`
-
-TBD
-
-### `engine.queryVoid()`
-
-TBD
-
-### `engine.queryBoolean()`
-
-TBD
-
-## SPARQL coverage
-
-We're using the [`rdf-test-suite`][s4] package to validate our
-support for SPARQL queries against official test suites published by the W3C.
-
-We're currently testing against the following manifests:
-
-- [SPARQL 1.1][s2] / [QUERY][s3]: 288/290 (99.3%) tests passing
-- [SPARQL 1.1][s2] / [UPDATE][s5]: 156/156 (100%) tests passing
-
-[s2]: https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl
-[s3]: http://www.w3.org/TR/sparql11-query/
-[s5]: http://www.w3.org/TR/sparql11-update/
-[s4]: https://www.npmjs.com/package/rdf-test-suite
+Each package comes with its own `README.md` for further information. 
 
 ## Build process
 
@@ -145,7 +29,7 @@ The bundle is intentionally kept un-minified to facilitate debugging and
 preservation.
 
 Dependencies shared with [quadstore][0] appear as `peerDependencies` in 
-`distribution/package.json`.
+`engine/package.json`.
 
 ```shell
 npm install         # run in the project's root dir, will install all
@@ -157,7 +41,7 @@ npm install         # run in the project's root dir, will install all
 npm run ts:build    # run in the project's root dir, will compile all TS files
                     # across all packages
                     
-cd distribution     # build the actual quadstore-comunica package by running
+cd engine           # build the actual quadstore-comunica package by running
 npm run build       # Comunica's runner and then Webpack.
 
 cd ../spec

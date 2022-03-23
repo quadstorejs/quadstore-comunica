@@ -4,7 +4,7 @@ import memdown from 'memdown';
 import { DataFactory } from 'rdf-data-factory';
 import { Engine, __engine } from 'quadstore-comunica';
 import { IQueryEngine, IUpdateEngine, QueryResultBindings, QueryResultBoolean, QueryResultQuads } from 'rdf-test-suite';
-import { Quad, Bindings } from '@rdfjs/types';
+import { Quad, Bindings, Variable } from '@rdfjs/types';
 
 const indexes: TermName[][] = [
   [ 'subject', 'predicate', 'object', 'graph' ],
@@ -63,7 +63,7 @@ const adapter: IQueryEngine & IUpdateEngine = {
       case 'quads':
         return new QueryResultQuads(await require('arrayify-stream')(await result.execute()));
       case 'bindings': {
-        const variables = (await result.metadata()).variables.map(variable => `?${variable.value}`);
+        const variables = (await result.metadata()).variables.map((variable: Variable) => `?${variable.value}`);
         const bindingsRaw: Bindings[] = (await require('arrayify-stream')(await result.execute()));
         const bindingsArr = bindingsRaw.map(b => Object.fromEntries([...b].map(([k, v]) => [`?${k.value}`, v])));
         return new QueryResultBindings(variables, bindingsArr, false);
