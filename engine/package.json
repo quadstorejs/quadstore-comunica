@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "3.0.0",
+  "version": "3.0.0-alpha.2",
   "description": "SPARQL query engine for quadstore, built on the Comunica framework",
   "main": "index.bundle.js",
   "typings": "index.d.ts",
