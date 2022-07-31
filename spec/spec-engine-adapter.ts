@@ -1,10 +1,11 @@
 
 import { Quadstore, TermName } from 'quadstore';
-import memdown from 'memdown';
+import { MemoryLevel } from 'memory-level';
 import { DataFactory } from 'rdf-data-factory';
 import { Engine, __engine } from 'quadstore-comunica';
 import { IQueryEngine, IUpdateEngine, QueryResultBindings, QueryResultBoolean, QueryResultQuads } from 'rdf-test-suite';
 import { Quad, Bindings, Variable } from '@rdfjs/types';
+import { streamToArray } from './utils';
 
 const indexes: TermName[][] = [
   [ 'subject', 'predicate', 'object', 'graph' ],
@@ -36,7 +37,7 @@ const indexes: TermName[][] = [
 async function source(data: Quad[]) {
   const store = new Quadstore({
     dataFactory: new DataFactory(),
-    backend: memdown(),
+    backend: new MemoryLevel(),
     indexes,
   });
   await store.open();
@@ -61,10 +62,10 @@ const adapter: IQueryEngine & IUpdateEngine = {
       case 'boolean':
         return new QueryResultBoolean(await result.execute());
       case 'quads':
-        return new QueryResultQuads(await require('arrayify-stream')(await result.execute()));
+        return new QueryResultQuads(await streamToArray(await result.execute()));
       case 'bindings': {
         const variables = (await result.metadata()).variables.map((variable: Variable) => `?${variable.value}`);
-        const bindingsRaw: Bindings[] = (await require('arrayify-stream')(await result.execute()));
+        const bindingsRaw: Bindings[] = (await streamToArray(await result.execute()));
         const bindingsArr = bindingsRaw.map(b => Object.fromEntries([...b].map(([k, v]) => [`?${k.value}`, v])));
         return new QueryResultBindings(variables, bindingsArr, false);
       }

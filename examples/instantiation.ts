@@ -1,5 +1,5 @@
 
-import memdown from 'memdown';
+import { MemoryLevel } from 'memory-level';
 import { Quadstore } from 'quadstore';
 import { Engine } from 'quadstore-comunica';
 import { DataFactory } from 'rdf-data-factory';
@@ -10,7 +10,7 @@ export const instantiate = async () => {
 
   const store = new Quadstore({
     dataFactory,
-    backend: memdown(),
+    backend: new MemoryLevel(),
   });
 
   await store.open();

@@ -13,9 +13,9 @@
   "dependencies": {
     "@types/memdown": "^3.0.0",
     "@types/rdf-js": "^4.0.1",
-    "memdown": "^6.1.1",
-    "quadstore": "^10.0.0",
-    "rdf-data-factory": "^1.1.0",
-    "rdf-test-suite": "^1.18.0"
+    "memory-level": "^1.0.0",
+    "quadstore": "^11.0.0-alpha.2",
+    "rdf-data-factory": "^1.1.1",
+    "rdf-test-suite": "^1.19.2"
   }
 }

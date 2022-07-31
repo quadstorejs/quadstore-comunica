@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^2.0.0/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^3.0.0/components/context.jsonld"
   ],
   "import": [
     "qc:config/rdf-resolve-quad-pattern/actors/federated.json",
