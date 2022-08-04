@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "memory-level": "^1.0.0",
-    "quadstore": "^11.0.0-alpha.2",
-    "quadstore-comunica": "^3.0.0",
+    "quadstore": "^11.0.0-beta.1",
     "rdf-data-factory": "^1.1.1",
     "rdf-terms": "^1.9.0"
   }
