@@ -4,6 +4,7 @@ const path = require('path');
 // These packages are required by other modules but their exports are never
 // used. We trick webpack into resolving them to a local empty module.
 const aliasToEmpty = [
+  'process',
   'promise-polyfill',
   'readable-web-to-node-stream',
   'stream',
