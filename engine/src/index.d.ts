@@ -1,5 +1,9 @@
 
 import type {
+  Quad,
+  Query,
+  Bindings,
+  ResultStream,
   StringQueryable,
   AlgebraQueryable,
   StringSparqlQueryable,
@@ -16,26 +20,40 @@ import type {
 } from 'quadstore';
 
 import type {
-   Algebra,
+  Algebra
 } from 'sparqlalgebrajs';
 
-type StringContext = Omit<
+export type StringContext = Omit<
   QueryStringContext & QuerySourceContext<Quadstore>,
   'source' | 'sources' | 'destination'
 >
 
-type AlgebraContext = Omit<
+export type AlgebraContext = Omit<
   QueryAlgebraContext & QuerySourceContext<Quadstore>,
   'source' | 'sources' | 'destination'
 >
 
-interface Engine extends StringQueryable<AllMetadataSupport, StringContext>
-  , AlgebraQueryable<Algebra, AllMetadataSupport, AlgebraContext>
+export declare class Engine implements StringQueryable<AllMetadataSupport, StringContext>
+  , AlgebraQueryable<Algebra.Operation, AllMetadataSupport, AlgebraContext>
   , StringSparqlQueryable<SparqlResultSupport, StringContext>
-  , AlgebraSparqlQueryable<Algebra, SparqlResultSupport, AlgebraContext> {}
+  , AlgebraSparqlQueryable<Algebra.Operation, SparqlResultSupport, AlgebraContext> {
 
-declare class Engine {
   constructor(store: Quadstore);
+
+  queryBindings(query: string, context?: StringContext): Promise<ResultStream<Bindings>>;
+  queryBindings(query: Algebra.Operation, context?: AlgebraContext): Promise<ResultStream<Bindings>>;
+
+  queryBoolean(query: string, context?: StringContext): Promise<boolean>;
+  queryBoolean(query: Algebra.Operation, context?: AlgebraContext): Promise<boolean>;
+
+  queryQuads(query: string, context?: StringContext): Promise<ResultStream<Quad>>;
+  queryQuads(query: Algebra.Operation, context?: AlgebraContext): Promise<ResultStream<Quad>>;
+
+  queryVoid(query: string, context?: StringContext): Promise<void>;
+  queryVoid(query: Algebra.Operation, context?: AlgebraContext): Promise<void>;
+
+  query(query: string, context?: StringContext): Promise<Query<AllMetadataSupport>>;
+  query(query: Algebra.Operation, context?: AlgebraContext): Promise<Query<AllMetadataSupport>>;
 }
 
-declare const __engine: unknown;
+export declare const __engine: unknown;
