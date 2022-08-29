@@ -331,8 +331,8 @@ node_modules
 package-lock.json
 yarn.lock
 *.LICENSE.*
-engine/index.bundle.js
-engine/engine.js
+engine/dist
+engine/src/engine.js
 engine/componentsjs-error-state.json
 packages/**/lib/**/*.js
 packages/**/lib/**/*.js.map

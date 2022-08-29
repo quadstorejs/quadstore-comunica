@@ -1,18 +1,30 @@
 {
   "name": "quadstore-comunica",
-  "version": "3.0.0-beta.2",
+  "version": "3.0.0-beta.3",
   "description": "SPARQL query engine for quadstore, built on the Comunica framework",
-  "main": "index.bundle.js",
-  "typings": "index.d.ts",
+  "type": "commonjs",
+  "main": "./dist/cjs/bundle.js",
+  "types": "./dist/cjs/bundle.d.ts",
+  "exports": {
+    "import": "./dist/esm/bundle.js",
+    "require": "./dist/cjs/bundle.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-engine": "comunica-compile-config config/config-quadstore.json > engine.js",
-    "build-bundle": "webpack --config webpack.config.js",
-    "build-bundle-rename-vars": "mv index.bundle.js b.js && sed -e 's/__webpack_/__cmncwpk_/g' b.js > index.bundle.js && rm b.js",
-    "build": "npm run build-engine && npm run build-bundle && npm run build-bundle-rename-vars",
-    "analyze-bundle": "webpack --config webpack.config.js --profile --json > webpack.stats.json && webpack-bundle-analyzer webpack.stats.json",
-    "publish:alpha": "npm publish --tag alpha",
-    "publish:beta": "npm publish --tag beta"
+    "build:engine": "comunica-compile-config config/config-quadstore.json > src/engine.js",
+    "build:cjs-types": "cp src/index.d.ts dist/cjs/bundle.d.ts",
+    "build:cjs-bundle": "webpack --config webpack.config.cjs.js && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json",
+    "build:cjs-bundle-rename-vars": "mv dist/cjs/bundle.js b.js && sed -e 's/__WEBPACK_/__QUADSTORE_COMUNICA_/g' -e 's/__webpack_/__quadstore_comunica_/g' b.js > dist/cjs/bundle.js && rm b.js",
+    "build:cjs": "npm run build:cjs-bundle && npm run build:cjs-bundle-rename-vars && npm run build:cjs-types",
+    "build:esm-types": "cp src/index.d.ts dist/esm/bundle.d.ts",
+    "build:esm-bundle": "webpack --config webpack.config.es.js && echo '{\"type\": \"module\"}' > dist/esm/package.json",
+    "build:esm-bundle-rename-vars": "mv dist/esm/bundle.js b.js && sed -e 's/__WEBPACK_/__QUADSTORE_COMUNICA_/g' -e 's/__webpack_/__quadstore_comunica_/g' b.js > dist/esm/bundle.js && rm b.js",
+    "build:esm": "npm run build:esm-bundle && npm run build:esm-bundle-rename-vars && npm run build:esm-types",
+    "build": "npm run clean && npm run build:engine && npm run build:esm && npm run build:cjs",
+    "clean": "rm -rf dist",
+    "analyze-bundle": "webpack --config webpack.config.cjs.js --profile --json > webpack.stats.cjs.json && webpack-bundle-analyzer webpack.stats.cjs.json",
+    "publish:alpha": "npm run clean && npm run build && npm publish --tag alpha",
+    "publish:beta": "npm run clean && npm run build && npm publish --tag beta"
   },
   "homepage": "https://github.com/belayeng/quadstore-comunica",
   "bugs": "https://github.com/belayeng/quadstore-comunica/issues",
@@ -208,8 +220,12 @@
     "@rdfjs/types": "^1.1.0"
   },
   "files": [
-    "index.d.ts",
-    "index.bundle.js"
+    "dist/cjs/**.d.ts",
+    "dist/cjs/**.js",
+    "dist/cjs/package.json",
+    "dist/esm/**.d.ts",
+    "dist/esm/**.js",
+    "dist/esm/package.json"
   ],
   "lsd:module": true,
   "engines": {
