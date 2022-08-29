@@ -36,6 +36,8 @@ const buildBaseConf = (externalsType) => {
 // These should show up in our `peerDependencies`.
   const externals = [
     'asynciterator',
+    'sparqljs',
+    'sparqlalgebrajs',
   ].reduce((acc, moduleName) => {
     acc[moduleName] = `${externalsType} ${moduleName}`;
     return acc;
@@ -67,13 +69,6 @@ const buildBaseConf = (externalsType) => {
       alias: {
         ...aliasToEmpty,
         ...aliasToSubs,
-
-        // For some reason, two identical copies of sparqljs are ending up in the
-        // bundle, one imported by Comunica itself and the other imported by
-        // sparqlalgebrajs . This forces Webpack to resolve sparqljs to the same
-        // package.
-        sparqljs: path.resolve(__dirname, '..', 'node_modules', 'sparqljs'),
-        sparqlalgebrajs: path.resolve(__dirname, '..', 'node_modules', 'sparqlalgebrajs'),
 
         // For some reason, two identical copies of rdf-data-factory are ending
         // up in the bundle. This forces Webpack to resolve them to the same

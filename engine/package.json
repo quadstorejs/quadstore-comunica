@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "3.0.0-beta.4",
+  "version": "3.0.0-beta.5",
   "description": "SPARQL query engine for quadstore, built on the Comunica framework",
   "type": "commonjs",
   "main": "./dist/cjs/bundle.js",
@@ -212,7 +212,7 @@
     "webpack-cli": "^4.10.0"
   },
   "peerDependencies": {
-    "asynciterator": "^3.6.0",
+    "asynciterator": "^3.7.0",
     "quadstore": "^11.0.0-beta.4"
   },
   "dependencies": {
