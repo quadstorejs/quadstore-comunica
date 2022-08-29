@@ -2,7 +2,7 @@
 import { empty } from 'typed-immutable-map/dist/HashMap/empty';
 import { fromIterable, fromObject } from 'typed-immutable-map/dist/HashMap/from';
 
-import { Map as _Map } from './lib/Map';
+import { Map as _Map } from './Map';
 
 const isIterable = (item: any): item is Iterable<unknown> => {
   return Symbol.iterator in item;

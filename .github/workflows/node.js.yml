@@ -28,8 +28,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: 'if [[ $(node -e "process.stdout.write(process.version)") = v14* ]]; then npm i -g npm@7; fi'
-      - run: npm install
-      - run: cd engine && npm run build
-      - run: npm run ts:build
+      - run: sh scripts/install.sh
+      - run: sh scripts/build.sh
       - run: cd spec && npm run spec:query
       - run: cd spec && npm run spec:update

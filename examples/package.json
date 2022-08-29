@@ -1,6 +1,9 @@
 {
   "name": "examples",
   "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "memory-level": "^1.0.0",
     "quadstore": "^11.0.0-beta.4",

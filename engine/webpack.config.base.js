@@ -72,8 +72,8 @@ const buildBaseConf = (externalsType) => {
         // bundle, one imported by Comunica itself and the other imported by
         // sparqlalgebrajs . This forces Webpack to resolve sparqljs to the same
         // package.
-        sparqljs: path.resolve(__dirname, 'node_modules', 'sparqljs'),
-        sparqlalgebrajs: path.resolve(__dirname, 'node_modules', 'sparqlalgebrajs'),
+        sparqljs: path.resolve(__dirname, '..', 'node_modules', 'sparqljs'),
+        sparqlalgebrajs: path.resolve(__dirname, '..', 'node_modules', 'sparqlalgebrajs'),
 
         // For some reason, two identical copies of rdf-data-factory are ending
         // up in the bundle. This forces Webpack to resolve them to the same
