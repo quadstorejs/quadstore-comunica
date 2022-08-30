@@ -10,12 +10,12 @@ optimized for use with [`quadstore`][i2], both browser-side and server-side.
 
 ## Directory structure
 
-| dir          | description                                                    |
-|:-------------|:---------------------------------------------------------------|
-| `./engine`   | the actual `quadstore-comunica` package and query engine       |
-| `./spec`     | SPARQL testing suite package                                   |
-| `./packages` | dependencies and replacements used within `quadstore-comunica` |
-| `./examples` | runnable usage examples                                        |
+| dir          | description                                                       |
+|:-------------|:------------------------------------------------------------------|
+| `./engine`   | the actual `quadstore-comunica` package and query engine          |
+| `./spec`     | SPARQL testing suite package                                      |
+| `./packages` | dependencies and replacements bundled within `quadstore-comunica` |
+| `./examples` | runnable usage examples                                           |
 
 Each package comes with its own `README.md` for further information. 
 
@@ -32,29 +32,20 @@ Dependencies shared with [quadstore][0] appear as `peerDependencies` in
 `engine/package.json`.
 
 ```shell
-npm install         # run in the project's root dir, will install all
-                    # dependencies across all packages
+sh scripts/install.sh   # run "npm install" across all packages
+sh scripts/build.sh     # run "npm run build" across all packages in the correct order
 
-# link Comunica's packages into this project (see below)
-# after the release of Comunica 2.0 this will not be necessary anymore. 
-      
-npm run ts:build    # run in the project's root dir, will compile all TS files
-                    # across all packages
-                    
-cd engine           # build the actual quadstore-comunica package by running
-npm run build       # Comunica's runner and then Webpack.
-
-cd ../spec
-npm run spec:query  # run SPARQL 1.1 / Query test suite
-npm run spec:update # run SPARQL 1.1 / Update test suite
+cd ./spec
+npm run spec:query      # run SPARQL 1.1 / Query test suite
+npm run spec:update     # run SPARQL 1.1 / Update test suite
 ```
 
 ### Nested bundles
 
 The build process of this package replaces the variable prefix `__webpack_` 
-with `__cmncwpk_` everywhere throughout the resulting bundle. This ensures
-that the latter can be included in other application bundles without 
-triggering naming collisions of Webpack's internal variables.
+with `__quadstore_comunica_` everywhere throughout the resulting bundle.
+This ensures that the latter can be included in other application bundles
+without triggering naming collisions of Webpack's internal variables.
 
 More issues related to naming collisions between nested bundles:
 

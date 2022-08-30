@@ -326,7 +326,7 @@ $RECYCLE.BIN/
 # Custom entries
 #
 
-webpack.stats.json
+webpack.stats.*
 node_modules
 package-lock.json
 yarn.lock
