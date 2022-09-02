@@ -18,6 +18,7 @@ const buildBaseConf = (externalsType) => {
     'readable-stream',
     'web-streams-ponyfill',
     'web-streams-node',
+    '@comunica/bus-http',
   ].reduce((acc, moduleName) => {
     acc[moduleName] = path.join(__dirname, 'require-empty.js');
     return acc;

@@ -18,7 +18,7 @@
     "qc:config/query-operation/mediators.json",
     "qc:config/query-parse/actors.json",
     "qc:config/query-parse/mediators.json",
-    "qc:config/query-result-serialize/actors.json",
+
     "qc:config/query-result-serialize/mediators.json",
 
     "qc:config/rdf-join/actors.json",
@@ -30,7 +30,7 @@
 
     "qc:config/rdf-resolve-quad-pattern/actors.json",
     "qc:config/rdf-resolve-quad-pattern/mediators.json",
-    "qc:config/rdf-serialize/actors.json",
+
     "qc:config/rdf-serialize/mediators.json",
 
     "qc:config/rdf-update-quads/actors-rdfjs.json",
