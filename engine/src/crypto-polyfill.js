@@ -20,15 +20,15 @@ const polyfillCrypto = ({ randomFillSync }) => {
 
 if (isNode && typeof crypto === 'undefined') {
 
-  if (Function('return typeof require === \'function\'')()) {
+  if (eval('typeof require === \'function\'')) {
 
     // require() is wrapped into a Function() so that it is ignored by webpack.
-    polyfillCrypto(Function('return require(\'crypto\');')());
+    polyfillCrypto(eval('require(\'crypto\');'));
 
   } else {
 
     // import() is wrapped into a Function() so that it is ignored by webpack.
-    Function('return import(\'crypto\');')().then(polyfillCrypto).catch((err) => {
+    eval('import(\'crypto\');').then(polyfillCrypto).catch((err) => {
       console.error(err);
       process.exit(1);
     });
