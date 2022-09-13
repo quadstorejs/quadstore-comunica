@@ -22,12 +22,12 @@ if (isNode && typeof crypto === 'undefined') {
 
   if (eval('typeof require === \'function\'')) {
 
-    // require() is wrapped into a Function() so that it is ignored by webpack.
+    // require() is wrapped into eval() so that it is ignored by webpack.
     polyfillCrypto(eval('require(\'crypto\');'));
 
   } else {
 
-    // import() is wrapped into a Function() so that it is ignored by webpack.
+    // import() is wrapped into eval() so that it is ignored by webpack.
     eval('import(\'crypto\');').then(polyfillCrypto).catch((err) => {
       console.error(err);
       process.exit(1);
