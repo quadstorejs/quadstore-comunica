@@ -1,11 +1,21 @@
 
+import fs from 'fs';
+import os from 'os';
+import path from 'path';
 import { Quadstore, TermName } from 'quadstore';
-import { MemoryLevel } from 'memory-level';
+import { ClassicLevel } from 'classic-level';
 import { DataFactory } from 'rdf-data-factory';
 import { Engine, __engine } from 'quadstore-comunica';
 import { IQueryEngine, IUpdateEngine, QueryResultBindings, QueryResultBoolean, QueryResultQuads } from 'rdf-test-suite';
 import { Quad, Bindings, Variable } from '@rdfjs/types';
 import { streamToArray } from './utils';
+
+const getUid = (prefix: string = ''): string => {
+  return `${prefix}-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+};
+
+const TMP_DIR_PATH = path.resolve(os.tmpdir(), getUid(`quadstore-comunica-spec`));
+fs.mkdirSync(TMP_DIR_PATH);
 
 const indexes: TermName[][] = [
   [ 'subject', 'predicate', 'object', 'graph' ],
@@ -34,10 +44,15 @@ const indexes: TermName[][] = [
   [ 'graph', 'object', 'predicate', 'subject' ]
 ];
 
+
+
+
+
 async function source(data: Quad[]) {
+  const file = path.resolve(TMP_DIR_PATH, getUid());
   const store = new Quadstore({
     dataFactory: new DataFactory(),
-    backend: new MemoryLevel(),
+    backend: new ClassicLevel(file),
     indexes,
   });
   await store.open();
