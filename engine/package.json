@@ -214,7 +214,7 @@
   },
   "dependencies": {
     "@rdfjs/types": "^1.1.0",
-    "sparqljs": "^3.5.2",
+    "sparqljs": "^3.6.0",
     "sparqlalgebrajs": "^4.0.3"
   },
   "files": [

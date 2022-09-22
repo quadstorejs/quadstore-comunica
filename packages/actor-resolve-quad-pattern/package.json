@@ -34,7 +34,7 @@
   "dependencies": {
     "@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source": "^2.4.0",
     "@types/rdf-js": "*",
-    "asynciterator": "^3.7.0"
+    "asynciterator": "^3.7.1"
   },
   "peerDependencies": {
     "@comunica/bus-rdf-resolve-quad-pattern": "^2.4.0",
