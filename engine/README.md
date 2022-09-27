@@ -22,12 +22,12 @@ For further information, please refer to [quadstore's repository][i7].
 ## Basic usage
 
 ```typescript
-import memdown from 'memdown';
+import { MemoryLevel } from 'memory-level';
 import { DataFactory } from 'rdf-data-factory';
 import { Quadstore } from 'quadstore';
 import { Engine } from 'quadstore-comunica';
 
-const backend = memdown();
+const backend = new MemoryLevel();
 const df = new DataFactory();
 const store = new Quadstore({ backend, dataFactory: df });
 const engine = new Engine(store);
