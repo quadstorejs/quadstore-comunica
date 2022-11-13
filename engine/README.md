@@ -32,8 +32,10 @@ const df = new DataFactory();
 const store = new Quadstore({ backend, dataFactory: df });
 const engine = new Engine(store);
 
-const query = await engine.query('SELECT * {?s ?p ?o}');
-const bindingsStream = await query.execute();
+await store.open();
+
+const bindingsStream = await engine.queryBindings('SELECT * {?s ?p ?o}');
+bindingsStream.on('data', binding => console.log(binding));
 ```
 
 ## SPARQL coverage
