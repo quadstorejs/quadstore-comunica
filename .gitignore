@@ -328,7 +328,6 @@ $RECYCLE.BIN/
 
 webpack.stats.*
 node_modules
-package-lock.json
 yarn.lock
 *.LICENSE.*
 engine/dist
