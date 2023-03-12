@@ -32,7 +32,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source": "^2.5.1",
+    "@comunica/actor-rdf-resolve-quad-pattern-rdfjs-source": "^2.6.8",
     "@types/rdf-js": "*",
     "asynciterator": "^3.8.0"
   },
@@ -41,8 +41,8 @@
     "@comunica/core": "^2.5.1"
   },
   "devDependencies": {
-    "@comunica/bus-rdf-resolve-quad-pattern": "^2.5.1",
-    "@comunica/core": "^2.5.1"
+    "@comunica/bus-rdf-resolve-quad-pattern": "^2.6.8",
+    "@comunica/core": "^2.6.8"
   },
   "jest": {
     "globals": {
