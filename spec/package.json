@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "spec:query": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl -s http://www.w3.org/TR/sparql11-query/ -o summary -e",
-    "spec:update": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl -s http://www.w3.org/TR/sparql11-update/ -o summary -e"
+    "spec:query": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql/sparql11/manifest-sparql11-query.ttl -o summary -e",
+    "spec:update": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql/sparql11/manifest-sparql11-update.ttl -o summary -e"
   },
   "author": "",
   "license": "MIT",
