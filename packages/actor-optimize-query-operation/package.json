@@ -32,15 +32,15 @@
     "index.js"
   ],
   "dependencies": {
-    "sparqlalgebrajs": "^4.0.5"
+    "sparqlalgebrajs": "^4.2.0"
   },
   "peerDependencies": {
     "@comunica/bus-optimize-query-operation": "^2.5.1",
     "@comunica/core": "^2.5.1"
   },
   "devDependencies": {
-    "@comunica/bus-optimize-query-operation": "^2.6.8",
-    "@comunica/core": "^2.6.8"
+    "@comunica/bus-optimize-query-operation": "^2.8.1",
+    "@comunica/core": "^2.8.1"
   },
   "jest": {
     "globals": {
