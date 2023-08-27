@@ -7,7 +7,7 @@
   "typings": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belayeng/quadstore-comunica.git",
+    "url": "https://github.com/jacoscaz/quadstore-comunica.git",
     "directory": "packages/actor-optimize-query-operation-quadstore"
   },
   "publishConfig": {
@@ -21,9 +21,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/belayeng/quadstore/issues"
+    "url": "https://github.com/jacoscaz/quadstore/issues"
   },
-  "homepage": "https://github.com/belayeng/quadstore",
+  "homepage": "https://github.com/jacoscaz/quadstore",
   "files": [
     "components",
     "lib/**/*.d.ts",

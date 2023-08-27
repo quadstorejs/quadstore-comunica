@@ -26,11 +26,11 @@
     "publish:alpha": "npm run clean && npm run build && npm publish --tag alpha",
     "publish:beta": "npm run clean && npm run build && npm publish --tag beta"
   },
-  "homepage": "https://github.com/belayeng/quadstore-comunica",
-  "bugs": "https://github.com/belayeng/quadstore-comunica/issues",
+  "homepage": "https://github.com/jacoscaz/quadstore-comunica",
+  "bugs": "https://github.com/jacoscaz/quadstore-comunica/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belayeng/quadstore-comunica.git"
+    "url": "https://github.com/jacoscaz/quadstore-comunica.git"
   },
   "author": "Jacopo Scazzosi <jacopo@scazzosi.com>",
   "license": "ISC",

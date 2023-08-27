@@ -7,7 +7,7 @@
   "typings": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/belayeng/quadstore-comunica.git",
+    "url": "https://github.com/jacoscaz/quadstore-comunica.git",
     "directory": "packages/actor-rdf-resolve-quad-pattern-quadstore-source"
   },
   "publishConfig": {
@@ -21,9 +21,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beautifulinteractions/node-quadstore/issue"
+    "url": "https://github.com/jacoscaz/quadstore/issues"
   },
-  "homepage": "https://github.com/beautifulinteractions/node-quadstore",
+  "homepage": "https://github.com/jacoscaz/quadstore",
   "files": [
     "components",
     "lib/**/*.d.ts",
