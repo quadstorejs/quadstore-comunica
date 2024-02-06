@@ -1,6 +1,6 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^3.0.0/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^4.0.0/components/context.jsonld"
   ],
   "import": [
     "qc:config/context-preprocess/actors.json",
