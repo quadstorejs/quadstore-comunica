@@ -13,9 +13,9 @@
   "license": "MIT",
   "dependencies": {
     "@types/memdown": "^3.0.5",
-    "@types/rdf-js": "^4.0.1",
+    "@rdfjs/types": "^1.1.0",
     "classic-level": "^1.4.1",
-    "quadstore": "^13.0.0",
+    "quadstore": "^13.0.1",
     "rdf-data-factory": "^1.1.2",
     "rdf-test-suite": "^1.25.0"
   }
