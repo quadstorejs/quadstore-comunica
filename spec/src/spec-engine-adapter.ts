@@ -8,6 +8,8 @@ import { DataFactory } from 'rdf-data-factory';
 import { Engine, __engine } from 'quadstore-comunica';
 import { IQueryEngine, IUpdateEngine, QueryResultBindings, QueryResultBoolean, QueryResultQuads } from 'rdf-test-suite';
 import { Quad, Bindings, Variable } from '@rdfjs/types';
+import { KeysInitQuery } from '@comunica/context-entries';
+import { ActionContext } from '@comunica/core';
 import { streamToArray } from './utils';
 
 const getUid = (prefix: string = ''): string => {
@@ -63,8 +65,9 @@ async function source(data: Quad[]) {
 const adapter: IQueryEngine & IUpdateEngine = {
 
   async parse(query, options) {
+    // const store = await source([]);
     // @ts-ignore
-    return __engine.actorInitQuery.mediatorQueryParse.mediate({ query: query, baseIRI: options.baseIRI });
+    return __engine.actorInitQuery.mediatorQueryProcess.bus.actors[0].parse(query,  new ActionContext({ [KeysInitQuery.baseIRI.name]: options.baseIRI }));
   },
 
   async query(data, queryString, options) {

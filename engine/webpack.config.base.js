@@ -9,16 +9,22 @@ const buildBaseConf = (externalsType) => {
   // These packages are required by other modules but their exports are never
 // used. We trick webpack into resolving them to a local empty module.
   const aliasToEmpty = [
+    '@bergos/jsonparse',
+    '@comunica/bus-http',
+    '@rubensworks/saxes',
+    '@smessie/readable-web-to-node-stream',
     'buffer',
-    'safe-buffer',
+    'cross-fetch',
+    'fetch-sparql-endpoint',
+    'n3',
     'process',
     'promise-polyfill',
-    'readable-web-to-node-stream',
-    'stream',
     'readable-stream',
-    'web-streams-ponyfill',
+    'readable-web-to-node-stream',
+    'safe-buffer',
+    'stream',
     'web-streams-node',
-    '@comunica/bus-http',
+    'web-streams-ponyfill'
   ].reduce((acc, moduleName) => {
     acc[moduleName] = path.join(__dirname, 'require-empty.js');
     return acc;
@@ -27,16 +33,20 @@ const buildBaseConf = (externalsType) => {
 // These packages are replaced with alternatives that are smaller and/or
 // faster.
   const aliasToSubs = {
+    'readable-stream': path.join(__dirname, 'require-readable-stream.js'),
     uuid: path.resolve(__dirname, '..', 'packages', 'uuid'),
     immutable: path.resolve(__dirname, '..', 'packages', 'immutable'),
   };
 
-// These modules are dependencies of both this configuration of Comunica
-// and quadstore itself. We don't need to bundle them as they are always
-// available when using this package within quadstore.
-// These should show up in our `peerDependencies`.
   const externals = [
+    // These modules are dependencies that quadstore-comunica shares with
+    // quadstore. We don't need to bundle them and we consider them peer
+    // dependencies.
     'asynciterator',
+    // These modules are dependecies of quadstore-comunica but they are also
+    // directly used by other packages depending on quadstore-comunica. We
+    // keep them outside the bundle to decrease chances of duplication. These
+    // should show up in our standard dependencies.
     'sparqljs',
     'sparqlalgebrajs',
   ].reduce((acc, moduleName) => {

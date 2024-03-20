@@ -1,10 +1,10 @@
 {
   "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^4.0.0/components/context.jsonld"
+    "https://linkedsoftwaredependencies.org/bundles/npm/@comunica/config-query-sparql/^3.0.0/components/context.jsonld"
   ],
   "import": [
-    "qc:config/rdf-join/actors-inner.json",
-    "qc:config/rdf-join/actors-minus.json",
-    "qc:config/rdf-join/actors-optional.json"
+    "ccqs:config/rdf-join/actors-inner.json",
+    "ccqs:config/rdf-join/actors-minus.json",
+    "ccqs:config/rdf-join/actors-optional.json"
   ]
 }

@@ -45,8 +45,8 @@ support for SPARQL queries against official test suites published by the W3C.
 
 We're currently testing against the following manifests:
 
-- [SPARQL 1.1][s2] / [QUERY][s3]: 296/298 (99.3%) tests passing
-- [SPARQL 1.1][s2] / [UPDATE][s5]: 157/157 (100%) tests passing
+- [SPARQL 1.1][s2] / [QUERY][s3]: 297/298 (99.6%) tests passing
+- [SPARQL 1.1][s2] / [UPDATE][s5]: 155/157 (98.7%) tests passing
 
 [s2]: https://w3c.github.io/rdf-tests/sparql11/data-sparql11/manifest-all.ttl
 [s3]: http://www.w3.org/TR/sparql11-query/

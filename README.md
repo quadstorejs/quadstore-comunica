@@ -28,7 +28,7 @@ file using Webpack **5.x** and finally published in its bundled form to NPM.
 The bundle is intentionally kept un-minified to facilitate debugging and
 preservation.
 
-Dependencies shared with [quadstore][0] appear as `peerDependencies` in 
+Dependencies shared with [quadstore][i2] appear as `peerDependencies` in 
 `engine/package.json`.
 
 ```shell

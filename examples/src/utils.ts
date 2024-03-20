@@ -1,5 +1,5 @@
 
-import type { Quad } from 'rdf-js';
+import type { Quad } from '@rdfjs/types';
 
 /**
  * Crashes the process.
