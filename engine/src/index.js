@@ -1,28 +1,9 @@
 
 require('./crypto-polyfill');
 
+const { QueryEngine } = require('@comunica/query-sparql-rdfjs-lite');
 
-// const { QueryEngineBase } from '@comunica/actor-init-query';
-// import type { ActorInitQueryBase } from '@comunica/actor-init-query';
-// import type { IQueryContextCommon } from '@comunica/types';
-
-// // eslint-disable-next-line import/extensions,ts/no-require-imports,ts/no-var-requires
-// const engineDefault = require('../engine.js');
-
-// /**
-//  * A Comunica SPARQL query engine.
-//  */
-// export class QueryEngine<QueryContext extends IQueryContextCommon = IQueryContextCommon>
-//   extends QueryEngineBase<QueryContext> {
-//   public constructor(engine: ActorInitQueryBase = engineDefault()) {
-//     super(engine);
-//   }
-// }
-
-const { QueryEngineBase } = require('@comunica/actor-init-query');
-
-const engineDefault = require('./engine.js');
-const queryEngine = new QueryEngineBase(engineDefault());
+const queryEngine = new QueryEngine();
 
 const empty = Object.create(null);
 

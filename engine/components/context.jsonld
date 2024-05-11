@@ -1,8 +1,0 @@
-{
-  "@context": [
-    "https://linkedsoftwaredependencies.org/bundles/npm/componentsjs/^5.0.0/components/context.jsonld",
-    {
-      "qc": "https://linkedsoftwaredependencies.org/bundles/npm/quadstore-comunica/^4.0.0/"
-    }
-  ]
-}

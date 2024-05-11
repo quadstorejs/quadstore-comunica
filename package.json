@@ -11,8 +11,8 @@
     "packages/actor-rdf-resolve-quad-pattern-quadstore-source"
   ],
   "devDependencies": {
-    "@types/node": "^20.11.27",
-    "typescript": "^5.4.2"
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5"
   },
   "private": true
 }
