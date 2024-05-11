@@ -7,6 +7,7 @@ optimized for use with [`quadstore`][i2], both browser-side and server-side.
 
 [i1]: https://comunica.dev
 [i2]: https://www.npmjs.com/package/quadstore
+[i3]: https://www.npmjs.com/package/@comunica/query-sparql-rdfjs-lite
 
 ## Directory structure
 
@@ -21,12 +22,12 @@ Each package comes with its own `README.md` for further information.
 
 ## Build process
 
-The SPARQL query engine is optimized for bundle size and dependency count.
+`quadstore-comunica` is optimized for bundle size and dependency count.
 
-The engine is first built using Comunica's runner, then bundled into a single
-file using Webpack **5.x** and finally published in its bundled form to NPM.
-The bundle is intentionally kept un-minified to facilitate debugging and
-preservation.
+The engine is based on [`@comunica/query-sparql-rdfjs-lite`][i3], bundled
+into a single file using Webpack **5.x** and published in its bundled form
+to NPM. The bundle is intentionally kept un-minified to facilitate debugging
+and preservation.
 
 Dependencies shared with [quadstore][i2] appear as `peerDependencies` in 
 `engine/package.json`.
@@ -53,21 +54,3 @@ https://github.com/webpack/webpack/issues/1054
 https://github.com/webpack/webpack/issues/11277
 
 See also [this PR to vercel/ncc](https://github.com/vercel/ncc/pull/633).
-
-### Linking Comunica
-
-When working against a local version of Comunica we need to link all of its
-packages into this project's `node_modules` directory. The following commands
-can help:
-
-```shell
-# Move to Comunica's directory.
-cd /to/comunica/dir
-
-# Prep all packages to be linked into a different project.
-./node_modules/.bin/lerna --no-progress --loglevel warn exec -- yarn link
-
-# Print a list of commands to be used in the root of whatever project depends
-# on Comunica to link all packages into the project's node_modules.
-./node_modules/.bin/lerna --no-progress --loglevel warn list | sed 's/^/yarn link /'
-```
