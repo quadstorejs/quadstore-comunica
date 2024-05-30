@@ -1,6 +1,6 @@
 {
   "name": "quadstore-comunica",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "SPARQL query engine for quadstore, built on the Comunica framework",
   "type": "commonjs",
   "main": "./dist/cjs/bundle.js",
@@ -34,7 +34,7 @@
   "author": "Jacopo Scazzosi <jacopo@scazzosi.com>",
   "license": "MIT",
   "devDependencies": {
-    "@comunica/query-sparql-rdfjs-lite": "^3.1.0",
+    "@comunica/query-sparql-rdfjs-lite": "^3.1.2",
     "json-loader": "^0.5.7",
     "webpack": "^5.91.0",
     "webpack-bundle-analyzer": "^4.10.2",
