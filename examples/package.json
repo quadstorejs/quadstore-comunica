@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "memory-level": "^1.0.0",
-    "quadstore": "13.1.3",
+    "quadstore": "13.1.4",
     "rdf-data-factory": "^1.1.2",
     "rdf-terms": "^1.11.0"
   }
