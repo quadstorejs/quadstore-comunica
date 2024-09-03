@@ -15,7 +15,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node-version: [16.x, 18.x, 20.x, 21.x]
+        node-version: [18.x, 20.x, 22.x]
         arch: [x64]
 
     runs-on: ${{ matrix.os }}
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: 'if [[ $(node -e "process.stdout.write(process.version)") = v14* ]]; then npm i -g npm@7; fi'
-      - run: 'NODE_OPTIONS="--max_old_space_size=4096" sh scripts/install.sh'
+      - run: 'NODE_OPTIONS="--max_old_space_size=4096" sh scripts/install-ci.sh'
       - run: 'NODE_OPTIONS="--max_old_space_size=4096" sh scripts/build.sh'
       - run: cd spec && npm run spec:query
       - run: cd spec && npm run spec:update
