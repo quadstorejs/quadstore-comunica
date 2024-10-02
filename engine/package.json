@@ -36,7 +36,7 @@
   "devDependencies": {
     "@comunica/query-sparql-rdfjs-lite": "^3.2.3",
     "json-loader": "^0.5.7",
-    "webpack": "^5.94.0",
+    "webpack": "^5.95.0",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4"
   },
@@ -45,7 +45,7 @@
     "quadstore": "^13.1.0"
   },
   "dependencies": {
-    "@rdfjs/types": "^1.1.0",
+    "@rdfjs/types": "^1.1.2",
     "sparqlalgebrajs": "^4.3.8",
     "sparqljs": "^3.7.3"
   },
