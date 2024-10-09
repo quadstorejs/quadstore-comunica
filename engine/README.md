@@ -11,13 +11,13 @@ repositories.
 
 For further information, please refer to [quadstore's repository][i7].
 
-[i0]: https://github.com/jacoscaz/quadstore
+[i0]: https://github.com/quadstorejs/quadstore
 [i1]: https://github.com/comunica/comunica
-[i2]: https://github.com/jacoscaz/quadstore/issues
+[i2]: https://github.com/quadstorejs/quadstore/issues
 [i3]: https://rdf.js.org/query-spec/
 [i5]: https://comunica.dev/docs/query/getting_started/query_app/#3--executing-sparql-select-queries
-[i6]: https://github.com/jacoscaz/quadstore-comunica/tree/master/examples
-[i7]: https://github.com/jacoscaz/quadstore#browser-usage
+[i6]: https://github.com/quadstorejs/quadstore-comunica/tree/master/examples
+[i7]: https://github.com/quadstorejs/quadstore#browser-usage
 
 ## Basic usage
 

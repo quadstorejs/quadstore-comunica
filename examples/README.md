@@ -9,10 +9,10 @@ built on the [Comunica][i1] framework and implementing the
 These examples complement the [RDF/JS Queryable][i4] specification
 and [Comunica's documentation][i5].
 
-[i0]: https://github.com/jacoscaz/quadstore
+[i0]: https://github.com/quadstorejs/quadstore
 [i1]: https://github.com/comunica/comunica
-[i2]: https://github.com/jacoscaz/quadstore/issues
+[i2]: https://github.com/quadstorejs/quadstore/issues
 [i3]: https://rdf.js.org/query-spec/
 [i4]: https://rdf.js.org/query-spec/#queryable-interfaces
 [i5]: https://comunica.dev/docs/query/getting_started/query_app/#3--executing-sparql-select-queries
-[i6]: https://github.com/jacoscaz/quadstore-comunica/tree/master/examples
+[i6]: https://github.com/quadstorejs/quadstore-comunica/tree/master/examples
