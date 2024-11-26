@@ -34,9 +34,9 @@
   "author": "Jacopo Scazzosi <jacopo@scazzosi.com>",
   "license": "MIT",
   "devDependencies": {
-    "@comunica/query-sparql-rdfjs-lite": "^4.0.1",
+    "@comunica/query-sparql-rdfjs-lite": "^4.0.2",
     "json-loader": "^0.5.7",
-    "webpack": "^5.95.0",
+    "webpack": "^5.96.1",
     "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4"
   },
