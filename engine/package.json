@@ -42,7 +42,7 @@
   },
   "peerDependencies": {
     "asynciterator": "^3.9.0",
-    "quadstore": "^13.1.0"
+    "quadstore": "^14.0.0"
   },
   "dependencies": {
     "@rdfjs/types": "^1.1.2",

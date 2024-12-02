@@ -5,8 +5,8 @@
     "build": "tsc"
   },
   "dependencies": {
-    "memory-level": "^1.0.0",
-    "quadstore": "13.2.4",
+    "memory-level": "^2.0.0",
+    "quadstore": "14.0.0",
     "rdf-data-factory": "^1.1.2",
     "rdf-terms": "^1.11.0"
   }
