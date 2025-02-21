@@ -1,11 +1,11 @@
 
-require('./crypto-polyfill');
+require('./crypto-polyfill.cjs');
 
 const { QueryEngine } = require('@comunica/query-sparql-rdfjs-lite');
 
-const queryEngine = new QueryEngine();
-
 const empty = Object.create(null);
+
+const __engine = new QueryEngine();
 
 class Engine {
 
@@ -24,26 +24,26 @@ class Engine {
     }
 
     query(query, context = empty) {
-        return queryEngine.query(query, this.getContext(context));
+        return __engine.query(query, this.getContext(context));
     }
 
     queryVoid(query, context = empty) {
-        return queryEngine.queryVoid(query, this.getContext(context));
+        return __engine.queryVoid(query, this.getContext(context));
     }
 
     queryBindings(query, context = empty) {
-        return queryEngine.queryBindings(query, this.getContext(context));
+        return __engine.queryBindings(query, this.getContext(context));
     }
 
     queryQuads(query, context = empty) {
-        return queryEngine.queryQuads(query, this.getContext(context));
+        return __engine.queryQuads(query, this.getContext(context));
     }
 
     queryBoolean(query, context = empty) {
-        return queryEngine.queryBoolean(query, this.getContext(context));
+        return __engine.queryBoolean(query, this.getContext(context));
     }
 
 }
 
+module.exports.__engine = __engine;
 module.exports.Engine = Engine;
-module.exports.__engine = queryEngine;

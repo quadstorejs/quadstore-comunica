@@ -6,16 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "spec:query": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql/sparql11/manifest-sparql11-query.ttl -o summary -e",
+    "spec:query": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql/sparql11/manifest-sparql11-query.ttl -e",
     "spec:update": "rdf-test-suite -c .rdf-test-suite-cache/ dist/spec-engine-adapter.js https://w3c.github.io/rdf-tests/sparql/sparql11/manifest-sparql11-update.ttl -o summary -e"
   },
+  "type": "commonjs",
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@types/memdown": "^3.0.5",
     "@rdfjs/types": "^1.1.2",
     "classic-level": "^2.0.0",
-    "quadstore": "^14.0.0",
+    "quadstore": "^15.0.0-beta.0",
     "rdf-data-factory": "^1.1.2",
     "rdf-test-suite": "^1.25.0"
   }
