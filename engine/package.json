@@ -41,12 +41,9 @@
     "sparqljs": "^3.7.3"
   },
   "files": [
-    "dist/cjs/**.d.ts",
-    "dist/cjs/**.js",
-    "dist/cjs/package.json",
-    "dist/esm/**.d.ts",
-    "dist/esm/**.js",
-    "dist/esm/package.json"
+    "dist/**.d.ts",
+    "dist/**.js",
+    "dist/package.json"
   ],
   "lsd:module": true,
   "engines": {
