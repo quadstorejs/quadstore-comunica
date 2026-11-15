@@ -36,8 +36,6 @@ const config = {
   },
   externals: {
     asynciterator: 'module asynciterator',
-    sparqljs: 'module sparqljs',
-    sparqlalgebrajs: 'module sparqlalgebrajs'
   },
   experiments: {
     outputModule: true,
