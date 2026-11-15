@@ -17,7 +17,7 @@
     "@rdfjs/types": "^2.0.1",
     "classic-level": "^3.0.0",
     "quadstore": "^16.0.0",
-    "rdf-data-factory": "^2.0.2",
+    "rdf-data-factory": "^2.1.0",
     "rdf-test-suite": "^2.1.1"
   }
 }
